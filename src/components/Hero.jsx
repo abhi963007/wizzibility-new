@@ -14,8 +14,7 @@ export default function Hero() {
             <div className="hero-subtitle">CREATIVE MEETS TECHNOLOGY</div>
             <h1 className="hero-heading-new">
               WE CREATE <br />
-              <span className="purple-highlight">DIGITAL</span> <br />
-              EXPERIENCES
+              DIGITAL EXPERIENCES
             </h1>
             <p className="hero-p-new">
               A creative tech studio crafting digital products, brands and experiences that drive real impact.
