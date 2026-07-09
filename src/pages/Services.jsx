@@ -7,7 +7,7 @@ export default function ServicesPage() {
   const services = [
     { 
       id: 1, 
-      title: 'Fashion Photography', 
+      title: 'Visual Communication', 
       slug: 'fashion-photography', 
       image: '6a3514ef9e312a69a772c2c0_8971c848c2638f539d50757c3cbdcfa62708d35c.webp', 
       sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 355px, 461px', 
@@ -16,7 +16,7 @@ export default function ServicesPage() {
     },
     { 
       id: 2, 
-      title: 'Voice & Videography', 
+      title: 'Digital Marketing', 
       slug: 'voice-videography', 
       image: '6a3514e18cb733c985d735eb_054f97113db54086c0f159ca559fbaea76ca59c9.webp', 
       sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 355px, 461px', 
@@ -25,7 +25,7 @@ export default function ServicesPage() {
     },
     { 
       id: 3, 
-      title: 'Video Editing photograhy', 
+      title: 'Branding', 
       slug: 'video-editing-photograhy', 
       image: '6a3514d344d27a821e163d62_c39acb39f24eaae1617e34596fcd880c93c2af1a.webp', 
       sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 355px, 461px', 
@@ -34,7 +34,7 @@ export default function ServicesPage() {
     },
     { 
       id: 4, 
-      title: 'Photo Editing Shoots', 
+      title: 'Multimedia Production', 
       slug: 'photo-editing-shoots', 
       image: '6a3514be30f3515af988ac02_ff0be023f7b2ee24272fccf4bf1cd342a495c37a.webp', 
       sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 47vw, 461px', 
@@ -43,7 +43,7 @@ export default function ServicesPage() {
     },
     { 
       id: 5, 
-      title: 'Brand & Product Shoots', 
+      title: 'Website Development', 
       slug: 'brand-product-shoots', 
       image: '6a35149d36fe5f1750672b3a_82d7964840e34c402f065d2c6276cb5141f0a984.webp', 
       sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 47vw, 461px', 
@@ -52,7 +52,7 @@ export default function ServicesPage() {
     },
     { 
       id: 6, 
-      title: 'Event & Wedding Coverage', 
+      title: 'App Development', 
       slug: 'event-wedding-coverage', 
       image: '6a3514888691881407d3c368_1ab4a0190b641c4b8019632a8f5eac8f25cf5100.webp', 
       sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 47vw, 461px', 
@@ -73,7 +73,7 @@ export default function ServicesPage() {
             <div className="hero-wrapper">
               <div className="hero-left">
                 <p className="project-hero-p">
-                  Professional photography services for weddings, events, portraits, and commercial projects, capturing every moment with creativity, precision, and lasting quality.
+                  Ignite bold creativity with smart tech. We offer tailored solutions blending innovation and artistry for every industry.
                 </p>
               </div>
               <div className="hero-title-wrapper">
@@ -149,7 +149,7 @@ export default function ServicesPage() {
           <div className="w-layout-blockcontainer container w-container">
             <div className="section-header">
               <div className="goal-heading-wrap">
-                <h2 className="section-heading">Built Around Your Goal, Not Just the Camera</h2>
+                <h2 className="section-heading">Built Around Your Goal, Not Just the Code</h2>
                 <div className="header-counter-wrap goal">
                   <div className="section-counter-text">(02)</div>
                 </div>
@@ -180,7 +180,7 @@ export default function ServicesPage() {
             <div className="space-3-small"></div>
             <div className="goal-p-wrap">
               <p className="goal-p">
-                We take time to understand what you want to show, who you want to reach, and how the final photos or videos will be used. That helps us plan the right style, mood, format, and delivery for your project.
+                We take time to understand your business goals, target audience, and technology needs. That helps us design and build a tailored marketing and tech ecosystem that drives real returns.
               </p>
             </div>
           </div>
@@ -223,7 +223,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="p-wrap">
                   <p className="hero-p nobel">
-                    Whether it is photography, videography, editing, or full creative production, Framevo Studio can guide you from idea to final delivery.
+                    Whether it is branding, web development, multimedia, or digital marketing, Wizzibility can guide you from concept to code.
                   </p>
                 </div>
               </div>
@@ -299,7 +299,7 @@ export default function ServicesPage() {
                 <div className="faq-top">
                   <div className="faq-top-left">
                     <div className="font-1-extra-small white">01</div>
-                    <div className="font-1-medium">How do I start a project?</div>
+                    <div className="font-1-medium">What is Wizzibility and what services do you offer?</div>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="faq-arrow">
                     <path d="M18 12.998H13V17.998C13 18.2633 12.8946 18.5176 12.7071 18.7052C12.5196 18.8927 12.2652 18.998 12 18.998C11.7348 18.998 11.4804 18.8927 11.2929 18.7052C11.1054 18.5176 11 18.2633 11 17.998V12.998H6C5.73478 12.998 5.48043 12.8927 5.29289 12.7052C5.10536 12.5176 5 12.2633 5 11.998C5 11.7328 5.10536 11.4785 5.29289 11.2909C5.48043 11.1034 5.73478 10.998 6 10.998H11V5.99805C11 5.73283 11.1054 5.47848 11.2929 5.29094C11.4804 5.1034 11.7348 4.99805 12 4.99805C12.2652 4.99805 12.5196 5.1034 12.7071 5.29094C12.8946 5.47848 13 5.73283 13 5.99805V10.998H18C18.2652 10.998 18.5196 11.1034 18.7071 11.2909C18.8946 11.4785 19 11.7328 19 11.998C19 12.2633 18.8946 12.5176 18.7071 12.7052C18.5196 12.8927 18.2652 12.998 18 12.998Z" fill="currentColor"></path>
@@ -307,7 +307,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="faq-p-wrap">
                   <p className="faq-p">
-                    Simply contact us with your ideas and requirements. We’ll discuss your vision, timeline, and create a plan that fits your needs.
+                    An enterprise-ready, startup-friendly marketing and technology agency offering branding, performance marketing, web development, AI integrations, CRM solutions, content, and creative design — all under one roof.
                   </p>
                 </div>
               </div>
@@ -315,7 +315,7 @@ export default function ServicesPage() {
                 <div className="faq-top">
                   <div className="faq-top-left">
                     <div className="font-1-extra-small white">02</div>
-                    <div className="font-1-medium">Can I choose the style?</div>
+                    <div className="font-1-medium">How does Wizzibility use AI to enhance marketing performance?</div>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="faq-arrow">
                     <path d="M18 12.998H13V17.998C13 18.2633 12.8946 18.5176 12.7071 18.7052C12.5196 18.8927 12.2652 18.998 12 18.998C11.7348 18.998 11.4804 18.8927 11.2929 18.7052C11.1054 18.5176 11 18.2633 11 17.998V12.998H6C5.73478 12.998 5.48043 12.8927 5.29289 12.7052C5.10536 12.5176 5 12.2633 5 11.998C5 11.7328 5.10536 11.4785 5.29289 11.2909C5.48043 11.1034 5.73478 10.998 6 10.998H11V5.99805C11 5.73283 11.1054 5.47848 11.2929 5.29094C11.4804 5.1034 11.7348 4.99805 12 4.99805C12.2652 4.99805 12.5196 5.1034 12.7071 5.29094C12.8946 5.47848 13 5.73283 13 5.99805V10.998H18C18.2652 10.998 18.5196 11.1034 18.7071 11.2909C18.8946 11.4785 19 11.7328 19 11.998C19 12.2633 18.8946 12.5176 18.7071 12.7052C18.5196 12.8927 18.2652 12.998 18 12.998Z" fill="currentColor"></path>
@@ -323,7 +323,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="faq-p-wrap">
                   <p className="faq-p">
-                    Yes. Whether you prefer classic, cinematic, documentary, or creative photography, we tailor every project to your preferred style.
+                    AI tools automate campaigns, generate intelligent insights, personalize user experiences, and boost efficiency.
                   </p>
                 </div>
               </div>
@@ -331,7 +331,7 @@ export default function ServicesPage() {
                 <div className="faq-top">
                   <div className="faq-top-left">
                     <div className="font-1-extra-small white">03</div>
-                    <div className="font-1-medium">Do you offer editing only?</div>
+                    <div className="font-1-medium">Is Wizzibility suitable for startups as well as large businesses?</div>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="faq-arrow">
                     <path d="M18 12.998H13V17.998C13 18.2633 12.8946 18.5176 12.7071 18.7052C12.5196 18.8927 12.2652 18.998 12 18.998C11.7348 18.998 11.4804 18.8927 11.2929 18.7052C11.1054 18.5176 11 18.2633 11 17.998V12.998H6C5.73478 12.998 5.48043 12.8927 5.29289 12.7052C5.10536 12.5176 5 12.2633 5 11.998C5 11.7328 5.10536 11.4785 5.29289 11.2909C5.48043 11.1034 5.73478 10.998 6 10.998H11V5.99805C11 5.73283 11.1054 5.47848 11.2929 5.29094C11.4804 5.1034 11.7348 4.99805 12 4.99805C12.2652 4.99805 12.5196 5.1034 12.7071 5.29094C12.8946 5.47848 13 5.73283 13 5.99805V10.998H18C18.2652 10.998 18.5196 11.1034 18.7071 11.2909C18.8946 11.4785 19 11.7328 19 11.998C19 12.2633 18.8946 12.5176 18.7071 12.7052C18.5196 12.8927 18.2652 12.998 18 12.998Z" fill="currentColor"></path>
@@ -339,7 +339,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="faq-p-wrap">
                   <p className="faq-p">
-                    Absolutely. We provide professional photo editing and retouching services, even if the images were not captured by us.
+                    Yes — cost-effective for startups and robust for enterprise needs.
                   </p>
                 </div>
               </div>
@@ -347,7 +347,7 @@ export default function ServicesPage() {
                 <div className="faq-top">
                   <div className="faq-top-left">
                     <div className="font-1-extra-small white">04</div>
-                    <div className="font-1-medium">Can I request both photography and video?</div>
+                    <div className="font-1-medium">Can Wizzibility build my brand from scratch?</div>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="faq-arrow">
                     <path d="M18 12.998H13V17.998C13 18.2633 12.8946 18.5176 12.7071 18.7052C12.5196 18.8927 12.2652 18.998 12 18.998C11.7348 18.998 11.4804 18.8927 11.2929 18.7052C11.1054 18.5176 11 18.2633 11 17.998V12.998H6C5.73478 12.998 5.48043 12.8927 5.29289 12.7052C5.10536 12.5176 5 12.2633 5 11.998C5 11.7328 5.10536 11.4785 5.29289 11.2909C5.48043 11.1034 5.73478 10.998 6 10.998H11V5.99805C11 5.73283 11.1054 5.47848 11.2929 5.29094C11.4804 5.1034 11.7348 4.99805 12 4.99805C12.2652 4.99805 12.5196 5.1034 12.7071 5.29094C12.8946 5.47848 13 5.73283 13 5.99805V10.998H18C18.2652 10.998 18.5196 11.1034 18.7071 11.2909C18.8946 11.4785 19 11.7328 19 11.998C19 12.2633 18.8946 12.5176 18.7071 12.7052C18.5196 12.8927 18.2652 12.998 18 12.998Z" fill="currentColor"></path>
@@ -355,7 +355,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="faq-p-wrap">
                   <p className="faq-p">
-                    Yes. We offer both photography and videography services, allowing you to capture every moment in a complete visual package.
+                    Yes — from naming and logo design to narrative, visual identity, and launch campaigns.
                   </p>
                 </div>
               </div>
@@ -371,11 +371,11 @@ export default function ServicesPage() {
               <div className="cta-content-wrap">
                 <div className="cta-number">(10)</div>
                 <div className="cta-heading-wrap">
-                  <h2 className="cta-heading">Let’s Frame Something</h2>
+                  <h2 className="cta-heading">Let’s Create Something</h2>
                 </div>
                 <Link data-wf--primary-button--variant="bg-white" data-wf-component-id="65aca0e1-f951-823d-959b-848e3a7ce565" data-wf-variant-state="06be3d8b-21d0-779c-6896-d9322336667f" to="/contact" className="button w-inline-block">
                   <div className="button-text-wrapper w-variant-06be3d8b-21d0-779c-6896-d9322336667f">
-                    <div className="button-text">Book photography</div>
+                    <div className="button-text">Work with us</div>
                   </div>
                   <div className="button-icon-wrapper w-variant-06be3d8b-21d0-779c-6896-d9322336667f">
                     <div className="project-arrow-pill">

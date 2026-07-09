@@ -9,7 +9,7 @@ export default function ProjectsPage() {
   const projects = [
     { 
       id: 1, 
-      title: 'Social Media Videos', 
+      title: 'Social Media Campaigns', 
       slug: 'social-media-videos', 
       category: 'Tab 2', // Weddings
       image: '6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp', 
@@ -18,7 +18,7 @@ export default function ProjectsPage() {
     },
     { 
       id: 2, 
-      title: 'Wedding Stories', 
+      title: 'Brand Identity Systems', 
       slug: 'wedding-stories', 
       category: 'Tab 2', // Weddings
       image: '6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727.webp', 
@@ -27,7 +27,7 @@ export default function ProjectsPage() {
     },
     { 
       id: 3, 
-      title: 'Brand Campaigns', 
+      title: 'Performance Marketing', 
       slug: 'brand-campaigns', 
       category: 'Tab 3', // Events
       image: '6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4.webp', 
@@ -36,7 +36,7 @@ export default function ProjectsPage() {
     },
     { 
       id: 4, 
-      title: 'Product Shoots', 
+      title: 'Product Design & UI/UX', 
       slug: 'product-shoots', 
       category: 'Tab 3', // Events
       image: '6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp', 
@@ -45,7 +45,7 @@ export default function ProjectsPage() {
     },
     { 
       id: 5, 
-      title: 'Corporate Event Highlights', 
+      title: 'Corporate Strategy & Audits', 
       slug: 'corporate-event-highlights', 
       category: 'Tab 4', // Product Photography
       image: '6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f.webp', 
@@ -54,7 +54,7 @@ export default function ProjectsPage() {
     },
     { 
       id: 6, 
-      title: 'Social Media Reel Series', 
+      title: 'Multimedia Content Creation', 
       slug: 'social-media-reel-series', 
       category: 'Tab 4', // Product Photography
       image: '6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp', 
@@ -122,7 +122,7 @@ export default function ProjectsPage() {
               <div className="project-header-top">
                 <div className="hero-left">
                   <p className="project-hero-p">
-                    Professional photography services for weddings, events, portraits, and commercial projects, capturing every moment with creativity, precision, and lasting quality.
+                    Empowering brands with creativity, technology, and strategy. We blend design, marketing, and tech to build extraordinary digital experiences that stand out.
                   </p>
                 </div>
               </div>
@@ -184,21 +184,21 @@ export default function ProjectsPage() {
                   className={`project-tab-link w-inline-block w-tab-link ${activeTab === 'Tab 2' ? 'w--current' : ''}`}
                   style={{ background: 'none', border: 'none', cursor: 'pointer' }}
                 >
-                  <div>Weddings</div>
+                  <div>Marketing & Branding</div>
                 </button>
                 <button 
                   onClick={() => setActiveTab('Tab 3')} 
                   className={`project-tab-link w-inline-block w-tab-link ${activeTab === 'Tab 3' ? 'w--current' : ''}`}
                   style={{ background: 'none', border: 'none', cursor: 'pointer' }}
                 >
-                  <div>Events</div>
+                  <div>Tech & Development</div>
                 </button>
                 <button 
                   onClick={() => setActiveTab('Tab 4')} 
                   className={`project-tab-link w-inline-block w-tab-link ${activeTab === 'Tab 4' ? 'w--current' : ''}`}
                   style={{ background: 'none', border: 'none', cursor: 'pointer' }}
                 >
-                  <div>Product Photography</div>
+                  <div>Multimedia & Design</div>
                 </button>
               </div>
 
@@ -252,7 +252,7 @@ export default function ProjectsPage() {
                 <div className="faq-top">
                   <div className="faq-top-left">
                     <div className="font-1-extra-small white">01</div>
-                    <div className="font-1-medium">How do I start a project?</div>
+                    <div className="font-1-medium">What is Wizzibility and what services do you offer?</div>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="faq-arrow">
                     <path d="M18 12.998H13V17.998C13 18.2633 12.8946 18.5176 12.7071 18.7052C12.5196 18.8927 12.2652 18.998 12 18.998C11.7348 18.998 11.4804 18.8927 11.2929 18.7052C11.1054 18.5176 11 18.2633 11 17.998V12.998H6C5.73478 12.998 5.48043 12.8927 5.29289 12.7052C5.10536 12.5176 5 12.2633 5 11.998C5 11.7328 5.10536 11.4785 5.29289 11.2909C5.48043 11.1034 5.73478 10.998 6 10.998H11V5.99805C11 5.73283 11.1054 5.47848 11.2929 5.29094C11.4804 5.1034 11.7348 4.99805 12 4.99805C12.2652 4.99805 12.5196 5.1034 12.7071 5.29094C12.8946 5.47848 13 5.73283 13 5.99805V10.998H18C18.2652 10.998 18.5196 11.1034 18.7071 11.2909C18.8946 11.4785 19 11.7328 19 11.998C19 12.2633 18.8946 12.5176 18.7071 12.7052C18.5196 12.8927 18.2652 12.998 18 12.998Z" fill="currentColor"></path>
@@ -260,7 +260,7 @@ export default function ProjectsPage() {
                 </div>
                 <div className="faq-p-wrap">
                   <p className="faq-p">
-                    Simply contact us with your ideas and requirements. We’ll discuss your vision, timeline, and create a plan that fits your needs.
+                    An enterprise-ready, startup-friendly marketing and technology agency offering branding, performance marketing, web development, AI integrations, CRM solutions, content, and creative design — all under one roof.
                   </p>
                 </div>
               </div>
@@ -268,7 +268,7 @@ export default function ProjectsPage() {
                 <div className="faq-top">
                   <div className="faq-top-left">
                     <div className="font-1-extra-small white">02</div>
-                    <div className="font-1-medium">Can I choose the style?</div>
+                    <div className="font-1-medium">How does Wizzibility use AI to enhance marketing performance?</div>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="faq-arrow">
                     <path d="M18 12.998H13V17.998C13 18.2633 12.8946 18.5176 12.7071 18.7052C12.5196 18.8927 12.2652 18.998 12 18.998C11.7348 18.998 11.4804 18.8927 11.2929 18.7052C11.1054 18.5176 11 18.2633 11 17.998V12.998H6C5.73478 12.998 5.48043 12.8927 5.29289 12.7052C5.10536 12.5176 5 12.2633 5 11.998C5 11.7328 5.10536 11.4785 5.29289 11.2909C5.48043 11.1034 5.73478 10.998 6 10.998H11V5.99805C11 5.73283 11.1054 5.47848 11.2929 5.29094C11.4804 5.1034 11.7348 4.99805 12 4.99805C12.2652 4.99805 12.5196 5.1034 12.7071 5.29094C12.8946 5.47848 13 5.73283 13 5.99805V10.998H18C18.2652 10.998 18.5196 11.1034 18.7071 11.2909C18.8946 11.4785 19 11.7328 19 11.998C19 12.2633 18.8946 12.5176 18.7071 12.7052C18.5196 12.8927 18.2652 12.998 18 12.998Z" fill="currentColor"></path>
@@ -276,7 +276,7 @@ export default function ProjectsPage() {
                 </div>
                 <div className="faq-p-wrap">
                   <p className="faq-p">
-                    Yes. Whether you prefer classic, cinematic, documentary, or creative photography, we tailor every project to your preferred style.
+                    AI tools automate campaigns, generate intelligent insights, personalize user experiences, and boost efficiency.
                   </p>
                 </div>
               </div>
@@ -284,7 +284,7 @@ export default function ProjectsPage() {
                 <div className="faq-top">
                   <div className="faq-top-left">
                     <div className="font-1-extra-small white">03</div>
-                    <div className="font-1-medium">Do you offer editing only?</div>
+                    <div className="font-1-medium">Is Wizzibility suitable for startups as well as large businesses?</div>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="faq-arrow">
                     <path d="M18 12.998H13V17.998C13 18.2633 12.8946 18.5176 12.7071 18.7052C12.5196 18.8927 12.2652 18.998 12 18.998C11.7348 18.998 11.4804 18.8927 11.2929 18.7052C11.1054 18.5176 11 18.2633 11 17.998V12.998H6C5.73478 12.998 5.48043 12.8927 5.29289 12.7052C5.10536 12.5176 5 12.2633 5 11.998C5 11.7328 5.10536 11.4785 5.29289 11.2909C5.48043 11.1034 5.73478 10.998 6 10.998H11V5.99805C11 5.73283 11.1054 5.47848 11.2929 5.29094C11.4804 5.1034 11.7348 4.99805 12 4.99805C12.2652 4.99805 12.5196 5.1034 12.7071 5.29094C12.8946 5.47848 13 5.73283 13 5.99805V10.998H18C18.2652 10.998 18.5196 11.1034 18.7071 11.2909C18.8946 11.4785 19 11.7328 19 11.998C19 12.2633 18.8946 12.5176 18.7071 12.7052C18.5196 12.8927 18.2652 12.998 18 12.998Z" fill="currentColor"></path>
@@ -292,7 +292,7 @@ export default function ProjectsPage() {
                 </div>
                 <div className="faq-p-wrap">
                   <p className="faq-p">
-                    Absolutely. We provide professional photo editing and retouching services, even if the images were not captured by us.
+                    Yes — cost-effective for startups and robust for enterprise needs.
                   </p>
                 </div>
               </div>
@@ -300,7 +300,7 @@ export default function ProjectsPage() {
                 <div className="faq-top">
                   <div className="faq-top-left">
                     <div className="font-1-extra-small white">04</div>
-                    <div className="font-1-medium">Can I request both photography and video?</div>
+                    <div className="font-1-medium">Can Wizzibility build my brand from scratch?</div>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="faq-arrow">
                     <path d="M18 12.998H13V17.998C13 18.2633 12.8946 18.5176 12.7071 18.7052C12.5196 18.8927 12.2652 18.998 12 18.998C11.7348 18.998 11.4804 18.8927 11.2929 18.7052C11.1054 18.5176 11 18.2633 11 17.998V12.998H6C5.73478 12.998 5.48043 12.8927 5.29289 12.7052C5.10536 12.5176 5 12.2633 5 11.998C5 11.7328 5.10536 11.4785 5.29289 11.2909C5.48043 11.1034 5.73478 10.998 6 10.998H11V5.99805C11 5.73283 11.1054 5.47848 11.2929 5.29094C11.4804 5.1034 11.7348 4.99805 12 4.99805C12.2652 4.99805 12.5196 5.1034 12.7071 5.29094C12.8946 5.47848 13 5.73283 13 5.99805V10.998H18C18.2652 10.998 18.5196 11.1034 18.7071 11.2909C18.8946 11.4785 19 11.7328 19 11.998C19 12.2633 18.8946 12.5176 18.7071 12.7052C18.5196 12.8927 18.2652 12.998 18 12.998Z" fill="currentColor"></path>
@@ -308,7 +308,7 @@ export default function ProjectsPage() {
                 </div>
                 <div className="faq-p-wrap">
                   <p className="faq-p">
-                    Yes. We offer both photography and videography services, allowing you to capture every moment in a complete visual package.
+                    Yes — from naming and logo design to narrative, visual identity, and launch campaigns.
                   </p>
                 </div>
               </div>
@@ -324,11 +324,11 @@ export default function ProjectsPage() {
               <div className="cta-content-wrap">
                 <div className="cta-number">(10)</div>
                 <div className="cta-heading-wrap">
-                  <h2 className="cta-heading">Let’s Frame Something</h2>
+                  <h2 className="cta-heading">Let’s Create Something</h2>
                 </div>
                 <Link data-wf--primary-button--variant="bg-white" data-wf-component-id="65aca0e1-f951-823d-959b-848e3a7ce565" data-wf-variant-state="06be3d8b-21d0-779c-6896-d9322336667f" to="/contact" className="button w-inline-block">
                   <div className="button-text-wrapper w-variant-06be3d8b-21d0-779c-6896-d9322336667f">
-                    <div className="button-text">Book photography</div>
+                    <div className="button-text">Work with us</div>
                   </div>
                   <div className="button-icon-wrapper w-variant-06be3d8b-21d0-779c-6896-d9322336667f">
                     <div className="project-arrow-pill">

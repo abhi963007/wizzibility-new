@@ -343,11 +343,11 @@ export default function ProjectDetail() {
               <div className="cta-content-wrap">
                 <div className="cta-number">(10)</div>
                 <div className="cta-heading-wrap">
-                  <h2 className="cta-heading">Let’s Frame Something</h2>
+                  <h2 className="cta-heading">Let’s Create Something</h2>
                 </div>
                 <Link data-wf--primary-button--variant="bg-white" data-wf-component-id="65aca0e1-f951-823d-959b-848e3a7ce565" data-wf-variant-state="06be3d8b-21d0-779c-6896-d9322336667f" to="/contact" className="button w-inline-block">
                   <div className="button-text-wrapper w-variant-06be3d8b-21d0-779c-6896-d9322336667f">
-                    <div className="button-text">Book photography</div>
+                    <div className="button-text">Work with us</div>
                   </div>
                   <div className="button-icon-wrapper w-variant-06be3d8b-21d0-779c-6896-d9322336667f">
                     <div className="project-arrow-pill">

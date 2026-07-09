@@ -1,6 +1,6 @@
 export const projectsData = {
   'social-media-videos': {
-    title: 'Social Media Videos',
+    title: 'Social Media Campaigns',
     heroImage: '6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp',
     heroImageSizes: '100vw',
     heroImageSrcset: '/images/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2-p-500.webp 500w, /images/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp 640w',
@@ -9,15 +9,15 @@ export const projectsData = {
     bodyImageSizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px',
     bodyImageSrcset: '/images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
     
-    overview: 'Framevo is a photography project focused on capturing authentic moments, creative perspectives, and timeless memories through professional photography. The project showcases portraits, landscapes, events, street photography, and visual storytelling.',
+    overview: 'A comprehensive digital campaign focused on capturing authentic brand stories, creative perspectives, and high-impact social media creatives that connect with audiences and drive conversions.',
     
     missionTitle: 'Mission',
-    missionDescription: 'To become a trusted photography brand that inspires people through powerful visual storytelling and exceptional photographic experiences.',
+    missionDescription: 'To build strong visual brands that stand out in crowded feeds and drive measurable digital traction.',
     missionPoints: [
-      'Capture authentic moments with creativity and precision.',
-      'Deliver professional-quality photography services.',
-      'Create memorable visual stories that connect with audiences.',
-      'Continuously explore innovative photography techniques and styles.'
+      'Create custom content optimized for major social platforms.',
+      'Develop engaging brand films, animated explainers, and reels.',
+      'Implement cohesive visual assets aligned with brand identity.',
+      'Test and analyze performance for continuous optimization.'
     ],
     
     galleryImage1: '6a35711efd85c674b1d6e05b_0a4d33f075c29af67c614baa2a5c85f5866700ae.webp',
@@ -35,15 +35,14 @@ export const projectsData = {
     galleryImage4: '6a3571f1ecd39a6f85413d99_f7fc5e934c1da3b88261783a9e1fb60088c33c8c.webp',
     galleryImage4Srcset: '/images/6a3571f1ecd39a6f85413d99_f7fc5e934c1da3b88261783a9e1fb60088c33c8c-p-500.webp 500w, /images/6a3571f1ecd39a6f85413d99_f7fc5e934c1da3b88261783a9e1fb60088c33c8c.webp 640w',
     
-    problemStatement: 'Photographers often struggle to present their work in an organized and visually appealing manner. Traditional storage methods lack efficient portfolio management, client interaction features, and seamless image presentation.',
+    problemStatement: 'Visionary brands often struggle to capture the interest of modern consumers on social feeds, leading to low engagement rates and missed market opportunities.',
     
-    solutionDescription: 'Framevo provides a centralized platform where photographers can:',
+    solutionDescription: 'Wizzibility delivers a complete short-form visual marketing strategy including:',
     solutionPoints: [
-      'Create and manage portfolios',
-      'Organize photos into albums and categories',
-      'Showcase work through responsive galleries',
-      'Share projects with clients',
-      'Maintain a professional online presence'
+      'High-converting social media templates and digital ads',
+      'Thumb-stopping product videos and brand reels',
+      'Cohesive cross-platform design guidelines',
+      'Growth analysis and feedback integration'
     ],
     solutionImage: '6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp',
     solutionImageSrcset: '/images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739-p-500.webp 500w, /images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp 640w',
@@ -51,7 +50,7 @@ export const projectsData = {
     relatedSlugs: ['wedding-stories', 'brand-campaigns']
   },
   'wedding-stories': {
-    title: 'Wedding Stories',
+    title: 'Brand Identity Systems',
     heroImage: '6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727.webp',
     heroImageSizes: '100vw',
     heroImageSrcset: '/images/6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727-p-500.webp 500w, /images/6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727.webp 640w',
@@ -60,15 +59,16 @@ export const projectsData = {
     bodyImageSizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px',
     bodyImageSrcset: '/images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
     
-    overview: 'Capturing the deep emotion, joy, and elegant details of weddings. We specialize in producing timeless visual records that encapsulate the laughter, intimate details, and tears of your unique love story.',
+    overview: 'Designing cohesive branding ecosystems from scratch, aligning logos, color palettes, guidelines, and core narrative to form a distinct, memorable brand footprint.',
     
+    brandStackTitle: 'Full Stack of Branding',
     missionTitle: 'Mission',
-    missionDescription: 'To document love stories with absolute authenticity, providing couples with high-end, emotional photographs they will cherish for generations.',
+    missionDescription: 'To empower modern businesses with robust, scalable, and professional brand kits that establish instant authority.',
     missionPoints: [
-      'Document genuine candid emotions and micro-moments.',
-      'Blend cinematic lighting with documentary-style coverage.',
-      'Deliver custom retouched image collections promptly.',
-      'Ensure a relaxed, comfortable experience for the couple and guests.'
+      'Develop naming, logo marks, and visual design foundations.',
+      'Draft comprehensive brand tone of voice and messaging rules.',
+      'Create flexible design libraries for web, print, and digital.',
+      'Ensure absolute consistency across all offline and online channels.'
     ],
     
     galleryImage1: '6a35711efd85c674b1d6e05b_0a4d33f075c29af67c614baa2a5c85f5866700ae.webp',
@@ -86,15 +86,14 @@ export const projectsData = {
     galleryImage4: '6a3571f1ecd39a6f85413d99_f7fc5e934c1da3b88261783a9e1fb60088c33c8c.webp',
     galleryImage4Srcset: '/images/6a3571f1ecd39a6f85413d99_f7fc5e934c1da3b88261783a9e1fb60088c33c8c-p-500.webp 500w, /images/6a3571f1ecd39a6f85413d99_f7fc5e934c1da3b88261783a9e1fb60088c33c8c.webp 640w',
     
-    problemStatement: 'Weddings are fast-paced, high-pressure environments. Missing key sentimental details or delivering flat, uninspired photographs fails to capture the true emotional magnitude of the occasion.',
+    problemStatement: 'Many growing startups lack a consistent visual identity, which dilutes their message and reduces customer trust.',
     
-    solutionDescription: 'We deliver comprehensive documentary wedding coverages that include:',
+    solutionDescription: 'We craft full-stack branding ecosystems that include:',
     solutionPoints: [
-      'Pre-wedding consultation & scheduling support',
-      'Dual-shooter coverage to capture multiple angles',
-      'High-definition video integration and highlight reels',
-      'Secure, cloud-hosted client galleries for digital sharing',
-      'Premium custom-bound layflat photo albums'
+      'Interactive logo design and custom typography',
+      'Detailed digital brand guidelines manual',
+      'Packaging designs and corporate collateral layout',
+      'Social media post templates and digital assets'
     ],
     solutionImage: '6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp',
     solutionImageSrcset: '/images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739-p-500.webp 500w, /images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp 640w',
@@ -102,7 +101,7 @@ export const projectsData = {
     relatedSlugs: ['social-media-videos', 'social-media-reel-series']
   },
   'brand-campaigns': {
-    title: 'Brand Campaigns',
+    title: 'Performance Marketing',
     heroImage: '6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4.webp',
     heroImageSizes: '100vw',
     heroImageSrcset: '/images/6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4-p-500.webp 500w, /images/6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4.webp 640w',
@@ -111,15 +110,15 @@ export const projectsData = {
     bodyImageSizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px',
     bodyImageSrcset: '/images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
     
-    overview: 'High-impact commercial photography and videography designed to tell brand stories, drive user engagement, and highlight brand values across global digital platforms.',
+    overview: 'Strategic online advertising and search marketing focused on increasing conversion rates, lead generation, and overall digital footprint.',
     
     missionTitle: 'Mission',
-    missionDescription: 'To translate complex corporate messaging into stunning, accessible visuals that increase brand conversion and connect with contemporary audiences.',
+    missionDescription: 'To run highly efficient campaigns that translate marketing budgets into business revenue.',
     missionPoints: [
-      'Collaborate with marketing teams on strategic visual direction.',
-      'Produce crisp, modern, on-brand product and human imagery.',
-      'Maintain visual consistency across all campaign deliverables.',
-      'Optimize image scaling and output formats for multi-channel usage.'
+      'Optimize Google Ads, Search Engine Marketing (SEM), and SEO.',
+      'Launch targeted email marketing workflows.',
+      'Produce analytics and audits to detect conversion gaps.',
+      'A/B test advertising assets and page funnels.'
     ],
     
     galleryImage1: '6a35711efd85c674b1d6e05b_0a4d33f075c29af67c614baa2a5c85f5866700ae.webp',
@@ -139,12 +138,12 @@ export const projectsData = {
     
     problemStatement: 'Brands struggle to stand out in congested social media feeds. Poor imagery diminishes perceived product value and fails to establish emotional consumer links.',
     
-    solutionDescription: 'We build high-converting commercial media campaigns tailored for:',
+    solutionDescription: 'Our digital marketing suite guarantees growth through:',
     solutionPoints: [
-      'Social media feeds and banner advertising',
-      'Websites and digital storefront interfaces',
-      'Print media, billboards, and brochures',
-      'Press releases and product launch events'
+      'Data-driven Search Engine Optimization (SEO)',
+      'Highly targeted social media and PPC campaigns',
+      'Audience segmenting and lead nurturing workflows',
+      'Real-time client analytics dashboards'
     ],
     solutionImage: '6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp',
     solutionImageSrcset: '/images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739-p-500.webp 500w, /images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp 640w',
@@ -152,7 +151,7 @@ export const projectsData = {
     relatedSlugs: ['product-shoots', 'corporate-event-highlights']
   },
   'product-shoots': {
-    title: 'Product Shoots',
+    title: 'Product Design & UI/UX',
     heroImage: '6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp',
     heroImageSizes: '100vw',
     heroImageSrcset: '/images/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2-p-500.webp 500w, /images/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp 640w',
@@ -161,15 +160,15 @@ export const projectsData = {
     bodyImageSizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px',
     bodyImageSrcset: '/images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
     
-    overview: 'Precision product photography focusing on texture, color accuracy, and premium styling. We design custom backdrops and light setups that make your merchandise stand out.',
+    overview: 'Designing intuitive user interfaces and user experiences for modern mobile and web platforms to boost engagement.',
     
     missionTitle: 'Mission',
-    missionDescription: 'To present consumer goods in the most compelling, detailed, and high-fidelity manner possible, elevating online catalog browsing experiences.',
+    missionDescription: 'To build digital interfaces that are functional, accessible, and delightful to interact with.',
     missionPoints: [
-      'Highlight product details, textures, and color tones.',
-      'Construct custom lifestyle set configurations.',
-      'Apply advanced studio lighting and macro-lens capture.',
-      'Retouch images for crisp, distraction-free rendering.'
+      'Conduct extensive user research and flow audits.',
+      'Wireframe and prototype interactive digital screens.',
+      'Implement responsive front-end styles and animations.',
+      'Align layout designs with modern app development guidelines.'
     ],
     
     galleryImage1: '6a35711efd85c674b1d6e05b_0a4d33f075c29af67c614baa2a5c85f5866700ae.webp',
@@ -187,14 +186,14 @@ export const projectsData = {
     galleryImage4: '6a3571f1ecd39a6f85413d99_f7fc5e934c1da3b88261783a9e1fb60088c33c8c.webp',
     galleryImage4Srcset: '/images/6a3571f1ecd39a6f85413d99_f7fc5e934c1da3b88261783a9e1fb60088c33c8c-p-500.webp 500w, /images/6a3571f1ecd39a6f85413d99_f7fc5e934c1da3b88261783a9e1fb60088c33c8c.webp 640w',
     
-    problemStatement: 'E-commerce returns increase and conversion rates decrease when customers cannot gauge product quality, material textures, or color correctness online.',
+    problemStatement: 'Users abandon digital applications quickly if they encounter complex layouts, poor navigation, or unoptimized mobile views.',
     
-    solutionDescription: 'We provide catalog-ready product photography assets for:',
+    solutionDescription: 'We deliver full-cycle UI/UX product designs featuring:',
     solutionPoints: [
-      'Studio clean-white backdrop cataloging',
-      'Interactive 360-degree rotation imagery',
-      'Real-world lifestyle set displays',
-      'Social media unpackaging clips and video walkthroughs'
+      'User flow wireframes and high-fidelity prototypes',
+      'Responsive layouts optimized for iOS, Android, and web',
+      'Dynamic interactive micro-animations',
+      'Design system tokens and components library'
     ],
     solutionImage: '6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp',
     solutionImageSrcset: '/images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739-p-500.webp 500w, /images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp 640w',
@@ -202,7 +201,7 @@ export const projectsData = {
     relatedSlugs: ['brand-campaigns', 'social-media-videos']
   },
   'corporate-event-highlights': {
-    title: 'Corporate Event Highlights',
+    title: 'Corporate Strategy & Audits',
     heroImage: '6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f.webp',
     heroImageSizes: '100vw',
     heroImageSrcset: '/images/6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f-p-500.webp 500w, /images/6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f.webp 640w',
@@ -211,15 +210,15 @@ export const projectsData = {
     bodyImageSizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px',
     bodyImageSrcset: '/images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
     
-    overview: 'Dynamic, professional corporate event coverage that documents keynote addresses, panel discussions, networking highlights, and team-building summits with energy and precision.',
+    overview: 'Helping enterprises identify growth opportunities, audit visual identity consistency, and plan long-term technology roadmaps.',
     
     missionTitle: 'Mission',
-    missionDescription: 'To document corporate milestones and event interactions, supplying brands with press-ready visual assets that highlight professional culture.',
+    missionDescription: 'To align corporate strategy with emerging tech, helping traditional brands transform into agile leaders.',
     missionPoints: [
-      'Document keynotes, networking interactions, and event scale.',
-      'Capture premium, professional headshots and group shots.',
-      'Operate with low-profile, non-intrusive shooting gear.',
-      'Provide express turnaround options for same-day PR media usage.'
+      'Audit existing branding, tech architecture, and campaigns.',
+      'Formulate clear technology integration roadmaps.',
+      'Deliver AI and robotic process automation strategies.',
+      'Consult on CRM system selection and integration.'
     ],
     
     galleryImage1: '6a35711efd85c674b1d6e05b_0a4d33f075c29af67c614baa2a5c85f5866700ae.webp',
@@ -237,14 +236,14 @@ export const projectsData = {
     galleryImage4: '6a3571f1ecd39a6f85413d99_f7fc5e934c1da3b88261783a9e1fb60088c33c8c.webp',
     galleryImage4Srcset: '/images/6a3571f1ecd39a6f85413d99_f7fc5e934c1da3b88261783a9e1fb60088c33c8c-p-500.webp 500w, /images/6a3571f1ecd39a6f85413d99_f7fc5e934c1da3b88261783a9e1fb60088c33c8c.webp 640w',
     
-    problemStatement: 'Static, boring, or low-resolution event photography fails to convey the excitement of live panels, team scaling, or corporate event scale.',
+    problemStatement: 'Large organizations often operate with outdated tech pipelines or disjointed branding strategies, slowing down growth.',
     
-    solutionDescription: 'We deliver comprehensive corporate media coverage packages featuring:',
+    solutionDescription: 'Our consulting packages support business scaling with:',
     solutionPoints: [
-      'Multi-camera coverage of keynote sessions',
-      'Dynamic video highlight packages for PR & LinkedIn',
-      'High-quality speaker profile headshot collections',
-      'Same-day digital delivery channels for PR teams'
+      'Thorough brand audits and market research reports',
+      'Detailed technology stack migration blueprints',
+      'Custom AI and automation workshops',
+      'Integrated business intelligence planning'
     ],
     solutionImage: '6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp',
     solutionImageSrcset: '/images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739-p-500.webp 500w, /images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp 640w',
@@ -252,7 +251,7 @@ export const projectsData = {
     relatedSlugs: ['brand-campaigns', 'social-media-reel-series']
   },
   'social-media-reel-series': {
-    title: 'Social Media Reel Series',
+    title: 'Multimedia Content Creation',
     heroImage: '6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp',
     heroImageSizes: '100vw',
     heroImageSrcset: '/images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
@@ -261,15 +260,15 @@ export const projectsData = {
     bodyImageSizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px',
     bodyImageSrcset: '/images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
     
-    overview: 'Vertical video series optimized for Instagram Reels, YouTube Shorts, and TikTok. We script, film, and edit engaging short-form content designed to boost organic social reach.',
+    overview: 'High-quality vertical video series, podcasts, explaining animations, and motion graphics tailored for modern social feeds.',
     
     missionTitle: 'Mission',
-    missionDescription: 'To supply brands with highly engaging short-form vertical assets that drive profile traffic, shares, and algorithmic visibility.',
+    missionDescription: 'To produce thumb-stopping multimedia that captures attention and enhances brand recall.',
     missionPoints: [
-      'Script and storyboard trending hooks and transitions.',
-      'Record in high-definition vertical 4K configuration.',
-      'Edit with dynamic text captions, sound design, and color grading.',
-      'Produce batch content collections for consistent publishing schedules.'
+      'Script and storyboard short-form reels and explainers.',
+      'Record and edit professional audio/video assets.',
+      'Apply animated typography and custom graphic elements.',
+      'Optimize audio scoring and transitions for high engagement.'
     ],
     
     galleryImage1: '6a35711efd85c674b1d6e05b_0a4d33f075c29af67c614baa2a5c85f5866700ae.webp',
@@ -287,14 +286,14 @@ export const projectsData = {
     galleryImage4: '6a3571f1ecd39a6f85413d99_f7fc5e934c1da3b88261783a9e1fb60088c33c8c.webp',
     galleryImage4Srcset: '/images/6a3571f1ecd39a6f85413d99_f7fc5e934c1da3b88261783a9e1fb60088c33c8c-p-500.webp 500w, /images/6a3571f1ecd39a6f85413d99_f7fc5e934c1da3b88261783a9e1fb60088c33c8c.webp 640w',
     
-    problemStatement: 'Traditional horizontal video edits perform poorly on mobile-first feeds. Slow pacing or weak hooks fail to grab attention within the first 3 seconds.',
+    problemStatement: 'Audiences lose interest in static text or long-form posts, demanding quick, interactive visual narratives.',
     
-    solutionDescription: 'We provide specialized vertical short-form video batch edits:',
+    solutionDescription: 'We produce dynamic, platform-ready short media files containing:',
     solutionPoints: [
-      'Hook-driven scripting and storyboarding',
-      'Fast-paced edits with trending audio overlays',
-      'Burned-in dynamic, styled caption text styling',
-      'Batch creation workflows for monthly calendar scheduling'
+      'Custom motion graphics and 2D explainers',
+      'Vertical Reels/Shorts/TikTok templates',
+      'Professional podcast edits and sound scoring',
+      'Thumbnails and visual hooks optimization'
     ],
     solutionImage: '6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp',
     solutionImageSrcset: '/images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739-p-500.webp 500w, /images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp 640w',
