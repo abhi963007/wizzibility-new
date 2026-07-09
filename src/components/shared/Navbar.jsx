@@ -22,8 +22,8 @@ export default function Navbar() {
       const itemCenter = itemRect.left + itemRect.width / 2 - rect.left;
       const distance = Math.abs(mouseX - itemCenter);
       
-      const maxMagnification = 1.45;
-      const rangeDistance = 40; // Only focus magnification on hovered item
+      const maxMagnification = 1.55;
+      const rangeDistance = 90; // Smoothly magnifies neighboring elements
 
       // Gaussian bell curve formula
       const exponent = -Math.pow(distance, 2) / (2 * Math.pow(rangeDistance, 2));
