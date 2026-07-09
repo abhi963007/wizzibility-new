@@ -130,9 +130,9 @@ export default function Contact() {
                       <label htmlFor="location" className="form-name-text">Location*</label>
                       <select id="location" name="location" data-name="Field" className="form-select w-select" required>
                         <option value="">Select one...</option>
-                        <option value="In-Studio">In-Studio</option>
-                        <option value="On-Location (Local)">On-Location (Local)</option>
-                        <option value="On-Location (Travel Required)">On-Location (Travel Required)</option>
+                        <option value="In-Office">In-Office</option>
+                        <option value="On-Site (Local)">On-Site (Local)</option>
+                        <option value="On-Site (Travel Required)">On-Site (Travel Required)</option>
                         <option value="Remote/Digital Only">Remote/Digital Only</option>
                       </select>
                     </div>

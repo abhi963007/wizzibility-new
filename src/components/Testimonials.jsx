@@ -71,7 +71,7 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-      <div className="space-10-small"></div>
+      <div className="space-3-small"></div>
     </section>
   );
 }

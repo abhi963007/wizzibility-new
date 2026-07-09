@@ -9,7 +9,7 @@ export default function About() {
           <div className="about-title-wrapper">
             <div className="about-text">About Us</div>
             <div className="max-width-51">
-              <p className="rebuild-text">Wizzibility is a next-gen creative tech studio blending design, marketing, and technology to build extraordinary digital experiences. Whether you're a startup, an enterprise, or a visionary brand, our AI-powered web design and integrated services help you stand out in a crowded digital world.</p>
+              <p className="rebuild-text">Wizzibility is a next-gen creative tech agency blending design, marketing, and technology to build extraordinary digital experiences. Whether you're a startup, an enterprise, or a visionary brand, our AI-powered web design and integrated services help you stand out in a crowded digital world.</p>
             </div>
           </div>
           <div className="space-3-large"></div>
