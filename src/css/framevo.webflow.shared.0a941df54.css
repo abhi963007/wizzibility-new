@@ -6917,12 +6917,21 @@ li {
   border-radius: 999px;
   padding: 0 24px;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: visible;
   z-index: 10001;
   display: flex;
   align-items: center;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
   animation: navbarBreathe 4s ease-in-out infinite;
+}
+
+.navbar-bg-glow-wrapper {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
 }
 
 @keyframes navbarBreathe {
@@ -6979,70 +6988,16 @@ li {
   z-index: 2;
 }
 
-/* Brand/Logo Area (Left Column, fixed width) */
-.navbar-logo-area {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: auto;
-  text-align: left;
-}
 .nav-brand-custom {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: #fff;
-  transition: transform 0.3s ease;
-}
-.nav-brand-custom.logo-up {
-  transform: translateY(-2px);
+  height: 100%;
 }
 .navbrand-logo-wrap {
   display: flex;
-  align-items: flex-start;
-}
-.brand-title {
-  font-family: "Inter Tight", sans-serif;
-  font-size: 1.15rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
-.brand-trademark {
-  font-size: 0.6rem;
-  margin-left: 2px;
-  color: #a855f7;
-}
-.brand-subtitle {
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.5rem;
-  letter-spacing: 0.1em;
-  color: #a855f7;
-  margin-top: 2px;
-  opacity: 0;
-  transform: translateY(2px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-.brand-subtitle.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Navigation center layout styling (Center Column) */
-.nav-center-block {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
   align-items: center;
-  height: 100%;
-  padding-right: 8px;
-}
-
-/* Primary Row Link Styling */
-.primary-nav-row {
-  display: flex;
-  align-items: center;
-  gap: 1.8rem;
 }
 
 .nav-item-simple {
@@ -7055,7 +7010,10 @@ li {
   text-transform: uppercase;
   padding: 6px 12px;
   position: relative;
-  transition: color 0.3s ease, letter-spacing 0.3s ease;
+  display: inline-block;
+  transform: scale(var(--dock-scale, 1));
+  transform-origin: bottom center;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease, letter-spacing 0.3s ease;
 }
 
 .nav-item-simple:hover {
@@ -7120,33 +7078,24 @@ li {
   }
   .floating-navbar-capsule {
     width: calc(100vw - 32px);
-    padding: 0 16px;
+    padding: 0 12px;
     height: 56px;
   }
   .navbar-ambient-backlight {
     width: calc(100vw - 28px);
     height: 60px;
   }
-  .primary-nav-row {
-    gap: 0.6rem;
-  }
   .nav-item-simple {
-    font-size: 0.7rem;
-    padding: 4px 6px;
+    font-size: 0.65rem;
+    padding: 2px 4px;
   }
-  .brand-title {
-    font-size: 0.95rem;
-  }
-  .navbar-logo-area {
-    width: auto;
-  }
-  .navbar-spacer-right {
-    display: none;
+  .navbar-logo-img {
+    max-height: 26px !important;
   }
 }
 
 .navbar-logo-img {
-  max-height: 28px;
+  max-height: 38px;
   width: auto;
   display: block;
   object-fit: contain;
