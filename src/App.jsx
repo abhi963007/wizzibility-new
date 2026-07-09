@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Projects from './pages/Projects';
+import ProjectDetail from './pages/ProjectDetail';
 import Contact from './pages/Contact';
 import useWebflow from './hooks/useWebflow';
 import './css/framevo.webflow.shared.0a941df54.css';
@@ -41,7 +42,14 @@ function AppContent() {
 
   // Pick config for current route (stable object reference from ROUTE_CONFIG)
   const { scriptSrcs, pageId } = useMemo(() => {
-    return ROUTE_CONFIG[location.pathname] ?? ROUTE_CONFIG['/'];
+    const path = location.pathname;
+    if (path.startsWith('/project/')) {
+      return {
+        scriptSrcs: ['/js/webflow.36540518.b49536ec3bcaf7fa.js'],
+        pageId: '6a2fb7239095a2e3365e18f9',
+      };
+    }
+    return ROUTE_CONFIG[path] ?? ROUTE_CONFIG['/'];
   }, [location.pathname]);
 
   useWebflow(scriptSrcs, pageId);
@@ -52,6 +60,7 @@ function AppContent() {
         <Route path="/" element={<Home />} />
         <Route path="/service" element={<Services />} />
         <Route path="/project" element={<Projects />} />
+        <Route path="/project/:slug" element={<ProjectDetail />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
