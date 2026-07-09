@@ -2,7 +2,13 @@ import React from 'react';
 import Navbar from '../components/shared/Navbar';
 import Footer from '../components/shared/Footer';
 
+import useMeta from '../hooks/useMeta';
+
 export default function Contact() {
+  useMeta(
+    'Contact Us | Wizzibility',
+    'Get in touch with Wizzibility. Call +91-9391763990, email info@wizzibility.com, or visit us in Hyderabad to start your next creative project.'
+  );
   const handleSubmit = (e) => {
     e.preventDefault();
     // Simulate form submission success/error classes

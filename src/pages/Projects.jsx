@@ -3,7 +3,13 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/shared/Navbar';
 import Footer from '../components/shared/Footer';
 
+import useMeta from '../hooks/useMeta';
+
 export default function ProjectsPage() {
+  useMeta(
+    'Projects & Case Stories | Wizzibility',
+    'Explore our portfolio of high-impact designs, creative tech solutions, and branding campaigns that drive sustainable business growth.'
+  );
   const [activeTab, setActiveTab] = useState('Tab 1');
 
   const projects = [

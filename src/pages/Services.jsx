@@ -3,7 +3,13 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/shared/Navbar';
 import Footer from '../components/shared/Footer';
 
+import useMeta from '../hooks/useMeta';
+
 export default function ServicesPage() {
+  useMeta(
+    'Our Services | Wizzibility',
+    "Ignite bold creativity with smart tech. Explore Wizzibility's core and integrated services, including visual communication, digital marketing, website and app development, and branding."
+  );
   const services = [
     { 
       id: 1, 

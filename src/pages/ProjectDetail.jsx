@@ -4,9 +4,16 @@ import Navbar from '../components/shared/Navbar';
 import Footer from '../components/shared/Footer';
 import { projectsData } from '../data/projectsData';
 
+import useMeta from '../hooks/useMeta';
+
 export default function ProjectDetail() {
   const { slug } = useParams();
   const project = projectsData[slug];
+
+  useMeta(
+    project ? `${project.title} | Projects | Wizzibility` : 'Project Detail | Wizzibility',
+    project ? project.overview : 'Detailed overview of our creative work.'
+  );
 
   // If the project doesn't exist, redirect back to projects listing page
   if (!project) {
