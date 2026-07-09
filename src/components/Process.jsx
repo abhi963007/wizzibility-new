@@ -26,7 +26,7 @@ export default function Process() {
       </div>
       <div className="space-3-large"></div>
       <div className="pin-height">
-        <div className="sticky-wrap">
+        <div className="sticky-wrap" data-w-id="833d6c3e-f5a5-241d-0496-aa5bfb8fc895" data-wf-target='["6a2ede0dd01527a201b478d1","833d6c3e-f5a5-241d-0496-aa5bfb8fc895"]'>
           <div className="process-card-container">
             {steps.map((step) => (
               <div key={step.id} className={`media ${step.id === 1 ? '_01' : step.id === 2 ? '_02' : step.id === 3 ? '_03' : step.id === 4 ? '_04' : ''}`}>

@@ -13,7 +13,7 @@ const ROUTE_CONFIG = {
   '/': {
     scriptSrcs: [
       '/js/webflow.schunk.121b0d7ff03e0f4a.js',
-      '/js/webflow.497307bd.76564bc1fcd59a88.js',
+      '/js/webflow.497307bd.76564bc1fcd59a88.js?v=2',
     ],
     pageId: '6a2ede0dd01527a201b478d1',
   },

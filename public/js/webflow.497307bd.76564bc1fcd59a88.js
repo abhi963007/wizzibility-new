@@ -1529,8 +1529,8 @@
                                                 id: "ta-bed7e779",
                                                 targets: [
                                                     [
-                                                        "wf:inst",
-                                                        ["6a2ede0dd01527a201b478d1", "833d6c3e-f5a5-241d-0496-aa5bfb8fc895"],
+                                                        "wf:class",
+                                                        ["sticky-wrap"],
                                                         {
                                                             relationship: "none",
                                                             firstMatchOnly: !1
@@ -1543,8 +1543,8 @@
                                                 tt: 2,
                                                 properties: {
                                                     "wf:transform": {
-                                                        x: ["0%", "-95%"],
-                                                        y: ["0%", "70%"]
+                                                        x: ["0%", "-100%"],
+                                                        y: ["0%", "75%"]
                                                     }
                                                 },
                                             }, ],
