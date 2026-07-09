@@ -1,6 +1,6 @@
 # Wizzibility - Webflow Template Converted to React
 
-A modern React application converted from a Webflow template, featuring a photography and videography studio website with smooth scrolling, animations, and a multi-page structure.
+A modern React application converted from a Webflow template, featuring a creative tech agency website with smooth scrolling, animations, and a multi-page structure.
 
 ## Features
 
