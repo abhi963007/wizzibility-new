@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 export default function Projects() {
   const projects = [
-    { id: 1, title: 'Social Media Videos', date: '23 Sep, 2026', slug: 'social-media-videos', image: '6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp' },
-    { id: 2, title: 'Wedding Stories', date: '23 Sep, 2026', slug: 'wedding-stories', image: '6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727.webp' },
-    { id: 3, title: 'Brand Campaigns', date: '23 Sep, 2026', slug: 'brand-campaigns', image: '6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4.webp' },
-    { id: 4, title: 'Product Shoots', date: '23 Sep, 2026', slug: 'product-shoots', image: '6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp' },
+    { id: 1, title: 'Social Media Campaigns', date: '23 Sep, 2026', slug: 'social-media-videos', image: '6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp' },
+    { id: 2, title: 'Brand Identity Systems', date: '23 Sep, 2026', slug: 'wedding-stories', image: '6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727.webp' },
+    { id: 3, title: 'Performance Marketing', date: '23 Sep, 2026', slug: 'brand-campaigns', image: '6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4.webp' },
+    { id: 4, title: 'Product Design & UI/UX', date: '23 Sep, 2026', slug: 'product-shoots', image: '6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp' },
   ];
 
   return (
@@ -21,7 +21,7 @@ export default function Projects() {
               </div>
             </div>
             <div className="max-width-30">
-              <p className="section-p">With over 8 years of experience in capturing moments that last a lifetime, I specialize rom weddings and portraits to adventure through the lens of my camera.</p>
+              <p className="section-p">Empowering brands with creativity, technology, and strategy. We blend design, marketing, and tech to build extraordinary digital experiences.</p>
             </div>
           </div>
           <div className="space-3-large"></div>

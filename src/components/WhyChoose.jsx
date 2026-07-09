@@ -2,12 +2,12 @@ import React from 'react';
 
 export default function WhyChoose() {
   const features = [
-    { id: 1, title: 'Cinematic visual style' },
-    { id: 2, title: 'Professional editing and retouching' },
-    { id: 3, title: 'Friendly creative direction' },
-    { id: 4, title: 'Clear communication' },
-    { id: 5, title: 'Organized project delivery' },
-    { id: 6, title: 'Visuals ready for web, social' },
+    { id: 1, title: 'Creative-Tech Integration' },
+    { id: 2, title: 'Enterprise-Ready Solutions' },
+    { id: 3, title: 'Startup-Friendly Approach' },
+    { id: 4, title: 'Cross-Platform Excellence' },
+    { id: 5, title: 'AI-Driven Web & App Design' },
+    { id: 6, title: 'Cinematic Media Production' },
   ];
 
   return (
@@ -17,7 +17,7 @@ export default function WhyChoose() {
         <div className="choose-wrapper">
           <div className="section-header left">
             <div className="section-heading-wrap choose">
-              <h2 className="section-heading">Why Choose Fravemo</h2>
+              <h2 className="section-heading">Why Team Up With Us?</h2>
               <div className="section-counter choose">
                 <div className="section-counter-text">(06)</div>
               </div>

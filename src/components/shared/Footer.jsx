@@ -17,7 +17,7 @@ export default function Footer() {
           </div>
           <div className="space-4-medium"></div>
           <div className="footer-title-wrapper">
-            <a href="mailto:Framevo@gmail.com" className="email-address">Framevo@gmail.com</a>
+            <a href="mailto:info@wizzibility.com" className="email-address">info@wizzibility.com</a>
             <div className="footer-social-block">
               <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="footer-soical-wrapper w-inline-block">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="footer-social-icon">
@@ -44,12 +44,12 @@ export default function Footer() {
     </div>
     <div className="copyright-wrapper">
       <div className="footer-bottom">
-        <div className="copyright-text">© Copyright <span>- </span><span>Framevo  </span><span>| </span>Design By <span>Lioweb </span><span>License by</span> Webflow</div>
+        <div className="copyright-text">© Copyright <span>- </span><span>Wizzibility &nbsp;</span><span>| </span>Design By <span>Lioweb </span><span>License by</span> Webflow</div>
         <div className="uitlity-link-wrap">
           <Link to="/style-guide" className="utility-link">Style Guide</Link>
           <Link to="/licenses" className="utility-link">Licenses</Link>
           <Link to="/changelog" className="utility-link">Changelog</Link>
-          <a href="https://framevo.webflow.io/404" className="utility-link">404</a>
+          <a href="https://wizzibility.com/404" className="utility-link">404</a>
         </div>
       </div>
     </div>

@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Team() {
   const team = [
-    { id: 1, name: 'Alex Morgan', role: 'Lead Photographer', image: '6a2fd6923e5daf11466f37d8_image%2057372.webp' },
-    { id: 2, name: 'Ryan Carter', role: 'Videographer', image: '6a2fd69280be1041c486ea15_image%2057373%20%283%29.webp' },
-    { id: 3, name: 'Emma Lee', role: 'Photo & Video Editor', image: '6a2fd691512d2eebe845225f_image%2057378.webp' },
+    { id: 1, name: 'Brooklyn Simmons', role: 'Lead Developer', image: '6a2fd6923e5daf11466f37d8_image%2057372.webp' },
+    { id: 2, name: 'Darlene Robertson', role: 'Chief Technology Officer', image: '6a2fd69280be1041c486ea15_image%2057373%20%283%29.webp' },
+    { id: 3, name: 'Emma Markson', role: 'Creative Director', image: '6a2fd691512d2eebe845225f_image%2057378.webp' },
   ];
 
   return (

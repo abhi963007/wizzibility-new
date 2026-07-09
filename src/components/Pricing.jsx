@@ -5,33 +5,33 @@ export default function Pricing() {
   const plans = [
     {
       id: 1,
-      title: 'Starter Shoot',
-      description: 'For portraits, small content sessions, and simple visual needs',
-      price: '$258.00',
+      title: 'Brand Foundations',
+      description: 'For startups and creators needing essential branding and website setups.',
+      price: '$950.00',
       features: [
-        'Photo creation and management',
-        'Basic photo edditing tools',
-        'Standard video creation toughts',
-        'Calendar and schedule integration',
-        'Up to 5 team members',
-        'Notifications and reminders',
+        'Brand kit and logo design foundations',
+        'Responsive one-page website development',
+        'Basic Search Engine Optimization (SEO)',
+        'Social media templates and guidelines',
+        'Up to 5 team members support',
+        '2 weeks post-delivery support',
         'Standard customer support',
       ],
       isPopular: false,
     },
     {
       id: 2,
-      title: 'Creative Project',
-      description: 'For brands, events, products, and social media campaigns.',
-      price: '$590.00',
+      title: 'Growth Marketing',
+      description: 'For scaling brands seeking end-to-end tech design and digital marketing.',
+      price: '$2,450.00',
       features: [
-        'Advanced photography creation',
-        'Smart workflow customization',
-        'Unlimited tasks and projects',
-        'AI-powered productivity insights',
-        'Up to 25 team members',
-        'Notifications and reminders',
-        'Priority email and chat support',
+        'Full-stack multi-page website development',
+        'Advanced brand identity system design',
+        'Strategic Digital Marketing setup & SEO',
+        'AI-driven customer analytics dashboards',
+        'Up to 25 team members integration',
+        'OpenAI and dynamic CRM integrations',
+        'Priority 24/7 slack and chat support',
       ],
       isPopular: true,
     },
@@ -86,7 +86,7 @@ export default function Pricing() {
                     </div>
                     <Link to="/contact" className="button w-inline-block">
                       <div className="button-text-wrapper">
-                        <div className="button-text">Choose Starter</div>
+                        <div className="button-text">Choose Plan</div>
                       </div>
                       <div className="button-icon-wrapper">
                         <div className="project-arrow-pill">

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 export default function Services() {
   const services = [
-    { id: 1, title: 'Fashion Photography', slug: 'fashion-photography', image: '6a3514ef9e312a69a772c2c0_8971c848c2638f539d50757c3cbdcfa62708d35c.webp' },
-    { id: 2, title: 'Voice & Videography', slug: 'voice-videography', image: '6a3514e18cb733c985d735eb_054f97113db54086c0f159ca559fbaea76ca59c9.webp' },
-    { id: 3, title: 'Video Editing photograhy', slug: 'video-editing-photograhy', image: '6a3514d344d27a821e163d62_c39acb39f24eaae1617e34596fcd880c93c2af1a.webp' },
+    { id: 1, title: 'Visual Communication', slug: 'fashion-photography', image: '6a3514ef9e312a69a772c2c0_8971c848c2638f539d50757c3cbdcfa62708d35c.webp' },
+    { id: 2, title: 'Digital Marketing', slug: 'voice-videography', image: '6a3514e18cb733c985d735eb_054f97113db54086c0f159ca559fbaea76ca59c9.webp' },
+    { id: 3, title: 'Branding', slug: 'video-editing-photograhy', image: '6a3514d344d27a821e163d62_c39acb39f24eaae1617e34596fcd880c93c2af1a.webp' },
   ];
 
   return (

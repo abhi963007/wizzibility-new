@@ -8,7 +8,7 @@ export default function Photography() {
         <div className="photography-wrapper">
           <div className="section-header left">
             <div className="section-heading-wrap photography">
-              <h2 className="section-heading">Natural Photos With a Timeless Feel</h2>
+              <h2 className="section-heading">Visuals That Tell Your Brand's Story</h2>
               <div className="section-counter _04">
                 <div className="section-counter-text">(04)</div>
               </div>
@@ -19,12 +19,12 @@ export default function Photography() {
             <div className="photography-left">
               <div className="photography-top">
                 <div className="max-width-30">
-                  <p className="section-p white-left">We capture portraits, events, products, weddings, and brand moments with clean composition and natural emotion.Every photo is created to feel real, sharp, balanced, and ready for personal or professional use.</p>
+                  <p className="section-p white-left">We design assets, digital illustrations, marketing graphics, and brand assets with clean layouts and premium aesthetics. Every visual is created to feel premium, sharp, balanced, and ready to elevate your business's presence.</p>
                 </div>
                 <div className="section-button-wrap">
                   <Link to="/contact" className="button w-inline-block">
                     <div className="button-text-wrapper">
-                      <div className="button-text">Book photography</div>
+                      <div className="button-text">Work with us</div>
                     </div>
                     <div className="button-icon-wrapper">
                       <div className="project-arrow-pill">

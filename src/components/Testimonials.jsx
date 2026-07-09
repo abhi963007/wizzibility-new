@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Testimonials() {
   const testimonials = [
-    { id: 1, name: 'James Walker', company: 'Maple House', quote: 'Framevo Studio made the whole process easy. The photos felt natural, and the final video captured the emotion perfectly.', count: '100+', subject: 'Cenimatic Video Capture', image: '6a2fd6923e5daf11466f37d8_image%2057372.webp' },
-    { id: 2, name: 'Sarah Johnson', company: 'Creative Co', quote: 'Professional, creative, and delivered on time. The team exceeded our expectations for our brand campaign.', count: '50+', subject: 'Brand Photography', image: '6a32f96f6e5d3efb008fbb33_1c77cef06aaf126d1d6c25d3ebe80b7cb39fe0c5.webp' },
+    { id: 1, name: 'Divya Reddy', company: 'Vayu Clothing', quote: "We've seen incredible growth thanks to their digital marketing. Insightful strategy and excellent communication made a huge difference.", count: '3k+', subject: 'Social Media Marketing', image: '6a2fd6923e5daf11466f37d8_image%2057372.webp' },
+    { id: 2, name: 'Payal Kar Dutta', company: 'Veva Realty', quote: 'Exceptional service! Their design work transformed our brand—professional, creative, and always on time.', count: '20k+', subject: 'End-to-End Marketing', image: '6a32f96f6e5d3efb008fbb33_1c77cef06aaf126d1d6c25d3ebe80b7cb39fe0c5.webp' },
   ];
 
   const testimonialImages = [

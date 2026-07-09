@@ -19,7 +19,7 @@ export default function Gallery() {
         <div className="gallary-wrapper">
           <div className="section-header">
             <div className="section-heading-wrap gallary">
-              <h2 className="section-heading">Let's See Showreel</h2>
+              <h2 className="section-heading">Our Creative Gallery</h2>
               <div className="section-counter gallary">
                 <div className="section-counter-text">(05)</div>
               </div>

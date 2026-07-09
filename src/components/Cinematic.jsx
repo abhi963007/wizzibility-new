@@ -19,7 +19,7 @@ export default function Cinematic() {
         <div className="cinematic-wrapper">
           <div className="section-header">
             <div className="section-heading-wrap cinematic">
-              <h2 className="section-heading">Cinematic Videos That Move People</h2>
+              <h2 className="section-heading">Digital Experiences That Drive Growth</h2>
               <div className="section-counter cinematic">
                 <div className="section-counter-text">(08)</div>
               </div>
@@ -46,11 +46,11 @@ export default function Cinematic() {
           </div>
           <div className="space-3-medium"></div>
           <div className="cinematic-content-wrapper">
-            <p className="section-p center-white">We capture portraits, events, products, weddings, and brand moments with clean composition and natural emotion.Every photo is created to feel real, sharp, balanced, and ready for personal or professional use.</p>
+            <p className="section-p center-white">We craft custom websites, user-centric apps, automated marketing campaigns, and multimedia brand stories that elevate your brand and engage users worldwide.</p>
             <div className="section-button-wrap">
               <Link to="/contact" className="button w-inline-block">
                 <div className="button-text-wrapper">
-                  <div className="button-text">Start a Video Project</div>
+                  <div className="button-text">Start Your Project</div>
                 </div>
                 <div className="button-icon-wrapper">
                   <div className="project-arrow-pill">
