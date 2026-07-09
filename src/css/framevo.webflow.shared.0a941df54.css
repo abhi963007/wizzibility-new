@@ -6558,3 +6558,587 @@ li {
         grid-row-gap: var(--_spacing---space-1-large);
     }
 }
+
+@media screen and (min-width: 992px) {
+  .hero-home-area {
+    height: 100vh;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .section.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .section.hero .space-10-small {
+    display: none;
+  }
+  .hero-wrapper {
+    width: 100%;
+    margin-top: 2vh;
+  }
+}
+
+/* Navbar Custom Accent Style - Matching Reference */
+.navlink-wrap {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.navlink {
+  text-transform: uppercase !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 0.82rem !important;
+  letter-spacing: 0.08em !important;
+  padding: 0.5rem 1.1rem !important;
+  background-color: transparent !important;
+  color: #ccc !important;
+  border-radius: 0 !important;
+  position: relative !important;
+}
+.navlink:hover {
+  color: #fff !important;
+}
+.navlink.active, .navlink.w--current {
+  color: #fff !important;
+  font-weight: 600 !important;
+}
+.navlink::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 14px;
+  height: 2px;
+  background-color: #a855f7;
+  border-radius: 2px;
+  opacity: 0;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navlink.active::after, .navlink.w--current::after {
+  transform: translateX(-50%) scaleX(1);
+  opacity: 1;
+}
+.navlink::before {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  width: 3px;
+  height: 3px;
+  background-color: #a855f7;
+  border-radius: 50%;
+  opacity: 0;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.1s, opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+}
+.navlink.active::before, .navlink.w--current::before {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+}
+
+.menu-button.w-nav-button {
+  border: 1.5px solid #a855f7 !important;
+  border-radius: 50% !important;
+  width: 44px !important;
+  height: 44px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  transition: all 0.3s ease !important;
+}
+.menu-button.w-nav-button:hover {
+  background-color: rgba(168, 85, 247, 0.1) !important;
+  border-color: #c084fc !important;
+}
+.btn_close {
+  width: 18px !important;
+  height: 18px !important;
+  margin: 0 !important;
+}
+
+/* Hero Section Custom Styles - Matching Reference */
+.hero-subtitle {
+  font-family: "Montserrat", sans-serif;
+  color: #a855f7;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hero-heading-new {
+  font-family: "Oswald", sans-serif;
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.01em;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-heading-new {
+    font-size: 7.2rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero-heading-new {
+    font-size: 8rem;
+  }
+}
+
+.purple-highlight {
+  color: #a855f7;
+}
+
+.hero-p-new {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.12rem;
+  line-height: 1.6;
+  color: #bbb;
+  max-width: 32rem;
+  margin: 0 0 2.2rem 0;
+}
+
+.hero-buttons-row {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  margin-top: 1rem;
+}
+
+.btn-explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem 1.8rem;
+  border: 1.5px solid #a855f7;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-explore:hover {
+  background-color: #a855f7;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+.btn-showreel {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-showreel:hover {
+  color: #c084fc;
+}
+
+.play-icon-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1.5px solid #a855f7;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-showreel:hover .play-icon-circle {
+  background-color: #a855f7;
+  border-color: #a855f7;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+}
+
+/* Bottom Scroll Discover Indicator */
+.scroll-discover-wrapper {
+  position: absolute;
+  bottom: 4vh;
+  left: 4.5vw;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.scroll-discover-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #888;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.scroll-line {
+  width: 1px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.15);
+  position: relative;
+}
+
+.scroll-dot {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: #a855f7;
+  border-radius: 50%;
+  animation: scrollAnim 2s infinite ease-in-out;
+}
+
+@keyframes scrollAnim {
+  0% { top: 0; opacity: 1; }
+  50% { top: 35px; opacity: 0.4; }
+  100% { top: 0; opacity: 1; }
+}
+
+/* Bottom Pagination Indicator */
+.hero-pagination-wrapper {
+  position: absolute;
+  bottom: 6vh;
+  right: 4.5vw;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.page-num {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.page-num.active {
+  color: #fff;
+}
+
+.page-line {
+  width: 70px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.12);
+  position: relative;
+}
+
+.page-line-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  background-color: #a855f7;
+}
+
+/* Blend overlay override for purple character lighting */
+.hero-home-area .blend-color {
+  background-color: #4c1d95 !important; /* Deep rich indigo/violet overlay for professional photo styling */
+}
+
+/* Edge-to-edge layout override for hero section container */
+.section.hero .container {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 4.5vw !important;
+  padding-right: 4.5vw !important;
+}
+
+/* ==========================================
+   Interactive Floating Capsule Navbar Styles
+   ========================================== */
+
+/* Fixed layout container at top of viewport */
+.navbar-fixed-container {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+/* Floating capsule background breathing & container */
+.floating-navbar-capsule {
+  pointer-events: auto;
+  position: relative;
+  width: 650px;
+  height: 64px;
+  background-color: #090909;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  padding: 0 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  animation: navbarBreathe 4s ease-in-out infinite;
+}
+
+@keyframes navbarBreathe {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    transform: scale(1.005);
+    box-shadow: 0 22px 45px rgba(168, 85, 247, 0.06);
+  }
+}
+
+/* Shifting ambient backlight behind navbar */
+.navbar-ambient-backlight {
+  position: absolute;
+  inset: -2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(168, 85, 247, 0) 0%, rgba(168, 85, 247, 0.08) 50%, rgba(168, 85, 247, 0) 100%);
+  background-size: 200% 100%;
+  filter: blur(14px);
+  z-index: 9999;
+  pointer-events: none;
+  animation: shiftLight 10s linear infinite;
+  width: 654px;
+  height: 68px;
+}
+
+@keyframes shiftLight {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Liquid cursor follow glow inside capsule */
+.navbar-cursor-glow {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.12) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.4s ease;
+}
+
+/* Internal Layout structure */
+.navbar-internal-layout {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+/* Brand/Logo Area (Left Column, fixed width) */
+.navbar-logo-area {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: auto;
+  text-align: left;
+}
+.nav-brand-custom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+.nav-brand-custom.logo-up {
+  transform: translateY(-2px);
+}
+.navbrand-logo-wrap {
+  display: flex;
+  align-items: flex-start;
+}
+.brand-title {
+  font-family: "Inter Tight", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.brand-trademark {
+  font-size: 0.6rem;
+  margin-left: 2px;
+  color: #a855f7;
+}
+.brand-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.5rem;
+  letter-spacing: 0.1em;
+  color: #a855f7;
+  margin-top: 2px;
+  opacity: 0;
+  transform: translateY(2px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.brand-subtitle.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Navigation center layout styling (Center Column) */
+.nav-center-block {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding-right: 8px;
+}
+
+/* Primary Row Link Styling */
+.primary-nav-row {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.nav-item-simple {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: #999;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  position: relative;
+  transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.nav-item-simple:hover {
+  color: #fff;
+  letter-spacing: 0.12em; /* Letters gain spacing on hover */
+}
+
+/* Yellow dot for active menu item */
+.nav-item-simple.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: #fbbf24; /* yellow dot */
+  border-radius: 50%;
+  animation: yellowDotPulse 4s infinite ease-in-out;
+}
+
+@keyframes yellowDotPulse {
+  0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.8; }
+  50% { transform: translateX(-50%) scale(1.8); opacity: 1; }
+}
+
+/* Hover liquid purple underline */
+.nav-item-simple::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 20px;
+  height: 2px;
+  background-color: #a855f7; /* liquid purple */
+  border-radius: 1px;
+  opacity: 0;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease;
+}
+
+.nav-item-simple:hover::before {
+  transform: translateX(-50%) scaleX(1);
+  opacity: 1;
+}
+
+/* Spacer block (Right Column, balances the logo width for perfect centering) */
+.navbar-spacer-right {
+  width: 170px;
+}
+
+/* Hide Webflow native navbar layout to avoid conflicts */
+.navbar.w-nav {
+  display: none !important;
+}
+
+/* Responsive mobile scaling for interactive capsule */
+@media screen and (max-width: 768px) {
+  .navbar-fixed-container {
+    top: 16px;
+    width: 100vw;
+  }
+  .floating-navbar-capsule {
+    width: calc(100vw - 32px);
+    padding: 0 16px;
+    height: 56px;
+  }
+  .navbar-ambient-backlight {
+    width: calc(100vw - 28px);
+    height: 60px;
+  }
+  .primary-nav-row {
+    gap: 0.6rem;
+  }
+  .nav-item-simple {
+    font-size: 0.7rem;
+    padding: 4px 6px;
+  }
+  .brand-title {
+    font-size: 0.95rem;
+  }
+  .navbar-logo-area {
+    width: auto;
+  }
+  .navbar-spacer-right {
+    display: none;
+  }
+}
+
+.navbar-logo-img {
+  max-height: 28px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}

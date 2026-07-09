@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from './shared/Navbar';
 
 export default function Hero() {
@@ -10,19 +11,53 @@ export default function Hero() {
         <div className="space-10-small"></div>
         <div className="w-layout-blockcontainer container w-container">
           <div className="hero-wrapper">
-            <div className="hero-title-wrapper">
-              <h1 className="hero-heading">Creative <br /><span className="heading-hightlight">Tech Studio</span></h1>
-            </div>
-            <div className="w-layout-grid hero-grid">
-              <div className="hero-left">
-                <p className="hero-p">We are a next-gen creative tech agency blending design, marketing, and technology to build extraordinary digital experiences. From Concept to Code, We've Got You!</p>
-              </div>
-              <div className="hero-right"></div>
+            <div className="hero-subtitle">CREATIVE MEETS TECHNOLOGY</div>
+            <h1 className="hero-heading-new">
+              WE CREATE <br />
+              <span className="purple-highlight">DIGITAL</span> <br />
+              EXPERIENCES
+            </h1>
+            <p className="hero-p-new">
+              A creative tech studio crafting digital products, brands and experiences that drive real impact.
+            </p>
+            <div className="hero-buttons-row">
+              <Link to="/project" className="btn-explore">
+                EXPLORE OUR WORK
+                <span className="arrow-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                    <path d="M1 6H15M15 6L10 1M15 6L10 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </span>
+              </Link>
+              <a href="#gallery" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' });
+              }} className="btn-showreel">
+                WATCH SHOWREEL
+                <span className="play-icon-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 10 12" fill="none" style={{ marginLeft: '1px' }}>
+                    <path d="M1.5 1.5L8.5 6L1.5 10.5V1.5Z" fill="currentColor"/>
+                  </svg>
+                </span>
+              </a>
             </div>
           </div>
         </div>
       </section>
-      <img src="/images/6a2ee4963f9feeabc218a125_a3907576a08303bea89e533589b9a42444ffc768.webp" loading="lazy" sizes="100vw" srcSet="/images/6a2ee4963f9feeabc218a125_a3907576a08303bea89e533589b9a42444ffc768-p-500.webp 500w, /images/6a2ee4963f9feeabc218a125_a3907576a08303bea89e533589b9a42444ffc768-p-800.webp 800w, /images/6a2ee4963f9feeabc218a125_a3907576a08303bea89e533589b9a42444ffc768-p-1080.webp 1080w, /images/6a2ee4963f9feeabc218a125_a3907576a08303bea89e533589b9a42444ffc768.webp 1536w" alt="Blurred image of a person holding a camera and extending their hand in a dark setting." className="hero-home-image" />
+      
+
+
+      {/* Pagination - Bottom Right */}
+      <div className="hero-pagination-wrapper">
+        <span className="page-num active">01</span>
+        <div className="page-line">
+          <div className="page-line-fill"></div>
+        </div>
+        <span className="page-num">04</span>
+      </div>
+
+      {/* Background Media & Overlays */}
+      <img src="/images/hero.png" loading="lazy" sizes="100vw" alt="Creative Tech Studio background" className="hero-home-image" />
       <div className="blend-color"></div>
       <div className="home-hero-overlay home"></div>
     </div>

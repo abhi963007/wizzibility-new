@@ -14,7 +14,7 @@ export default function Gallery() {
   ];
 
   return (
-    <section className="section">
+    <section className="section" id="gallery">
       <div className="w-layout-blockcontainer container w-container">
         <div className="gallary-wrapper">
           <div className="section-header">
