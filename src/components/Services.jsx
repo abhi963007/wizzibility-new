@@ -16,9 +16,6 @@ export default function Services() {
           <div className="services-header">
             <div className="service-header-left">
               <h2 className="section-heading">Creative </h2>
-              <div className="header-counter-wrap">
-                <div className="section-counter-text">(03)</div>
-              </div>
             </div>
             <div className="service-header-right">
               <h2 className="section-heading">Services</h2>

@@ -21,9 +21,6 @@ export default function Testimonials() {
         <div className="section-header">
           <div className="section-heading-wrap pricing">
             <h2 className="section-heading center-mobile">Stories From Our Clients</h2>
-            <div className="section-counter testimonial">
-              <div className="section-counter-text">(08)</div>
-            </div>
           </div>
         </div>
         <div className="space-3-large"></div>

@@ -16,9 +16,6 @@ export default function Team() {
             <div className="service-header-right">
               <h2 className="section-heading">teams</h2>
             </div>
-            <div className="service-top-team team">
-              <div className="section-counter-text">(10)</div>
-            </div>
           </div>
         </div>
         <div className="space-3-large"></div>

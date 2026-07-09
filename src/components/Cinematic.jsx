@@ -20,9 +20,6 @@ export default function Cinematic() {
           <div className="section-header">
             <div className="section-heading-wrap cinematic">
               <h2 className="section-heading">Digital Experiences That Drive Growth</h2>
-              <div className="section-counter cinematic">
-                <div className="section-counter-text">(08)</div>
-              </div>
             </div>
           </div>
           <div className="space-3-large"></div>

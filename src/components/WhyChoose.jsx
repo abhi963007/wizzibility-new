@@ -18,9 +18,6 @@ export default function WhyChoose() {
           <div className="section-header left">
             <div className="section-heading-wrap choose">
               <h2 className="section-heading">Why Team Up With Us?</h2>
-              <div className="section-counter choose">
-                <div className="section-counter-text">(06)</div>
-              </div>
             </div>
           </div>
           <div className="space-3-large"></div>

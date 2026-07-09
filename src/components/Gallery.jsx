@@ -20,9 +20,6 @@ export default function Gallery() {
           <div className="section-header">
             <div className="section-heading-wrap gallary">
               <h2 className="section-heading">Our Creative Gallery</h2>
-              <div className="section-counter gallary">
-                <div className="section-counter-text">(05)</div>
-              </div>
             </div>
           </div>
           <div className="space-3-large"></div>

@@ -44,9 +44,6 @@ export default function Pricing() {
           <div className="section-header">
             <div className="section-heading-wrap pricing">
               <h2 className="section-heading">Flexible Pricing Plan</h2>
-              <div className="section-counter pricing">
-                <div className="section-counter-text">(09)</div>
-              </div>
             </div>
           </div>
           <div className="space-3-large"></div>

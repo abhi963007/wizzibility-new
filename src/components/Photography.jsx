@@ -9,9 +9,6 @@ export default function Photography() {
           <div className="section-header left">
             <div className="section-heading-wrap photography">
               <h2 className="section-heading">Visuals That Tell Your Brand's Story</h2>
-              <div className="section-counter _04">
-                <div className="section-counter-text">(04)</div>
-              </div>
             </div>
           </div>
           <div className="space-3-large hide-mobile"></div>
