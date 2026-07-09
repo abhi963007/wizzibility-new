@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import logoImg from '../../../Wizzibility_white_logo-1.webp';
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
 
@@ -10,6 +11,9 @@ export default function Navbar() {
     const rect = e.currentTarget.getBoundingClientRect();
     const mouseX = e.clientX - rect.left;
     setMousePos({ x: mouseX, y: e.clientY - rect.top });
+
+    // Only apply macOS dock magnification if menu is open
+    if (!isOpen) return;
 
     // macOS Dock Magnification Logic
     const items = e.currentTarget.querySelectorAll('.nav-item-simple');
@@ -38,13 +42,17 @@ export default function Navbar() {
     });
   };
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="navbar-fixed-container">
       {/* Ambient Backlight Behind Navbar */}
-      <div className="navbar-ambient-backlight" />
+      <div className={`navbar-ambient-backlight ${isOpen ? 'menu-open' : ''}`} />
 
       <header
-        className="floating-navbar-capsule"
+        className={`floating-navbar-capsule ${isOpen ? 'menu-open' : ''}`}
         onMouseMove={handleMouseMove}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={handleMouseLeave}
@@ -75,11 +83,28 @@ export default function Navbar() {
             </div>
           </NavLink>
 
-          {/* Navigation Links (Directly distributed via space-between) */}
-          <NavLink to="/" className="nav-item-simple">HOME</NavLink>
-          <NavLink to="/service" className="nav-item-simple">SERVICES</NavLink>
-          <NavLink to="/project" className="nav-item-simple">PROJECTS</NavLink>
-          <NavLink to="/contact" className="nav-item-simple">CONTACT</NavLink>
+          {/* Navigation Links Wrapper (collapses/reveals with swipe) */}
+          <div className={`navbar-links-wrapper ${isOpen ? 'open' : ''}`}>
+            <NavLink to="/" className="nav-item-simple">HOME</NavLink>
+            <NavLink to="/service" className="nav-item-simple">SERVICES</NavLink>
+            <NavLink to="/project" className="nav-item-simple">PROJECTS</NavLink>
+            <NavLink to="/contact" className="nav-item-simple">CONTACT</NavLink>
+          </div>
+
+          {/* Hamburger Menu Toggle Button */}
+          <button 
+            className={`navbar-toggle-btn ${isOpen ? 'active' : ''}`}
+            onClick={toggleMenu}
+            aria-label="Toggle Navigation"
+          >
+            <div className="hamburger-circle">
+              <div className="hamburger-lines">
+                <span className="line line-1"></span>
+                <span className="line line-2"></span>
+                <span className="line line-3"></span>
+              </div>
+            </div>
+          </button>
 
         </div>
       </header>
