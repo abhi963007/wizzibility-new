@@ -42,14 +42,16 @@ export default function Footer() {
           <div className="space-10-small"></div>
         </div>
       </div>
-      <div className="copyright-wrapper">
-        <div className="footer-bottom">
-          <div className="copyright-text">© Copyright <span>- </span><span>Wizzibility &nbsp;</span><span>| </span>Design By <span>Lioweb </span><span>License by</span> Webflow</div>
-          <div className="uitlity-link-wrap">
-            <Link to="/style-guide" className="utility-link">Style Guide</Link>
-            <Link to="/licenses" className="utility-link">Licenses</Link>
-            <Link to="/changelog" className="utility-link">Changelog</Link>
-            <a href="https://wizzibility.com/404" className="utility-link">404</a>
+      <div className="copyright-wrapper" style={{ display: 'block' }}>
+        <div className="w-layout-blockcontainer container w-container">
+          <div className="footer-bottom">
+            <div className="copyright-text">© Copyright <span>2026 - </span><span>Wizzibility</span></div>
+            <div className="uitlity-link-wrap">
+              <Link to="/style-guide" className="utility-link">Style Guide</Link>
+              <Link to="/licenses" className="utility-link">Licenses</Link>
+              <Link to="/changelog" className="utility-link">Changelog</Link>
+              <a href="https://wizzibility.com/404" className="utility-link">404</a>
+            </div>
           </div>
         </div>
       </div>

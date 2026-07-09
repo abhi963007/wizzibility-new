@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Services from './pages/Services';
+import ServiceDetail from './pages/ServiceDetail';
 import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetail';
 import Contact from './pages/Contact';
@@ -49,6 +50,12 @@ function AppContent() {
         pageId: '6a2fb7239095a2e3365e18f9',
       };
     }
+    if (path.startsWith('/service/')) {
+      return {
+        scriptSrcs: ['/js/webflow.95f6ec0a.eda60b02784b47ba.js'],
+        pageId: '6a2fc5386bf7f404b664d7bf',
+      };
+    }
     return ROUTE_CONFIG[path] ?? ROUTE_CONFIG['/'];
   }, [location.pathname]);
 
@@ -64,6 +71,7 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/service" element={<Services />} />
+        <Route path="/service/:slug" element={<ServiceDetail />} />
         <Route path="/project" element={<Projects />} />
         <Route path="/project/:slug" element={<ProjectDetail />} />
         <Route path="/contact" element={<Contact />} />
