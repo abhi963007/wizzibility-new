@@ -21,7 +21,7 @@ const homeSchema = [
     "@id": "https://wizzibility.com/#organization",
     "name": "Wizzibility",
     "url": "https://wizzibility.com",
-    "logo": "https://wizzibility.com/images/6a37b4f707629ea28678886b_favicon-64x64%201.png",
+    "logo": "https://wizzibility.com/fav-icon.png",
     "sameAs": [
       "https://www.facebook.com/wizzibility",
       "https://www.instagram.com/wizzibility",
