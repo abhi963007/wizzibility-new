@@ -1,4 +1,4 @@
-# Framevo - Webflow Template Converted to React
+# Wizzibility - Webflow Template Converted to React
 
 A modern React application converted from a Webflow template, featuring a photography and videography studio website with smooth scrolling, animations, and a multi-page structure.
 
@@ -146,6 +146,6 @@ This project is converted from a Webflow template. Please check the original tem
 ## Credits
 
 - Original template: Framevo Webflow Template
-- Converted to React by: [Your Name]
+- Converted to React by: Wizzibility
 - Icons: Webflow template assets
 - Fonts: Inter Tight, Phudu (Google Fonts)
