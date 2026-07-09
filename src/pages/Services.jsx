@@ -5,11 +5,119 @@ import Footer from '../components/shared/Footer';
 
 import useMeta from '../hooks/useMeta';
 
+const servicesSchema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Visual Communication",
+    "description": "Impactful design, enhancing brand identity through engaging visual storytelling, presentations, infographics, and motion graphics.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Wizzibility",
+      "url": "https://wizzibility.com"
+    },
+    "areaServed": ["IN", "US", "GB"],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Digital Marketing",
+    "description": "Boosts online presence, drives engagement, increases conversions through strategic SEO, performance marketing, SMM, and GEO.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Wizzibility",
+      "url": "https://wizzibility.com"
+    },
+    "areaServed": ["IN", "US", "GB"]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Branding",
+    "description": "Crafts unique brand identities, building recognition, trust, and loyalty through logos, narrative guidelines, and design templates.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Wizzibility",
+      "url": "https://wizzibility.com"
+    },
+    "areaServed": ["IN", "US", "GB"]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Website Development",
+    "description": "Responsive, fast, and secure custom website development utilizing React, Next.js, and Vite, fully optimized for search and AI discovery.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Wizzibility",
+      "url": "https://wizzibility.com"
+    },
+    "areaServed": ["IN", "US", "GB"]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "App Development",
+    "description": "Intuitive mobile and web application development combining user-centric design with robust coding and CRM system integrations.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Wizzibility",
+      "url": "https://wizzibility.com"
+    },
+    "areaServed": ["IN", "US", "GB"]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Multimedia Production",
+    "description": "Dynamic content production combining videography, photography, TV commercials, drone shoots, and post-production editing.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Wizzibility",
+      "url": "https://wizzibility.com"
+    },
+    "areaServed": ["IN", "US", "GB"]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What visual communication deliverables does Wizzibility provide?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pitch decks, presentations, infographics, brochures, packaging designs, motion graphics, and digital ads."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What tech stack is used for website development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We build fast, interactive websites using React, Next.js, Vite, and GSAP, integrated with robust backend services and CRM systems."
+        }
+      }
+    ]
+  }
+];
+
 export default function ServicesPage() {
-  useMeta(
-    'Our Services | Wizzibility',
-    "Ignite bold creativity with smart tech. Explore Wizzibility's core and integrated services, including visual communication, digital marketing, website and app development, and branding."
-  );
+  useMeta({
+    title: 'Our Services | Wizzibility',
+    description: "Ignite bold creativity with smart tech. Explore Wizzibility's core and integrated services, including visual communication, digital marketing, website and app development, and branding.",
+    canonical: 'https://wizzibility.com/service',
+    keywords: 'services, digital marketing hyderabad, branding agency, react web development, app development, motion graphics',
+    schema: servicesSchema,
+    og: {
+      type: 'website',
+      url: 'https://wizzibility.com/service'
+    }
+  });
   const services = [
     { 
       id: 1, 
@@ -105,7 +213,7 @@ export default function ServicesPage() {
         <div className="home-hero-overlay"></div>
       </div>
 
-      <div className="main">
+      <main className="main" id="main-content" role="main">
         {/* Services Grid Section */}
         <section className="section">
           <div className="space-6-normal"></div>
@@ -428,7 +536,7 @@ export default function ServicesPage() {
 
         {/* Footer wrapper */}
         <Footer />
-      </div>
+      </main>
     </>
   );
 }

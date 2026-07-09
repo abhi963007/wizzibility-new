@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Directives for AI Search and LLM Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://wizzibility.com/sitemap.xml

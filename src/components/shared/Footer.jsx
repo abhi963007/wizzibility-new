@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <section data-wf-component-id="5a6382d2-e0d3-62a0-fb99-90b247678888" data-wf-variant-state="base" className="section">
+    <footer data-wf-component-id="5a6382d2-e0d3-62a0-fb99-90b247678888" data-wf-variant-state="base" className="section" role="contentinfo">
       <div className="space-10-small"></div>
       <div className="w-layout-blockcontainer container w-container">
         <div className="footer-wrapper">
@@ -17,42 +17,42 @@ export default function Footer() {
           </div>
           <div className="space-4-medium"></div>
           <div className="footer-title-wrapper">
-            <a href="mailto:info@wizzibility.com" className="email-address">info@wizzibility.com</a>
+            <a href="mailto:info@wizzibility.com" className="email-address" aria-label="Wizzibility Email Contact">info@wizzibility.com</a>
             <div className="footer-social-block">
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="footer-soical-wrapper w-inline-block">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="footer-social-icon">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="footer-soical-wrapper w-inline-block" aria-label="Wizzibility Facebook Page">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="footer-social-icon" aria-hidden="true">
                   <path d="M13.397 20.9972V12.8012H16.162L16.573 9.59225H13.397V7.54825C13.397 6.62225 13.655 5.98825 14.984 5.98825H16.668V3.12725C15.8487 3.03874 15.0251 2.99634 14.201 3.00025C11.757 3.00025 10.079 4.49225 10.079 7.23125V9.58625H7.33203V12.7952H10.085V20.9972H13.397Z" fill="currentColor"></path>
                 </svg>
                 <div className="footer-social-text">Facebook</div>
               </a>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="footer-soical-wrapper w-inline-block">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" className="footer-social-icon">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="footer-soical-wrapper w-inline-block" aria-label="Wizzibility Instagram Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" className="footer-social-icon" aria-hidden="true">
                   <path d="M6.667 10C6.667 9.56224 6.75322 9.12876 6.92075 8.72433C7.08827 8.31989 7.33382 7.9524 7.64336 7.64286C7.9529 7.33332 8.32039 7.08777 8.72482 6.92025C9.12926 6.75272 9.56274 6.6665 10.0005 6.6665C10.4383 6.6665 10.8717 6.75272 11.2762 6.92025C11.6806 7.08777 12.0481 7.33332 12.3576 7.64286C12.6672 7.9524 12.9127 8.31989 13.0803 8.72433C13.2478 9.12876 13.334 9.56224 13.334 10C13.334 10.8841 12.9828 11.732 12.3576 12.3571C11.7325 12.9823 10.8846 13.3335 10.0005 13.3335C9.1164 13.3335 8.26851 12.9823 7.64336 12.3571C7.01821 11.732 6.667 10.8841 6.667 10ZM4.865 10C4.865 10.6743 4.99782 11.3421 5.25588 11.9651C5.51394 12.5881 5.89218 13.1542 6.36901 13.631C6.84584 14.1078 7.41191 14.4861 8.03492 14.7441C8.65793 15.0022 9.32566 15.135 10 15.135C10.6743 15.135 11.3421 15.0022 11.9651 14.7441C12.5881 14.4861 13.1542 14.1078 13.631 13.631C14.1078 13.1542 14.4861 12.5881 14.7441 11.9651C15.0022 11.3421 15.135 10.6743 15.135 10ZM14.138 4.662C14.138 4.89934 14.2084 5.13135 14.3402 5.32868C14.4721 5.52602 14.6595 5.67983 14.8788 5.77066C15.0981 5.86148 15.3393 5.88524 15.5721 5.83894C15.8049 5.79264 16.0187 5.67835 16.1865 5.51053C16.3544 5.34271 16.4686 5.12889 16.5149 4.89611C16.5612 4.66333 16.5375 4.42205 16.4467 4.20278C16.3558 3.98351 16.202 3.79609 16.0047 3.66424C15.8073 3.53238 15.5753 3.462 15.338 3.462C15.0197 3.462 14.7145 3.58843 14.4895 3.81347C14.2644 4.03852 14.138 4.34374 14.138 4.662ZM5.96 18.14C4.985 18.095 4.455 17.933 4.103 17.796C3.66862 17.6357 3.27566 17.3801 2.953 17.048C2.62091 16.7253 2.36532 16.3324 2.205 15.898C2.067 15.546 1.905 15.016 1.861 14.041C1.812 12.987 1.803 12.671 1.803 10.001C1.803 7.331 1.813 7.014 1.861 5.959C1.905 4.984 2.069 4.455 2.205 4.102C2.386 3.635 2.603 3.302 2.953 2.952C3.303 2.602 3.635 2.385 4.103 2.204C4.455 2.066 4.985 1.904 5.96 1.86C7.014 1.81 7.33 1.8 10 1.8C12.67 1.8 12.986 1.81 14.041 1.859C15.016 1.903 15.545 2.067 15.898 2.203C16.365 2.383 16.698 2.601 17.048 2.951C17.398 3.301 17.615 3.634 17.797 4.101C17.934 4.453 18.097 4.983 18.14 5.958C18.189 7.013 18.199 7.328 18.199 9.999C18.199 12.669 18.189 12.985 18.14 14.04C18.096 15.015 17.933 15.545 17.797 15.897C17.6367 16.3314 17.3811 16.7243 17.049 17.047C16.7263 17.3791 16.3334 17.6347 15.899 17.795C15.546 17.932 15.016 18.095 14.041 18.139C12.987 18.187 12.671 18.197 10 18.197C7.33 18.197 7.014 18.187 5.96 18.139M5.877 0.0599999C4.813 0.109 4.085 0.278 3.45 0.525C2.78247 0.775816 2.17773 1.16931 1.678 1.678C1.16931 2.17773 0.775816 2.78247 0.525 3.45C0.278 4.086 0.109 4.813 0.0610001 5.877C0.0100001 6.943 0 7.284 0 10C0 12.716 0.0109999 13.057 0.0599999 14.123C0.109 15.187 0.278 15.914 0.525 16.55C0.775945 17.2172 1.16943 17.8216 1.678 18.321C2.17763 18.8301 2.78238 19.2239 3.45 19.475C4.086 19.722 4.813 19.891 5.877 19.939C6.944 19.988 7.284 20 10 20C12.716 20 13.057 19.989 14.123 19.94C15.187 19.891 15.914 19.722 16.55 19.475C17.2173 19.2238 17.8217 18.8299 18.321 18.321C18.8298 17.8219 19.2236 17.2179 19.475 16.551C19.722 15.914 19.892 15.187 19.939 14.123C19.988 13.056 19.999 12.716 19.999 10C19.999 7.284 19.988 6.943 19.939 5.877C19.891 4.813 19.722 4.085 19.475 3.45C19.2239 2.78238 18.8301 2.17763 18.321 1.678C17.8218 1.16955 17.2178 0.776074 16.551 0.525C15.914 0.278 15.187 0.108 14.124 0.0610001C13.057 0.0120001 12.717 0 10 0C7.283 0 6.943 0.0109999 5.876 0.0599999" fill="currentColor"></path>
-              </svg>
-              <div className="footer-social-text">Instagram</div>
-            </a>
-            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" className="footer-soical-wrapper w-inline-block">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="footer-social-icon">
-                <path d="M17.6873 3.06348L12.6913 8.77448L8.3713 3.06348H2.1123L9.5893 12.8395L2.5033 20.9385H5.5373L11.0063 14.6885L15.7863 20.9385H21.8883L14.0943 10.6345L20.7193 3.06348H17.6873ZM16.6233 19.1235L5.6543 4.78248H7.4573L18.3033 19.1225L16.6233 19.1235Z" fill="currentColor"></path>
-              </svg>
-              <div className="footer-social-text">Twitter (X)</div>
-            </a>
+                </svg>
+                <div className="footer-social-text">Instagram</div>
+              </a>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" className="footer-soical-wrapper w-inline-block" aria-label="Wizzibility Twitter Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="footer-social-icon" aria-hidden="true">
+                  <path d="M17.6873 3.06348L12.6913 8.77448L8.3713 3.06348H2.1123L9.5893 12.8395L2.5033 20.9385H5.5373L11.0063 14.6885L15.7863 20.9385H21.8883L14.0943 10.6345L20.7193 3.06348H17.6873ZM16.6233 19.1235L5.6543 4.78248H7.4573L18.3033 19.1225L16.6233 19.1235Z" fill="currentColor"></path>
+                </svg>
+                <div className="footer-social-text">Twitter (X)</div>
+              </a>
+            </div>
+          </div>
+          <div className="space-10-small"></div>
+        </div>
+      </div>
+      <div className="copyright-wrapper">
+        <div className="footer-bottom">
+          <div className="copyright-text">© Copyright <span>- </span><span>Wizzibility &nbsp;</span><span>| </span>Design By <span>Lioweb </span><span>License by</span> Webflow</div>
+          <div className="uitlity-link-wrap">
+            <Link to="/style-guide" className="utility-link">Style Guide</Link>
+            <Link to="/licenses" className="utility-link">Licenses</Link>
+            <Link to="/changelog" className="utility-link">Changelog</Link>
+            <a href="https://wizzibility.com/404" className="utility-link">404</a>
           </div>
         </div>
-        <div className="space-10-small"></div>
       </div>
-    </div>
-    <div className="copyright-wrapper">
-      <div className="footer-bottom">
-        <div className="copyright-text">© Copyright <span>- </span><span>Wizzibility &nbsp;</span><span>| </span>Design By <span>Lioweb </span><span>License by</span> Webflow</div>
-        <div className="uitlity-link-wrap">
-          <Link to="/style-guide" className="utility-link">Style Guide</Link>
-          <Link to="/licenses" className="utility-link">Licenses</Link>
-          <Link to="/changelog" className="utility-link">Changelog</Link>
-          <a href="https://wizzibility.com/404" className="utility-link">404</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </footer>
   );
 }

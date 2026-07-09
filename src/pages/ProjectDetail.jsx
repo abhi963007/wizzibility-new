@@ -10,15 +10,62 @@ export default function ProjectDetail() {
   const { slug } = useParams();
   const project = projectsData[slug];
 
-  useMeta(
-    project ? `${project.title} | Projects | Wizzibility` : 'Project Detail | Wizzibility',
-    project ? project.overview : 'Detailed overview of our creative work.'
-  );
-
   // If the project doesn't exist, redirect back to projects listing page
   if (!project) {
     return <Navigate to="/project" replace />;
   }
+
+  const projectSchema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": project.title,
+      "description": project.overview,
+      "image": `https://wizzibility.com/images/${project.heroImage}`,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Wizzibility",
+        "url": "https://wizzibility.com"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://wizzibility.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Projects",
+          "item": "https://wizzibility.com/project"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": project.title,
+          "item": `https://wizzibility.com/project/${slug}`
+        }
+      ]
+    }
+  ];
+
+  useMeta({
+    title: `${project.title} | Projects | Wizzibility`,
+    description: project.overview,
+    canonical: `https://wizzibility.com/project/${slug}`,
+    keywords: `case study, portfolio, ${project.title}, wizzibility campaigns`,
+    schema: projectSchema,
+    og: {
+      type: 'article',
+      url: `https://wizzibility.com/project/${slug}`,
+      image: `/images/${project.heroImage}`
+    }
+  });
 
   // Scroll to the top of the page when the project slug changes
   React.useEffect(() => {
@@ -62,7 +109,7 @@ export default function ProjectDetail() {
         <div className="home-hero-overlay"></div>
       </div>
 
-      <div className="main">
+      <main className="main" id="main-content" role="main">
         {/* Project Body Details */}
         <section className="section">
           <div className="space-3-small"></div>
@@ -401,7 +448,7 @@ export default function ProjectDetail() {
 
         {/* Footer */}
         <Footer />
-      </div>
+      </main>
     </>
   );
 }

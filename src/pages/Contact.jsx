@@ -4,11 +4,80 @@ import Footer from '../components/shared/Footer';
 
 import useMeta from '../hooks/useMeta';
 
+const contactSchema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "@id": "https://wizzibility.com/contact#contactpage",
+    "name": "Contact Us | Wizzibility",
+    "description": "Get in touch with Wizzibility. Call +91-9391763990, email info@wizzibility.com, or visit us in Hyderabad to start your next creative project.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Wizzibility",
+      "url": "https://wizzibility.com"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://wizzibility.com/contact#localbusiness",
+    "name": "Wizzibility",
+    "image": "https://wizzibility.com/images/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp",
+    "telephone": "+91-9391763990",
+    "email": "info@wizzibility.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4th Floor, 2/91/20, Kondapur",
+      "addressLocality": "Hyderabad",
+      "addressRegion": "Telangana",
+      "postalCode": "500081",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 17.4556572,
+      "longitude": 78.3650841
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "priceRange": "$$"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wizzibility.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Contact",
+        "item": "https://wizzibility.com/contact"
+      }
+    ]
+  }
+];
+
 export default function Contact() {
-  useMeta(
-    'Contact Us | Wizzibility',
-    'Get in touch with Wizzibility. Call +91-9391763990, email info@wizzibility.com, or visit us in Hyderabad to start your next creative project.'
-  );
+  useMeta({
+    title: 'Contact Us | Wizzibility',
+    description: 'Get in touch with Wizzibility. Call +91-9391763990, email info@wizzibility.com, or visit us in Hyderabad to start your next creative project.',
+    canonical: 'https://wizzibility.com/contact',
+    keywords: 'contact us, wizzibility phone number, email wizzibility, office address hyderabad',
+    schema: contactSchema,
+    og: {
+      type: 'website',
+      url: 'https://wizzibility.com/contact'
+    }
+  });
   const handleSubmit = (e) => {
     e.preventDefault();
     // Simulate form submission success/error classes
@@ -60,7 +129,7 @@ export default function Contact() {
         <div className="space-10-small"></div>
       </div>
 
-      <div className="main">
+      <main className="main" id="main-content" role="main">
         {/* Contact Form Section */}
         <section className="section onyx">
           <div className="space-6-normal"></div>
@@ -257,7 +326,7 @@ export default function Contact() {
 
         {/* Footer */}
         <Footer />
-      </div>
+      </main>
     </>
   );
 }

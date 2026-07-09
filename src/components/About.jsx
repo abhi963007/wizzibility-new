@@ -15,7 +15,7 @@ export default function About() {
           <div className="space-3-large"></div>
           <div className="w-layout-grid about-grid">
             <div className="about-image-wrapper">
-              <img src="/images/6a2fb5b2c06d0a708d8f2145_image%2057361%20%281%29.webp" loading="lazy" sizes="100vw" srcSet="/images/6a2fb5b2c06d0a708d8f2145_image%2057361%20%281%29-p-500.webp 500w, /images/6a2fb5b2c06d0a708d8f2145_image%2057361%20%281%29-p-800.webp 800w, /images/6a2fb5b2c06d0a708d8f2145_image%2057361%20%281%29-p-1080.webp 1080w, /images/6a2fb5b2c06d0a708d8f2145_image%2057361%20%281%29-p-1600.webp 1600w, /images/6a2fb5b2c06d0a708d8f2145_image%2057361%20%281%29.webp 1946w" alt="Young woman with brown eyes and hair in an updo wearing an orange lace high-collared dress." className="about-image" />
+              <img src="/images/6a2fb5b2c06d0a708d8f2145_image%2057361%20%281%29.webp" loading="lazy" sizes="100vw" srcSet="/images/6a2fb5b2c06d0a708d8f2145_image%2057361%20%281%29-p-500.webp 500w, /images/6a2fb5b2c06d0a708d8f2145_image%2057361%20%281%29-p-800.webp 800w, /images/6a2fb5b2c06d0a708d8f2145_image%2057361%20%281%29-p-1080.webp 1080w, /images/6a2fb5b2c06d0a708d8f2145_image%2057361%20%281%29-p-1600.webp 1600w, /images/6a2fb5b2c06d0a708d8f2145_image%2057361%20%281%29.webp 1946w" alt="Wizzibility Design Innovation Team - Creative Tech Agency Hyderabad" title="Wizzibility Design &amp; Tech Studio" width="973" height="650" className="about-image" />
               <div className="overlay-grid">
                 <div className="col"></div>
                 <div className="col"></div>
@@ -28,7 +28,7 @@ export default function About() {
               </div>
             </div>
             <div className="about-image-wrapper">
-              <img src="/images/6a2fb5b2c0cd7d264bb280a4_image%2057362%20%281%29.webp" loading="lazy" sizes="100vw" srcSet="/images/6a2fb5b2c0cd7d264bb280a4_image%2057362%20%281%29-p-500.webp 500w, /images/6a2fb5b2c0cd7d264bb280a4_image%2057362%20%281%29-p-800.webp 800w, /images/6a2fb5b2c0cd7d264bb280a4_image%2057362%20%281%29-p-1080.webp 1080w, /images/6a2fb5b2c0cd7d264bb280a4_image%2057362%20%281%29-p-1600.webp 1600w, /images/6a2fb5b2c0cd7d264bb280a4_image%2057362%20%281%29.webp 1946w" alt="Close-up of a person with red hair illuminated by warm orange light, wearing a chain necklace and dark clothes." className="about-image" />
+              <img src="/images/6a2fb5b2c0cd7d264bb280a4_image%2057362%20%281%29.webp" loading="lazy" sizes="100vw" srcSet="/images/6a2fb5b2c0cd7d264bb280a4_image%2057362%20%281%29-p-500.webp 500w, /images/6a2fb5b2c0cd7d264bb280a4_image%2057362%20%281%29-p-800.webp 800w, /images/6a2fb5b2c0cd7d264bb280a4_image%2057362%20%281%29-p-1080.webp 1080w, /images/6a2fb5b2c0cd7d264bb280a4_image%2057362%20%281%29-p-1600.webp 1600w, /images/6a2fb5b2c0cd7d264bb280a4_image%2057362%20%281%29.webp 1946w" alt="Wizzibility Strategic Branding Team - Modern Digital Experiences" title="Wizzibility Strategic Marketing &amp; Art Studio" width="973" height="650" className="about-image" />
               <div className="overlay-grid">
                 <div className="col"></div>
                 <div className="col"></div>

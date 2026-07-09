@@ -5,11 +5,72 @@ import Footer from '../components/shared/Footer';
 
 import useMeta from '../hooks/useMeta';
 
+const projectsSchema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://wizzibility.com/project#collectionpage",
+    "name": "Projects & Case Stories | Wizzibility",
+    "url": "https://wizzibility.com/project",
+    "description": "Explore our portfolio of high-impact designs, creative tech solutions, and branding campaigns that drive sustainable business growth.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Wizzibility",
+      "url": "https://wizzibility.com"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://wizzibility.com/project/social-media-videos"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://wizzibility.com/project/wedding-stories"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://wizzibility.com/project/brand-campaigns"
+        }
+      ]
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wizzibility.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Projects",
+        "item": "https://wizzibility.com/project"
+      }
+    ]
+  }
+];
+
 export default function ProjectsPage() {
-  useMeta(
-    'Projects & Case Stories | Wizzibility',
-    'Explore our portfolio of high-impact designs, creative tech solutions, and branding campaigns that drive sustainable business growth.'
-  );
+  useMeta({
+    title: 'Projects & Case Stories | Wizzibility',
+    description: 'Explore our portfolio of high-impact designs, creative tech solutions, and branding campaigns that drive sustainable business growth.',
+    canonical: 'https://wizzibility.com/project',
+    keywords: 'projects, portfolio, case studies, branding portfolio, website portfolio, creative campaigns',
+    schema: projectsSchema,
+    og: {
+      type: 'website',
+      url: 'https://wizzibility.com/project'
+    }
+  });
   const [activeTab, setActiveTab] = useState('Tab 1');
 
   const projects = [
@@ -155,7 +216,7 @@ export default function ProjectsPage() {
         <div className="home-hero-overlay"></div>
       </div>
 
-      <div className="main">
+      <main className="main" id="main-content" role="main">
         {/* Projects Filtering Tab Section */}
         <section className="section">
           <div className="space-10-small"></div>
@@ -381,7 +442,7 @@ export default function ProjectsPage() {
 
         {/* Footer */}
         <Footer />
-      </div>
+      </main>
     </>
   );
 }

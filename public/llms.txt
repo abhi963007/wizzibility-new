@@ -1,0 +1,29 @@
+# Wizzibility — Creative Tech Studio
+
+Wizzibility is a next-gen creative tech studio blending design, marketing, and technology to build extraordinary digital experiences. We are an enterprise-ready, startup-friendly agency based in Hyderabad, India, serving global markets.
+
+## Core Information
+- **Website:** https://wizzibility.com
+- **HQ Address:** 4th Floor, 2/91/20, Kondapur, Hyderabad, 500081
+- **Email:** info@wizzibility.com
+- **Phone:** +91-9391763990
+- **Technologies:** React, Next.js, Vite, Node.js, GSAP, Lenis, OpenAI API, CRM Integrations
+- **Core Verticals:** Real Estate, E-Commerce, Interior Design, Tech Startups, Construction, Education
+
+## Services Offered
+1. **Visual Communication:** Investor pitch decks, presentations, infographics, packaging design, motion graphics, and digital ads.
+2. **Digital Marketing:** SEO, Search Engine Marketing (SEM), Social Media Marketing (SMM), content strategy, lead generation, and GEO (Generative Engine Optimization).
+3. **Branding:** Strategy, values, brand naming, logomark/wordmark design, color palette typography guides, packaging, and digital templates.
+4. **Multimedia Production:** Videography, photography, TV commercials, drone shoots, product filming, and editing.
+5. **Print Media:** Outdoor signage, brochures, newspaper/magazine ads, merchandising, and DooH (Digital-out-of-Home) assets.
+6. **Website & App Development:** UI/UX design, custom frontend development, cloud hosting, domains, CRM linkages, and mobile apps.
+
+## Our 3-Phase Process
+1. **Discover:** In-depth audit, customer journey mapping, brand analysis, and gap identification.
+2. **Design & Develop:** Tailored ecosystem creation utilizing advanced design frameworks, AI systems, data, and storytelling.
+3. **Deploy & Scale:** Campaign launches, asset publishing, active monitoring, and performance scaling.
+
+## FAQs
+- **Is Wizzibility suitable for startups and enterprises?** Yes, it is designed to scale dynamically, being cost-effective for startups and robust for enterprise grade deployments.
+- **How does Wizzibility use AI?** We incorporate AI for intelligent campaign optimizations, customer personalization, analytics insights, and development automation.
+- **Can Wizzibility build a brand from scratch?** Yes, we provide full-stack branding from initial naming and positioning to logo systems and launches.

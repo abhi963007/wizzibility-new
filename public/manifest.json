@@ -1,0 +1,21 @@
+{
+  "short_name": "Wizzibility",
+  "name": "Wizzibility | Next-Gen Creative Tech Studio",
+  "icons": [
+    {
+      "src": "/images/6a37b4f707629ea28678886b_favicon-64x64%201.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/6a37b4f7d57002c9566d9130_favicon-64x64%201.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0d0e11",
+  "theme_color": "#e25c38",
+  "display": "standalone",
+  "orientation": "portrait"
+}
