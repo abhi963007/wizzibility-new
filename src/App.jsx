@@ -54,6 +54,11 @@ function AppContent() {
 
   useWebflow(scriptSrcs, pageId);
 
+  // Scroll to the top of the window on every page transition
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <div className="page-wrapper">
       <Routes>

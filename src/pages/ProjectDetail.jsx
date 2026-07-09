@@ -13,6 +13,11 @@ export default function ProjectDetail() {
     return <Navigate to="/project" replace />;
   }
 
+  // Scroll to the top of the page when the project slug changes
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
+
   // Retrieve details for related projects
   const relatedProjects = (project.relatedSlugs ?? [])
     .map(relatedSlug => ({ slug: relatedSlug, ...projectsData[relatedSlug] }))
