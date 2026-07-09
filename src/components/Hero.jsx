@@ -14,23 +14,7 @@ export default function Hero() {
               <div className="hero-left">
                 <p className="hero-p">We are a next-gen creative tech agency blending design, marketing, and technology to build extraordinary digital experiences. From Concept to Code, We've Got You!</p>
               </div>
-              <div className="hero-right">
-                <div className="hero-item-wrapper">
-                  <div className="hero-pill">
-                    <div className="font-1-medium">Design</div>
-                  </div>
-                  <div className="hero-pill">
-                    <div className="font-1-medium">Marketing</div>
-                  </div>
-                  <div className="hero-pill">
-                    <div className="font-1-medium">Technology</div>
-                  </div>
-                  <div className="hero-pill last">
-                    <div className="font-1-medium">AI Integrations</div>
-                  </div>
-                </div>
-                <div className="small-overlay"></div>
-              </div>
+              <div className="hero-right"></div>
             </div>
             <div className="hero-title-wrapper">
               <h1 className="hero-heading">Creative <br /><span className="heading-hightlight">Tech Studio</span></h1>
