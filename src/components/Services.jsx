@@ -9,7 +9,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="section">
+    <section className="section services-section-purple">
       <div className="space-10-small"></div>
       <div className="w-layout-blockcontainer container w-container">
         <div className="service-wrapper">
