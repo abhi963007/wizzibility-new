@@ -10,7 +10,7 @@ export default function Projects() {
   ];
 
   return (
-    <section className="section bg">
+    <section className="section bg project-section-purple">
       <div className="space-6-normal"></div>
       <div className="w-layout-blockcontainer container w-container">
         <div className="project-wrapper">

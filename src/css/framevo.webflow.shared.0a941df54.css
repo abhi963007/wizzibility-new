@@ -7339,3 +7339,315 @@ li {
   display: block;
   object-fit: contain;
 }
+
+/* ==========================================
+   Scene 2: About Section Redesign - Creative Ecosystem
+   ========================================== */
+
+.about-philosophy-section {
+  position: relative;
+  width: 100%;
+  background-color: #050505;
+  color: #f8f8f8;
+  overflow: hidden;
+}
+
+/* Light Trail / Energy Trail Style */
+.about-energy-trail-wrap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.energy-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.energy-path {
+  fill: none;
+  stroke: url(#purple-light-grad);
+  stroke-width: 2px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+/* Cinematic Opening Statement Viewport */
+.about-intro-viewport {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 4.5vw;
+}
+
+.about-editorial-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #7b2ff7;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.about-intro-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 8vw;
+  line-height: 0.95;
+  color: #f8f8f8;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  transform: scaleY(1.3);
+  transform-origin: center center;
+  margin: 0;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+/* Typography masking and stretching */
+.text-mask-wrapper {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.text-masked-line {
+  display: inline-block;
+  transform: translateY(105%) scaleY(1.8);
+  opacity: 0;
+}
+
+/* Editorial Layout Structure */
+.about-editorial-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4.5vw;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 3;
+}
+
+.about-editorial-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  position: relative;
+}
+
+.about-editorial-left {
+  flex: 0 0 60%;
+  position: relative;
+}
+
+.about-editorial-right {
+  flex: 0 0 35%;
+  margin-top: 4rem;
+}
+
+.about-editorial-headline {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 6.8vw;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: #f8f8f8;
+  transform: scaleY(1.35);
+  transform-origin: left top;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.about-editorial-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #f8f8f8;
+  opacity: 0.7;
+  margin: 0 0 2rem 0;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+/* Creative Ecosystem Layout Grid */
+.ecosystem-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.ecosystem-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ecosystem-node {
+  fill: #7b2ff7;
+  stroke: rgba(168, 85, 247, 0.4);
+  stroke-width: 4px;
+}
+
+.ecosystem-node.yellow-indicator {
+  fill: #ffd84d;
+  stroke: rgba(255, 216, 77, 0.4);
+  stroke-width: 4px;
+}
+
+.ecosystem-line {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.05);
+  stroke-width: 1px;
+}
+
+.ecosystem-line.active-trail {
+  stroke: rgba(168, 85, 247, 0.25);
+  stroke-width: 1.5px;
+}
+
+.ecosystem-grid-line {
+  stroke: rgba(255, 255, 255, 0.02);
+  stroke-width: 1px;
+}
+
+/* Floating interface elements & labels */
+.floating-metadata {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: #a855f7;
+  opacity: 0.4;
+  text-transform: uppercase;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.floating-metadata:hover {
+  opacity: 0.9;
+  color: #ffd84d;
+}
+
+.coord-label {
+  font-family: monospace;
+  font-size: 0.65rem;
+  color: #ffd84d;
+  opacity: 0.4;
+}
+
+/* Custom interactive underline for highlighted words */
+.about-highlight-word {
+  color: #ffd84d;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.about-highlight-word::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 1.5px;
+  background-color: #7b2ff7;
+  transition: width 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), left 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.about-highlight-word:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+  .about-intro-title {
+    font-size: 11vw;
+  }
+  .about-editorial-columns {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .about-editorial-left,
+  .about-editorial-right {
+    flex: 0 0 100%;
+    margin-top: 0;
+  }
+  .about-editorial-headline {
+    font-size: 10vw;
+  }
+  .about-editorial-paragraph {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* Projects Section - Purple Cinematic Theme */
+.project-section-purple {
+  background-color: #050505 !important;
+  color: #f8f8f8 !important;
+}
+
+.project-section-purple .section-heading.night {
+  color: #f8f8f8 !important;
+}
+
+.project-section-purple .section-p {
+  color: #bbb !important;
+}
+
+.project-section-purple .project-collection-heading {
+  color: #f8f8f8 !important;
+  transition: color 0.3s ease;
+}
+
+.project-section-purple .project-collection-wrapper:hover .project-collection-heading {
+  color: #a855f7 !important;
+}
+
+.project-section-purple .project-collection-date {
+  color: #888 !important;
+}
+
+.project-section-purple .project-line-wrap {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.project-section-purple .project-icon-wrapper {
+  background-color: #111 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(123, 47, 247, 0.25);
+  transition: all 0.3s ease;
+}
+
+.project-section-purple .project-collection-wrapper:hover .project-icon-wrapper {
+  border-color: #7b2ff7;
+  box-shadow: 0 0 25px rgba(123, 47, 247, 0.5);
+  background-color: #7b2ff7 !important;
+}
+
+.project-section-purple .project-icon {
+  color: #a855f7 !important;
+  transition: color 0.3s ease;
+}
+
+.project-section-purple .project-collection-wrapper:hover .project-icon {
+  color: #fff !important;
+}
