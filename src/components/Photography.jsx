@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Photography() {
   return (
-    <section className="section">
+    <section className="section photography-section-purple">
       <div className="w-layout-blockcontainer container w-container">
         <div className="photography-wrapper">
           <div className="section-header left">

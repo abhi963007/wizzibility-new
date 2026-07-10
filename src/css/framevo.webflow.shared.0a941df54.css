@@ -7720,3 +7720,43 @@ li {
 .services-section-purple .button:hover .button-icon {
   transform: rotate(-45deg) translate(1px, -1px);
 }
+
+/* Photography Section - Purple Cinematic Theme */
+.photography-section-purple {
+  background-color: #050505 !important;
+}
+
+.photography-section-purple .button {
+  background: transparent !important;
+  border: none !important;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.photography-section-purple .button-text-wrapper {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background-image: linear-gradient(#1a1a1a, #111111) !important;
+  transition: border-color 0.3s ease !important;
+}
+
+.photography-section-purple .button:hover .button-text-wrapper {
+  border-color: #7b2ff7 !important;
+}
+
+.photography-section-purple .button-icon-wrapper {
+  background-color: #7b2ff7 !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.photography-section-purple .button:hover .button-icon-wrapper {
+  background-color: #a855f7 !important;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+}
+
+.photography-section-purple .button-icon {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+.photography-section-purple .button:hover .button-icon {
+  transform: rotate(-45deg) translate(1px, -1px);
+}
