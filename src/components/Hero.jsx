@@ -142,7 +142,9 @@ export default function Hero() {
       </div>
 
       {/* Background Media & Overlays */}
-      <img src="/images/hero.png" loading="lazy" sizes="100vw" alt="Creative Tech Studio background" className="hero-home-image" />
+      <video className="hero-home-image" autoPlay loop muted playsInline>
+        <source src="/video/hero.mp4" type="video/mp4" />
+      </video>
       <div className="blend-color"></div>
       <div className="home-hero-overlay home"></div>
     </div>
