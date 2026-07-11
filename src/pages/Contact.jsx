@@ -248,9 +248,6 @@ export default function Contact() {
                 <div className="faq-heading-wrap right">
                   <h2 className="section-heading">questions</h2>
                 </div>
-                <div className="header-counter-wrap faq">
-                  <div className="section-counter-text">(03)</div>
-                </div>
               </div>
             </div>
             <div className="space-3-large"></div>

@@ -319,9 +319,6 @@ export default function ServiceDetail() {
                 <div className="releted-service-heading-wrap right">
                   <h2 className="section-heading">services</h2>
                 </div>
-                <div className="header-counter-wrap faq">
-                  <div className="section-top-text">(02)</div>
-                </div>
               </div>
             </div>
             <div className="space-3-large"></div>

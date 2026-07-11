@@ -264,9 +264,6 @@ export default function ServicesPage() {
             <div className="section-header">
               <div className="goal-heading-wrap">
                 <h2 className="section-heading">Built Around Your Goal, Not Just the Code</h2>
-                <div className="header-counter-wrap goal">
-                  <div className="section-counter-text">(02)</div>
-                </div>
               </div>
             </div>
             <div className="space-3-large"></div>
@@ -307,9 +304,6 @@ export default function ServicesPage() {
             <div className="section-header left">
               <div className="service-heading-wrap">
                 <h2 className="section-heading">Not Sure Which Service You Need?</h2>
-                <div className="header-counter-wrap service">
-                  <div className="section-counter-text">(03)</div>
-                </div>
               </div>
             </div>
             <div className="space-3-large"></div>
@@ -402,9 +396,6 @@ export default function ServicesPage() {
                 <div className="faq-heading-wrap right">
                   <h2 className="section-heading">questions</h2>
                 </div>
-                <div className="header-counter-wrap faq">
-                  <div className="section-counter-text">(03)</div>
-                </div>
               </div>
             </div>
             <div className="space-3-large"></div>
@@ -483,7 +474,6 @@ export default function ServicesPage() {
           <div className="cta-sticky-wrap">
             <div className="cta-sticky">
               <div className="cta-content-wrap">
-                <div className="cta-number">(10)</div>
                 <div className="cta-heading-wrap">
                   <h2 className="cta-heading">Let’s Create Something</h2>
                 </div>

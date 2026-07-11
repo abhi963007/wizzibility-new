@@ -338,9 +338,6 @@ export default function ProjectDetail() {
                 <div className="releted-service-heading-wrap right">
                   <h2 className="section-heading">Projects</h2>
                 </div>
-                <div className="header-counter-wrap faq">
-                  <div className="section-top-text">(05)</div>
-                </div>
               </div>
             </div>
             <div className="space-3-large"></div>
@@ -395,7 +392,6 @@ export default function ProjectDetail() {
           <div className="cta-sticky-wrap">
             <div className="cta-sticky">
               <div className="cta-content-wrap">
-                <div className="cta-number">(10)</div>
                 <div className="cta-heading-wrap">
                   <h2 className="cta-heading">Let’s Create Something</h2>
                 </div>
