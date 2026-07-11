@@ -1,13 +1,13 @@
 export const projectsData = {
   'social-media-videos': {
     title: 'Social Media Campaigns',
-    heroImage: '6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp',
+    heroImage: 'home/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp',
     heroImageSizes: '100vw',
-    heroImageSrcset: '/images/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2-p-500.webp 500w, /images/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp 640w',
+    heroImageSrcset: '/images/home/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2-p-500.webp 500w, /images/home/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp 640w',
     
-    bodyImage: '6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp',
+    bodyImage: 'home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp',
     bodyImageSizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px',
-    bodyImageSrcset: '/images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
+    bodyImageSrcset: '/images/home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
     
     overview: 'A comprehensive digital campaign focused on capturing authentic brand stories, creative perspectives, and high-impact social media creatives that connect with audiences and drive conversions.',
     
@@ -51,13 +51,13 @@ export const projectsData = {
   },
   'wedding-stories': {
     title: 'Brand Identity Systems',
-    heroImage: '6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727.webp',
+    heroImage: 'home/6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727.webp',
     heroImageSizes: '100vw',
-    heroImageSrcset: '/images/6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727-p-500.webp 500w, /images/6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727.webp 640w',
+    heroImageSrcset: '/images/home/6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727-p-500.webp 500w, /images/home/6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727.webp 640w',
     
-    bodyImage: '6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp',
+    bodyImage: 'home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp',
     bodyImageSizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px',
-    bodyImageSrcset: '/images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
+    bodyImageSrcset: '/images/home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
     
     overview: 'Designing cohesive branding ecosystems from scratch, aligning logos, color palettes, guidelines, and core narrative to form a distinct, memorable brand footprint.',
     
@@ -102,13 +102,13 @@ export const projectsData = {
   },
   'brand-campaigns': {
     title: 'Performance Marketing',
-    heroImage: '6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4.webp',
+    heroImage: 'home/6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4.webp',
     heroImageSizes: '100vw',
-    heroImageSrcset: '/images/6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4-p-500.webp 500w, /images/6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4.webp 640w',
+    heroImageSrcset: '/images/home/6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4-p-500.webp 500w, /images/home/6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4.webp 640w',
     
-    bodyImage: '6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp',
+    bodyImage: 'home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp',
     bodyImageSizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px',
-    bodyImageSrcset: '/images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
+    bodyImageSrcset: '/images/home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
     
     overview: 'Strategic online advertising and search marketing focused on increasing conversion rates, lead generation, and overall digital footprint.',
     
@@ -152,13 +152,13 @@ export const projectsData = {
   },
   'product-shoots': {
     title: 'Product Design & UI/UX',
-    heroImage: '6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp',
+    heroImage: 'home/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp',
     heroImageSizes: '100vw',
-    heroImageSrcset: '/images/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2-p-500.webp 500w, /images/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp 640w',
+    heroImageSrcset: '/images/home/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2-p-500.webp 500w, /images/home/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp 640w',
     
-    bodyImage: '6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp',
+    bodyImage: 'home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp',
     bodyImageSizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px',
-    bodyImageSrcset: '/images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
+    bodyImageSrcset: '/images/home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
     
     overview: 'Designing intuitive user interfaces and user experiences for modern mobile and web platforms to boost engagement.',
     
@@ -202,13 +202,13 @@ export const projectsData = {
   },
   'corporate-event-highlights': {
     title: 'Corporate Strategy & Audits',
-    heroImage: '6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f.webp',
+    heroImage: 'home/6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f.webp',
     heroImageSizes: '100vw',
-    heroImageSrcset: '/images/6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f-p-500.webp 500w, /images/6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f.webp 640w',
+    heroImageSrcset: '/images/home/6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f-p-500.webp 500w, /images/home/6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f.webp 640w',
     
-    bodyImage: '6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp',
+    bodyImage: 'home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp',
     bodyImageSizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px',
-    bodyImageSrcset: '/images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
+    bodyImageSrcset: '/images/home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
     
     overview: 'Helping enterprises identify growth opportunities, audit visual identity consistency, and plan long-term technology roadmaps.',
     
@@ -252,13 +252,13 @@ export const projectsData = {
   },
   'social-media-reel-series': {
     title: 'Multimedia Content Creation',
-    heroImage: '6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp',
+    heroImage: 'home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp',
     heroImageSizes: '100vw',
-    heroImageSrcset: '/images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
+    heroImageSrcset: '/images/home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
     
-    bodyImage: '6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp',
+    bodyImage: 'home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp',
     bodyImageSizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px',
-    bodyImageSrcset: '/images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
+    bodyImageSrcset: '/images/home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/home/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w',
     
     overview: 'High-quality vertical video series, podcasts, explaining animations, and motion graphics tailored for modern social feeds.',
     

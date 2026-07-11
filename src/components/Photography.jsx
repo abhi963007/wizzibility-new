@@ -37,7 +37,7 @@ export default function Photography() {
                 </div>
               </div>
               <div className="photoraphy-image-wrapper left">
-                <img src="/images/6a2fd4c166aa567e67e7901e_image%2057367.webp" loading="lazy" sizes="100vw" srcSet="/images/6a2fd4c166aa567e67e7901e_image%2057367-p-500.webp 500w, /images/6a2fd4c166aa567e67e7901e_image%2057367-p-800.webp 800w, /images/6a2fd4c166aa567e67e7901e_image%2057367-p-1080.webp 1080w, /images/6a2fd4c166aa567e67e7901e_image%2057367.webp 1256w" alt="Person in a white hoodie with a dark shadowed face against a red and black background." className="photography-image" />
+                <img src="/images/home/6a2fd4c166aa567e67e7901e_image%2057367.webp" loading="lazy" sizes="100vw" srcSet="/images/home/6a2fd4c166aa567e67e7901e_image%2057367-p-500.webp 500w, /images/home/6a2fd4c166aa567e67e7901e_image%2057367-p-800.webp 800w, /images/home/6a2fd4c166aa567e67e7901e_image%2057367-p-1080.webp 1080w, /images/home/6a2fd4c166aa567e67e7901e_image%2057367.webp 1256w" alt="Person in a white hoodie with a dark shadowed face against a red and black background." className="photography-image" />
                 <div className="overlay-grid">
                   <div className="col"></div>
                   <div className="col"></div>
@@ -51,7 +51,7 @@ export default function Photography() {
               </div>
             </div>
             <div className="photography-right">
-              <img src="/images/6a2fd4c24d9c1fd8d2a43a4a_image%2057368%20%281%29.webp" loading="lazy" sizes="100vw" srcSet="/images/6a2fd4c24d9c1fd8d2a43a4a_image%2057368%20%281%29-p-500.webp 500w, /images/6a2fd4c24d9c1fd8d2a43a4a_image%2057368%20%281%29-p-800.webp 800w, /images/6a2fd4c24d9c1fd8d2a43a4a_image%2057368%20%281%29-p-1080.webp 1080w, /images/6a2fd4c24d9c1fd8d2a43a4a_image%2057368%20%281%29-p-1600.webp 1600w, /images/6a2fd4c24d9c1fd8d2a43a4a_image%2057368%20%281%29.webp 1947w" alt="Black perfume bottle with blank label resting on glowing volcanic rocks with red lava light." className="photography-image" />
+              <img src="/images/home/6a2fd4c24d9c1fd8d2a43a4a_image%2057368%20%281%29.webp" loading="lazy" sizes="100vw" srcSet="/images/home/6a2fd4c24d9c1fd8d2a43a4a_image%2057368%20%281%29-p-500.webp 500w, /images/home/6a2fd4c24d9c1fd8d2a43a4a_image%2057368%20%281%29-p-800.webp 800w, /images/home/6a2fd4c24d9c1fd8d2a43a4a_image%2057368%20%281%29-p-1080.webp 1080w, /images/home/6a2fd4c24d9c1fd8d2a43a4a_image%2057368%20%281%29-p-1600.webp 1600w, /images/home/6a2fd4c24d9c1fd8d2a43a4a_image%2057368%20%281%29.webp 1947w" alt="Black perfume bottle with blank label resting on glowing volcanic rocks with red lava light." className="photography-image" />
               <div className="overlay-grid">
                 <div className="col"></div>
                 <div className="col"></div>

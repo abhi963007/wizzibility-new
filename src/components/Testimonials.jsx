@@ -2,17 +2,17 @@ import React from 'react';
 
 export default function Testimonials() {
   const testimonials = [
-    { id: 1, name: 'Divya Reddy', company: 'Vayu Clothing', quote: "We've seen incredible growth thanks to their digital marketing. Insightful strategy and excellent communication made a huge difference.", count: '3k+', subject: 'SOCIAL MEDIA MARKETING', image: '6a2fd6923e5daf11466f37d8_image%2057372.webp' },
-    { id: 2, name: 'Payal Kar Dutta', company: 'Veva Realty', quote: 'Exceptional service! Their design work transformed our brand—professional, creative, and always on time.', count: '20k+', subject: 'END-END MARKETING', image: '6a32f96f6e5d3efb008fbb33_1c77cef06aaf126d1d6c25d3ebe80b7cb39fe0c5.webp' },
-    { id: 3, name: 'Vikas', company: 'Extrica Spaces', quote: 'Their branding expertise gave our business a fresh, memorable identity. Clients frequently compliment our professional look.', count: '10k+', subject: 'BRANDING', image: '6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4.webp' },
-    { id: 4, name: 'Vinod Kumar', company: 'Ananda Homes', quote: 'From web development to print materials, everything was flawless. They truly understand what a growing brand needs and executed it seamlessly.', count: '50k+', subject: 'END-END MARKETING', image: '6a32f97242ecfd2a31f27c73_e1d9a0b1de7bd9df1def9c845c2a857def6c8c26.webp' },
+    { id: 1, name: 'Divya Reddy', company: 'Vayu Clothing', quote: "We've seen incredible growth thanks to their digital marketing. Insightful strategy and excellent communication made a huge difference.", count: '3k+', subject: 'SOCIAL MEDIA MARKETING', image: 'home/6a2fd6923e5daf11466f37d8_image%2057372.webp' },
+    { id: 2, name: 'Payal Kar Dutta', company: 'Veva Realty', quote: 'Exceptional service! Their design work transformed our brand—professional, creative, and always on time.', count: '20k+', subject: 'END-END MARKETING', image: 'home/6a32f96f6e5d3efb008fbb33_1c77cef06aaf126d1d6c25d3ebe80b7cb39fe0c5.webp' },
+    { id: 3, name: 'Vikas', company: 'Extrica Spaces', quote: 'Their branding expertise gave our business a fresh, memorable identity. Clients frequently compliment our professional look.', count: '10k+', subject: 'BRANDING', image: 'home/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4.webp' },
+    { id: 4, name: 'Vinod Kumar', company: 'Ananda Homes', quote: 'From web development to print materials, everything was flawless. They truly understand what a growing brand needs and executed it seamlessly.', count: '50k+', subject: 'END-END MARKETING', image: 'home/6a32f97242ecfd2a31f27c73_e1d9a0b1de7bd9df1def9c845c2a857def6c8c26.webp' },
   ];
 
   const testimonialImages = [
-    '6a2fd6923e5daf11466f37d8_image%2057372.webp',
-    '6a32f96f6e5d3efb008fbb33_1c77cef06aaf126d1d6c25d3ebe80b7cb39fe0c5.webp',
-    '6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4.webp',
-    '6a32f97242ecfd2a31f27c73_e1d9a0b1de7bd9df1def9c845c2a857def6c8c26.webp',
+    'home/6a2fd6923e5daf11466f37d8_image%2057372.webp',
+    'home/6a32f96f6e5d3efb008fbb33_1c77cef06aaf126d1d6c25d3ebe80b7cb39fe0c5.webp',
+    'home/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4.webp',
+    'home/6a32f97242ecfd2a31f27c73_e1d9a0b1de7bd9df1def9c845c2a857def6c8c26.webp',
   ];
 
   return (

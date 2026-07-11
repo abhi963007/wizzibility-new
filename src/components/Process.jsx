@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function Process() {
   const steps = [
-    { id: 1, title: 'Discover', description: 'Discovery session to analyze brand, goals, customer journey, and gaps through research and audits.', image: '6a2fd6923e5daf11466f37d8_image%2057372.webp' },
-    { id: 2, title: 'Strategy', description: 'Formulate technology integration roadmaps and digital marketing funnels.', image: '6a3452aaac57c482ba42872c_3077e770cdd04ed4421b756812d0ca9c9b8933a7.webp' },
-    { id: 3, title: 'Design & Develop', description: 'Expert team designs a tailored marketing ecosystem using design, storytelling, data, and AI tools.', image: '6a3452a7e8b89d5850831283_e99b98690dd0e97f74d7db5b770bb989e634ab7c.webp' },
-    { id: 4, title: 'Deploy & Scale', description: 'Launch campaigns and assets, then monitor, optimize, and scale for continuous growth and returns.', image: '6a3452a73f041d6e38e3c63a_9275859a8a5d77330830771699639a1c0e3123ff.webp' },
-    { id: 5, title: 'Optimize', description: 'Refine user experiences, automate workflows, and scale for continuous revenue growth.', image: '6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp' },
+    { id: 1, title: 'Discover', description: 'Discovery session to analyze brand, goals, customer journey, and gaps through research and audits.', image: 'home/6a2fd6923e5daf11466f37d8_image%2057372.webp' },
+    { id: 2, title: 'Strategy', description: 'Formulate technology integration roadmaps and digital marketing funnels.', image: 'home/6a3452aaac57c482ba42872c_3077e770cdd04ed4421b756812d0ca9c9b8933a7.webp' },
+    { id: 3, title: 'Design & Develop', description: 'Expert team designs a tailored marketing ecosystem using design, storytelling, data, and AI tools.', image: 'home/6a3452a7e8b89d5850831283_e99b98690dd0e97f74d7db5b770bb989e634ab7c.webp' },
+    { id: 4, title: 'Deploy & Scale', description: 'Launch campaigns and assets, then monitor, optimize, and scale for continuous growth and returns.', image: 'home/6a3452a73f041d6e38e3c63a_9275859a8a5d77330830771699639a1c0e3123ff.webp' },
+    { id: 5, title: 'Optimize', description: 'Refine user experiences, automate workflows, and scale for continuous revenue growth.', image: 'home/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp' },
   ];
 
   return (

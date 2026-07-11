@@ -39,7 +39,7 @@ export default function ServiceDetail() {
       "@type": "Service",
       "name": service.title,
       "description": service.overviewText1,
-      "image": `https://wizzibility.com/images/${service.heroImage}`,
+      "image": `https://wizzibility.com/images/home/${service.heroImage}`,
       "provider": {
         "@type": "Organization",
         "name": "Wizzibility",
@@ -81,7 +81,7 @@ export default function ServiceDetail() {
     og: {
       type: 'website',
       url: `https://wizzibility.com/service/${slug}`,
-      image: `/images/${service.heroImage}`
+      image: `/images/home/${service.heroImage}`
     }
   });
 
@@ -136,7 +136,7 @@ export default function ServiceDetail() {
           </div>
         </section>
         <img
-          src={`/images/${service.heroImage}`}
+          src={`/images/home/${service.heroImage}`}
           loading="lazy"
           alt={service.title}
           sizes="100vw"
@@ -165,7 +165,7 @@ export default function ServiceDetail() {
                   {service.galleryImages?.slice(0, 2).map((img, index) => (
                     <div key={index} className="service-multi-img-wrap">
                       <img
-                        src={`/images/${img}`}
+                        src={`/images/home/${img}`}
                         loading="lazy"
                         alt={`${service.title} Showcase ${index + 1}`}
                         className="services-multi-img"
@@ -199,7 +199,7 @@ export default function ServiceDetail() {
                 {service.galleryImages?.[2] && (
                   <div className="service-img-wrap">
                     <img
-                      src={`/images/${service.galleryImages[2]}`}
+                      src={`/images/home/${service.galleryImages[2]}`}
                       loading="lazy"
                       alt={`${service.title} Showcase Highlight`}
                       className="service-multi-img-three"
@@ -339,7 +339,7 @@ export default function ServiceDetail() {
                           </div>
                           <div className="service-image-wrapper">
                             <img
-                              src={`/images/${relatedServices[0].image}`}
+                              src={`/images/home/${relatedServices[0].image}`}
                               loading="lazy"
                               alt={relatedServices[0].title}
                               className="service-image"
@@ -381,7 +381,7 @@ export default function ServiceDetail() {
                           </div>
                           <div className="service-image-wrapper">
                             <img
-                              src={`/images/${relatedServices[1].image}`}
+                              src={`/images/home/${relatedServices[1].image}`}
                               loading="lazy"
                               alt={relatedServices[1].title}
                               className="service-image"

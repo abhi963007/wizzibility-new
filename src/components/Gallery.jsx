@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Gallery() {
-  const galleryImages = [
+  const rawGalleryImages = [
     '6a2fd69280be1041c486ea15_image%2057373%20%283%29.webp',
     '6a2fd69177fc7a358ffe83b0_image%2057369%20%281%29.webp',
     '6a2fd692d5a0f9b716ac6d45_image%2057377.webp',
@@ -12,6 +12,7 @@ export default function Gallery() {
     '6a2fd692e6d38fcb2570642c_image%2057376.webp',
     '6a2fd693ef8e25bcc8cb25ef_image%2057370%20%281%29.webp',
   ];
+  const galleryImages = rawGalleryImages.map(img => `home/${img}`);
 
   return (
     <section className="section gallery-section-purple" id="gallery">
