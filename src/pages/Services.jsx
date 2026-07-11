@@ -125,7 +125,7 @@ export default function ServicesPage() {
       slug: 'fashion-photography', 
       image: '6a3514ef9e312a69a772c2c0_8971c848c2638f539d50757c3cbdcfa62708d35c.webp', 
       sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 355px, 461px', 
-      srcset: '/images/6a3514ef9e312a69a772c2c0_8971c848c2638f539d50757c3cbdcfa62708d35c-p-500.webp 500w, /images/6a3514ef9e312a69a772c2c0_8971c848c2638f539d50757c3cbdcfa62708d35c.webp 640w', 
+      srcset: '/images/services/details/6a3514ef9e312a69a772c2c0_8971c848c2638f539d50757c3cbdcfa62708d35c-p-500.webp 500w, /images/services/details/6a3514ef9e312a69a772c2c0_8971c848c2638f539d50757c3cbdcfa62708d35c.webp 640w', 
       maxWidthClass: 'max-width-17' 
     },
     { 
@@ -134,7 +134,7 @@ export default function ServicesPage() {
       slug: 'voice-videography', 
       image: '6a3514e18cb733c985d735eb_054f97113db54086c0f159ca559fbaea76ca59c9.webp', 
       sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 355px, 461px', 
-      srcset: '/images/6a3514e18cb733c985d735eb_054f97113db54086c0f159ca559fbaea76ca59c9-p-500.webp 500w, /images/6a3514e18cb733c985d735eb_054f97113db54086c0f159ca559fbaea76ca59c9.webp 640w', 
+      srcset: '/images/services/details/6a3514e18cb733c985d735eb_054f97113db54086c0f159ca559fbaea76ca59c9-p-500.webp 500w, /images/services/details/6a3514e18cb733c985d735eb_054f97113db54086c0f159ca559fbaea76ca59c9.webp 640w', 
       maxWidthClass: 'max-width-17' 
     },
     { 
@@ -143,7 +143,7 @@ export default function ServicesPage() {
       slug: 'video-editing-photograhy', 
       image: '6a3514d344d27a821e163d62_c39acb39f24eaae1617e34596fcd880c93c2af1a.webp', 
       sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 355px, 461px', 
-      srcset: '/images/6a3514d344d27a821e163d62_c39acb39f24eaae1617e34596fcd880c93c2af1a-p-500.webp 500w, /images/6a3514d344d27a821e163d62_c39acb39f24eaae1617e34596fcd880c93c2af1a.webp 640w', 
+      srcset: '/images/services/details/6a3514d344d27a821e163d62_c39acb39f24eaae1617e34596fcd880c93c2af1a-p-500.webp 500w, /images/services/details/6a3514d344d27a821e163d62_c39acb39f24eaae1617e34596fcd880c93c2af1a.webp 640w', 
       maxWidthClass: 'max-width-17' 
     },
     { 
@@ -152,7 +152,7 @@ export default function ServicesPage() {
       slug: 'photo-editing-shoots', 
       image: '6a3514be30f3515af988ac02_ff0be023f7b2ee24272fccf4bf1cd342a495c37a.webp', 
       sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 47vw, 461px', 
-      srcset: '/images/6a3514be30f3515af988ac02_ff0be023f7b2ee24272fccf4bf1cd342a495c37a-p-500.webp 500w, /images/6a3514be30f3515af988ac02_ff0be023f7b2ee24272fccf4bf1cd342a495c37a-p-800.webp 800w, /images/6a3514be30f3515af988ac02_ff0be023f7b2ee24272fccf4bf1cd342a495c37a.webp 1200w', 
+      srcset: '/images/services/details/6a3514be30f3515af988ac02_ff0be023f7b2ee24272fccf4bf1cd342a495c37a-p-500.webp 500w, /images/services/details/6a3514be30f3515af988ac02_ff0be023f7b2ee24272fccf4bf1cd342a495c37a-p-800.webp 800w, /images/services/details/6a3514be30f3515af988ac02_ff0be023f7b2ee24272fccf4bf1cd342a495c37a.webp 1200w', 
       maxWidthClass: 'max-width-17' 
     },
     { 
@@ -161,7 +161,7 @@ export default function ServicesPage() {
       slug: 'brand-product-shoots', 
       image: '6a35149d36fe5f1750672b3a_82d7964840e34c402f065d2c6276cb5141f0a984.webp', 
       sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 47vw, 461px', 
-      srcset: '/images/6a35149d36fe5f1750672b3a_82d7964840e34c402f065d2c6276cb5141f0a984-p-500.webp 500w, /images/6a35149d36fe5f1750672b3a_82d7964840e34c402f065d2c6276cb5141f0a984.webp 640w', 
+      srcset: '/images/services/details/6a35149d36fe5f1750672b3a_82d7964840e34c402f065d2c6276cb5141f0a984-p-500.webp 500w, /images/services/details/6a35149d36fe5f1750672b3a_82d7964840e34c402f065d2c6276cb5141f0a984.webp 640w', 
       maxWidthClass: 'max-width-24' 
     },
     { 
@@ -170,7 +170,7 @@ export default function ServicesPage() {
       slug: 'event-wedding-coverage', 
       image: '6a3514888691881407d3c368_1ab4a0190b641c4b8019632a8f5eac8f25cf5100.webp', 
       sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 47vw, 461px', 
-      srcset: '/images/6a3514888691881407d3c368_1ab4a0190b641c4b8019632a8f5eac8f25cf5100-p-500.webp 500w, /images/6a3514888691881407d3c368_1ab4a0190b641c4b8019632a8f5eac8f25cf5100-p-800.webp 800w, /images/6a3514888691881407d3c368_1ab4a0190b641c4b8019632a8f5eac8f25cf5100.webp 960w', 
+      srcset: '/images/services/details/6a3514888691881407d3c368_1ab4a0190b641c4b8019632a8f5eac8f25cf5100-p-500.webp 500w, /images/services/details/6a3514888691881407d3c368_1ab4a0190b641c4b8019632a8f5eac8f25cf5100-p-800.webp 800w, /images/services/details/6a3514888691881407d3c368_1ab4a0190b641c4b8019632a8f5eac8f25cf5100.webp 960w', 
       maxWidthClass: 'max-width-24' 
     }
   ];
@@ -202,10 +202,10 @@ export default function ServicesPage() {
           </div>
         </section>
         <img 
-          src="/images/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522.webp" 
+          src="/images/services/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522.webp" 
           loading="lazy" 
           sizes="(max-width: 928px) 100vw, 928px" 
-          srcSet="/images/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522-p-500.webp 500w, /images/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522-p-800.webp 800w, /images/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522.webp 928w" 
+          srcSet="/images/services/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522-p-500.webp 500w, /images/services/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522-p-800.webp 800w, /images/services/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522.webp 928w" 
           alt="Person reaching out with hand, head blurred in long exposure effect, dark background." 
           className="service-hero-img" 
         />
@@ -232,7 +232,7 @@ export default function ServicesPage() {
                             </div>
                             <div className="service-image-wrapper">
                               <img 
-                                src={`/images/${service.image}`} 
+                                src={`/images/services/details/${service.image}`} 
                                 loading="lazy" 
                                 alt="" 
                                 sizes={service.sizes} 
@@ -272,10 +272,10 @@ export default function ServicesPage() {
             <div className="space-3-large"></div>
             <div className="goal-img-wrap">
               <img 
-                src="/images/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward.webp" 
+                src="/images/services/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward.webp" 
                 loading="lazy" 
                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" 
-                srcSet="/images/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-500.webp 500w, /images/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-800.webp 800w, /images/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward.webp 1200w" 
+                srcSet="/images/services/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-500.webp 500w, /images/services/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-800.webp 800w, /images/services/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward.webp 1200w" 
                 alt="Man with closed eyes standing by a reflective surface with streaks of orange light." 
                 className="goal-img" 
               />
@@ -317,10 +317,10 @@ export default function ServicesPage() {
               <div className="service-card-main">
                 <div className="img-wrap">
                   <img 
-                    src="/images/6a352e62b8470e3cc9cf96eb_7fb6cea04e5d423fc08d3f711c32c4ec7d981389.webp" 
+                    src="/images/services/6a352e62b8470e3cc9cf96eb_7fb6cea04e5d423fc08d3f711c32c4ec7d981389.webp" 
                     loading="lazy" 
                     sizes="100vw" 
-                    srcSet="/images/6a352e62b8470e3cc9cf96eb_7fb6cea04e5d423fc08d3f711c32c4ec7d981389-p-500.webp 500w, /images/6a352e62b8470e3cc9cf96eb_7fb6cea04e5d423fc08d3f711c32c4ec7d981389.webp 640w" 
+                    srcSet="/images/services/6a352e62b8470e3cc9cf96eb_7fb6cea04e5d423fc08d3f711c32c4ec7d981389-p-500.webp 500w, /images/services/6a352e62b8470e3cc9cf96eb_7fb6cea04e5d423fc08d3f711c32c4ec7d981389.webp 640w" 
                     alt="Blurred silhouette of a person playing electric guitar against warm orange background." 
                     className="service-img" 
                   />
@@ -344,10 +344,10 @@ export default function ServicesPage() {
               <div className="service-card-main">
                 <div className="img-wrap">
                   <img 
-                    src="/images/6a35522c90e837ded87b5407_b6c43112b03c41ba6324e0507eed810126d0a33a.webp" 
+                    src="/images/services/6a35522c90e837ded87b5407_b6c43112b03c41ba6324e0507eed810126d0a33a.webp" 
                     loading="lazy" 
                     sizes="100vw" 
-                    srcSet="/images/6a35522c90e837ded87b5407_b6c43112b03c41ba6324e0507eed810126d0a33a-p-500.webp 500w, /images/6a35522c90e837ded87b5407_b6c43112b03c41ba6324e0507eed810126d0a33a.webp 640w" 
+                    srcSet="/images/services/6a35522c90e837ded87b5407_b6c43112b03c41ba6324e0507eed810126d0a33a-p-500.webp 500w, /images/services/6a35522c90e837ded87b5407_b6c43112b03c41ba6324e0507eed810126d0a33a.webp 640w" 
                     alt="Silhouette of a person standing on a foggy street illuminated by bright red and yellow lights." 
                     className="service-img" 
                   />
@@ -506,27 +506,27 @@ export default function ServicesPage() {
               <div className="cta-circle-large">
                 <div className="cta-circle-small"></div>
                 <div className="cta-card _01">
-                  <img loading="lazy" src="/images/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp" alt="Modern villa pool exterior" sizes="(max-width: 2528px) 100vw, 2528px" srcSet="/images/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-500.webp 500w, /images/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-800.webp 800w, /images/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1080.webp 1080w, /images/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1600.webp 1600w, /images/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-2000.webp 2000w, /images/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp 2528w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/services/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp" alt="Modern villa pool exterior" sizes="(max-width: 2528px) 100vw, 2528px" srcSet="/images/services/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-500.webp 500w, /images/services/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-800.webp 800w, /images/services/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1080.webp 1080w, /images/services/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1600.webp 1600w, /images/services/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-2000.webp 2000w, /images/services/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp 2528w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _02">
-                  <img loading="lazy" src="/images/6a3452a7e8b89d5850831283_e99b98690dd0e97f74d7db5b770bb989e634ab7c.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/6a3452a7e8b89d5850831283_e99b98690dd0e97f74d7db5b770bb989e634ab7c-p-500.webp 500w, /images/6a3452a7e8b89d5850831283_e99b98690dd0e97f74d7db5b770bb989e634ab7c.webp 640w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/services/6a3452a7e8b89d5850831283_e99b98690dd0e97f74d7db5b770bb989e634ab7c.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/services/6a3452a7e8b89d5850831283_e99b98690dd0e97f74d7db5b770bb989e634ab7c-p-500.webp 500w, /images/services/6a3452a7e8b89d5850831283_e99b98690dd0e97f74d7db5b770bb989e634ab7c.webp 640w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _03">
-                  <img loading="lazy" src="/images/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-500.webp 500w, /images/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-800.webp 800w, /images/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-1080.webp 1080w, /images/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp 1199w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/services/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/services/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-500.webp 500w, /images/services/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-800.webp 800w, /images/services/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-1080.webp 1080w, /images/services/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp 1199w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _04">
-                  <img loading="lazy" src="/images/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4-p-500.webp 500w, /images/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4.webp 640w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/services/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/services/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4-p-500.webp 500w, /images/services/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4.webp 640w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _05">
-                  <img loading="lazy" src="/images/6a2fd693ef8e25bcc8cb25ef_image%2057370%20%281%29.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/6a2fd693ef8e25bcc8cb25ef_image%2057370%20%281%29-p-500.webp 500w, /images/6a2fd693ef8e25bcc8cb25ef_image%2057370%20%281%29-p-800.webp 800w, /images/6a2fd693ef8e25bcc8cb25ef_image%2057370%20%281%29.webp 1020w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/services/6a2fd693ef8e25bcc8cb25ef_image%2057370%20%281%29.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/services/6a2fd693ef8e25bcc8cb25ef_image%2057370%20%281%29-p-500.webp 500w, /images/services/6a2fd693ef8e25bcc8cb25ef_image%2057370%20%281%29-p-800.webp 800w, /images/services/6a2fd693ef8e25bcc8cb25ef_image%2057370%20%281%29.webp 1020w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _06">
-                  <img loading="lazy" src="/images/6a2fd693f5522ea31fb56b52_image%2057374.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/6a2fd693f5522ea31fb56b52_image%2057374-p-500.webp 500w, /images/6a2fd693f5522ea31fb56b52_image%2057374-p-800.webp 800w, /images/6a2fd693f5522ea31fb56b52_image%2057374.webp 1032w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/services/6a2fd693f5522ea31fb56b52_image%2057374.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/services/6a2fd693f5522ea31fb56b52_image%2057374-p-500.webp 500w, /images/services/6a2fd693f5522ea31fb56b52_image%2057374-p-800.webp 800w, /images/services/6a2fd693f5522ea31fb56b52_image%2057374.webp 1032w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
               </div>
