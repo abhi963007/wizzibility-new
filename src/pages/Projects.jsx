@@ -81,7 +81,7 @@ export default function ProjectsPage() {
       category: 'Tab 2', // Weddings
       image: '6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp', 
       sizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px', 
-      srcset: '/images/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2-p-500.webp 500w, /images/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp 640w' 
+      srcset: '/images/projects/details/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2-p-500.webp 500w, /images/projects/details/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp 640w' 
     },
     { 
       id: 2, 
@@ -90,7 +90,7 @@ export default function ProjectsPage() {
       category: 'Tab 2', // Weddings
       image: '6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727.webp', 
       sizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px', 
-      srcset: '/images/6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727-p-500.webp 500w, /images/6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727.webp 640w' 
+      srcset: '/images/projects/details/6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727-p-500.webp 500w, /images/projects/details/6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727.webp 640w' 
     },
     { 
       id: 3, 
@@ -99,7 +99,7 @@ export default function ProjectsPage() {
       category: 'Tab 3', // Events
       image: '6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4.webp', 
       sizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px', 
-      srcset: '/images/6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4-p-500.webp 500w, /images/6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4.webp 640w' 
+      srcset: '/images/projects/details/6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4-p-500.webp 500w, /images/projects/details/6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4.webp 640w' 
     },
     { 
       id: 4, 
@@ -108,7 +108,7 @@ export default function ProjectsPage() {
       category: 'Tab 3', // Events
       image: '6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp', 
       sizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px', 
-      srcset: '/images/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2-p-500.webp 500w, /images/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp 640w' 
+      srcset: '/images/projects/details/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2-p-500.webp 500w, /images/projects/details/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp 640w' 
     },
     { 
       id: 5, 
@@ -117,7 +117,7 @@ export default function ProjectsPage() {
       category: 'Tab 4', // Product Photography
       image: '6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f.webp', 
       sizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px', 
-      srcset: '/images/6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f-p-500.webp 500w, /images/6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f.webp 640w' 
+      srcset: '/images/projects/details/6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f-p-500.webp 500w, /images/projects/details/6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f.webp 640w' 
     },
     { 
       id: 6, 
@@ -126,7 +126,7 @@ export default function ProjectsPage() {
       category: 'Tab 4', // Product Photography
       image: '6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp', 
       sizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px', 
-      srcset: '/images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w' 
+      srcset: '/images/projects/details/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/projects/details/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w' 
     }
   ];
 
@@ -139,7 +139,7 @@ export default function ProjectsPage() {
             <div key={project.id} role="listitem" className="w-dyn-item">
               <Link to={`/project/${project.slug}`} className="project-card w-inline-block">
                 <img 
-                  src={`/images/${project.image}`} 
+                  src={`/images/projects/details/${project.image}`} 
                   loading="lazy" 
                   alt="" 
                   sizes={project.sizes} 
@@ -205,10 +205,10 @@ export default function ProjectsPage() {
           </div>
         </section>
         <img 
-          src="/images/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522.webp" 
+          src="/images/projects/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522.webp" 
           loading="lazy" 
           sizes="(max-width: 928px) 100vw, 928px" 
-          srcSet="/images/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522-p-500.webp 500w, /images/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522-p-800.webp 800w, /images/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522.webp 928w" 
+          srcSet="/images/projects/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522-p-500.webp 500w, /images/projects/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522-p-800.webp 800w, /images/projects/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522.webp 928w" 
           alt="Person reaching out with hand, head blurred in long exposure effect, dark background." 
           className="service-hero-img" 
         />
@@ -412,27 +412,27 @@ export default function ProjectsPage() {
               <div className="cta-circle-large">
                 <div className="cta-circle-small"></div>
                 <div className="cta-card _01">
-                  <img loading="lazy" src="/images/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp" alt="Modern villa pool exterior" sizes="(max-width: 2528px) 100vw, 2528px" srcSet="/images/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-500.webp 500w, /images/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-800.webp 800w, /images/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1080.webp 1080w, /images/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1600.webp 1600w, /images/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-2000.webp 2000w, /images/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp 2528w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp" alt="Modern villa pool exterior" sizes="(max-width: 2528px) 100vw, 2528px" srcSet="/images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-500.webp 500w, /images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-800.webp 800w, /images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1080.webp 1080w, /images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1600.webp 1600w, /images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-2000.webp 2000w, /images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp 2528w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _02">
-                  <img loading="lazy" src="/images/6a3452aaac57c482ba42872c_3077e770cdd04ed4421b756812d0ca9c9b8933a7.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/6a3452aaac57c482ba42872c_3077e770cdd04ed4421b756812d0ca9c9b8933a7-p-500.webp 500w, /images/6a3452aaac57c482ba42872c_3077e770cdd04ed4421b756812d0ca9c9b8933a7.webp 640w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/projects/6a3452aaac57c482ba42872c_3077e770cdd04ed4421b756812d0ca9c9b8933a7.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/projects/6a3452aaac57c482ba42872c_3077e770cdd04ed4421b756812d0ca9c9b8933a7-p-500.webp 500w, /images/projects/6a3452aaac57c482ba42872c_3077e770cdd04ed4421b756812d0ca9c9b8933a7.webp 640w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _03">
-                  <img loading="lazy" src="/images/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-500.webp 500w, /images/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-800.webp 800w, /images/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-1080.webp 1080w, /images/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp 1199w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/projects/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/projects/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-500.webp 500w, /images/projects/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-800.webp 800w, /images/projects/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-1080.webp 1080w, /images/projects/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp 1199w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _04">
-                  <img loading="lazy" src="/images/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-500.webp 500w, /images/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-800.webp 800w, /images/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-1080.webp 1080w, /images/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward.webp 1200w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/projects/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/projects/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-500.webp 500w, /images/projects/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-800.webp 800w, /images/projects/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-1080.webp 1080w, /images/projects/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward.webp 1200w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _05">
-                  <img loading="lazy" src="/images/6a2fdf2885d25f647a818135_image%2057379.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/6a2fdf2885d25f647a818135_image%2057379-p-500.webp 500w, /images/6a2fdf2885d25f647a818135_image%2057379-p-800.webp 800w, /images/6a2fdf2885d25f647a818135_image%2057379-p-1080.webp 1080w, /images/6a2fdf2885d25f647a818135_image%2057379.webp 1356w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/projects/6a2fdf2885d25f647a818135_image%2057379.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/projects/6a2fdf2885d25f647a818135_image%2057379-p-500.webp 500w, /images/projects/6a2fdf2885d25f647a818135_image%2057379-p-800.webp 800w, /images/projects/6a2fdf2885d25f647a818135_image%2057379-p-1080.webp 1080w, /images/projects/6a2fdf2885d25f647a818135_image%2057379.webp 1356w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _06">
-                  <img loading="lazy" src="/images/6a2fd69290263b0be396f5c5_image%2057371%20%281%29.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/6a2fd69290263b0be396f5c5_image%2057371%20%281%29-p-500.webp 500w, /images/6a2fd69290263b0be396f5c5_image%2057371%20%281%29-p-800.webp 800w, /images/6a2fd69290263b0be396f5c5_image%2057371%20%281%29.webp 1024w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/projects/6a2fd69290263b0be396f5c5_image%2057371%20%281%29.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/projects/6a2fd69290263b0be396f5c5_image%2057371%20%281%29-p-500.webp 500w, /images/projects/6a2fd69290263b0be396f5c5_image%2057371%20%281%29-p-800.webp 800w, /images/projects/6a2fd69290263b0be396f5c5_image%2057371%20%281%29.webp 1024w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
               </div>

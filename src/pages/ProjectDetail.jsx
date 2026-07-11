@@ -21,7 +21,7 @@ export default function ProjectDetail() {
       "@type": "CreativeWork",
       "name": project.title,
       "description": project.overview,
-      "image": `https://wizzibility.com/images/${project.heroImage}`,
+      "image": `https://wizzibility.com/images/projects/details/${project.heroImage}`,
       "publisher": {
         "@type": "Organization",
         "name": "Wizzibility",
@@ -63,7 +63,7 @@ export default function ProjectDetail() {
     og: {
       type: 'article',
       url: `https://wizzibility.com/project/${slug}`,
-      image: `/images/${project.heroImage}`
+      image: `/images/projects/details/${project.heroImage}`
     }
   });
 
@@ -98,11 +98,11 @@ export default function ProjectDetail() {
           </div>
         </section>
         <img 
-          src={`/images/${project.heroImage}`} 
+          src={`/images/projects/details/${project.heroImage}`} 
           loading="lazy" 
           alt="" 
           sizes={project.heroImageSizes} 
-          srcSet={project.heroImageSrcset} 
+          srcSet={project.heroImageSrcset?.replaceAll('/images/', '/images/projects/details/')} 
           className="proeject-main-img" 
         />
         <div className="blend-color"></div>
@@ -119,11 +119,11 @@ export default function ProjectDetail() {
               {/* Overview Main Body Image */}
               <div className="project-hero-img-wrap">
                 <img 
-                  src={`/images/${project.bodyImage}`} 
+                  src={`/images/projects/details/${project.bodyImage}`} 
                   loading="lazy" 
                   alt="" 
                   sizes={project.bodyImageSizes} 
-                  srcSet={project.bodyImageSrcset} 
+                  srcSet={project.bodyImageSrcset?.replaceAll('/images/', '/images/projects/details/')} 
                   className="project-hero-img" 
                 />
                 <div data-wf--overlay-grid--variant="base" data-wf-component-id="cb7828ae-a9c6-5bd0-42f2-dab3822909f5" data-wf-variant-state="base" className="overlay-grid">
@@ -151,11 +151,11 @@ export default function ProjectDetail() {
               <div className="w-layout-grid project-multi-img-grid">
                 <div className="project-multi-img-wrap">
                   <img 
-                    src={`/images/${project.galleryImage1}`} 
+                    src={`/images/projects/details/${project.galleryImage1}`} 
                     loading="lazy" 
                     alt="" 
                     sizes="(max-width: 767px) 48vw, (max-width: 991px) 47vw, 461px" 
-                    srcSet={project.galleryImage1Srcset} 
+                    srcSet={project.galleryImage1Srcset?.replaceAll('/images/', '/images/projects/details/')} 
                     className="project-multi-img" 
                   />
                   <div className="blend-color"></div>
@@ -172,11 +172,11 @@ export default function ProjectDetail() {
                 </div>
                 <div className="project-multi-img-wrap">
                   <img 
-                    src={`/images/${project.galleryImage2}`} 
+                    src={`/images/projects/details/${project.galleryImage2}`} 
                     loading="lazy" 
                     alt="" 
                     sizes="(max-width: 767px) 48vw, (max-width: 991px) 47vw, 461px" 
-                    srcSet={project.galleryImage2Srcset} 
+                    srcSet={project.galleryImage2Srcset?.replaceAll('/images/', '/images/projects/details/')} 
                     className="project-multi-img" 
                   />
                   <div data-wf--overlay-grid--variant="base" data-wf-component-id="cb7828ae-a9c6-5bd0-42f2-dab3822909f5" data-wf-variant-state="base" className="overlay-grid">
@@ -211,11 +211,11 @@ export default function ProjectDetail() {
               <div className="project-img-block">
                 <div className="project-multi-img-wrap">
                   <img 
-                    src={`/images/${project.galleryImageMiddle}`} 
+                    src={`/images/projects/details/${project.galleryImageMiddle}`} 
                     loading="lazy" 
                     alt="" 
                     sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px" 
-                    srcSet={project.galleryImageMiddleSrcset} 
+                    srcSet={project.galleryImageMiddleSrcset?.replaceAll('/images/', '/images/projects/details/')} 
                     className="project-multi-img" 
                   />
                   <div className="blend-color"></div>
@@ -233,11 +233,11 @@ export default function ProjectDetail() {
                 <div className="w-layout-grid project-multi-img-grid _02">
                   <div className="project-multi-img-wrap">
                     <img 
-                      src={`/images/${project.galleryImage3}`} 
+                      src={`/images/projects/details/${project.galleryImage3}`} 
                       loading="lazy" 
                       alt="" 
                       sizes="(max-width: 767px) 48vw, (max-width: 991px) 47vw, 461px" 
-                      srcSet={project.galleryImage3Srcset} 
+                      srcSet={project.galleryImage3Srcset?.replaceAll('/images/', '/images/projects/details/')} 
                       className="project-multi-img" 
                     />
                     <div className="blend-color"></div>
@@ -254,11 +254,11 @@ export default function ProjectDetail() {
                   </div>
                   <div className="project-multi-img-wrap">
                     <img 
-                      src={`/images/${project.galleryImage4}`} 
+                      src={`/images/projects/details/${project.galleryImage4}`} 
                       loading="lazy" 
                       alt="" 
                       sizes="(max-width: 767px) 48vw, (max-width: 991px) 47vw, 461px" 
-                      srcSet={project.galleryImage4Srcset} 
+                      srcSet={project.galleryImage4Srcset?.replaceAll('/images/', '/images/projects/details/')} 
                       className="project-multi-img" 
                     />
                     <div className="blend-color"></div>
@@ -302,11 +302,11 @@ export default function ProjectDetail() {
                 </div>
                 <div className="solution-right">
                   <img 
-                    src={`/images/${project.solutionImage}`} 
+                    src={`/images/projects/details/${project.solutionImage}`} 
                     loading="lazy" 
                     alt="" 
                     sizes="(max-width: 767px) 48vw, (max-width: 991px) 47vw, 461px" 
-                    srcSet={project.solutionImageSrcset} 
+                    srcSet={project.solutionImageSrcset?.replaceAll('/images/', '/images/projects/details/')} 
                     className="project-multi-img-seven" 
                   />
                   <div data-wf--overlay-grid--variant="base" data-wf-component-id="cb7828ae-a9c6-5bd0-42f2-dab3822909f5" data-wf-variant-state="base" className="overlay-grid">
@@ -351,11 +351,11 @@ export default function ProjectDetail() {
                   <div key={relatedProject.slug} role="listitem" className="w-dyn-item">
                     <Link to={`/project/${relatedProject.slug}`} className="project-card w-inline-block">
                       <img 
-                        src={`/images/${relatedProject.heroImage}`} 
+                        src={`/images/projects/details/${relatedProject.heroImage}`} 
                         loading="lazy" 
                         alt="" 
                         sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px" 
-                        srcSet={relatedProject.heroImageSrcset} 
+                        srcSet={relatedProject.heroImageSrcset?.replaceAll('/images/', '/images/projects/details/')} 
                         className="project-card-img" 
                       />
                       <div className="project-arrow-wrap">
@@ -418,27 +418,27 @@ export default function ProjectDetail() {
               <div className="cta-circle-large">
                 <div className="cta-circle-small"></div>
                 <div className="cta-card _01">
-                  <img loading="lazy" src="/images/home/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp" alt="Modern villa pool exterior" sizes="(max-width: 2528px) 100vw, 2528px" srcSet="/images/home/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-500.webp 500w, /images/home/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-800.webp 800w, /images/home/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1080.webp 1080w, /images/home/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1600.webp 1600w, /images/home/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-2000.webp 2000w, /images/home/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp 2528w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp" alt="Modern villa pool exterior" sizes="(max-width: 2528px) 100vw, 2528px" srcSet="/images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-500.webp 500w, /images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-800.webp 800w, /images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1080.webp 1080w, /images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1600.webp 1600w, /images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-2000.webp 2000w, /images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp 2528w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _02">
-                  <img loading="lazy" src="/images/home/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/home/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-500.webp 500w, /images/home/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp 1199w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/projects/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/projects/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-500.webp 500w, /images/projects/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp 1199w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _03">
-                  <img loading="lazy" src="/images/home/6a3452a73f041d6e38e3c63a_9275859a8a5d77330830771699639a1c0e3123ff.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/home/6a3452a73f041d6e38e3c63a_9275859a8a5d77330830771699639a1c0e3123ff-p-500.webp 500w, /images/home/6a3452a73f041d6e38e3c63a_9275859a8a5d77330830771699639a1c0e3123ff.webp 640w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/projects/6a3452a73f041d6e38e3c63a_9275859a8a5d77330830771699639a1c0e3123ff.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/projects/6a3452a73f041d6e38e3c63a_9275859a8a5d77330830771699639a1c0e3123ff-p-500.webp 500w, /images/projects/6a3452a73f041d6e38e3c63a_9275859a8a5d77330830771699639a1c0e3123ff.webp 640w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _04">
-                  <img loading="lazy" src="/images/home/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/home/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-500.webp 500w, /images/home/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-800.webp 800w, /images/home/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-1080.webp 1080w, /images/home/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward.webp 1200w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/projects/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/projects/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-500.webp 500w, /images/projects/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-800.webp 800w, /images/projects/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-1080.webp 1080w, /images/projects/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward.webp 1200w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _05">
-                  <img loading="lazy" src="/images/home/6a32f97242ecfd2a31f27c73_e1d9a0b1de7bd9df1def9c845c2a857def6c8c26.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/home/6a32f97242ecfd2a31f27c73_e1d9a0b1de7bd9df1def9c845c2a857def6c8c26-p-500.webp 500w, /images/home/6a32f97242ecfd2a31f27c73_e1d9a0b1de7bd9df1def9c845c2a857def6c8c26.webp 640w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/projects/6a32f97242ecfd2a31f27c73_e1d9a0b1de7bd9df1def9c845c2a857def6c8c26.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/projects/6a32f97242ecfd2a31f27c73_e1d9a0b1de7bd9df1def9c845c2a857def6c8c26-p-500.webp 500w, /images/projects/6a32f97242ecfd2a31f27c73_e1d9a0b1de7bd9df1def9c845c2a857def6c8c26.webp 640w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _06">
-                  <img loading="lazy" src="/images/home/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/home/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4-p-500.webp 500w, /images/home/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4.webp 640w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/projects/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/projects/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4-p-500.webp 500w, /images/projects/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4.webp 640w" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
               </div>

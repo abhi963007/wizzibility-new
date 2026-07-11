@@ -31,7 +31,7 @@ export default function Projects() {
                 <div key={project.id} role="listitem" className="w-dyn-item">
                   <Link to={`/project/${project.slug}`} className="project-collection-wrapper w-inline-block">
                     <div className="project-image-wrapper">
-                      <img src={`/images/home/${project.image}`} loading="lazy" alt="" sizes="100vw" srcSet={`/images/home/${project.image.replace('.webp', '-p-500.webp')} 500w, /images/home/${project.image} 640w`} className="project-image" />
+                      <img src={`/images/projects/details/${project.image}`} loading="lazy" alt="" sizes="100vw" srcSet={`/images/projects/details/${project.image.replace('.webp', '-p-500.webp')} 500w, /images/projects/details/${project.image} 640w`} className="project-image" />
                       <div className="project-icon-wrapper">
                         <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 37 37" fill="none" className="project-icon">
                           <path d="M6.1539 16.9231V20H24.6154V23.0769H27.6924V20H30.7693V16.9231H27.6924V13.8462H24.6154V16.9231H6.1539ZM21.5385 10.7692H24.6154V13.8462H21.5385V10.7692ZM21.5385 10.7692H18.4616V7.69231H21.5385V10.7692ZM21.5385 26.1538H24.6154V23.0769H21.5385V26.1538ZM21.5385 26.1538H18.4616V29.2308H21.5385V26.1538Z" fill="currentColor" className="project-icon"></path>
