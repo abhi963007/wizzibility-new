@@ -7823,12 +7823,13 @@ li {
   border: 1px solid rgba(168, 85, 247, 0.15) !important;
   height: 28rem !important;
   position: relative !important;
-  transition: box-shadow 0.3s ease, transform 0.3s ease !important;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 .process-card-ref:hover {
-  box-shadow: 0 16px 48px rgba(109, 40, 217, 0.2) !important;
-  transform: translateY(-4px) !important;
+  transform: translateY(-3px) !important;
+  border-color: rgba(168, 85, 247, 0.4) !important;
+  box-shadow: 0 12px 38px rgba(109, 40, 217, 0.15) !important;
 }
 
 /* Image fills the top portion */
@@ -7845,11 +7846,6 @@ li {
   height: 100% !important;
   object-fit: cover !important;
   object-position: center top !important;
-  transition: transform 0.4s ease !important;
-}
-
-.process-card-ref:hover .process-img {
-  transform: scale(1.04) !important;
 }
 
 /* Content panel with wave shape */

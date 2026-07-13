@@ -3,6 +3,9 @@ import React from 'react';
 // SVG assets served from public/images/home/ (copied by vite.config.js on startup)
 const step1Svg = '/images/home/step-1.svg';
 const step2Svg = '/images/home/step-2.svg';
+const step3Svg = '/images/home/step-3.svg';
+const step4Svg = '/images/home/step-4.svg';
+const step5Svg = '/images/home/step-5.svg';
 const curveBg = '/curve.webp';
 
 
@@ -127,31 +130,11 @@ export default function Process() {
 
                     {/* Right Column: Circular Graphic */}
                     <div className="process-graphic-col">
-                      {step.id === 1 ? (
-                        <img
-                          src={step1Svg}
-                          alt=""
-                          className="process-circle-graphic"
-                        />
-                      ) : step.id === 2 ? (
-                        <img
-                          src={step2Svg}
-                          alt=""
-                          className="process-circle-graphic"
-                        />
-                      ) : (
-                        <div className="process-circle-graphic-fallback">
-                          <div className="outer-dashed-ring">
-                            <div className="dot top-right"></div>
-                            <div className="dot bottom-left"></div>
-                            <div className="inner-glow-ring">
-                              <div className="center-purple-circle">
-                                {step.icon}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      )}
+                      <img
+                        src={[step1Svg, step2Svg, step3Svg, step4Svg, step5Svg][step.id - 1]}
+                        alt={step.title}
+                        className="process-circle-graphic"
+                      />
                     </div>
                   </div>
                 </div>
@@ -189,31 +172,11 @@ export default function Process() {
 
                     {/* Right Column: Circular Graphic */}
                     <div className="process-graphic-col">
-                      {step.id === 1 ? (
-                        <img
-                          src={step1Svg}
-                          alt=""
-                          className="process-circle-graphic"
-                        />
-                      ) : step.id === 2 ? (
-                        <img
-                          src={step2Svg}
-                          alt=""
-                          className="process-circle-graphic"
-                        />
-                      ) : (
-                        <div className="process-circle-graphic-fallback">
-                          <div className="outer-dashed-ring">
-                            <div className="dot top-right"></div>
-                            <div className="dot bottom-left"></div>
-                            <div className="inner-glow-ring">
-                              <div className="center-purple-circle">
-                                {step.icon}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      )}
+                      <img
+                        src={[step1Svg, step2Svg, step3Svg, step4Svg, step5Svg][step.id - 1]}
+                        alt={step.title}
+                        className="process-circle-graphic"
+                      />
                     </div>
                   </div>
                 </div>
