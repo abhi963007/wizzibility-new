@@ -7823,13 +7823,12 @@ li {
   border: 1px solid rgba(168, 85, 247, 0.15) !important;
   height: 28rem !important;
   position: relative !important;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease !important;
 }
 
 .process-card-ref:hover {
-  transform: translateY(-3px) !important;
-  border-color: rgba(168, 85, 247, 0.4) !important;
-  box-shadow: 0 12px 38px rgba(109, 40, 217, 0.15) !important;
+  border-color: rgba(123, 47, 247, 0.6) !important;
+  box-shadow: 0 8px 36px rgba(123, 47, 247, 0.18) !important;
 }
 
 /* Image fills the top portion */
