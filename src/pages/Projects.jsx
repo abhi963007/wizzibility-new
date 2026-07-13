@@ -78,55 +78,43 @@ export default function ProjectsPage() {
       id: 1, 
       title: 'Social Media Campaigns', 
       slug: 'social-media-videos', 
-      category: 'Tab 2', // Weddings
-      image: '6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp', 
-      sizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px', 
-      srcset: '/images/projects/details/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2-p-500.webp 500w, /images/projects/details/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp 640w' 
+      category: 'Tab 2', 
+      image: 'Social Media.jpeg', 
     },
     { 
       id: 2, 
       title: 'Brand Identity Systems', 
       slug: 'wedding-stories', 
-      category: 'Tab 2', // Weddings
-      image: '6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727.webp', 
-      sizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px', 
-      srcset: '/images/projects/details/6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727-p-500.webp 500w, /images/projects/details/6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727.webp 640w' 
+      category: 'Tab 2', 
+      image: 'Brand Identity Systems.jpeg', 
     },
     { 
       id: 3, 
       title: 'Performance Marketing', 
       slug: 'brand-campaigns', 
-      category: 'Tab 3', // Events
-      image: '6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4.webp', 
-      sizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px', 
-      srcset: '/images/projects/details/6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4-p-500.webp 500w, /images/projects/details/6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4.webp 640w' 
+      category: 'Tab 3', 
+      image: 'Performance Marketing.jpeg', 
     },
     { 
       id: 4, 
       title: 'Product Design & UI/UX', 
       slug: 'product-shoots', 
-      category: 'Tab 3', // Events
-      image: '6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp', 
-      sizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px', 
-      srcset: '/images/projects/details/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2-p-500.webp 500w, /images/projects/details/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp 640w' 
+      category: 'Tab 3', 
+      image: 'Product Design.jpeg', 
     },
     { 
       id: 5, 
       title: 'Corporate Strategy & Audits', 
       slug: 'corporate-event-highlights', 
-      category: 'Tab 4', // Product Photography
-      image: '6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f.webp', 
-      sizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px', 
-      srcset: '/images/projects/details/6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f-p-500.webp 500w, /images/projects/details/6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f.webp 640w' 
+      category: 'Tab 4', 
+      image: '1.jpeg', 
     },
     { 
       id: 6, 
       title: 'Multimedia Content Creation', 
       slug: 'social-media-reel-series', 
-      category: 'Tab 4', // Product Photography
-      image: '6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp', 
-      sizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px', 
-      srcset: '/images/projects/details/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf-p-500.webp 500w, /images/projects/details/6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp 640w' 
+      category: 'Tab 4', 
+      image: '2.jpeg', 
     }
   ];
 
@@ -139,11 +127,9 @@ export default function ProjectsPage() {
             <div key={project.id} role="listitem" className="w-dyn-item">
               <Link to={`/project/${project.slug}`} className="project-card w-inline-block">
                 <img 
-                  src={`/images/projects/details/${project.image}`} 
+                  src={`/images/home/${project.image}`} 
                   loading="lazy" 
-                  alt="" 
-                  sizes={project.sizes} 
-                  srcSet={project.srcset} 
+                  alt={project.title} 
                   className="project-card-img" 
                 />
                 <div className="project-arrow-wrap">

@@ -2,15 +2,15 @@ import React from 'react';
 
 export default function Gallery() {
   const rawGalleryImages = [
-    'crative1.jpeg',
-    'creative 2.jpeg',
-    'creative3.jpeg',
-    'Visuals1.jpeg',
-    'Visuals2.jpeg',
-    'Why Team Up.jpeg',
-    'services1.jpeg',
-    'sevices2.jpeg',
-    'services3.jpeg',
+    '1.jpeg',
+    '2.jpeg',
+    '3.jpeg',
+    '4.jpeg',
+    '5.jpeg',
+    '6.jpeg',
+    '7.jpeg',
+    '8.jpeg',
+    '9.jpeg',
   ];
   const galleryImages = rawGalleryImages.map(img => `home/${img}`);
 

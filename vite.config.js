@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import fs from 'fs';
 import path from 'path';
 
-// Automatically copy assets from pics- to public/images/home (triggered update)
+// Automatically copy assets from pics- to public/images/home (gallery update)
 try {
   const srcDir = path.resolve(process.cwd(), 'pics-');
   const destDir = path.resolve(process.cwd(), 'public/images/home');
