@@ -18,7 +18,7 @@ export default function Team() {
             </div>
           </div>
         </div>
-        <div className="space-3-large"></div>
+        <div style={{ height: '1.5rem' }}></div>
         <div className="w-layout-grid team-grid">
           {team.map((member) => (
             <div key={member.id} className="team-card">
@@ -33,7 +33,8 @@ export default function Team() {
           ))}
         </div>
       </div>
-      <div className="space-10-small"></div>
+      <div style={{ height: '4rem' }}></div>
     </section>
   );
 }
+
