@@ -10,7 +10,7 @@ export default function Process() {
   ];
 
   return (
-    <section className="section bg">
+    <section className="section bg process-section">
       <div className="space-6-normal"></div>
       <div className="w-layout-blockcontainer container w-container">
         <div className="process-title-wrapper">

@@ -7934,3 +7934,12 @@ li {
 .email-address {
   --_color---primary-color: #a855f7 !important;
 }
+
+/* Working Process Section - White text styling */
+.process-section .section-heading.night {
+  color: var(--_color---white) !important;
+}
+
+.process-section .section-p {
+  color: var(--_color---white) !important;
+}
