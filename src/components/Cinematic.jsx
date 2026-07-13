@@ -25,9 +25,8 @@ export default function Cinematic() {
           <div className="space-3-large"></div>
           <div className="cinematic-video-wrapper">
             <div className="cinematic-video w-background-video w-background-video-atom">
-              <video ref={videoRef} autoPlay loop muted playsInline style={{ backgroundImage: 'url("https://cdn.prod.website-files.com/6a2ede0dd01527a201b478d4%2F6a36e2273df09853ce6be394_close-up-side-view-of-asian-male-using-a-camera-ta-2025-12-17-22-42-18-utc_poster.0000000.jpg")' }}>
-                <source src="/media/6a2ede0dd01527a201b478d4%2F6a36e2273df09853ce6be394_close-up-side-view-of-asian-male-using-a-camera-ta-2025-12-17-22-42-18-utc_mp4.mp4" type="video/mp4" />
-                <source src="/media/6a2ede0dd01527a201b478d4%2F6a36e2273df09853ce6be394_close-up-side-view-of-asian-male-using-a-camera-ta-2025-12-17-22-42-18-utc_webm.webm" type="video/webm" />
+              <video ref={videoRef} autoPlay loop muted playsInline>
+                <source src="/images/home/Designer_and_developer_working_s…_202607131331.mp4" type="video/mp4" />
               </video>
             </div>
             <div className="overlay-grid">
