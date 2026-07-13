@@ -7807,44 +7807,217 @@ li {
   color: #ffffff !important;
 }
 
-/* Working Process Cards - Premium UI/UX Design Overrides */
-.process-shape {
-  background-image: none !important; /* Remove old Webflow ellipse background */
-  background-color: rgba(255, 255, 255, 0.9) !important; /* Semi-transparent white card background */
-  backdrop-filter: blur(12px) !important; /* Premium glassmorphic blur */
-  -webkit-backdrop-filter: blur(12px) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.4) !important;
-  border-radius: 16px 16px 0 0 !important; /* Elegant rounded top corners */
-  padding: 1.5rem 1rem 1.25rem !important; /* Well-spaced interior padding */
+/* Working Process Cards - Reference Image Match */
+
+/* The outer .media card — full rounded card with white bg, no overflow on image */
+.process-card-ref {
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  background-color: #ffffff !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: stretch !important;
+  padding: 0 !important; /* Remove inner padding — image bleeds to edges */
+  border: 1px solid rgba(168, 85, 247, 0.18) !important; /* Subtle purple glow border */
+  height: 25.5rem !important;
+  position: relative !important;
+}
+
+/* Image fills the top half of the card */
+.process-card-ref .process-image-wrapper {
+  width: 100% !important;
+  height: 12.5rem !important;
+  overflow: hidden !important;
+  flex-shrink: 0 !important;
+  border-radius: 0 !important;
+}
+
+.process-card-ref .process-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* Content panel — absolute positioned at the bottom, overlays the image with a wave */
+.process-card-ref .process-shape {
+  position: absolute !important;
   inset: auto 0% 0% !important;
+  height: 16rem !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 0 !important;
+  background-color: transparent !important;
+  border-top: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
 }
 
-/* Purple Step Pill */
-.process-shape .process-card-pill {
-  background-color: #6d28d9 !important; /* Vibrant brand purple step pill */
-  color: #ffffff !important; /* High contrast white text */
+/* Inner layout container for the content */
+.process-shape-inner {
+  display: flex !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 3.2rem 1.2rem 1rem 1.2rem !important; /* Top padding is high to push content below the wave peak */
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  box-sizing: border-box !important;
+}
+
+/* Left Column: Text & Pill */
+.process-text-col {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  width: 61% !important;
+  gap: 0.3rem !important;
+}
+
+/* Purple Step Pill — left-aligned */
+.process-card-ref .process-card-pill {
+  background-color: #5b21b6 !important; /* Darker purple pill matching reference */
+  color: #ffffff !important;
   font-weight: 600 !important;
-  padding: 0.35rem 0.85rem !important;
-  font-size: 0.75rem !important;
-  border-radius: 9999px !important; /* Capsule shaped pill */
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding: 0.28rem 0.85rem !important;
+  font-size: 0.72rem !important;
+  border-radius: 9999px !important;
+  border: none !important;
+  align-self: flex-start !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  letter-spacing: 0.02em !important;
 }
 
-/* Step Title */
-.process-shape .black-phudu {
-  color: #0f172a !important; /* Slate 900 dark charcoal */
-  font-weight: 700 !important; /* Bold */
-  font-size: 1.25rem !important;
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.25rem !important;
+.process-card-ref .process-card-pill .font-1-extra-small {
+  color: #ffffff !important;
 }
 
-/* Step Description */
-.process-shape .paragraph-medium {
-  color: #334155 !important; /* Slate 700 readable charcoal */
-  font-size: 0.875rem !important;
-  line-height: 1.4 !important;
+/* Title & Description wrapper */
+.process-card-ref .process-content-wrapper {
+  align-items: flex-start !important;
+  max-width: 100% !important;
+  gap: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* ALL-CAPS bold title */
+.process-card-ref .process-card-title {
+  color: #0f172a !important;
+  font-family: var(--font-family--phudu) !important;
+  font-weight: 800 !important;
+  font-size: 1.5rem !important;
+  line-height: 1.1 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.02em !important;
+  margin-top: 0.4rem !important;
+  margin-bottom: 0 !important;
+  text-align: left !important;
+}
+
+/* Underline horizontal line under title */
+.process-card-title-line {
+  width: 2.2rem !important;
+  height: 3px !important;
+  background-color: #6d28d9 !important;
+  margin: 0.45rem 0 0.6rem 0 !important;
+  border-radius: 9999px !important;
+}
+
+/* Description text — left-aligned, muted */
+.process-card-ref .process-card-desc {
+  color: #475569 !important;
+  font-size: 0.82rem !important;
+  line-height: 1.45 !important;
+  opacity: 1 !important;
+  text-align: left !important;
   margin: 0 !important;
+  font-weight: 400 !important;
+}
+
+/* Right Column: Graphic */
+.process-graphic-col {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 36% !important;
+  height: 100% !important;
+  position: relative !important;
+}
+
+/* Image graphic element (SVG) */
+.process-circle-graphic {
+  width: 6.8rem !important;
+  height: 6.8rem !important;
+  object-fit: contain !important;
+  margin-top: -1.2rem !important; /* overlap slightly upwards */
+  filter: drop-shadow(0 8px 24px rgba(123, 47, 247, 0.25)) !important;
+}
+
+/* Fallback concentric rings matching SVG */
+.process-circle-graphic-fallback {
+  margin-top: -1.2rem !important;
+}
+
+.outer-dashed-ring {
+  width: 6.8rem !important;
+  height: 6.8rem !important;
+  border: 1px dashed rgba(168, 85, 247, 0.35) !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative !important;
+}
+
+.outer-dashed-ring .dot {
+  position: absolute !important;
+  width: 6px !important;
+  height: 6px !important;
+  background-color: #6d28d9 !important;
+  border-radius: 50% !important;
+}
+
+.outer-dashed-ring .dot.top-right {
+  top: 15% !important;
+  right: 15% !important;
+}
+
+.outer-dashed-ring .dot.bottom-left {
+  bottom: 15% !important;
+  left: 15% !important;
+}
+
+.inner-glow-ring {
+  width: 5.5rem !important;
+  height: 5.5rem !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(168, 85, 247, 0.15) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  box-shadow: inset 0 0 12px rgba(168, 85, 247, 0.1) !important;
+}
+
+.center-purple-circle {
+  width: 4.2rem !important;
+  height: 4.2rem !important;
+  border-radius: 50% !important;
+  background: linear-gradient(135deg, #7b2ff7 0%, #6d28d9 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 6px 18px rgba(123, 47, 247, 0.4) !important;
+}
+
+.center-purple-circle svg {
+  width: 1.4rem !important;
+  height: 1.4rem !important;
+  color: #ffffff !important;
 }
 
 /* Team Section - Premium Hover Animations */
