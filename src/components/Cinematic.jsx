@@ -13,7 +13,7 @@ export default function Cinematic() {
   }, []);
 
   return (
-    <section>
+    <section className="cinematic-section">
       <div className="space-10-small"></div>
       <div className="w-layout-blockcontainer container w-container">
         <div className="cinematic-wrapper">

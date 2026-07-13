@@ -7943,3 +7943,39 @@ li {
 .process-section .section-p {
   color: var(--_color---white) !important;
 }
+
+/* Cinematic Section - Purple Button & Hover Animations */
+.cinematic-section .button {
+  background: transparent !important;
+  border: none !important;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.cinematic-section .button-text-wrapper {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background-image: linear-gradient(#1a1a1a, #111111) !important;
+  transition: border-color 0.3s ease !important;
+}
+
+.cinematic-section .button:hover .button-text-wrapper {
+  border-color: #7b2ff7 !important;
+}
+
+.cinematic-section .button-icon-wrapper {
+  background-color: #7b2ff7 !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.cinematic-section .button:hover .button-icon-wrapper {
+  background-color: #a855f7 !important;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.5) !important;
+}
+
+.cinematic-section .button-icon {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+.cinematic-section .button:hover .button-icon {
+  transform: rotate(-45deg) translate(1px, -1px) !important;
+}
