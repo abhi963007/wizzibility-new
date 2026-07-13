@@ -7930,3 +7930,7 @@ li {
 .testimonials-section .reviewer-logo {
   color: #a855f7 !important;
 }
+
+.email-address {
+  --_color---primary-color: #a855f7 !important;
+}
