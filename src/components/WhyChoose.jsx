@@ -17,7 +17,10 @@ export default function WhyChoose() {
         <div className="choose-wrapper">
           <div className="section-header left">
             <div className="section-heading-wrap choose">
-              <h2 className="section-heading">Why Team Up With Us?</h2>
+              <h2 className="section-heading">
+                Why Team Up <br />
+                With Us?
+              </h2>
             </div>
           </div>
           <div className="space-3-large"></div>

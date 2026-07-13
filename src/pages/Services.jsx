@@ -244,7 +244,10 @@ export default function ServicesPage() {
           <div className="w-layout-blockcontainer container w-container">
             <div className="section-header">
               <div className="goal-heading-wrap">
-                <h2 className="section-heading">Built Around Your Goal, Not Just the Code</h2>
+                <h2 className="section-heading">
+                  Built Around Your Goal, <br />
+                  Not Just the Code
+                </h2>
               </div>
             </div>
             <div className="space-3-large"></div>
@@ -340,7 +343,7 @@ export default function ServicesPage() {
             </div>
             <div className="space-3-small"></div>
             <div className="button-wrapper">
-              <Link data-wf--primary-button--variant="base" data-wf-component-id="65aca0e1-f951-823d-959b-848e3a7ce565" data-wf-variant-state="base" to="/contact" className="button w-inline-block">
+              <Link data-wf--primary-button--variant="base" data-wf-component-id="65aca0e1-f951-823d-959b-848e3a7ce565" data-wf-variant-state="base" to="/contact" className="button quote-btn-purple w-inline-block">
                 <div className="button-text-wrapper">
                   <div className="button-text">Request a quote</div>
                 </div>
