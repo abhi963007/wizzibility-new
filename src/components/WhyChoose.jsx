@@ -23,7 +23,7 @@ export default function WhyChoose() {
           <div className="space-3-large"></div>
           <div className="w-layout-grid choose-grid">
             <div className="choose-image-wrapper">
-              <img src="/images/home/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp" loading="lazy" sizes="100vw" srcSet="/images/home/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-500.webp 500w, /images/home/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-800.webp 800w, /images/home/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1080.webp 1080w, /images/home/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1600.webp 1600w, /images/home/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-2000.webp 2000w, /images/home/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp 2528w" alt="Woman looking through a telescope with red light illuminating her face and hair against a blue sky." className="choose-image" />
+              <img src="/images/home/Why Team Up.jpeg" loading="lazy" alt="Creative team collaboration and vision" className="choose-image" />
               <div className="overlay-grid">
                 <div className="col"></div>
                 <div className="col"></div>

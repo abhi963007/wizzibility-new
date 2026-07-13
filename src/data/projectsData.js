@@ -301,3 +301,73 @@ export const projectsData = {
     relatedSlugs: ['social-media-videos', 'corporate-event-highlights']
   }
 };
+
+// Dynamic image overrides for pics- JPEGs integration
+const imageMapping = {
+  'social-media-videos': {
+    heroImage: 'crative1.jpeg',
+    bodyImage: 'Visuals2.jpeg',
+    galleryImage1: 'crative1.jpeg',
+    galleryImage2: 'Visuals2.jpeg',
+    galleryImageMiddle: 'crative1.jpeg',
+    galleryImage3: 'Visuals2.jpeg',
+    galleryImage4: 'crative1.jpeg',
+    solutionImage: 'Visuals2.jpeg'
+  },
+  'wedding-stories': {
+    heroImage: 'creative 2.jpeg',
+    bodyImage: 'services3.jpeg',
+    galleryImage1: 'creative 2.jpeg',
+    galleryImage2: 'services3.jpeg',
+    galleryImageMiddle: 'creative 2.jpeg',
+    galleryImage3: 'services3.jpeg',
+    galleryImage4: 'creative 2.jpeg',
+    solutionImage: 'services3.jpeg'
+  },
+  'brand-campaigns': {
+    heroImage: 'creative3.jpeg',
+    bodyImage: 'sevices2.jpeg',
+    galleryImage1: 'creative3.jpeg',
+    galleryImage2: 'sevices2.jpeg',
+    galleryImageMiddle: 'creative3.jpeg',
+    galleryImage3: 'sevices2.jpeg',
+    galleryImage4: 'creative3.jpeg',
+    solutionImage: 'sevices2.jpeg'
+  },
+  'product-shoots': {
+    heroImage: 'services1.jpeg',
+    bodyImage: 'Visuals1.jpeg',
+    galleryImage1: 'services1.jpeg',
+    galleryImage2: 'Visuals1.jpeg',
+    galleryImageMiddle: 'services1.jpeg',
+    galleryImage3: 'Visuals1.jpeg',
+    galleryImage4: 'services1.jpeg',
+    solutionImage: 'Visuals1.jpeg'
+  },
+  'corporate-event-highlights': {
+    heroImage: 'Visuals1.jpeg',
+    bodyImage: 'Why Team Up.jpeg',
+    galleryImage1: 'Visuals1.jpeg',
+    galleryImage2: 'Why Team Up.jpeg',
+    galleryImageMiddle: 'Visuals1.jpeg',
+    galleryImage3: 'Why Team Up.jpeg',
+    galleryImage4: 'Visuals1.jpeg',
+    solutionImage: 'Why Team Up.jpeg'
+  },
+  'social-media-reel-series': {
+    heroImage: 'Visuals2.jpeg',
+    bodyImage: 'crative1.jpeg',
+    galleryImage1: 'Visuals2.jpeg',
+    galleryImage2: 'crative1.jpeg',
+    galleryImageMiddle: 'Visuals2.jpeg',
+    galleryImage3: 'crative1.jpeg',
+    galleryImage4: 'Visuals2.jpeg',
+    solutionImage: 'crative1.jpeg'
+  }
+};
+
+for (const slug in imageMapping) {
+  if (projectsData[slug]) {
+    Object.assign(projectsData[slug], imageMapping[slug]);
+  }
+}
