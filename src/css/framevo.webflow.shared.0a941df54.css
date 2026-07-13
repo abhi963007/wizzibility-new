@@ -7870,8 +7870,8 @@ li {
   top: 0 !important;
   left: 0 !important;
   width: 100% !important;
-  height: 2.6rem !important;
-  transform: translateY(-100%) !important;
+  height: 2.7rem !important;
+  transform: translateY(-2.6rem) !important; /* 0.1rem overlap to eliminate sub-pixel gap line */
   pointer-events: none !important;
   z-index: 2 !important;
   display: block !important;

@@ -160,8 +160,14 @@ export default function Process() {
                   />
                 </div>
 
-                {/* Bottom Content Area - Wave background */}
+                {/* Bottom Content Area — Organic SVG Wave */}
                 <div className="process-shape">
+                  {/* S-shaped wave: starts high on left, sweeps down to right */}
+                  <div className="process-wave-top" aria-hidden="true">
+                    <svg viewBox="0 0 100 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0,40 L0,12 C20,1 80,38 100,20 L100,40 Z" fill="white"/>
+                    </svg>
+                  </div>
                   <div className="process-shape-inner">
                     {/* Left Column: Text Content */}
                     <div className="process-text-col">
