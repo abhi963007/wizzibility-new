@@ -7778,3 +7778,11 @@ li {
 .goal-img-wrap .blend-color {
   background-color: #4c1d95 !important; /* Deep rich purple color overlay matching the hero section */
 }
+
+/* Sticky CTA Cards - Circular styling override */
+.cta-card-img {
+  aspect-ratio: 1 / 1 !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+}
