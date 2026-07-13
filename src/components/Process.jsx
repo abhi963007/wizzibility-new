@@ -1,7 +1,11 @@
 import React from 'react';
-import step1Svg from './step-1.svg';
-import step2Svg from './step-2.svg';
-import curveBg from './curve.webp';
+
+// SVG assets served from public/images/home/ (copied by vite.config.js on startup)
+const step1Svg = '/images/home/step-1.svg';
+const step2Svg = '/images/home/step-2.svg';
+const curveBg = '/curve.webp';
+
+
 
 export default function Process() {
   const steps = [

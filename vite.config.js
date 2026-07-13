@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import fs from 'fs';
 import path from 'path';
 
-// Automatically copy assets from pics- to public/images/home (force reload   )
+// Automatically copy assets from pics- to public/images/home
 try {
   const srcDir = path.resolve(process.cwd(), 'pics-');
   const destDir = path.resolve(process.cwd(), 'public/images/home');
@@ -22,6 +22,21 @@ try {
   }
 } catch (err) {
   console.error('[Vite Config] Failed to copy pics-:', err);
+}
+
+// Copy SVGs and curve image to public/ for static serving
+try {
+  const svgSrc1 = path.resolve(process.cwd(), 'pics-/step-1.svg');
+  const svgSrc2 = path.resolve(process.cwd(), 'pics-/step-2.svg');
+  const curveSrc = path.resolve(process.cwd(), 'reference/saveweb2zip-com-framevo-webflow-io/images/6a314fb6b41bb0c8342c33aa_Ellipse 5.webp');
+  const publicDir = path.resolve(process.cwd(), 'public');
+
+  if (fs.existsSync(svgSrc1)) fs.copyFileSync(svgSrc1, path.join(publicDir, 'step-1.svg'));
+  if (fs.existsSync(svgSrc2)) fs.copyFileSync(svgSrc2, path.join(publicDir, 'step-2.svg'));
+  if (fs.existsSync(curveSrc)) fs.copyFileSync(curveSrc, path.join(publicDir, 'curve.webp'));
+  console.log('[Vite Config] Copied step SVGs and curve to public/');
+} catch (err) {
+  console.error('[Vite Config] Failed to copy SVGs to public/:', err);
 }
 
 
