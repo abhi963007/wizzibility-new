@@ -7922,3 +7922,11 @@ li {
 .testimonials-section .testimonial-sticky {
   top: 20vh !important;
 }
+
+.testimonials-section .color-circle {
+  background-color: #a855f7 !important;
+}
+
+.testimonials-section .reviewer-logo {
+  color: #a855f7 !important;
+}
