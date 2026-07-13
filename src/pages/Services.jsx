@@ -123,54 +123,42 @@ export default function ServicesPage() {
       id: 1, 
       title: 'Visual Communication', 
       slug: 'fashion-photography', 
-      image: '6a3514ef9e312a69a772c2c0_8971c848c2638f539d50757c3cbdcfa62708d35c.webp', 
-      sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 355px, 461px', 
-      srcset: '/images/services/details/6a3514ef9e312a69a772c2c0_8971c848c2638f539d50757c3cbdcfa62708d35c-p-500.webp 500w, /images/services/details/6a3514ef9e312a69a772c2c0_8971c848c2638f539d50757c3cbdcfa62708d35c.webp 640w', 
+      image: 'Service 1.jpeg', 
       maxWidthClass: 'max-width-17' 
     },
     { 
       id: 2, 
       title: 'Digital Marketing', 
       slug: 'voice-videography', 
-      image: '6a3514e18cb733c985d735eb_054f97113db54086c0f159ca559fbaea76ca59c9.webp', 
-      sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 355px, 461px', 
-      srcset: '/images/services/details/6a3514e18cb733c985d735eb_054f97113db54086c0f159ca559fbaea76ca59c9-p-500.webp 500w, /images/services/details/6a3514e18cb733c985d735eb_054f97113db54086c0f159ca559fbaea76ca59c9.webp 640w', 
+      image: 'Service 2.jpeg', 
       maxWidthClass: 'max-width-17' 
     },
     { 
       id: 3, 
       title: 'Branding', 
       slug: 'video-editing-photograhy', 
-      image: '6a3514d344d27a821e163d62_c39acb39f24eaae1617e34596fcd880c93c2af1a.webp', 
-      sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 355px, 461px', 
-      srcset: '/images/services/details/6a3514d344d27a821e163d62_c39acb39f24eaae1617e34596fcd880c93c2af1a-p-500.webp 500w, /images/services/details/6a3514d344d27a821e163d62_c39acb39f24eaae1617e34596fcd880c93c2af1a.webp 640w', 
+      image: 'Service 3.jpeg', 
       maxWidthClass: 'max-width-17' 
     },
     { 
       id: 4, 
       title: 'Multimedia Production', 
       slug: 'photo-editing-shoots', 
-      image: '6a3514be30f3515af988ac02_ff0be023f7b2ee24272fccf4bf1cd342a495c37a.webp', 
-      sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 47vw, 461px', 
-      srcset: '/images/services/details/6a3514be30f3515af988ac02_ff0be023f7b2ee24272fccf4bf1cd342a495c37a-p-500.webp 500w, /images/services/details/6a3514be30f3515af988ac02_ff0be023f7b2ee24272fccf4bf1cd342a495c37a-p-800.webp 800w, /images/services/details/6a3514be30f3515af988ac02_ff0be023f7b2ee24272fccf4bf1cd342a495c37a.webp 1200w', 
+      image: 'Service 4.jpeg', 
       maxWidthClass: 'max-width-17' 
     },
     { 
       id: 5, 
       title: 'Website Development', 
       slug: 'brand-product-shoots', 
-      image: '6a35149d36fe5f1750672b3a_82d7964840e34c402f065d2c6276cb5141f0a984.webp', 
-      sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 47vw, 461px', 
-      srcset: '/images/services/details/6a35149d36fe5f1750672b3a_82d7964840e34c402f065d2c6276cb5141f0a984-p-500.webp 500w, /images/services/details/6a35149d36fe5f1750672b3a_82d7964840e34c402f065d2c6276cb5141f0a984.webp 640w', 
+      image: 'Service 5.jpeg', 
       maxWidthClass: 'max-width-24' 
     },
     { 
       id: 6, 
       title: 'App Development', 
       slug: 'event-wedding-coverage', 
-      image: '6a3514888691881407d3c368_1ab4a0190b641c4b8019632a8f5eac8f25cf5100.webp', 
-      sizes: '(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 47vw, 461px', 
-      srcset: '/images/services/details/6a3514888691881407d3c368_1ab4a0190b641c4b8019632a8f5eac8f25cf5100-p-500.webp 500w, /images/services/details/6a3514888691881407d3c368_1ab4a0190b641c4b8019632a8f5eac8f25cf5100-p-800.webp 800w, /images/services/details/6a3514888691881407d3c368_1ab4a0190b641c4b8019632a8f5eac8f25cf5100.webp 960w', 
+      image: 'Service 6.jpeg', 
       maxWidthClass: 'max-width-24' 
     }
   ];
@@ -232,11 +220,9 @@ export default function ServicesPage() {
                             </div>
                             <div className="service-image-wrapper">
                               <img 
-                                src={`/images/services/details/${service.image}`} 
+                                src={`/images/home/${service.image}`} 
                                 loading="lazy" 
-                                alt="" 
-                                sizes={service.sizes} 
-                                srcSet={service.srcset} 
+                                alt={service.title} 
                                 className="service-image" 
                               />
                               <div className="project-arrow-wrap">
