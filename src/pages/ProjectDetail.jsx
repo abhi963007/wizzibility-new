@@ -69,7 +69,11 @@ export default function ProjectDetail() {
 
   // Scroll to the top of the page when the project slug changes
   React.useEffect(() => {
-    window.scrollTo(0, 0);
+    if (window.lenis) {
+      window.lenis.scrollTo(0, { immediate: true });
+    } else {
+      window.scrollTo(0, 0);
+    }
   }, [slug]);
 
   // Retrieve details for related projects
