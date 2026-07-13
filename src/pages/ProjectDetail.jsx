@@ -97,17 +97,14 @@ export default function ProjectDetail() {
             </div>
           </div>
         </section>
-        {(() => {
-          const isJpg = project.heroImage?.endsWith('.jpeg') || project.heroImage?.endsWith('.jpg');
-          return (
-            <img 
-              src={isJpg ? `/images/home/${project.heroImage}` : `/images/projects/details/${project.heroImage}`} 
-              loading="lazy" 
-              alt={project.title} 
-              className="proeject-main-img" 
-            />
-          );
-        })()}
+        <img 
+          src={`/images/projects/details/${project.heroImage}`} 
+          loading="lazy" 
+          alt="" 
+          sizes={project.heroImageSizes} 
+          srcSet={project.heroImageSrcset?.replaceAll('/images/', '/images/projects/details/')} 
+          className="proeject-main-img" 
+        />
         <div className="blend-color"></div>
         <div className="home-hero-overlay"></div>
       </div>
@@ -121,17 +118,14 @@ export default function ProjectDetail() {
               
               {/* Overview Main Body Image */}
               <div className="project-hero-img-wrap">
-                {(() => {
-                  const isJpg = project.bodyImage?.endsWith('.jpeg') || project.bodyImage?.endsWith('.jpg');
-                  return (
-                    <img 
-                      src={isJpg ? `/images/home/${project.bodyImage}` : `/images/projects/details/${project.bodyImage}`} 
-                      loading="lazy" 
-                      alt="" 
-                      className="project-hero-img" 
-                    />
-                  );
-                })()}
+                <img 
+                  src={`/images/projects/details/${project.bodyImage}`} 
+                  loading="lazy" 
+                  alt="" 
+                  sizes={project.bodyImageSizes} 
+                  srcSet={project.bodyImageSrcset?.replaceAll('/images/', '/images/projects/details/')} 
+                  className="project-hero-img" 
+                />
                 <div data-wf--overlay-grid--variant="base" data-wf-component-id="cb7828ae-a9c6-5bd0-42f2-dab3822909f5" data-wf-variant-state="base" className="overlay-grid">
                   <div className="col"></div>
                   <div className="col"></div>
@@ -156,17 +150,14 @@ export default function ProjectDetail() {
               {/* Gallery Image Grid Row 1 */}
               <div className="w-layout-grid project-multi-img-grid">
                 <div className="project-multi-img-wrap">
-                  {(() => {
-                    const isJpg = project.galleryImage1?.endsWith('.jpeg') || project.galleryImage1?.endsWith('.jpg');
-                    return (
-                      <img 
-                        src={isJpg ? `/images/home/${project.galleryImage1}` : `/images/projects/details/${project.galleryImage1}`} 
-                        loading="lazy" 
-                        alt="" 
-                        className="project-multi-img" 
-                      />
-                    );
-                  })()}
+                  <img 
+                    src={`/images/projects/details/${project.galleryImage1}`} 
+                    loading="lazy" 
+                    alt="" 
+                    sizes="(max-width: 767px) 48vw, (max-width: 991px) 47vw, 461px" 
+                    srcSet={project.galleryImage1Srcset?.replaceAll('/images/', '/images/projects/details/')} 
+                    className="project-multi-img" 
+                  />
                   <div className="blend-color"></div>
                   <div data-wf--overlay-grid--variant="base" data-wf-component-id="cb7828ae-a9c6-5bd0-42f2-dab3822909f5" data-wf-variant-state="base" className="overlay-grid">
                     <div className="col"></div>
@@ -180,17 +171,14 @@ export default function ProjectDetail() {
                   </div>
                 </div>
                 <div className="project-multi-img-wrap">
-                  {(() => {
-                    const isJpg = project.galleryImage2?.endsWith('.jpeg') || project.galleryImage2?.endsWith('.jpg');
-                    return (
-                      <img 
-                        src={isJpg ? `/images/home/${project.galleryImage2}` : `/images/projects/details/${project.galleryImage2}`} 
-                        loading="lazy" 
-                        alt="" 
-                        className="project-multi-img" 
-                      />
-                    );
-                  })()}
+                  <img 
+                    src={`/images/projects/details/${project.galleryImage2}`} 
+                    loading="lazy" 
+                    alt="" 
+                    sizes="(max-width: 767px) 48vw, (max-width: 991px) 47vw, 461px" 
+                    srcSet={project.galleryImage2Srcset?.replaceAll('/images/', '/images/projects/details/')} 
+                    className="project-multi-img" 
+                  />
                   <div data-wf--overlay-grid--variant="base" data-wf-component-id="cb7828ae-a9c6-5bd0-42f2-dab3822909f5" data-wf-variant-state="base" className="overlay-grid">
                     <div className="col"></div>
                     <div className="col"></div>
@@ -222,17 +210,14 @@ export default function ProjectDetail() {
               {/* Gallery Image Row 2 (Middle Wide & Grid Row 3) */}
               <div className="project-img-block">
                 <div className="project-multi-img-wrap">
-                  {(() => {
-                    const isJpg = project.galleryImageMiddle?.endsWith('.jpeg') || project.galleryImageMiddle?.endsWith('.jpg');
-                    return (
-                      <img 
-                        src={isJpg ? `/images/home/${project.galleryImageMiddle}` : `/images/projects/details/${project.galleryImageMiddle}`} 
-                        loading="lazy" 
-                        alt="" 
-                        className="project-multi-img" 
-                      />
-                    );
-                  })()}
+                  <img 
+                    src={`/images/projects/details/${project.galleryImageMiddle}`} 
+                    loading="lazy" 
+                    alt="" 
+                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px" 
+                    srcSet={project.galleryImageMiddleSrcset?.replaceAll('/images/', '/images/projects/details/')} 
+                    className="project-multi-img" 
+                  />
                   <div className="blend-color"></div>
                   <div data-wf--overlay-grid--variant="base" data-wf-component-id="cb7828ae-a9c6-5bd0-42f2-dab3822909f5" data-wf-variant-state="base" className="overlay-grid">
                     <div className="col"></div>
@@ -247,17 +232,14 @@ export default function ProjectDetail() {
                 </div>
                 <div className="w-layout-grid project-multi-img-grid _02">
                   <div className="project-multi-img-wrap">
-                    {(() => {
-                      const isJpg = project.galleryImage3?.endsWith('.jpeg') || project.galleryImage3?.endsWith('.jpg');
-                      return (
-                        <img 
-                          src={isJpg ? `/images/home/${project.galleryImage3}` : `/images/projects/details/${project.galleryImage3}`} 
-                          loading="lazy" 
-                          alt="" 
-                          className="project-multi-img" 
-                        />
-                      );
-                    })()}
+                    <img 
+                      src={`/images/projects/details/${project.galleryImage3}`} 
+                      loading="lazy" 
+                      alt="" 
+                      sizes="(max-width: 767px) 48vw, (max-width: 991px) 47vw, 461px" 
+                      srcSet={project.galleryImage3Srcset?.replaceAll('/images/', '/images/projects/details/')} 
+                      className="project-multi-img" 
+                    />
                     <div className="blend-color"></div>
                     <div data-wf--overlay-grid--variant="base" data-wf-component-id="cb7828ae-a9c6-5bd0-42f2-dab3822909f5" data-wf-variant-state="base" className="overlay-grid">
                       <div className="col"></div>
@@ -271,17 +253,14 @@ export default function ProjectDetail() {
                     </div>
                   </div>
                   <div className="project-multi-img-wrap">
-                    {(() => {
-                      const isJpg = project.galleryImage4?.endsWith('.jpeg') || project.galleryImage4?.endsWith('.jpg');
-                      return (
-                        <img 
-                          src={isJpg ? `/images/home/${project.galleryImage4}` : `/images/projects/details/${project.galleryImage4}`} 
-                          loading="lazy" 
-                          alt="" 
-                          className="project-multi-img" 
-                        />
-                      );
-                    })()}
+                    <img 
+                      src={`/images/projects/details/${project.galleryImage4}`} 
+                      loading="lazy" 
+                      alt="" 
+                      sizes="(max-width: 767px) 48vw, (max-width: 991px) 47vw, 461px" 
+                      srcSet={project.galleryImage4Srcset?.replaceAll('/images/', '/images/projects/details/')} 
+                      className="project-multi-img" 
+                    />
                     <div className="blend-color"></div>
                     <div data-wf--overlay-grid--variant="base" data-wf-component-id="cb7828ae-a9c6-5bd0-42f2-dab3822909f5" data-wf-variant-state="base" className="overlay-grid">
                       <div className="col"></div>
@@ -322,17 +301,14 @@ export default function ProjectDetail() {
                   </div>
                 </div>
                 <div className="solution-right">
-                  {(() => {
-                    const isJpg = project.solutionImage?.endsWith('.jpeg') || project.solutionImage?.endsWith('.jpg');
-                    return (
-                      <img 
-                        src={isJpg ? `/images/home/${project.solutionImage}` : `/images/projects/details/${project.solutionImage}`} 
-                        loading="lazy" 
-                        alt="" 
-                        className="project-multi-img-seven" 
-                      />
-                    );
-                  })()}
+                  <img 
+                    src={`/images/projects/details/${project.solutionImage}`} 
+                    loading="lazy" 
+                    alt="" 
+                    sizes="(max-width: 767px) 48vw, (max-width: 991px) 47vw, 461px" 
+                    srcSet={project.solutionImageSrcset?.replaceAll('/images/', '/images/projects/details/')} 
+                    className="project-multi-img-seven" 
+                  />
                   <div data-wf--overlay-grid--variant="base" data-wf-component-id="cb7828ae-a9c6-5bd0-42f2-dab3822909f5" data-wf-variant-state="base" className="overlay-grid">
                     <div className="col"></div>
                     <div className="col"></div>
@@ -371,17 +347,14 @@ export default function ProjectDetail() {
                 {relatedProjects.map((relatedProject) => (
                   <div key={relatedProject.slug} role="listitem" className="w-dyn-item">
                     <Link to={`/project/${relatedProject.slug}`} className="project-card w-inline-block">
-                      {(() => {
-                        const isJpg = relatedProject.heroImage?.endsWith('.jpeg') || relatedProject.heroImage?.endsWith('.jpg');
-                        return (
-                          <img 
-                            src={isJpg ? `/images/home/${relatedProject.heroImage}` : `/images/projects/details/${relatedProject.heroImage}`} 
-                            loading="lazy" 
-                            alt={relatedProject.title} 
-                            className="project-card-img" 
-                          />
-                        );
-                      })()}
+                      <img 
+                        src={`/images/projects/details/${relatedProject.heroImage}`} 
+                        loading="lazy" 
+                        alt="" 
+                        sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px" 
+                        srcSet={relatedProject.heroImageSrcset?.replaceAll('/images/', '/images/projects/details/')} 
+                        className="project-card-img" 
+                      />
                       <div className="project-arrow-wrap">
                         <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 30 23" fill="none" className="project-icon-2">
                           <path fillRule="evenodd" clipRule="evenodd" d="M28.2134 9.46264C24.1672 9.46264 20.4796 5.74946 20.4796 1.67184L20.4796 -8.94821e-07L17.1604 -7.49793e-07L17.1604 1.67184C17.1604 4.63769 18.4515 7.41963 20.4779 9.46264L4.13796e-07 9.46264L5.60013e-07 12.8063L20.4779 12.8063C18.4515 14.8493 17.1604 17.6313 17.1604 20.5971L17.1604 22.2689L20.4796 22.2689L20.4796 20.5971C20.4796 16.5195 24.1672 12.8063 28.2134 12.8063L29.873 12.8063L29.873 9.46264L28.2134 9.46264Z" fill="currentColor"></path>

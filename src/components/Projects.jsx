@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 export default function Projects() {
   const projects = [
-    { id: 1, title: 'Social Media Campaigns', date: '23 Sep, 2026', slug: 'social-media-videos', image: 'crative1.jpeg' },
-    { id: 2, title: 'Brand Identity Systems', date: '23 Sep, 2026', slug: 'wedding-stories', image: 'creative 2.jpeg' },
-    { id: 3, title: 'Performance Marketing', date: '23 Sep, 2026', slug: 'brand-campaigns', image: 'creative3.jpeg' },
-    { id: 4, title: 'Product Design & UI/UX', date: '23 Sep, 2026', slug: 'product-shoots', image: 'services1.jpeg' },
+    { id: 1, title: 'Social Media Campaigns', date: '23 Sep, 2026', slug: 'social-media-videos', image: 'Social Media.jpeg' },
+    { id: 2, title: 'Brand Identity Systems', date: '23 Sep, 2026', slug: 'wedding-stories', image: 'Brand Identity Systems.jpeg' },
+    { id: 3, title: 'Performance Marketing', date: '23 Sep, 2026', slug: 'brand-campaigns', image: 'Performance Marketing.jpeg' },
+    { id: 4, title: 'Product Design & UI/UX', date: '23 Sep, 2026', slug: 'product-shoots', image: 'Product Design.jpeg' },
   ];
 
   return (
