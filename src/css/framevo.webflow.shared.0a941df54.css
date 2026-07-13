@@ -7618,6 +7618,13 @@ li {
   transition: color 0.3s ease;
 }
 
+@media screen and (min-width: 992px) {
+  .project-section-purple .project-collection-heading {
+    font-size: 4.8vw !important;
+    white-space: nowrap;
+  }
+}
+
 .project-section-purple .project-collection-wrapper:hover .project-collection-heading {
   color: #a855f7 !important;
 }
@@ -7785,4 +7792,14 @@ li {
   border-radius: 50% !important;
   object-fit: cover !important;
   border: 2px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Global BG Section - Cinematic Purple Theme Override */
+.section.bg {
+  background-color: #4c1d95 !important; /* Deep rich purple background color */
+}
+
+/* Make CTA heading white for better contrast on purple background */
+.cta-heading {
+  color: #ffffff !important;
 }

@@ -391,27 +391,27 @@ export default function ProjectsPage() {
               <div className="cta-circle-large">
                 <div className="cta-circle-small"></div>
                 <div className="cta-card _01">
-                  <img loading="lazy" src="/images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp" alt="Modern villa pool exterior" sizes="(max-width: 2528px) 100vw, 2528px" srcSet="/images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-500.webp 500w, /images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-800.webp 800w, /images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1080.webp 1080w, /images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1600.webp 1600w, /images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-2000.webp 2000w, /images/projects/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp 2528w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/home/cards1.jpeg" alt="Creative preview 1" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _02">
-                  <img loading="lazy" src="/images/projects/6a3452aaac57c482ba42872c_3077e770cdd04ed4421b756812d0ca9c9b8933a7.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/projects/6a3452aaac57c482ba42872c_3077e770cdd04ed4421b756812d0ca9c9b8933a7-p-500.webp 500w, /images/projects/6a3452aaac57c482ba42872c_3077e770cdd04ed4421b756812d0ca9c9b8933a7.webp 640w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/home/cards2.jpeg" alt="Creative preview 2" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _03">
-                  <img loading="lazy" src="/images/projects/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/projects/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-500.webp 500w, /images/projects/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-800.webp 800w, /images/projects/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-1080.webp 1080w, /images/projects/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp 1199w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/home/cards3.jpeg" alt="Creative preview 3" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _04">
-                  <img loading="lazy" src="/images/projects/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/projects/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-500.webp 500w, /images/projects/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-800.webp 800w, /images/projects/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-1080.webp 1080w, /images/projects/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward.webp 1200w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/home/cards4.jpeg" alt="Creative preview 4" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _05">
-                  <img loading="lazy" src="/images/projects/6a2fdf2885d25f647a818135_image%2057379.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/projects/6a2fdf2885d25f647a818135_image%2057379-p-500.webp 500w, /images/projects/6a2fdf2885d25f647a818135_image%2057379-p-800.webp 800w, /images/projects/6a2fdf2885d25f647a818135_image%2057379-p-1080.webp 1080w, /images/projects/6a2fdf2885d25f647a818135_image%2057379.webp 1356w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/home/cards5.jpeg" alt="Creative preview 5" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _06">
-                  <img loading="lazy" src="/images/projects/6a2fd69290263b0be396f5c5_image%2057371%20%281%29.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/projects/6a2fd69290263b0be396f5c5_image%2057371%20%281%29-p-500.webp 500w, /images/projects/6a2fd69290263b0be396f5c5_image%2057371%20%281%29-p-800.webp 800w, /images/projects/6a2fd69290263b0be396f5c5_image%2057371%20%281%29.webp 1024w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/home/cards6.jpeg" alt="Creative preview 6" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
               </div>
