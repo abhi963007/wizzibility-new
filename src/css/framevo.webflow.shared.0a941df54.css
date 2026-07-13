@@ -7803,3 +7803,43 @@ li {
 .cta-heading {
   color: #ffffff !important;
 }
+
+/* Working Process Cards - Premium UI/UX Design Overrides */
+.process-shape {
+  background-image: none !important; /* Remove old Webflow ellipse background */
+  background-color: rgba(255, 255, 255, 0.9) !important; /* Semi-transparent white card background */
+  backdrop-filter: blur(12px) !important; /* Premium glassmorphic blur */
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 16px 16px 0 0 !important; /* Elegant rounded top corners */
+  padding: 1.5rem 1rem 1.25rem !important; /* Well-spaced interior padding */
+  inset: auto 0% 0% !important;
+}
+
+/* Purple Step Pill */
+.process-shape .process-card-pill {
+  background-color: #6d28d9 !important; /* Vibrant brand purple step pill */
+  color: #ffffff !important; /* High contrast white text */
+  font-weight: 600 !important;
+  padding: 0.35rem 0.85rem !important;
+  font-size: 0.75rem !important;
+  border-radius: 9999px !important; /* Capsule shaped pill */
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Step Title */
+.process-shape .black-phudu {
+  color: #0f172a !important; /* Slate 900 dark charcoal */
+  font-weight: 700 !important; /* Bold */
+  font-size: 1.25rem !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+/* Step Description */
+.process-shape .paragraph-medium {
+  color: #334155 !important; /* Slate 700 readable charcoal */
+  font-size: 0.875rem !important;
+  line-height: 1.4 !important;
+  margin: 0 !important;
+}
