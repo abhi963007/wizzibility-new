@@ -8,7 +8,7 @@ export default function Team() {
   ];
 
   return (
-    <section className="section">
+    <section className="section team-section">
       <div className="w-layout-blockcontainer container w-container">
         <div className="section-header">
           <div className="service-title-wrapper">
@@ -18,7 +18,6 @@ export default function Team() {
             </div>
           </div>
         </div>
-        <div style={{ height: '1.5rem' }}></div>
         <div className="w-layout-grid team-grid">
           {team.map((member) => (
             <div key={member.id} className="team-card">
@@ -33,7 +32,6 @@ export default function Team() {
           ))}
         </div>
       </div>
-      <div style={{ height: '4rem' }}></div>
     </section>
   );
 }

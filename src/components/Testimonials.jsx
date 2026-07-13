@@ -16,10 +16,10 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="section">
+    <section className="section testimonials-section">
       <div className="w-layout-blockcontainer container w-container">
         <div className="section-header">
-          <div className="section-heading-wrap pricing">
+          <div className="section-heading-wrap testimonials-heading-wrap">
             <h2 className="section-heading center-mobile">Stories From Our Clients</h2>
           </div>
         </div>

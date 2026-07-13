@@ -3991,12 +3991,14 @@ li {
 
 .testimonial-sticky-wrap {
     height: 250vh;
+    position: relative;
+    z-index: 0;
 }
 
 .testimonial-sticky {
     position: sticky;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 6rem;
+    z-index: 0;
 }
 
 .testimonial-item-wrap {
@@ -5448,7 +5450,6 @@ li {
 
     .testimonial-sticky {
         top: 4rem;
-        transform: none;
     }
 
     .testimonial-img {
@@ -6327,7 +6328,6 @@ li {
 
     .testimonial-sticky {
         top: 2rem;
-        transform: none;
     }
 
     .testimonial-item-wrap {
@@ -7870,4 +7870,46 @@ li {
 
 .team-card:hover .team-image {
   transform: scale(1.04);
+}
+
+/* Team Section - Remove large gap between heading and cards */
+.team-grid {
+  margin-top: 0 !important;
+}
+
+/* Team section - fully isolated block, no overflow into next sections */
+.team-section {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+  position: relative !important;
+  z-index: 1 !important;
+  overflow: visible !important;
+  isolation: isolate !important;
+}
+
+.team-section .section-header {
+  margin-bottom: 1.5rem !important;
+  padding-bottom: 0 !important;
+}
+
+.team-section .team-grid {
+  margin-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Testimonials Section - fully isolated, prevent overlap from Team section */
+.testimonials-section {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+  position: relative !important;
+  z-index: 2 !important;
+  background-color: var(--_color---onyx) !important;
+  overflow: visible !important;
+}
+
+.testimonials-heading-wrap {
+  max-width: 52.3125rem;
+  position: relative;
+  margin-bottom: 1.5rem !important;
+  z-index: 10 !important;
 }
