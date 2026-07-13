@@ -2,6 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
+  const handleLinkClick = () => {
+    if (window.lenis) {
+      window.lenis.scrollTo(0, { immediate: true });
+    } else {
+      window.scrollTo(0, 0);
+    }
+  };
+
   return (
     <footer data-wf-component-id="5a6382d2-e0d3-62a0-fb99-90b247678888" data-wf-variant-state="base" className="section" role="contentinfo">
       <div className="space-10-small"></div>
@@ -9,10 +17,10 @@ export default function Footer() {
         <div className="footer-wrapper">
           <div className="footer-nav-wrapper">
             <div className="footer-navigation">
-              <Link to="/" className="navlink">Home</Link>
-              <Link to="/service" className="navlink">Service</Link>
-              <Link to="/project" className="navlink">Project</Link>
-              <Link to="/contact" className="navlink">Contact</Link>
+              <Link to="/" className="navlink" onClick={handleLinkClick}>Home</Link>
+              <Link to="/service" className="navlink" onClick={handleLinkClick}>Service</Link>
+              <Link to="/project" className="navlink" onClick={handleLinkClick}>Project</Link>
+              <Link to="/contact" className="navlink" onClick={handleLinkClick}>Contact</Link>
             </div>
           </div>
           <div className="space-4-medium"></div>
