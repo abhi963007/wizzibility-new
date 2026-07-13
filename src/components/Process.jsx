@@ -6,7 +6,6 @@ const step2Svg = '/images/home/step-2.svg';
 const step3Svg = '/images/home/step-3.svg';
 const step4Svg = '/images/home/step-4.svg';
 const step5Svg = '/images/home/step-5.svg';
-const curveBg = '/curve.webp';
 
 
 
@@ -113,8 +112,14 @@ export default function Process() {
                   />
                 </div>
 
-                {/* Bottom Content Area - Wave background */}
-                <div className="process-shape" style={{ backgroundImage: `url(${curveBg})` }}>
+                {/* Bottom Content Area — Organic SVG Wave */}
+                <div className="process-shape">
+                  {/* S-shaped wave: starts high on left, sweeps down to right */}
+                  <div className="process-wave-top" aria-hidden="true">
+                    <svg viewBox="0 0 100 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0,40 L0,12 C20,1 80,38 100,20 L100,40 Z" fill="white"/>
+                    </svg>
+                  </div>
                   <div className="process-shape-inner">
                     {/* Left Column: Text Content */}
                     <div className="process-text-col">
@@ -156,7 +161,7 @@ export default function Process() {
                 </div>
 
                 {/* Bottom Content Area - Wave background */}
-                <div className="process-shape" style={{ backgroundImage: `url(${curveBg})` }}>
+                <div className="process-shape">
                   <div className="process-shape-inner">
                     {/* Left Column: Text Content */}
                     <div className="process-text-col">

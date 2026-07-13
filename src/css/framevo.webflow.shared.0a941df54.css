@@ -7848,19 +7848,39 @@ li {
 }
 
 /* Content panel with wave shape */
+/* Content panel — solid white, flat top (wave sits above via .process-wave-top) */
 .process-card-ref .process-shape {
   position: absolute !important;
   inset: auto 0% 0% !important;
-  height: 17rem !important;
-  background-size: 100% 100% !important;
-  background-repeat: no-repeat !important;
-  background-position: 50% 0 !important;
-  background-color: transparent !important;
+  height: 15rem !important;
+  background-image: none !important;
+  background-color: #ffffff !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
   border-top: none !important;
-  border-radius: 0 !important;
   padding: 0 !important;
   display: flex !important;
   flex-direction: column !important;
+  z-index: 2 !important;
+}
+
+/* SVG wave element — sits above the white panel, in the photo area */
+.process-wave-top {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 2.6rem !important;
+  transform: translateY(-100%) !important;
+  pointer-events: none !important;
+  z-index: 2 !important;
+  display: block !important;
+}
+
+.process-wave-top svg {
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
 }
 
 /* Inner flex row: text left, graphic right */
@@ -7868,7 +7888,7 @@ li {
   display: flex !important;
   width: 100% !important;
   height: 100% !important;
-  padding: 3.5rem 1.1rem 1.2rem 1.4rem !important;
+  padding: 1.4rem 1.1rem 1.2rem 1.4rem !important;
   justify-content: space-between !important;
   align-items: center !important;
   box-sizing: border-box !important;
