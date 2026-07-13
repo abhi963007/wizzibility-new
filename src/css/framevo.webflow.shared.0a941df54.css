@@ -7918,3 +7918,7 @@ li {
 .testimonials-section .testimonial-sticky-wrap {
   margin-top: 5rem !important;
 }
+
+.testimonials-section .testimonial-sticky {
+  top: 20vh !important;
+}
