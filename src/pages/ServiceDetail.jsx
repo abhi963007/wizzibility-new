@@ -87,7 +87,11 @@ export default function ServiceDetail() {
 
   // Scroll to top when slug changes
   React.useEffect(() => {
-    window.scrollTo(0, 0);
+    if (window.lenis) {
+      window.lenis.scrollTo(0, { immediate: true });
+    } else {
+      window.scrollTo(0, 0);
+    }
   }, [slug]);
 
   // Handle form change

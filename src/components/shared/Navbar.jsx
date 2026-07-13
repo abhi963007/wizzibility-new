@@ -46,6 +46,15 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const handleLinkClick = () => {
+    if (window.lenis) {
+      window.lenis.scrollTo(0, { immediate: true });
+    } else {
+      window.scrollTo(0, 0);
+    }
+    setIsOpen(false);
+  };
+
   return (
     <div className="navbar-fixed-container">
       {/* Ambient Backlight Behind Navbar */}
@@ -77,6 +86,7 @@ export default function Navbar() {
             to="/" 
             className="nav-brand-custom"
             aria-label="Wizzibility Logo"
+            onClick={handleLinkClick}
           >
             <div className="navbrand-logo-wrap">
               <img src={logoImg} alt="Wizzibility Logo" className="navbar-logo-img" />
@@ -85,10 +95,10 @@ export default function Navbar() {
 
           {/* Navigation Links Wrapper (collapses/reveals with swipe) */}
           <div className={`navbar-links-wrapper ${isOpen ? 'open' : ''}`}>
-            <NavLink to="/" className="nav-item-simple">HOME</NavLink>
-            <NavLink to="/service" className="nav-item-simple">SERVICES</NavLink>
-            <NavLink to="/project" className="nav-item-simple">PROJECTS</NavLink>
-            <NavLink to="/contact" className="nav-item-simple">CONTACT</NavLink>
+            <NavLink to="/" className="nav-item-simple" onClick={handleLinkClick}>HOME</NavLink>
+            <NavLink to="/service" className="nav-item-simple" onClick={handleLinkClick}>SERVICES</NavLink>
+            <NavLink to="/project" className="nav-item-simple" onClick={handleLinkClick}>PROJECTS</NavLink>
+            <NavLink to="/contact" className="nav-item-simple" onClick={handleLinkClick}>CONTACT</NavLink>
           </div>
 
           {/* Hamburger Menu Toggle Button */}
