@@ -7430,7 +7430,7 @@ li {
 
 .text-masked-line {
   display: inline-block;
-  transform: translateY(105%) scaleY(1.8);
+  transform: translateY(30px);
   opacity: 0;
 }
 
@@ -8299,4 +8299,40 @@ li {
   .about-main-headline {
     font-size: 9vw;
   }
+}
+
+/* Style all main section headings with Bebas Neue and scaleY(1.3) stretching to match Hero/About style */
+.section-heading {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-weight: 400 !important;
+  text-transform: uppercase !important;
+  transform: scaleY(1.3) !important;
+  transform-origin: left center !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.01em !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Style main page hero, detail, and cta headings with Bebas Neue and scaleY(1.3) stretching */
+.hero-heading,
+.single-innner-heading,
+.cta-heading {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-weight: 400 !important;
+  text-transform: uppercase !important;
+  transform: scaleY(1.3) !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.01em !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Transform origins based on alignment to keep centered items centered */
+.hero-heading,
+.single-innner-heading {
+  transform-origin: left center !important;
+}
+
+.hero-heading.center,
+.cta-heading {
+  transform-origin: center center !important;
 }

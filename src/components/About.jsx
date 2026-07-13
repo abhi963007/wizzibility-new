@@ -10,20 +10,25 @@ export default function About() {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    // 1. Cinematic Headline character mask reveal
-    gsap.to(".text-masked-line", {
-      y: "0%",
-      scaleY: 1.3,
-      opacity: 1,
-      duration: 1.2,
-      stagger: 0.15,
-      ease: "power4.out",
-      scrollTrigger: {
-        trigger: ".about-layout-container",
-        start: "top 80%",
-        toggleActions: "play none none reverse",
+    // 1. Cinematic Headline character mask reveal (smooth slide-up and fade-in matching Recent Projects)
+    gsap.fromTo(".text-masked-line",
+      {
+        y: 30,
+        opacity: 0
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1.0,
+        stagger: 0.15,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".about-layout-container",
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        }
       }
-    });
+    );
 
     // 2. Right column text entrance reveal
     gsap.fromTo(".about-col-right",
