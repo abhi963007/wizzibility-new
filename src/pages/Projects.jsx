@@ -207,17 +207,7 @@ export default function ProjectsPage() {
         <section className="section">
           <div className="space-10-small"></div>
           <div className="w-layout-blockcontainer container w-container">
-            <div className="section-header">
-              <div className="project-header">
-                <div className="proect-heading-wrap left">
-                  <h2 className="section-heading">Our Recent</h2>
-                </div>
-                <div className="proect-heading-wrap right">
-                  <h2 className="section-heading">Project</h2>
-                </div>
-              </div>
-            </div>
-            <div className="space-3-large"></div>
+
 
             <div className="proect-tab w-tabs">
               {/* Tab Selector Menu */}
