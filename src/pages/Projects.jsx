@@ -392,27 +392,27 @@ export default function ProjectsPage() {
                 <div className="cta-circle-small"></div>
                 <div className="cta-card _01">
                   <img loading="lazy" src="/images/home/cards1.jpeg" alt="Creative preview 1" className="cta-card-img" />
-                  <div className="cta-card-text">@2026</div>
+                  <div className="cta-card-text">@SocialMedia</div>
                 </div>
                 <div className="cta-card _02">
                   <img loading="lazy" src="/images/home/cards2.jpeg" alt="Creative preview 2" className="cta-card-img" />
-                  <div className="cta-card-text">@2026</div>
+                  <div className="cta-card-text">@Branding</div>
                 </div>
                 <div className="cta-card _03">
                   <img loading="lazy" src="/images/home/cards3.jpeg" alt="Creative preview 3" className="cta-card-img" />
-                  <div className="cta-card-text">@2026</div>
+                  <div className="cta-card-text">@Marketing</div>
                 </div>
                 <div className="cta-card _04">
                   <img loading="lazy" src="/images/home/cards4.jpeg" alt="Creative preview 4" className="cta-card-img" />
-                  <div className="cta-card-text">@2026</div>
+                  <div className="cta-card-text">@UI_UX</div>
                 </div>
                 <div className="cta-card _05">
                   <img loading="lazy" src="/images/home/cards5.jpeg" alt="Creative preview 5" className="cta-card-img" />
-                  <div className="cta-card-text">@2026</div>
+                  <div className="cta-card-text">@Strategy</div>
                 </div>
                 <div className="cta-card _06">
                   <img loading="lazy" src="/images/home/cards6.jpeg" alt="Creative preview 6" className="cta-card-img" />
-                  <div className="cta-card-text">@2026</div>
+                  <div className="cta-card-text">@Multimedia</div>
                 </div>
               </div>
             </div>

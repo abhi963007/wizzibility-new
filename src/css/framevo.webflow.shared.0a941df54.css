@@ -7979,3 +7979,9 @@ li {
 .cinematic-section .button:hover .button-icon {
   transform: rotate(-45deg) translate(1px, -1px) !important;
 }
+
+/* CTA Circular Cards - Center text handles */
+.cta-card-text {
+  text-align: center !important;
+  width: 100% !important;
+}
