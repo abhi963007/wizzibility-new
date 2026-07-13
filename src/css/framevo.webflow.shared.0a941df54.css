@@ -3995,7 +3995,8 @@ li {
 
 .testimonial-sticky {
     position: sticky;
-    top: 6rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .testimonial-item-wrap {
@@ -5447,6 +5448,7 @@ li {
 
     .testimonial-sticky {
         top: 4rem;
+        transform: none;
     }
 
     .testimonial-img {
@@ -6325,6 +6327,7 @@ li {
 
     .testimonial-sticky {
         top: 2rem;
+        transform: none;
     }
 
     .testimonial-item-wrap {
