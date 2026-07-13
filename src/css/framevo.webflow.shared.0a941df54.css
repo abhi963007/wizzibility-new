@@ -7617,7 +7617,7 @@ li {
 }
 
 .project-section-purple .project-collection-heading {
-  color: #f8f8f8 !important;
+  color: rgba(255, 255, 255, 0.45) !important;
   transition: color 0.3s ease;
 }
 
@@ -7629,7 +7629,7 @@ li {
 }
 
 .project-section-purple .project-collection-wrapper:hover .project-collection-heading {
-  color: #a855f7 !important;
+  color: #ffffff !important;
 }
 
 .project-section-purple .project-collection-date {
