@@ -255,11 +255,9 @@ export default function ServicesPage() {
             <div className="space-3-large"></div>
             <div className="goal-img-wrap">
               <img 
-                src="/images/services/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward.webp" 
+                src="/images/home/Goals Section.jpeg" 
                 loading="lazy" 
-                sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" 
-                srcSet="/images/services/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-500.webp 500w, /images/services/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward-p-800.webp 800w, /images/services/6a3400b56571238315a68eca_575d1a0db0939e2ff392584b41240239_Woman%20Illuminated%20in%20Red%20Gazing%20Upward.webp 1200w" 
-                alt="Man with closed eyes standing by a reflective surface with streaks of orange light." 
+                alt="Strategic goal alignment vision" 
                 className="goal-img" 
               />
               <div className="blend-color"></div>
@@ -297,11 +295,9 @@ export default function ServicesPage() {
               <div className="service-card-main">
                 <div className="img-wrap">
                   <img 
-                    src="/images/services/6a352e62b8470e3cc9cf96eb_7fb6cea04e5d423fc08d3f711c32c4ec7d981389.webp" 
+                    src="/images/home/Help Selection.jpeg" 
                     loading="lazy" 
-                    sizes="100vw" 
-                    srcSet="/images/services/6a352e62b8470e3cc9cf96eb_7fb6cea04e5d423fc08d3f711c32c4ec7d981389-p-500.webp 500w, /images/services/6a352e62b8470e3cc9cf96eb_7fb6cea04e5d423fc08d3f711c32c4ec7d981389.webp 640w" 
-                    alt="Blurred silhouette of a person playing electric guitar against warm orange background." 
+                    alt="Creative planning consultation" 
                     className="service-img" 
                   />
                   <div data-wf--overlay-grid--variant="base" data-wf-component-id="cb7828ae-a9c6-5bd0-42f2-dab3822909f5" data-wf-variant-state="base" className="overlay-grid">
@@ -324,11 +320,9 @@ export default function ServicesPage() {
               <div className="service-card-main">
                 <div className="img-wrap">
                   <img 
-                    src="/images/services/6a35522c90e837ded87b5407_b6c43112b03c41ba6324e0507eed810126d0a33a.webp" 
+                    src="/images/home/help section 2.jpeg" 
                     loading="lazy" 
-                    sizes="100vw" 
-                    srcSet="/images/services/6a35522c90e837ded87b5407_b6c43112b03c41ba6324e0507eed810126d0a33a-p-500.webp 500w, /images/services/6a35522c90e837ded87b5407_b6c43112b03c41ba6324e0507eed810126d0a33a.webp 640w" 
-                    alt="Silhouette of a person standing on a foggy street illuminated by bright red and yellow lights." 
+                    alt="Strategic project direction" 
                     className="service-img" 
                   />
                   <div data-wf--overlay-grid--variant="base" data-wf-component-id="cb7828ae-a9c6-5bd0-42f2-dab3822909f5" data-wf-variant-state="base" className="overlay-grid">
@@ -482,27 +476,27 @@ export default function ServicesPage() {
               <div className="cta-circle-large">
                 <div className="cta-circle-small"></div>
                 <div className="cta-card _01">
-                  <img loading="lazy" src="/images/services/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp" alt="Modern villa pool exterior" sizes="(max-width: 2528px) 100vw, 2528px" srcSet="/images/services/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-500.webp 500w, /images/services/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-800.webp 800w, /images/services/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1080.webp 1080w, /images/services/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-1600.webp 1600w, /images/services/6a2fdb77859e335168fa06d4_image%2057387%20%281%29-p-2000.webp 2000w, /images/services/6a2fdb77859e335168fa06d4_image%2057387%20%281%29.webp 2528w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/home/cards1.jpeg" alt="Creative portfolio preview 1" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _02">
-                  <img loading="lazy" src="/images/services/6a3452a7e8b89d5850831283_e99b98690dd0e97f74d7db5b770bb989e634ab7c.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/services/6a3452a7e8b89d5850831283_e99b98690dd0e97f74d7db5b770bb989e634ab7c-p-500.webp 500w, /images/services/6a3452a7e8b89d5850831283_e99b98690dd0e97f74d7db5b770bb989e634ab7c.webp 640w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/home/cards2.jpeg" alt="Creative portfolio preview 2" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _03">
-                  <img loading="lazy" src="/images/services/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/services/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-500.webp 500w, /images/services/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-800.webp 800w, /images/services/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-1080.webp 1080w, /images/services/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp 1199w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/home/cards3.jpeg" alt="Creative portfolio preview 3" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _04">
-                  <img loading="lazy" src="/images/services/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/services/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4-p-500.webp 500w, /images/services/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4.webp 640w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/home/cards4.jpeg" alt="Creative portfolio preview 4" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _05">
-                  <img loading="lazy" src="/images/services/6a2fd693ef8e25bcc8cb25ef_image%2057370%20%281%29.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/services/6a2fd693ef8e25bcc8cb25ef_image%2057370%20%281%29-p-500.webp 500w, /images/services/6a2fd693ef8e25bcc8cb25ef_image%2057370%20%281%29-p-800.webp 800w, /images/services/6a2fd693ef8e25bcc8cb25ef_image%2057370%20%281%29.webp 1020w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/home/cards5.jpeg" alt="Creative portfolio preview 5" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
                 <div className="cta-card _06">
-                  <img loading="lazy" src="/images/services/6a2fd693f5522ea31fb56b52_image%2057374.webp" alt="Modern villa pool exterior" sizes="(max-width: 904px) 100vw, 904px" srcSet="/images/services/6a2fd693f5522ea31fb56b52_image%2057374-p-500.webp 500w, /images/services/6a2fd693f5522ea31fb56b52_image%2057374-p-800.webp 800w, /images/services/6a2fd693f5522ea31fb56b52_image%2057374.webp 1032w" className="cta-card-img" />
+                  <img loading="lazy" src="/images/home/cards6.jpeg" alt="Creative portfolio preview 6" className="cta-card-img" />
                   <div className="cta-card-text">@2026</div>
                 </div>
               </div>

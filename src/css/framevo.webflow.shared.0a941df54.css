@@ -7773,3 +7773,8 @@ li {
           transparent 77%,
           #050505 96%) !important;
 }
+
+/* Goal Section - Purple Blend Overlay */
+.goal-img-wrap .blend-color {
+  background-color: #4c1d95 !important; /* Deep rich purple color overlay matching the hero section */
+}
