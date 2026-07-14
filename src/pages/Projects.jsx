@@ -185,14 +185,17 @@ export default function ProjectsPage() {
             </div>
           </div>
         </section>
-        <img 
-          src="/images/projects/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522.webp" 
-          loading="lazy" 
-          sizes="(max-width: 928px) 100vw, 928px" 
-          srcSet="/images/projects/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522-p-500.webp 500w, /images/projects/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522-p-800.webp 800w, /images/projects/6a351d924340b50bc73bcd7b_69342287855f89e7feb91320036ed549e5f65522.webp 928w" 
-          alt="Person reaching out with hand, head blurred in long exposure effect, dark background." 
-          className="service-hero-img" 
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="service-hero-img"
+          style={{ transform: 'none' }}
+        >
+          <source src="/video/projects.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="blend-color"></div>
         <div className="home-hero-overlay"></div>
       </div>

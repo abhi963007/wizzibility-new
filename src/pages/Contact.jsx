@@ -116,14 +116,17 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <img 
-          src="/images/contact/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp" 
-          loading="lazy" 
-          sizes="(max-width: 1199px) 100vw, 1199px" 
-          srcSet="/images/contact/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-500.webp 500w, /images/contact/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient-p-800.webp 800w, /images/contact/6a34034a534a177bb2c50b74_Contemplative%20Profile%20in%20Color%20Gradient.webp 1199w" 
-          alt="Side profile of a person wearing sunglasses with a colorful blue and orange gradient background." 
-          className="contact-hero-img" 
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="contact-hero-img"
+          style={{ transform: 'none' }}
+        >
+          <source src="/video/contact.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="blend-color"></div>
         <div className="contact-hero-overlay"></div>
         <div className="space-10-small"></div>
