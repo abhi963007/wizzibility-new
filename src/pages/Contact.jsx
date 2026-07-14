@@ -103,7 +103,7 @@ export default function Contact() {
         <Navbar />
         <div className="space-10-small"></div>
         <div className="w-layout-blockcontainer container w-container">
-          <div className="contact-hero">
+          <div className="contact-hero" style={{ paddingTop: 'clamp(5rem, 15vw, 15rem)' }}>
             <div className="contact-hero-header">
               <div className="hero-title-wrapper">
                 <h1 className="hero-heading">Contact Us</h1>
