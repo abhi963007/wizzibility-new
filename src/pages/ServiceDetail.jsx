@@ -15,6 +15,14 @@ const allServicesList = [
   { slug: 'event-wedding-coverage', title: 'App Development', image: '6a3514888691881407d3c368_1ab4a0190b641c4b8019632a8f5eac8f25cf5100.webp' }
 ];
 
+// Mapping of service slugs to background videos
+const serviceVideos = {
+  'fashion-photography': '/video/visual.mp4',
+  'voice-videography': '/video/digital.mp4',
+  'video-editing-photograhy': '/video/brand.mp4',
+  'photo-editing-shoots': '/video/multimedia.mp4',
+};
+
 export default function ServiceDetail() {
   const { slug } = useParams();
   const service = servicesData[slug];
@@ -94,6 +102,127 @@ export default function ServiceDetail() {
     }
   }, [slug]);
 
+  // Coordinated entrance animations for Hero text
+  React.useEffect(() => {
+    let attempts = 0;
+    let headingSplit = null;
+    let paragraphSplit = null;
+    
+    const initAnimation = () => {
+      const gsap = window.gsap;
+      const SplitText = window.SplitText;
+      
+      // Fallback if GSAP is not loaded
+      if (!gsap) {
+        attempts++;
+        if (attempts > 15) {
+          const elements = document.querySelectorAll('.single-innner-heading-span, .hero-p');
+          elements.forEach(el => {
+            el.style.opacity = '1';
+            el.style.transform = 'none';
+          });
+          return;
+        }
+        setTimeout(initAnimation, 100);
+        return;
+      }
+      
+      // Clean up previous animations if any
+      gsap.killTweensOf('.single-innner-heading-span, .hero-p, .anim-char, .anim-line');
+      
+      try {
+        if (SplitText) {
+          // Clear any existing split HTML to prevent duplicates
+          gsap.set('.single-innner-heading-span', { clearProps: "all" });
+          gsap.set('.hero-p', { clearProps: "all" });
+
+          headingSplit = new SplitText('.single-innner-heading-span', { 
+            type: 'chars',
+            charsClass: 'anim-char'
+          });
+
+          paragraphSplit = new SplitText('.hero-p', {
+            type: 'lines',
+            linesClass: 'anim-line'
+          });
+        }
+      } catch (err) {
+        console.warn('SplitText initialization error:', err);
+      }
+      
+      const timeline = gsap.timeline({
+        defaults: { ease: 'power3.out' }
+      });
+      
+      // 1. Paragraph (overviewText1) line-by-line slide/fade up (starts at 0)
+      if (paragraphSplit && paragraphSplit.lines && paragraphSplit.lines.length > 0) {
+        timeline.fromTo(paragraphSplit.lines,
+          { yPercent: 100, opacity: 0 },
+          {
+            yPercent: 0,
+            opacity: 1,
+            duration: 0.6,
+            stagger: { amount: 0.2 },
+            ease: 'power2.out',
+            onComplete: () => {
+              try {
+                paragraphSplit.revert();
+              } catch (e) {}
+            }
+          },
+          0
+        );
+      } else {
+        timeline.fromTo('.hero-p',
+          { y: 20, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.6, ease: 'power2.out' },
+          0
+        );
+      }
+      
+      // 2. Heading Stagger (SplitText character slide/fade up) (starts at 0.46)
+      if (headingSplit && headingSplit.chars && headingSplit.chars.length > 0) {
+        timeline.fromTo(headingSplit.chars,
+          { yPercent: 100, opacity: 0 },
+          {
+            yPercent: 0,
+            opacity: 1,
+            duration: 0.6,
+            stagger: { amount: 0.7 },
+            ease: 'power3.out',
+            onComplete: () => {
+              try {
+                headingSplit.revert();
+              } catch (e) {}
+            }
+          },
+          0.46
+        );
+      } else {
+        timeline.fromTo('.single-innner-heading-span',
+          { y: 25, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.6, ease: 'power3.out' },
+          0.46
+        );
+      }
+    };
+    
+    const timer = setTimeout(initAnimation, 100);
+    return () => {
+      clearTimeout(timer);
+      if (headingSplit) {
+        try {
+          headingSplit.revert();
+        } catch (e) {}
+      }
+      if (paragraphSplit) {
+        try {
+          paragraphSplit.revert();
+        } catch (e) {}
+      }
+    };
+  }, [slug]);
+
   // Handle form change
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -131,21 +260,39 @@ export default function ServiceDetail() {
           <div className="w-layout-blockcontainer container w-container">
             <div className="hero-wrapper">
               <div className="hero-left">
-                <p className="hero-p">{service.overviewText1}</p>
+                <p className="hero-p" style={{ opacity: 0 }}>{service.overviewText1}</p>
               </div>
               <div className="hero-title-wrapper">
-                <h1 className="single-innner-heading">{service.title}</h1>
+                <h1 className="single-innner-heading">
+                  <span className="single-innner-heading-span" style={{ display: 'inline-block', opacity: 0 }}>
+                    {service.title}
+                  </span>
+                </h1>
               </div>
             </div>
           </div>
         </section>
-        <img
-          src={`/images/services/details/${service.heroImage}`}
-          loading="lazy"
-          alt={service.title}
-          sizes="100vw"
-          className="services-img"
-        />
+        {serviceVideos[slug] ? (
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="services-img"
+            style={{ transform: 'none' }}
+          >
+            <source src={serviceVideos[slug]} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        ) : (
+          <img
+            src={`/images/services/details/${service.heroImage}`}
+            loading="lazy"
+            alt={service.title}
+            sizes="100vw"
+            className="services-img"
+          />
+        )}
         <div className="blend-color"></div>
         <div className="home-hero-overlay"></div>
       </div>
