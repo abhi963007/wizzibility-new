@@ -21,6 +21,7 @@ const serviceVideos = {
   'voice-videography': '/video/digital.mp4',
   'video-editing-photograhy': '/video/brand.mp4',
   'photo-editing-shoots': '/video/multimedia.mp4',
+  'brand-product-shoots': '/video/web.mp4',
 };
 
 export default function ServiceDetail() {
