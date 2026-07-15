@@ -122,35 +122,35 @@ export default function ServicesPage() {
     { 
       id: 1, 
       title: 'Visual Communication', 
-      slug: 'fashion-photography', 
+      slug: 'visual-communication', 
       image: 'Service 1.jpeg', 
       maxWidthClass: 'max-width-17' 
     },
     { 
       id: 2, 
       title: 'Digital Marketing', 
-      slug: 'voice-videography', 
+      slug: 'digital-marketing', 
       image: 'Service 2.jpeg', 
       maxWidthClass: 'max-width-17' 
     },
     { 
       id: 3, 
       title: 'Branding', 
-      slug: 'video-editing-photograhy', 
+      slug: 'branding', 
       image: 'Service 3.jpeg', 
       maxWidthClass: 'max-width-17' 
     },
     { 
       id: 4, 
       title: 'Multimedia Production', 
-      slug: 'photo-editing-shoots', 
+      slug: 'multimedia-production', 
       image: 'Service 4.jpeg', 
       maxWidthClass: 'max-width-17' 
     },
     { 
       id: 5, 
       title: 'Website Development', 
-      slug: 'brand-product-shoots', 
+      slug: 'website-development', 
       image: 'Service 5.jpeg', 
       maxWidthClass: 'max-width-24' 
     },

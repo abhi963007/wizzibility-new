@@ -1,5 +1,5 @@
 export const servicesData = {
-  'fashion-photography': {
+  'visual-communication': {
     title: 'Visual Communication',
     heroImage: '6a3514ef9e312a69a772c2c0_8971c848c2638f539d50757c3cbdcfa62708d35c.webp',
     overviewTitle: 'Strategic Visual Design That Captures Attention',
@@ -25,7 +25,7 @@ export const servicesData = {
       '6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4.webp'
     ]
   },
-  'voice-videography': {
+  'digital-marketing': {
     title: 'Digital Marketing',
     heroImage: '6a3514e18cb733c985d735eb_054f97113db54086c0f159ca559fbaea76ca59c9.webp',
     overviewTitle: 'Data-Driven Campaigns to Grow Your Online Presence',
@@ -51,7 +51,7 @@ export const servicesData = {
       '6a2fd69290263b0be396f5c5_image%2057371%20%281%29.webp'
     ]
   },
-  'video-editing-photograhy': {
+  'branding': {
     title: 'Branding',
     heroImage: '6a3514d344d27a821e163d62_c39acb39f24eaae1617e34596fcd880c93c2af1a.webp',
     overviewTitle: 'Building Cohesive Identities with Vision and Precision',
@@ -77,7 +77,7 @@ export const servicesData = {
       '6a2fd692e6d38fcb2570642c_image%2057376.webp'
     ]
   },
-  'photo-editing-shoots': {
+  'multimedia-production': {
     title: 'Multimedia Production',
     heroImage: '6a3514be30f3515af988ac02_ff0be023f7b2ee24272fccf4bf1cd342a495c37a.webp',
     overviewTitle: 'Cinematic Storytelling Through Audio, Video & Images',
@@ -103,7 +103,7 @@ export const servicesData = {
       '6a2fd69280be1041c486ea15_image%2057373%20%283%29.webp'
     ]
   },
-  'brand-product-shoots': {
+  'website-development': {
     title: 'Website Development',
     heroImage: '6a35149d36fe5f1750672b3a_82d7964840e34c402f065d2c6276cb5141f0a984.webp',
     overviewTitle: 'Fast, Custom Web Engineering Built for AI & Humans',

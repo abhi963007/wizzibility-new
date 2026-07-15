@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 export default function Services() {
   const services = [
-    { id: 1, title: 'Visual Communication', slug: 'fashion-photography', image: 'services1.jpeg' },
-    { id: 2, title: 'Digital Marketing', slug: 'voice-videography', image: 'sevices2.jpeg' },
-    { id: 3, title: 'Branding', slug: 'video-editing-photograhy', image: 'services3.jpeg' },
+    { id: 1, title: 'Visual Communication', slug: 'visual-communication', image: 'services1.jpeg' },
+    { id: 2, title: 'Digital Marketing', slug: 'digital-marketing', image: 'sevices2.jpeg' },
+    { id: 3, title: 'Branding', slug: 'branding', image: 'services3.jpeg' },
   ];
 
   return (
