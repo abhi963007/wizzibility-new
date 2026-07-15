@@ -157,7 +157,7 @@ export default function ServicesPage() {
     { 
       id: 6, 
       title: 'App Development', 
-      slug: 'event-wedding-coverage', 
+      slug: 'app-development', 
       image: 'Service 6.jpeg', 
       maxWidthClass: 'max-width-24' 
     }

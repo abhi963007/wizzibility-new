@@ -129,7 +129,7 @@ export const servicesData = {
       '6a2fd6923e5daf11466f37d8_image%2057372.webp'
     ]
   },
-  'event-wedding-coverage': {
+  'app-development': {
     title: 'App Development',
     heroImage: '6a3514888691881407d3c368_1ab4a0190b641c4b8019632a8f5eac8f25cf5100.webp',
     overviewTitle: 'Custom Mobile & Web Applications Built to Scale',
