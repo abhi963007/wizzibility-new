@@ -193,7 +193,7 @@ export default function ProjectsPage() {
           className="service-hero-img"
           style={{ transform: 'none' }}
         >
-          <source src="/video/projects.mp4" type="video/mp4" />
+          <source src="/video/Animate_blue_background_streaks_202607141221.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="blend-color"></div>
