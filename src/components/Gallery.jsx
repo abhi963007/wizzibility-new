@@ -1,19 +1,7 @@
 import React from 'react';
 
 export default function Gallery() {
-  const originalImages = [
-    'home/1.jpeg',
-    'home/2.jpeg',
-    'home/3.jpeg',
-    'home/4.jpeg',
-    'home/5.jpeg',
-    'home/6.jpeg',
-    'home/7.jpeg',
-    'home/8.jpeg',
-    'home/9.jpeg',
-  ];
-  
-  const posterImages = [
+  const galleryImages = [
     'home-posters/1X1 New1.png',
     'home-posters/Artboard 1.png',
     'home-posters/ChatGPT Image Jul 16, 2026, 05_29_50 PM.png',
@@ -32,8 +20,6 @@ export default function Gallery() {
     'home-posters/the cascades neopolis 5.png',
   ];
 
-  const galleryImages = [...originalImages, ...posterImages];
-
   return (
     <section className="section gallery-section-purple" id="gallery">
       <div className="w-layout-blockcontainer container w-container">
@@ -47,14 +33,14 @@ export default function Gallery() {
           <div className="gallray-image-wrapper">
             <div className="gallery-marque">
               <div className="gallary-image-block bottom-to-top">
-                {galleryImages.slice(0, 5).map((img, i) => (
+                {galleryImages.slice(0, 3).map((img, i) => (
                   <div key={i} className="gallary-image-wrapper">
                     <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 1}`} className="gallary-image" />
                   </div>
                 ))}
               </div>
               <div className="gallary-image-block bottom-to-top">
-                {galleryImages.slice(0, 5).map((img, i) => (
+                {galleryImages.slice(0, 3).map((img, i) => (
                   <div key={i} className="gallary-image-wrapper">
                     <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 1}`} className="gallary-image" />
                   </div>
@@ -63,64 +49,64 @@ export default function Gallery() {
             </div>
             <div className="gallery-marque">
               <div className="gallary-image-block top-to-bottom">
-                {galleryImages.slice(5, 10).map((img, i) => (
+                {galleryImages.slice(3, 6).map((img, i) => (
                   <div key={i} className="gallary-image-wrapper">
-                    <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 6}`} className="gallary-image" />
+                    <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 4}`} className="gallary-image" />
                   </div>
                 ))}
               </div>
               <div className="gallary-image-block top-to-bottom">
-                {galleryImages.slice(5, 10).map((img, i) => (
+                {galleryImages.slice(3, 6).map((img, i) => (
                   <div key={i} className="gallary-image-wrapper">
-                    <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 6}`} className="gallary-image" />
+                    <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 4}`} className="gallary-image" />
                   </div>
                 ))}
               </div>
             </div>
             <div className="gallery-marque">
               <div className="gallary-image-block bottom-to-top">
-                {galleryImages.slice(10, 15).map((img, i) => (
+                {galleryImages.slice(6, 10).map((img, i) => (
                   <div key={i} className="gallary-image-wrapper">
-                    <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 11}`} className="gallary-image" />
+                    <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 7}`} className="gallary-image" />
                   </div>
                 ))}
               </div>
               <div className="gallary-image-block bottom-to-top">
-                {galleryImages.slice(10, 15).map((img, i) => (
+                {galleryImages.slice(6, 10).map((img, i) => (
                   <div key={i} className="gallary-image-wrapper">
-                    <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 11}`} className="gallary-image" />
+                    <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 7}`} className="gallary-image" />
                   </div>
                 ))}
               </div>
             </div>
             <div className="gallery-marque hide-mobile-l">
               <div className="gallary-image-block top-to-bottom">
-                {galleryImages.slice(15, 20).map((img, i) => (
+                {galleryImages.slice(10, 13).map((img, i) => (
                   <div key={i} className="gallary-image-wrapper">
-                    <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 16}`} className="gallary-image" />
+                    <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 11}`} className="gallary-image" />
                   </div>
                 ))}
               </div>
               <div className="gallary-image-block top-to-bottom">
-                {galleryImages.slice(15, 20).map((img, i) => (
+                {galleryImages.slice(10, 13).map((img, i) => (
                   <div key={i} className="gallary-image-wrapper">
-                    <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 16}`} className="gallary-image" />
+                    <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 11}`} className="gallary-image" />
                   </div>
                 ))}
               </div>
             </div>
             <div className="gallery-marque hide-mobile">
               <div className="gallary-image-block bottom-to-top">
-                {galleryImages.slice(20, 25).map((img, i) => (
+                {galleryImages.slice(13, 16).map((img, i) => (
                   <div key={i} className="gallary-image-wrapper">
-                    <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 21}`} className="gallary-image" />
+                    <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 14}`} className="gallary-image" />
                   </div>
                 ))}
               </div>
               <div className="gallary-image-block bottom-to-top">
-                {galleryImages.slice(20, 25).map((img, i) => (
+                {galleryImages.slice(13, 16).map((img, i) => (
                   <div key={i} className="gallary-image-wrapper">
-                    <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 21}`} className="gallary-image" />
+                    <img src={`/images/${img}`} loading="lazy" alt={`Gallery ${i + 14}`} className="gallary-image" />
                   </div>
                 ))}
               </div>
