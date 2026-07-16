@@ -6,6 +6,11 @@ import { projectsData } from '../data/projectsData';
 
 import useMeta from '../hooks/useMeta';
 
+// Mapping of project slugs to background videos
+const projectVideos = {
+  'social-media-videos': '/video/social.mp4',
+};
+
 export default function ProjectDetail() {
   const { slug } = useParams();
   const project = projectsData[slug];
@@ -21,7 +26,7 @@ export default function ProjectDetail() {
       "@type": "CreativeWork",
       "name": project.title,
       "description": project.overview,
-      "image": `https://wizzibility.com/images/projects/details/${project.heroImage}`,
+      "image": project.heroImage.startsWith('/') ? `https://wizzibility.com${project.heroImage}` : `https://wizzibility.com/images/projects/details/${project.heroImage}`,
       "publisher": {
         "@type": "Organization",
         "name": "Wizzibility",
@@ -63,7 +68,7 @@ export default function ProjectDetail() {
     og: {
       type: 'article',
       url: `https://wizzibility.com/project/${slug}`,
-      image: `/images/projects/details/${project.heroImage}`
+      image: project.heroImage.startsWith('/') ? project.heroImage : `/images/projects/details/${project.heroImage}`
     }
   });
 
@@ -101,14 +106,29 @@ export default function ProjectDetail() {
             </div>
           </div>
         </section>
-        <img 
-          src={`/images/projects/details/${project.heroImage}`} 
-          loading="lazy" 
-          alt="" 
-          sizes={project.heroImageSizes} 
-          srcSet={project.heroImageSrcset?.replaceAll('/images/', '/images/projects/details/')} 
-          className="proeject-main-img" 
-        />
+        {projectVideos[slug] ? (
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="proeject-main-img"
+            style={{ transform: 'none' }}
+            poster={project.heroImage.startsWith('/') ? project.heroImage : `/images/projects/details/${project.heroImage}`}
+          >
+            <source src={projectVideos[slug]} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        ) : (
+          <img 
+            src={project.heroImage.startsWith('/') ? project.heroImage : `/images/projects/details/${project.heroImage}`} 
+            loading="lazy" 
+            alt="" 
+            sizes={project.heroImageSizes} 
+            srcSet={project.heroImage.startsWith('/') ? project.heroImageSrcset : project.heroImageSrcset?.replaceAll('/images/', '/images/projects/details/')} 
+            className="proeject-main-img" 
+          />
+        )}
         <div className="blend-color"></div>
         <div className="home-hero-overlay"></div>
       </div>

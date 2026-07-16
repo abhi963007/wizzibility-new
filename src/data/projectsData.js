@@ -1,9 +1,9 @@
 export const projectsData = {
   'social-media-videos': {
     title: 'Social Media Campaigns',
-    heroImage: '6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp',
+    heroImage: '/images/social.png',
     heroImageSizes: '100vw',
-    heroImageSrcset: '/images/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2-p-500.webp 500w, /images/6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp 640w',
+    heroImageSrcset: '/images/social.png 1920w',
     
     bodyImage: '6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp',
     bodyImageSizes: '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px',
