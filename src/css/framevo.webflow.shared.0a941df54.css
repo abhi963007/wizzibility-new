@@ -3266,12 +3266,14 @@ li {
 }
 
 .gallary-image-wrapper {
+    width: 100%;
     max-width: 15.9375rem;
 }
 
 .gallary-image {
     width: var(--_spacing---container-weight--full);
-    height: var(--_spacing---container-weight--full);
+    height: auto;
+    aspect-ratio: 3 / 4;
     object-fit: cover;
 }
 
