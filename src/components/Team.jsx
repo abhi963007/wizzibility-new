@@ -10,12 +10,9 @@ export default function Team() {
   return (
     <section className="section team-section">
       <div className="w-layout-blockcontainer container w-container">
-        <div className="section-header">
-          <div className="service-title-wrapper">
-            <h2 className="section-heading">Expertise</h2>
-            <div className="service-header-right">
-              <h2 className="section-heading">teams</h2>
-            </div>
+        <div className="section-header" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+          <div style={{ width: '100%', textAlign: 'center' }}>
+            <h2 className="section-heading" style={{ textAlign: 'center', whiteSpace: 'nowrap' }}>Expertise Teams</h2>
           </div>
         </div>
         <div className="w-layout-grid team-grid">
