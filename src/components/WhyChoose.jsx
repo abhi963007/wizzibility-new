@@ -15,15 +15,12 @@ export default function WhyChoose() {
       <div className="space-6-normal"></div>
       <div className="w-layout-blockcontainer container w-container">
         <div className="choose-wrapper">
-          <div className="section-header left">
-            <div className="section-heading-wrap choose">
-              <h2 className="section-heading">
-                Why Team Up <br />
-                With Us?
-              </h2>
+          <div className="section-header">
+            <div className="section-heading-wrap choose text-center">
+              <h2 className="section-heading text-center">Why Team Up With Us?</h2>
             </div>
           </div>
-          <div className="space-3-large"></div>
+          <div className="space-3-small"></div>
           <div className="w-layout-grid choose-grid">
             <div className="choose-image-wrapper">
               <img src="/images/home/Why Team Up.jpeg" loading="lazy" alt="Creative team collaboration and vision" className="choose-image" />
