@@ -3167,8 +3167,11 @@ li {
 }
 
 .section-heading-wrap.cinematic {
-    max-width: 54.875rem;
+    max-width: none;
+    width: 100%;
     position: relative;
+    text-align: center;
+    display: block;
 }
 
 .section-heading-wrap.pricing {
