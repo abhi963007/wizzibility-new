@@ -9,6 +9,7 @@ import useMeta from '../hooks/useMeta';
 // Mapping of project slugs to background videos
 const projectVideos = {
   'social-media-videos': '/video/social.mp4',
+  'wedding-stories': '/video/brand-identity.mp4',
 };
 
 export default function ProjectDetail() {

@@ -2873,7 +2873,7 @@ li {
     transform-style: preserve-3d;
     position: absolute;
     inset: 0%;
-    transform: translate3d(6%, 0, 0) rotateY(-180deg) !important;
+    transform: translate3d(-6%, 0, 0) rotateY(-180deg) !important;
 }
 
 .space-6-normal {
