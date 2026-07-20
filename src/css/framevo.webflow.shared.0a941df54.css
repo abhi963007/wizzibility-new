@@ -4861,6 +4861,17 @@ li {
     display: grid;
 }
 
+/* ── Sticky card-stack layout ── */
+.project-stack-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.project-stack-item {
+    width: 100%;
+}
+
 .project-card {
     width: var(--_spacing---container-weight--full);
     justify-content: center;
@@ -4868,6 +4879,9 @@ li {
     display: flex;
     position: relative;
     overflow: hidden;
+    border-radius: 8px;
+    will-change: transform, opacity;
+    transform-origin: center top;
 }
 
 .project-card-img {
@@ -4875,6 +4889,12 @@ li {
     object-fit: cover;
     height: 39.6875rem;
 }
+
+/* Override Webflow's overflow:hidden so position:sticky works inside tabs */
+.project-tab-content.w-tab-content {
+    overflow: visible;
+}
+
 
 .project-info-wrap {
     padding-right: var(--_spacing---space-3-medium);

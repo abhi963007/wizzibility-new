@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/shared/Navbar';
 import Footer from '../components/shared/Footer';
@@ -73,6 +73,75 @@ export default function ProjectsPage() {
   });
   const [activeTab, setActiveTab] = useState('Tab 1');
 
+  // GSAP sticky-stack animation: each card shrinks/fades as the next one slides over it
+  useEffect(() => {
+    let killTriggers = [];
+
+    const applyStackAnimations = () => {
+      const gsap = window.gsap;
+      const ScrollTrigger = window.ScrollTrigger;
+      if (!gsap || !ScrollTrigger) return;
+
+      const cards = document.querySelectorAll('.project-card');
+      if (!cards.length) return;
+
+      // Kill any existing triggers first
+      killTriggers.forEach(t => t.kill());
+      killTriggers = [];
+
+      cards.forEach((card, i) => {
+        // Each card sticks at top with a small increasing offset so titles peek
+        const stickyTop = 80 + i * 20;
+        card.style.position = 'sticky';
+        card.style.top = `${stickyTop}px`;
+        card.style.zIndex = i + 1;
+
+        // All cards except the last one: scale down + fade as the NEXT card covers them
+        if (i < cards.length - 1) {
+          const nextCard = cards[i + 1];
+          const st = ScrollTrigger.create({
+            trigger: nextCard,
+            start: 'top 90%',
+            end: 'top 10%',
+            scrub: true,
+            onUpdate: (self) => {
+              const p = self.progress;
+              // Scale from 1 → 0.92, opacity from 1 → 0.4
+              gsap.set(card, {
+                scale: 1 - 0.08 * p,
+                opacity: 1 - 0.6 * p,
+                transformOrigin: 'center top',
+              });
+            },
+          });
+          killTriggers.push(st);
+        }
+      });
+
+      ScrollTrigger.refresh();
+    };
+
+    // Wait for GSAP + ScrollTrigger to be available (loaded by Webflow scripts)
+    const wait = setInterval(() => {
+      if (window.gsap && window.ScrollTrigger) {
+        clearInterval(wait);
+        setTimeout(applyStackAnimations, 200);
+      }
+    }, 100);
+
+    return () => {
+      clearInterval(wait);
+      killTriggers.forEach(t => t.kill());
+      // Reset inline styles on cards
+      document.querySelectorAll('.project-card').forEach((card) => {
+        card.style.position = '';
+        card.style.top = '';
+        card.style.zIndex = '';
+        if (window.gsap) window.gsap.set(card, { scale: 1, opacity: 1, clearProps: 'all' });
+      });
+    };
+  }, [activeTab]);
+
   const projects = [
     { 
       id: 1, 
@@ -122,9 +191,9 @@ export default function ProjectsPage() {
   const renderProjectGrid = (filteredProjects) => {
     return (
       <div className="w-dyn-list">
-        <div role="list" className="project-collection-list w-dyn-items">
+        <div role="list" className="project-stack-list w-dyn-items">
           {filteredProjects.map((project) => (
-            <div key={project.id} role="listitem" className="w-dyn-item">
+            <div key={project.id} role="listitem" className="w-dyn-item project-stack-item">
               <Link to={`/project/${project.slug}`} className="project-card w-inline-block">
                 <img 
                   src={`/images/home/${project.image}`} 
