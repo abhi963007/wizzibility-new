@@ -10,6 +10,7 @@ import useMeta from '../hooks/useMeta';
 const projectVideos = {
   'social-media-videos': '/video/social.mp4',
   'wedding-stories': '/video/brand-identity.mp4',
+  'brand-campaigns': '/video/performce-marketing.mp4',
 };
 
 export default function ProjectDetail() {
