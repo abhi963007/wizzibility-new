@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 export default function Process() {
-  const steps = [
+  const baseSteps = [
     {
       id: 1,
       title: 'DISCOVERY & AUDIT',
@@ -62,28 +62,36 @@ export default function Process() {
     },
   ];
 
+  // Duplicate steps array to guarantee seamless infinite coverflow streaming with zero gaps on right or left
+  const steps = [
+    ...baseSteps,
+    ...baseSteps.map((s) => ({ ...s, id: s.id + 100 })),
+    ...baseSteps.map((s) => ({ ...s, id: s.id + 200 })),
+  ];
+
   const cssStyles = `
     .process-coverflow-swiper {
       width: 100%;
+      max-width: 100%;
       padding-top: 25px;
-      padding-bottom: 60px !important;
+      padding-bottom: 55px !important;
     }
     
     .process-coverflow-swiper .swiper-slide {
       background-position: center;
       background-size: cover;
-      width: 330px;
-      height: 450px;
-      border-radius: 16px;
+      width: 360px;
+      height: 520px;
+      border-radius: 18px;
       overflow: hidden;
-      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 24px 50px rgba(0, 0, 0, 0.65);
       border: 1px solid rgba(255, 255, 255, 0.14);
       transition: border-color 0.35s ease, transform 0.35s ease;
     }
 
     .process-coverflow-swiper .swiper-slide-active {
       border-color: rgba(255, 255, 255, 0.45);
-      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.75), 0 0 20px rgba(255, 255, 255, 0.1);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8), 0 0 24px rgba(255, 255, 255, 0.12);
     }
 
     .process-coverflow-swiper .swiper-pagination-bullet {
@@ -102,8 +110,8 @@ export default function Process() {
     }
 
     .process-nav-btn {
-      width: 48px;
-      height: 48px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.08);
       backdrop-filter: blur(12px);
@@ -125,14 +133,14 @@ export default function Process() {
 
     @media (max-width: 640px) {
       .process-coverflow-swiper .swiper-slide {
-        width: 270px;
-        height: 390px;
+        width: 290px;
+        height: 420px;
       }
     }
   `;
 
   return (
-    <section className="section bg process-section" style={{ position: 'relative', overflow: 'hidden' }}>
+    <section className="section bg process-section" style={{ position: 'relative', overflow: 'hidden', width: '100%' }}>
       <style>{cssStyles}</style>
 
       <div className="space-6-normal"></div>
@@ -149,19 +157,23 @@ export default function Process() {
             </p>
           </div>
         </div>
+      </div>
 
+      {/* Full-width container spanning edge to edge across the screen */}
+      <div className="process-fullwidth-wrap" style={{ width: '100%', maxWidth: '100%', overflow: 'hidden' }}>
         <motion.div
           initial={{ opacity: 0, translateY: 30 }}
           whileInView={{ opacity: 1, translateY: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="relative w-full px-2"
+          className="relative w-full"
+          style={{ width: '100%' }}
         >
           <Swiper
             spaceBetween={0}
-            speed={800}
+            speed={750}
             autoplay={{
-              delay: 2500,
+              delay: 2400,
               disableOnInteraction: false,
               pauseOnMouseEnter: true,
             }}
@@ -170,11 +182,11 @@ export default function Process() {
             slidesPerView="auto"
             centeredSlides={true}
             loop={true}
-            loopedSlides={7}
+            watchSlidesProgress={true}
             coverflowEffect={{
-              rotate: 25,
+              rotate: 18,
               stretch: 0,
-              depth: 120,
+              depth: 90,
               modifier: 1,
               slideShadows: true,
             }}
@@ -201,11 +213,11 @@ export default function Process() {
                     style={{
                       position: 'absolute',
                       inset: 0,
-                      background: 'linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0.92) 100%)',
+                      background: 'linear-gradient(180deg, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0.94) 100%)',
                       display: 'flex',
                       flexDirection: 'column',
                       justifyContent: 'space-between',
-                      padding: '1.5rem',
+                      padding: '1.75rem',
                     }}
                   >
                     {/* Step Pill */}
@@ -216,9 +228,9 @@ export default function Process() {
                           backdropFilter: 'blur(12px)',
                           border: '1px solid rgba(255, 255, 255, 0.22)',
                           color: '#fff',
-                          fontSize: '0.75rem',
+                          fontSize: '0.78rem',
                           fontWeight: '600',
-                          padding: '0.35rem 0.85rem',
+                          padding: '0.38rem 0.9rem',
                           borderRadius: '20px',
                           letterSpacing: '0.08em',
                         }}
@@ -232,19 +244,19 @@ export default function Process() {
                       <h3
                         style={{
                           color: '#ffffff',
-                          fontSize: '1.25rem',
+                          fontSize: '1.3rem',
                           fontWeight: '700',
                           letterSpacing: '-0.01em',
-                          marginBottom: '0.4rem',
+                          marginBottom: '0.45rem',
                         }}
                       >
                         {step.title}
                       </h3>
                       <p
                         style={{
-                          color: 'rgba(255, 255, 255, 0.8)',
-                          fontSize: '0.85rem',
-                          lineHeight: '1.45',
+                          color: 'rgba(255, 255, 255, 0.82)',
+                          fontSize: '0.88rem',
+                          lineHeight: '1.48',
                           margin: 0,
                         }}
                       >
@@ -257,7 +269,7 @@ export default function Process() {
             ))}
 
             {/* Navigation Controls */}
-            <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginTop: '1.5rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '1.25rem', marginTop: '1.5rem' }}>
               <div className="process-swiper-prev process-nav-btn">
                 <ChevronLeftIcon className="h-6 w-6 text-white" />
               </div>
