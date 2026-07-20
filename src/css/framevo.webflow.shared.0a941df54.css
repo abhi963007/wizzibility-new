@@ -3147,8 +3147,11 @@ li {
 }
 
 .section-heading-wrap.photography {
-    max-width: 73.0625rem;
+    max-width: none;
+    width: 100%;
     position: relative;
+    text-align: center;
+    display: block;
 }
 
 .section-heading-wrap.gallary {

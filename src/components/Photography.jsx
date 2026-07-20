@@ -6,9 +6,9 @@ export default function Photography() {
     <section className="section photography-section-purple">
       <div className="w-layout-blockcontainer container w-container">
         <div className="photography-wrapper">
-          <div className="section-header left">
-            <div className="section-heading-wrap photography">
-              <h2 className="section-heading">Visuals That Tell Your Brand's Story</h2>
+          <div className="section-header" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+            <div className="section-heading-wrap photography" style={{ width: '100%', textAlign: 'center' }}>
+              <h2 className="section-heading" style={{ textAlign: 'center', width: '100%' }}>Visuals That Tell Your Brand's Story</h2>
             </div>
           </div>
           <div className="space-3-large hide-mobile"></div>
