@@ -1,202 +1,255 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
+import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-// SVG assets served from public/images/home/ (copied by vite.config.js on startup)
-const step1Svg = '/images/home/step-1.svg';
-const step2Svg = '/images/home/step-2.svg';
-const step3Svg = '/images/home/step-3.svg';
-const step4Svg = '/images/home/step-4.svg';
-const step5Svg = '/images/home/step-5.svg';
-
-
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 export default function Process() {
   const steps = [
     {
       id: 1,
       title: 'DISCOVER',
+      step: 'STEP 01',
       description: 'Discovery session to analyze brand, goals, customer journey, and gaps through research and audits.',
-      image: 'work1.jpeg',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="24" height="24">
-          <circle cx="11" cy="11" r="7" stroke="white" strokeWidth="2"/>
-          <path d="M16.5 16.5L21 21" stroke="white" strokeWidth="2" strokeLinecap="round"/>
-        </svg>
-      ),
+      src: '/images/home/work1.jpeg',
     },
     {
       id: 2,
       title: 'STRATEGY',
-      description: 'Formulate technology integration roadmaps and digital marketing funnels.',
-      image: 'work2.jpeg',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="24" height="24">
-          <path d="M3 17l4-4 4 4 4-6 4 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
-      ),
+      step: 'STEP 02',
+      description: 'Formulate technology integration roadmaps and digital marketing funnels tailored for growth.',
+      src: '/images/home/work2.jpeg',
     },
     {
       id: 3,
       title: 'DESIGN & DEVELOP',
+      step: 'STEP 03',
       description: 'Expert team designs a tailored marketing ecosystem using design, storytelling, data, and AI tools.',
-      image: 'work3.jpeg',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="24" height="24">
-          <rect x="3" y="3" width="7" height="7" rx="1" stroke="white" strokeWidth="2"/>
-          <rect x="14" y="3" width="7" height="7" rx="1" stroke="white" strokeWidth="2"/>
-          <rect x="3" y="14" width="7" height="7" rx="1" stroke="white" strokeWidth="2"/>
-          <path d="M17.5 14v6M14.5 17h6" stroke="white" strokeWidth="2" strokeLinecap="round"/>
-        </svg>
-      ),
+      src: '/images/home/work3.jpeg',
     },
     {
       id: 4,
       title: 'DEPLOY & SCALE',
+      step: 'STEP 04',
       description: 'Launch campaigns and assets, then monitor, optimize, and scale for continuous growth and returns.',
-      image: 'work4.jpeg',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="24" height="24">
-          <path d="M4 14l4-8 4 5 3-3 5 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          <path d="M4 20h16" stroke="white" strokeWidth="2" strokeLinecap="round"/>
-        </svg>
-      ),
+      src: '/images/home/work4.jpeg',
     },
     {
       id: 5,
       title: 'OPTIMIZE',
+      step: 'STEP 05',
       description: 'Refine user experiences, automate workflows, and scale for continuous revenue growth.',
-      image: 'work5.jpeg',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="24" height="24">
-          <path d="M4 18l3-6 3 3 3-5 3 4 4-8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
-      ),
+      src: '/images/home/work5.jpeg',
     },
   ];
 
-  const modifierClass = (id) => {
-    if (id === 1) return '_01';
-    if (id === 2) return '_02';
-    if (id === 3) return '_03';
-    if (id === 4) return '_04';
-    return '';
-  };
+  const cssStyles = `
+    .process-coverflow-swiper {
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 60px !important;
+    }
+    
+    .process-coverflow-swiper .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 340px;
+      height: 460px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .process-coverflow-swiper .swiper-slide-active {
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .process-coverflow-swiper .swiper-pagination-bullet {
+      background-color: rgba(255, 255, 255, 0.4) !important;
+      width: 10px;
+      height: 10px;
+      opacity: 0.6;
+    }
+
+    .process-coverflow-swiper .swiper-pagination-bullet-active {
+      background-color: #ffffff !important;
+      width: 28px;
+      border-radius: 6px;
+      opacity: 1;
+    }
+
+    .process-nav-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+      z-index: 10;
+    }
+
+    .process-nav-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.08);
+    }
+
+    @media (max-width: 640px) {
+      .process-coverflow-swiper .swiper-slide {
+        width: 280px;
+        height: 400px;
+      }
+    }
+  `;
 
   return (
-    <section className="section bg process-section">
+    <section className="section bg process-section" style={{ position: 'relative', overflow: 'hidden' }}>
+      <style>{cssStyles}</style>
+
       <div className="space-6-normal"></div>
       <div className="w-layout-blockcontainer container w-container">
-        <div className="process-title-wrapper">
-          <div className="section-header left">
-            <div className="max-width-44">
+        <div className="process-title-wrapper" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', marginBottom: '2rem' }}>
+          <div className="section-header">
+            <div className="section-heading-wrap choose text-center">
               <h2 className="section-heading night">Working Process</h2>
             </div>
           </div>
-          <div className="max-width-28">
-            <p className="section-p">Working with Wizzibility means you get a next-gen creative tech partner. We guide you from discovery through engineering and scaling.</p>
+          <div className="max-width-28" style={{ marginTop: '1rem', maxWidth: '36rem' }}>
+            <p className="section-p" style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '1.05rem', lineHeight: '1.6' }}>
+              Working with Wizzibility means you get a next-gen creative tech partner. We guide you seamlessly from discovery through engineering and scaling.
+            </p>
           </div>
         </div>
-      </div>
-      <div className="space-3-large"></div>
-      <div className="pin-height">
-        <div className="sticky-wrap" data-w-id="833d6c3e-f5a5-241d-0496-aa5bfb8fc895" data-wf-target='["6a2ede0dd01527a201b478d1","833d6c3e-f5a5-241d-0496-aa5bfb8fc895"]'>
-          <div className="process-card-container">
+
+        <motion.div
+          initial={{ opacity: 0, translateY: 30 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          className="relative w-full px-2"
+        >
+          <Swiper
+            spaceBetween={0}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            effect="coverflow"
+            grabCursor={true}
+            slidesPerView="auto"
+            centeredSlides={true}
+            loop={true}
+            coverflowEffect={{
+              rotate: 35,
+              stretch: 0,
+              depth: 140,
+              modifier: 1,
+              slideShadows: true,
+            }}
+            pagination={{ clickable: true }}
+            navigation={{
+              nextEl: '.process-swiper-next',
+              prevEl: '.process-swiper-prev',
+            }}
+            className="process-coverflow-swiper"
+            modules={[EffectCoverflow, Autoplay, Pagination, Navigation]}
+          >
             {steps.map((step) => (
-              <div key={step.id} className={`media ${modifierClass(step.id)} process-card-ref`}>
-                {/* Top Image Area */}
-                <div className="process-image-wrapper">
+              <SwiperSlide key={step.id}>
+                <div style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden' }}>
+                  {/* Background Image */}
                   <img
-                    src={`/images/home/${step.image}`}
-                    loading="lazy"
+                    src={step.src}
                     alt={step.title}
-                    className="process-img"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
-                </div>
 
-                {/* Bottom Content Area — Organic SVG Wave */}
-                <div className="process-shape">
-                  {/* S-shaped wave: starts high on left, sweeps down to right */}
-                  <div className="process-wave-top" aria-hidden="true">
-                    <svg viewBox="0 0 100 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0,40 L0,12 C20,1 80,38 100,20 L100,40 Z" fill="white"/>
-                    </svg>
-                  </div>
-                  <div className="process-shape-inner">
-                    {/* Left Column: Text Content */}
-                    <div className="process-text-col">
-                      <div className="process-card-pill">
-                        <div className="font-1-extra-small">Step {String(step.id).padStart(2, '0')}</div>
-                      </div>
-                      <div className="process-content-wrapper">
-                        <div className="font-1-normal black-phudu process-card-title">{step.title}</div>
-                        <div className="process-card-title-line"></div>
-                        <p className="paragraph-medium process-card-desc">{step.description}</p>
-                      </div>
+                  {/* Dark Gradient Overlay */}
+                  <div
+                    style={{
+                      position: 'absolute',
+                      inset: 0,
+                      background: 'linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.92) 100%)',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                      padding: '1.5rem',
+                    }}
+                  >
+                    {/* Step Pill */}
+                    <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
+                      <span
+                        style={{
+                          background: 'rgba(255, 255, 255, 0.15)',
+                          backdropFilter: 'blur(10px)',
+                          border: '1px solid rgba(255, 255, 255, 0.2)',
+                          color: '#fff',
+                          fontSize: '0.75rem',
+                          fontWeight: '600',
+                          padding: '0.35rem 0.85rem',
+                          borderRadius: '20px',
+                          letterSpacing: '0.08em',
+                        }}
+                      >
+                        {step.step}
+                      </span>
                     </div>
 
-                    {/* Right Column: Circular Graphic */}
-                    <div className="process-graphic-col">
-                      <img
-                        src={[step1Svg, step2Svg, step3Svg, step4Svg, step5Svg][step.id - 1]}
-                        alt={step.title}
-                        className="process-circle-graphic"
-                      />
+                    {/* Content Box */}
+                    <div style={{ marginTop: 'auto' }}>
+                      <h3
+                        style={{
+                          color: '#ffffff',
+                          fontSize: '1.35rem',
+                          fontWeight: '700',
+                          letterSpacing: '-0.01em',
+                          marginBottom: '0.5rem',
+                        }}
+                      >
+                        {step.title}
+                      </h3>
+                      <p
+                        style={{
+                          color: 'rgba(255, 255, 255, 0.8)',
+                          fontSize: '0.875rem',
+                          lineHeight: '1.5',
+                          margin: 0,
+                        }}
+                      >
+                        {step.description}
+                      </p>
                     </div>
                   </div>
                 </div>
-              </div>
+              </SwiperSlide>
             ))}
-          </div>
 
-          <div className="process-card-container _02">
-            {steps.map((step) => (
-              <div key={step.id} className={`media ${modifierClass(step.id)} process-card-ref`}>
-                {/* Top Image Area */}
-                <div className="process-image-wrapper">
-                  <img
-                    src={`/images/home/${step.image}`}
-                    loading="lazy"
-                    alt={step.title}
-                    className="process-img"
-                  />
-                </div>
-
-                {/* Bottom Content Area — Organic SVG Wave */}
-                <div className="process-shape">
-                  {/* S-shaped wave: starts high on left, sweeps down to right */}
-                  <div className="process-wave-top" aria-hidden="true">
-                    <svg viewBox="0 0 100 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0,40 L0,12 C20,1 80,38 100,20 L100,40 Z" fill="white"/>
-                    </svg>
-                  </div>
-                  <div className="process-shape-inner">
-                    {/* Left Column: Text Content */}
-                    <div className="process-text-col">
-                      <div className="process-card-pill">
-                        <div className="font-1-extra-small">Step {String(step.id).padStart(2, '0')}</div>
-                      </div>
-                      <div className="process-content-wrapper">
-                        <div className="font-1-normal black-phudu process-card-title">{step.title}</div>
-                        <div className="process-card-title-line"></div>
-                        <p className="paragraph-medium process-card-desc">{step.description}</p>
-                      </div>
-                    </div>
-
-                    {/* Right Column: Circular Graphic */}
-                    <div className="process-graphic-col">
-                      <img
-                        src={[step1Svg, step2Svg, step3Svg, step4Svg, step5Svg][step.id - 1]}
-                        alt={step.title}
-                        className="process-circle-graphic"
-                      />
-                    </div>
-                  </div>
-                </div>
+            {/* Navigation Controls */}
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginTop: '1.5rem' }}>
+              <div className="process-swiper-prev process-nav-btn">
+                <ChevronLeftIcon className="h-6 w-6 text-white" />
               </div>
-            ))}
-          </div>
-        </div>
+              <div className="process-swiper-next process-nav-btn">
+                <ChevronRightIcon className="h-6 w-6 text-white" />
+              </div>
+            </div>
+          </Swiper>
+        </motion.div>
       </div>
-      <div className="space-6-normal hide-destop"></div>
+
+      <div className="space-6-normal"></div>
     </section>
   );
 }
