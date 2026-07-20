@@ -377,11 +377,11 @@ export default function ProjectDetail() {
                   <div key={relatedProject.slug} role="listitem" className="w-dyn-item">
                     <Link to={`/project/${relatedProject.slug}`} className="project-card w-inline-block">
                       <img 
-                        src={`/images/projects/details/${relatedProject.heroImage}`} 
+                        src={relatedProject.heroImage.startsWith('/') ? relatedProject.heroImage : `/images/projects/details/${relatedProject.heroImage}`} 
                         loading="lazy" 
                         alt="" 
                         sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px" 
-                        srcSet={relatedProject.heroImageSrcset?.replaceAll('/images/', '/images/projects/details/')} 
+                        srcSet={relatedProject.heroImage.startsWith('/') ? relatedProject.heroImageSrcset : relatedProject.heroImageSrcset?.replaceAll('/images/', '/images/projects/details/')} 
                         className="project-card-img" 
                       />
                       <div className="project-arrow-wrap">
