@@ -4610,8 +4610,11 @@ li {
 }
 
 .goal-heading-wrap {
-    max-width: 62rem;
+    max-width: none;
+    width: 100%;
     position: relative;
+    text-align: center;
+    display: block;
 }
 
 .goal-img-wrap {
@@ -4737,8 +4740,9 @@ li {
     justify-content: flex-start;
     align-items: flex-start;
     max-width: 35rem;
+    height: auto !important;
     display: flex;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .faq-p {
