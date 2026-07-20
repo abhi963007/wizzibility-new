@@ -337,89 +337,76 @@ export default function ProjectsPage() {
         </section>
 
         {/* FAQ Section */}
-        <section data-wf-component-id="8200a477-3767-8364-6113-c88aa46f9614" data-wf-variant-state="base" className="section">
-          <div className="space-10-small"></div>
-          <div className="w-layout-blockcontainer container w-container">
-            <div className="section-header">
-              <div className="faq-header">
-                <div className="faq-heading-wrap left">
-                  <h2 className="section-heading">Common</h2>
-                </div>
-                <div className="faq-heading-wrap right">
-                  <h2 className="section-heading">questions</h2>
-                </div>
-              </div>
-            </div>
-            <div className="space-3-large"></div>
-            <div className="faq-main">
-              <div className="faq-card">
-                <div className="faq-top">
-                  <div className="faq-top-left">
-                    <div className="font-1-extra-small white">01</div>
-                    <div className="font-1-medium">What is Wizzibility and what services do you offer?</div>
+        {(() => {
+          const faqs = [
+            { id: '01', q: 'What is Wizzibility and what services do you offer?', a: 'An enterprise-ready, startup-friendly marketing and technology agency offering branding, performance marketing, web development, AI integrations, CRM solutions, content, and creative design — all under one roof.' },
+            { id: '02', q: 'How does Wizzibility use AI to enhance marketing performance?', a: 'AI tools automate campaigns, generate intelligent insights, personalize user experiences, and boost efficiency.' },
+            { id: '03', q: 'Is Wizzibility suitable for startups as well as large businesses?', a: 'Yes — cost-effective for startups and robust for enterprise needs.' },
+            { id: '04', q: 'Can Wizzibility build my brand from scratch?', a: 'Yes — from naming and logo design to narrative, visual identity, and launch campaigns.' },
+          ];
+
+          const FaqSection = () => {
+            const [openId, setOpenId] = useState(null);
+
+            return (
+              <section data-wf-component-id="8200a477-3767-8364-6113-c88aa46f9614" data-wf-variant-state="base" className="section">
+                <div className="space-10-small"></div>
+                <div className="w-layout-blockcontainer container w-container">
+                  <div className="section-header" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+                    <div style={{ width: '100%', textAlign: 'center' }}>
+                      <h2 className="section-heading" style={{ textAlign: 'center', whiteSpace: 'nowrap' }}>Common Questions</h2>
+                    </div>
                   </div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="faq-arrow">
-                    <path d="M18 12.998H13V17.998C13 18.2633 12.8946 18.5176 12.7071 18.7052C12.5196 18.8927 12.2652 18.998 12 18.998C11.7348 18.998 11.4804 18.8927 11.2929 18.7052C11.1054 18.5176 11 18.2633 11 17.998V12.998H6C5.73478 12.998 5.48043 12.8927 5.29289 12.7052C5.10536 12.5176 5 12.2633 5 11.998C5 11.7328 5.10536 11.4785 5.29289 11.2909C5.48043 11.1034 5.73478 10.998 6 10.998H11V5.99805C11 5.73283 11.1054 5.47848 11.2929 5.29094C11.4804 5.1034 11.7348 4.99805 12 4.99805C12.2652 4.99805 12.5196 5.1034 12.7071 5.29094C12.8946 5.47848 13 5.73283 13 5.99805V10.998H18C18.2652 10.998 18.5196 11.1034 18.7071 11.2909C18.8946 11.4785 19 11.7328 19 11.998C19 12.2633 18.8946 12.5176 18.7071 12.7052C18.5196 12.8927 18.2652 12.998 18 12.998Z" fill="currentColor"></path>
-                  </svg>
-                </div>
-                <div className="faq-p-wrap">
-                  <p className="faq-p">
-                    An enterprise-ready, startup-friendly marketing and technology agency offering branding, performance marketing, web development, AI integrations, CRM solutions, content, and creative design — all under one roof.
-                  </p>
-                </div>
-              </div>
-              <div className="faq-card">
-                <div className="faq-top">
-                  <div className="faq-top-left">
-                    <div className="font-1-extra-small white">02</div>
-                    <div className="font-1-medium">How does Wizzibility use AI to enhance marketing performance?</div>
+                  <div className="space-3-large"></div>
+                  <div className="faq-main">
+                    {faqs.map((faq) => {
+                      const isOpen = openId === faq.id;
+                      return (
+                        <div
+                          key={faq.id}
+                          className="faq-card"
+                          onMouseEnter={() => setOpenId(faq.id)}
+                          onMouseLeave={() => setOpenId(null)}
+                          style={{ cursor: 'pointer' }}
+                        >
+                          <div className="faq-top">
+                            <div className="faq-top-left">
+                              <div className="font-1-extra-small white">{faq.id}</div>
+                              <div className="font-1-medium">{faq.q}</div>
+                            </div>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              className="faq-arrow"
+                              style={{ flexShrink: 0, transition: 'transform 0.3s ease', transform: isOpen ? 'rotate(45deg)' : 'rotate(0deg)' }}
+                            >
+                              <path d="M18 12.998H13V17.998C13 18.2633 12.8946 18.5176 12.7071 18.7052C12.5196 18.8927 12.2652 18.998 12 18.998C11.7348 18.998 11.4804 18.8927 11.2929 18.7052C11.1054 18.5176 11 18.2633 11 17.998V12.998H6C5.73478 12.998 5.48043 12.8927 5.29289 12.7052C5.10536 12.5176 5 12.2633 5 11.998C5 11.7328 5.10536 11.4785 5.29289 11.2909C5.48043 11.1034 5.73478 10.998 6 10.998H11V5.99805C11 5.73283 11.1054 5.47848 11.2929 5.29094C11.4804 5.1034 11.7348 4.99805 12 4.99805C12.2652 4.99805 12.5196 5.1034 12.7071 5.29094C12.8946 5.47848 13 5.73283 13 5.99805V10.998H18C18.2652 10.998 18.5196 11.1034 18.7071 11.2909C18.8946 11.4785 19 11.7328 19 11.998C19 12.2633 18.8946 12.5176 18.7071 12.7052C18.5196 12.8927 18.2652 12.998 18 12.998Z" fill="currentColor" />
+                            </svg>
+                          </div>
+                          <div
+                            style={{
+                              maxHeight: isOpen ? '200px' : '0px',
+                              overflow: 'hidden',
+                              transition: 'max-height 0.4s ease',
+                            }}
+                          >
+                            <p className="faq-p">{faq.a}</p>
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="faq-arrow">
-                    <path d="M18 12.998H13V17.998C13 18.2633 12.8946 18.5176 12.7071 18.7052C12.5196 18.8927 12.2652 18.998 12 18.998C11.7348 18.998 11.4804 18.8927 11.2929 18.7052C11.1054 18.5176 11 18.2633 11 17.998V12.998H6C5.73478 12.998 5.48043 12.8927 5.29289 12.7052C5.10536 12.5176 5 12.2633 5 11.998C5 11.7328 5.10536 11.4785 5.29289 11.2909C5.48043 11.1034 5.73478 10.998 6 10.998H11V5.99805C11 5.73283 11.1054 5.47848 11.2929 5.29094C11.4804 5.1034 11.7348 4.99805 12 4.99805C12.2652 4.99805 12.5196 5.1034 12.7071 5.29094C12.8946 5.47848 13 5.73283 13 5.99805V10.998H18C18.2652 10.998 18.5196 11.1034 18.7071 11.2909C18.8946 11.4785 19 11.7328 19 11.998C19 12.2633 18.8946 12.5176 18.7071 12.7052C18.5196 12.8927 18.2652 12.998 18 12.998Z" fill="currentColor"></path>
-                  </svg>
                 </div>
-                <div className="faq-p-wrap">
-                  <p className="faq-p">
-                    AI tools automate campaigns, generate intelligent insights, personalize user experiences, and boost efficiency.
-                  </p>
-                </div>
-              </div>
-              <div className="faq-card">
-                <div className="faq-top">
-                  <div className="faq-top-left">
-                    <div className="font-1-extra-small white">03</div>
-                    <div className="font-1-medium">Is Wizzibility suitable for startups as well as large businesses?</div>
-                  </div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="faq-arrow">
-                    <path d="M18 12.998H13V17.998C13 18.2633 12.8946 18.5176 12.7071 18.7052C12.5196 18.8927 12.2652 18.998 12 18.998C11.7348 18.998 11.4804 18.8927 11.2929 18.7052C11.1054 18.5176 11 18.2633 11 17.998V12.998H6C5.73478 12.998 5.48043 12.8927 5.29289 12.7052C5.10536 12.5176 5 12.2633 5 11.998C5 11.7328 5.10536 11.4785 5.29289 11.2909C5.48043 11.1034 5.73478 10.998 6 10.998H11V5.99805C11 5.73283 11.1054 5.47848 11.2929 5.29094C11.4804 5.1034 11.7348 4.99805 12 4.99805C12.2652 4.99805 12.5196 5.1034 12.7071 5.29094C12.8946 5.47848 13 5.73283 13 5.99805V10.998H18C18.2652 10.998 18.5196 11.1034 18.7071 11.2909C18.8946 11.4785 19 11.7328 19 11.998C19 12.2633 18.8946 12.5176 18.7071 12.7052C18.5196 12.8927 18.2652 12.998 18 12.998Z" fill="currentColor"></path>
-                  </svg>
-                </div>
-                <div className="faq-p-wrap">
-                  <p className="faq-p">
-                    Yes — cost-effective for startups and robust for enterprise needs.
-                  </p>
-                </div>
-              </div>
-              <div className="faq-card">
-                <div className="faq-top">
-                  <div className="faq-top-left">
-                    <div className="font-1-extra-small white">04</div>
-                    <div className="font-1-medium">Can Wizzibility build my brand from scratch?</div>
-                  </div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="faq-arrow">
-                    <path d="M18 12.998H13V17.998C13 18.2633 12.8946 18.5176 12.7071 18.7052C12.5196 18.8927 12.2652 18.998 12 18.998C11.7348 18.998 11.4804 18.8927 11.2929 18.7052C11.1054 18.5176 11 18.2633 11 17.998V12.998H6C5.73478 12.998 5.48043 12.8927 5.29289 12.7052C5.10536 12.5176 5 12.2633 5 11.998C5 11.7328 5.10536 11.4785 5.29289 11.2909C5.48043 11.1034 5.73478 10.998 6 10.998H11V5.99805C11 5.73283 11.1054 5.47848 11.2929 5.29094C11.4804 5.1034 11.7348 4.99805 12 4.99805C12.2652 4.99805 12.5196 5.1034 12.7071 5.29094C12.8946 5.47848 13 5.73283 13 5.99805V10.998H18C18.2652 10.998 18.5196 11.1034 18.7071 11.2909C18.8946 11.4785 19 11.7328 19 11.998C19 12.2633 18.8946 12.5176 18.7071 12.7052C18.5196 12.8927 18.2652 12.998 18 12.998Z" fill="currentColor"></path>
-                  </svg>
-                </div>
-                <div className="faq-p-wrap">
-                  <p className="faq-p">
-                    Yes — from naming and logo design to narrative, visual identity, and launch campaigns.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="space-10-small"></div>
-        </section>
+                <div className="space-10-small"></div>
+              </section>
+            );
+          };
+
+          return <FaqSection />;
+        })()}
 
         {/* Sticky CTA Section */}
         <section data-wf-component-id="d0f53c86-b418-a526-4d6f-71e162cb1bb7" data-wf-variant-state="base" className="section bg">
