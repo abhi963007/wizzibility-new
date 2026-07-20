@@ -2869,11 +2869,11 @@ li {
     width: 108% !important;
     height: var(--_spacing---container-weight--full);
     object-fit: cover;
-    object-position: 50% 0%;
+    object-position: 60% 0%;
     transform-style: preserve-3d;
     position: absolute;
     inset: 0%;
-    transform: translate3d(-6%, 0, 0) rotateY(-180deg) !important;
+    transform: translate3d(0%, 0, 0) rotateY(-180deg) !important;
 }
 
 .space-6-normal {
