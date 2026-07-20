@@ -3152,8 +3152,9 @@ li {
 }
 
 .section-heading-wrap.gallary {
-    max-width: 47.1875rem;
+    max-width: none;
     position: relative;
+    text-align: center;
 }
 
 .section-heading-wrap.choose {

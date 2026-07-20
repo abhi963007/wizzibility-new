@@ -13,74 +13,90 @@ export default function Process() {
   const steps = [
     {
       id: 1,
-      title: 'DISCOVER',
+      title: 'DISCOVERY & AUDIT',
       step: 'STEP 01',
-      description: 'Discovery session to analyze brand, goals, customer journey, and gaps through research and audits.',
+      description: 'In-depth brand audits, market research, and audience mapping to identify core digital growth opportunities.',
       src: '/images/home/work1.jpeg',
     },
     {
       id: 2,
-      title: 'STRATEGY',
+      title: 'STRATEGY & ROADMAP',
       step: 'STEP 02',
-      description: 'Formulate technology integration roadmaps and digital marketing funnels tailored for growth.',
+      description: 'Formulate technology integration roadmaps, funnels, and positioning strategies tailored for scale.',
       src: '/images/home/work2.jpeg',
     },
     {
       id: 3,
-      title: 'DESIGN & DEVELOP',
+      title: 'UI/UX ARCHITECTURE',
       step: 'STEP 03',
-      description: 'Expert team designs a tailored marketing ecosystem using design, storytelling, data, and AI tools.',
+      description: 'Craft high-fidelity wireframes, interactive prototypes, and human-centric visual design systems.',
       src: '/images/home/work3.jpeg',
     },
     {
       id: 4,
-      title: 'DEPLOY & SCALE',
+      title: 'CREATIVE PRODUCTION',
       step: 'STEP 04',
-      description: 'Launch campaigns and assets, then monitor, optimize, and scale for continuous growth and returns.',
+      description: 'Produce cinematic 3D visual assets, motion graphics, and high-impact brand collateral.',
       src: '/images/home/work4.jpeg',
     },
     {
       id: 5,
-      title: 'OPTIMIZE',
+      title: 'FULL-STACK ENGINEERING',
       step: 'STEP 05',
-      description: 'Refine user experiences, automate workflows, and scale for continuous revenue growth.',
+      description: 'Engineered with modern web frameworks, clean architecture, high performance, and seamless API integrations.',
       src: '/images/home/work5.jpeg',
+    },
+    {
+      id: 6,
+      title: 'DEPLOYMENT & TESTING',
+      step: 'STEP 06',
+      description: 'Rigorous quality assurance, cross-platform testing, automated security checks, and multi-region deployment.',
+      src: '/images/home/Service 1.jpeg',
+    },
+    {
+      id: 7,
+      title: 'OPTIMIZE & SCALE',
+      step: 'STEP 07',
+      description: 'Continuous conversion rate optimization, data analytics, automated workflows, and scaling revenue growth.',
+      src: '/images/home/Service 2.jpeg',
     },
   ];
 
   const cssStyles = `
     .process-coverflow-swiper {
       width: 100%;
-      padding-top: 20px;
+      padding-top: 25px;
       padding-bottom: 60px !important;
     }
     
     .process-coverflow-swiper .swiper-slide {
       background-position: center;
       background-size: cover;
-      width: 340px;
-      height: 460px;
+      width: 330px;
+      height: 450px;
       border-radius: 16px;
       overflow: hidden;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      transition: border-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      transition: border-color 0.35s ease, transform 0.35s ease;
     }
 
     .process-coverflow-swiper .swiper-slide-active {
-      border-color: rgba(255, 255, 255, 0.4);
+      border-color: rgba(255, 255, 255, 0.45);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.75), 0 0 20px rgba(255, 255, 255, 0.1);
     }
 
     .process-coverflow-swiper .swiper-pagination-bullet {
-      background-color: rgba(255, 255, 255, 0.4) !important;
-      width: 10px;
-      height: 10px;
+      background-color: rgba(255, 255, 255, 0.35) !important;
+      width: 8px;
+      height: 8px;
       opacity: 0.6;
+      transition: all 0.3s ease;
     }
 
     .process-coverflow-swiper .swiper-pagination-bullet-active {
       background-color: #ffffff !important;
-      width: 28px;
+      width: 26px;
       border-radius: 6px;
       opacity: 1;
     }
@@ -97,19 +113,20 @@ export default function Process() {
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      transition: background 0.3s ease, transform 0.2s ease;
+      transition: background 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
       z-index: 10;
     }
 
     .process-nav-btn:hover {
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.22);
+      border-color: rgba(255, 255, 255, 0.35);
       transform: scale(1.08);
     }
 
     @media (max-width: 640px) {
       .process-coverflow-swiper .swiper-slide {
-        width: 280px;
-        height: 400px;
+        width: 270px;
+        height: 390px;
       }
     }
   `;
@@ -126,9 +143,9 @@ export default function Process() {
               <h2 className="section-heading night">Working Process</h2>
             </div>
           </div>
-          <div className="max-width-28" style={{ marginTop: '1rem', maxWidth: '36rem' }}>
-            <p className="section-p" style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '1.05rem', lineHeight: '1.6' }}>
-              Working with Wizzibility means you get a next-gen creative tech partner. We guide you seamlessly from discovery through engineering and scaling.
+          <div className="max-width-28" style={{ marginTop: '1rem', maxWidth: '38rem' }}>
+            <p className="section-p" style={{ color: 'rgba(255, 255, 255, 0.72)', fontSize: '1.05rem', lineHeight: '1.6' }}>
+              Working with Wizzibility means you get a next-gen creative tech partner. We guide you seamlessly from discovery through engineering, testing, and infinite scaling.
             </p>
           </div>
         </div>
@@ -142,19 +159,22 @@ export default function Process() {
         >
           <Swiper
             spaceBetween={0}
+            speed={800}
             autoplay={{
-              delay: 3000,
+              delay: 2500,
               disableOnInteraction: false,
+              pauseOnMouseEnter: true,
             }}
             effect="coverflow"
             grabCursor={true}
             slidesPerView="auto"
             centeredSlides={true}
             loop={true}
+            loopedSlides={7}
             coverflowEffect={{
-              rotate: 35,
+              rotate: 25,
               stretch: 0,
-              depth: 140,
+              depth: 120,
               modifier: 1,
               slideShadows: true,
             }}
@@ -181,7 +201,7 @@ export default function Process() {
                     style={{
                       position: 'absolute',
                       inset: 0,
-                      background: 'linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.92) 100%)',
+                      background: 'linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0.92) 100%)',
                       display: 'flex',
                       flexDirection: 'column',
                       justifyContent: 'space-between',
@@ -193,8 +213,8 @@ export default function Process() {
                       <span
                         style={{
                           background: 'rgba(255, 255, 255, 0.15)',
-                          backdropFilter: 'blur(10px)',
-                          border: '1px solid rgba(255, 255, 255, 0.2)',
+                          backdropFilter: 'blur(12px)',
+                          border: '1px solid rgba(255, 255, 255, 0.22)',
                           color: '#fff',
                           fontSize: '0.75rem',
                           fontWeight: '600',
@@ -212,10 +232,10 @@ export default function Process() {
                       <h3
                         style={{
                           color: '#ffffff',
-                          fontSize: '1.35rem',
+                          fontSize: '1.25rem',
                           fontWeight: '700',
                           letterSpacing: '-0.01em',
-                          marginBottom: '0.5rem',
+                          marginBottom: '0.4rem',
                         }}
                       >
                         {step.title}
@@ -223,8 +243,8 @@ export default function Process() {
                       <p
                         style={{
                           color: 'rgba(255, 255, 255, 0.8)',
-                          fontSize: '0.875rem',
-                          lineHeight: '1.5',
+                          fontSize: '0.85rem',
+                          lineHeight: '1.45',
                           margin: 0,
                         }}
                       >

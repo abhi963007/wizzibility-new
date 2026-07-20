@@ -25,8 +25,8 @@ export default function Gallery() {
       <div className="w-layout-blockcontainer container w-container">
         <div className="gallary-wrapper">
           <div className="section-header">
-            <div className="section-heading-wrap gallary">
-              <h2 className="section-heading">Our Creative Gallery</h2>
+            <div className="section-heading-wrap gallary text-center">
+              <h2 className="section-heading text-center" style={{ whiteSpace: 'nowrap' }}>Our Creative Gallery</h2>
             </div>
           </div>
           <div className="space-3-large"></div>
