@@ -11,6 +11,9 @@ const projectVideos = {
   'social-media-videos': '/video/social.mp4',
   'wedding-stories': '/video/brand-identity.mp4',
   'brand-campaigns': '/video/performce-marketing.mp4',
+  'product-shoots': '/video/ui-ux.mp4',
+  'corporate-event-highlights': '/video/corporate.mp4',
+  'social-media-reel-series': '/video/content-creation.mp4',
 };
 
 export default function ProjectDetail() {
