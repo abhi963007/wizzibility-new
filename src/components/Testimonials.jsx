@@ -18,9 +18,9 @@ export default function Testimonials() {
   return (
     <section className="section testimonials-section">
       <div className="w-layout-blockcontainer container w-container">
-        <div className="section-header">
-          <div className="section-heading-wrap testimonials-heading-wrap">
-            <h2 className="section-heading center-mobile">Stories From Our Clients</h2>
+        <div className="section-header left">
+          <div className="section-heading-wrap testimonials-heading-wrap" style={{ marginLeft: '8rem' }}>
+            <h2 className="section-heading center-mobile" style={{ whiteSpace: 'nowrap' }}>Stories From Our Clients</h2>
           </div>
         </div>
         <div className="space-3-large"></div>
