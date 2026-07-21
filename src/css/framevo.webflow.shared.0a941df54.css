@@ -4108,7 +4108,7 @@ li {
 
 .testimonial-item-wrap {
     background-color: var(--_color---onyx);
-    justify-content: space-between;
+    justify-content: center;
     align-items: stretch;
     display: flex;
 }

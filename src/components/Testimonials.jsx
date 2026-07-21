@@ -46,10 +46,10 @@ export default function Testimonials() {
 
               {/* Desktop view right side cards & side text */}
               <div className="review-right-main">
-                <div className="info-card-wrap">
-                  <div className="testimonial-info-wrap">
+                <div className="info-card-wrap" style={{ margin: '0 auto' }}>
+                  <div className="testimonial-info-wrap" style={{ paddingLeft: '2.5rem', paddingRight: '2.5rem' }}>
                     {testimonials.map((t, i) => (
-                      <div key={t.id} className={`testimonial-info-card _0${i + 1}`}>
+                      <div key={t.id} className={`testimonial-info-card _0${i + 1}`} style={{ maxWidth: '35.5rem', margin: '0 auto', left: 0, right: 0 }}>
                         <div className="review-info-top">
                           <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 167 30" fill="none" className="reviewer-logo">
                             <g clipPath="url(#clip0_34_135)">
@@ -127,8 +127,8 @@ export default function Testimonials() {
                     className={`tab-pane w-tab-pane ${i === 0 ? 'w--tab-active' : ''}`}
                   >
                     <div className="review-right-main">
-                      <div className="info-card-wrap">
-                        <div className="testimonial-info-card">
+                      <div className="info-card-wrap" style={{ margin: '0 auto' }}>
+                        <div className="testimonial-info-card" style={{ maxWidth: '35.5rem', margin: '0 auto' }}>
                           <div className="review-info-top">
                             <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 167 30" fill="none" className="reviewer-logo">
                               <g clipPath="url(#clip0_34_135)">
