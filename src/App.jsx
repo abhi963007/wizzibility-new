@@ -52,7 +52,10 @@ function AppContent() {
     }
     if (path.startsWith('/service/')) {
       return {
-        scriptSrcs: ['/js/webflow.95f6ec0a.eda60b02784b47ba.js'],
+        scriptSrcs: [
+          '/js/webflow.schunk.dac51c455b7e76af.js',
+          '/js/webflow.95f6ec0a.eda60b02784b47ba.js',
+        ],
         pageId: '6a2fc5386bf7f404b664d7bf',
       };
     }

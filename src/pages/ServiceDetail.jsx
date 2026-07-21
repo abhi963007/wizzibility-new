@@ -299,7 +299,7 @@ export default function ServiceDetail() {
         <div className="home-hero-overlay"></div>
       </div>
 
-      <div className="main">
+      <main className="main" id="main-content" role="main">
         <section className="section">
           <div className="space-10-small"></div>
           <div className="w-layout-blockcontainer container w-container">
@@ -564,8 +564,8 @@ export default function ServiceDetail() {
           </div>
           <div className="space-10-small"></div>
         </section>
-      </div>
-      <Footer />
+        <Footer />
+      </main>
     </>
   );
 }
