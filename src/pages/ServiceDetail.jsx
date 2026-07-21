@@ -147,6 +147,8 @@ export default function ServiceDetail() {
           // Clear any existing split HTML to prevent duplicates
           gsap.set('.single-innner-heading-span', { clearProps: "all" });
           gsap.set('.hero-p', { clearProps: "all" });
+          gsap.set('.single-innner-heading-span', { opacity: 1 });
+          gsap.set('.hero-p', { opacity: 1 });
 
           headingSplit = new SplitText('.single-innner-heading-span', { 
             type: 'chars',
@@ -175,12 +177,7 @@ export default function ServiceDetail() {
             opacity: 1,
             duration: 0.6,
             stagger: { amount: 0.2 },
-            ease: 'power2.out',
-            onComplete: () => {
-              try {
-                paragraphSplit.revert();
-              } catch (e) {}
-            }
+            ease: 'power2.out'
           },
           0
         );
@@ -201,12 +198,7 @@ export default function ServiceDetail() {
             opacity: 1,
             duration: 0.6,
             stagger: { amount: 0.7 },
-            ease: 'power3.out',
-            onComplete: () => {
-              try {
-                headingSplit.revert();
-              } catch (e) {}
-            }
+            ease: 'power3.out'
           },
           0.46
         );
@@ -387,81 +379,6 @@ export default function ServiceDetail() {
                     <br />
                     <strong>- {service.clientName}, {service.clientCompany}</strong>
                   </blockquote>
-                </div>
-              </div>
-
-              {/* Right Column: Contact Form */}
-              <div className="services-right">
-                <div className="service-form-wrap">
-                  <div className="font-1-medium phudu">Let's start a new project</div>
-                  
-                  {submitted ? (
-                    <div className="w-form-done" style={{ display: 'block', padding: '20px', borderRadius: '8px', background: 'rgba(255,255,255,0.05)', marginTop: '20px' }}>
-                      <div style={{ color: '#fff', fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>Submission Received!</div>
-                      <p style={{ color: '#ccc', margin: 0 }}>Thank you for reaching out. We will get back to you shortly!</p>
-                    </div>
-                  ) : (
-                    <div className="service-form-main w-form">
-                      <form onSubmit={handleSubmit} className="service-form">
-                        <div className="group">
-                          <label htmlFor="name" className="field-label">Name</label>
-                          <input
-                            className="service-text-field w-input"
-                            maxLength="256"
-                            name="name"
-                            placeholder="Enter full name"
-                            type="text"
-                            id="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            required
-                          />
-                        </div>
-                        <div className="group">
-                          <label htmlFor="email" className="field-label">Email</label>
-                          <input
-                            className="service-text-field w-input"
-                            maxLength="256"
-                            name="email"
-                            placeholder="Enter email address"
-                            type="email"
-                            id="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            required
-                          />
-                        </div>
-                        <div className="group">
-                          <label htmlFor="subject" className="field-label">Subject</label>
-                          <input
-                            className="service-text-field w-input"
-                            maxLength="256"
-                            name="subject"
-                            placeholder="Project domain or service required"
-                            type="text"
-                            id="subject"
-                            value={formData.subject}
-                            onChange={handleChange}
-                          />
-                        </div>
-                        <div className="group">
-                          <label htmlFor="message" className="field-label">Message</label>
-                          <textarea
-                            className="service-text-field message-area w-input"
-                            maxLength="5000"
-                            name="message"
-                            placeholder="Tell us about your project requirements..."
-                            id="message"
-                            value={formData.message}
-                            onChange={handleChange}
-                          ></textarea>
-                        </div>
-                        <button type="submit" className="submit-button services w-button">
-                          Submit Now
-                        </button>
-                      </form>
-                    </div>
-                  )}
                 </div>
               </div>
 
