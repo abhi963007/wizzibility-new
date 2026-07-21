@@ -152,7 +152,7 @@ export default function Process() {
             </div>
           </div>
           <div className="max-width-28" style={{ marginTop: '1rem', maxWidth: '38rem' }}>
-            <p className="section-p" style={{ color: 'rgba(255, 255, 255, 0.72)', fontSize: '1.05rem', lineHeight: '1.6' }}>
+            <p className="section-p" style={{ color: 'rgba(255, 255, 255, 0.72)', fontSize: '1.05rem', lineHeight: '1.6', textAlign: 'center' }}>
               Working with Wizzibility means you get a next-gen creative tech partner. We guide you seamlessly from discovery through engineering, testing, and infinite scaling.
             </p>
           </div>
@@ -220,24 +220,7 @@ export default function Process() {
                       padding: '1.75rem',
                     }}
                   >
-                    {/* Step Pill */}
-                    <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
-                      <span
-                        style={{
-                          background: 'rgba(255, 255, 255, 0.15)',
-                          backdropFilter: 'blur(12px)',
-                          border: '1px solid rgba(255, 255, 255, 0.22)',
-                          color: '#fff',
-                          fontSize: '0.78rem',
-                          fontWeight: '600',
-                          padding: '0.38rem 0.9rem',
-                          borderRadius: '20px',
-                          letterSpacing: '0.08em',
-                        }}
-                      >
-                        {step.step}
-                      </span>
-                    </div>
+
 
                     {/* Content Box */}
                     <div style={{ marginTop: 'auto' }}>
