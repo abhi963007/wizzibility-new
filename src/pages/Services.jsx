@@ -506,7 +506,7 @@ export default function ServicesPage() {
                 </Link>
               </div>
               {/* GIF overlay - absolutely centered over the circles, outside rotating wrapper */}
-              <div style={{
+              <div className="cta-gif-overlay" style={{
                 position: 'absolute',
                 top: '50%',
                 left: '50%',

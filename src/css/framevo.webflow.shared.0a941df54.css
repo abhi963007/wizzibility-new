@@ -7958,6 +7958,27 @@ li {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5) !important;
 }
 
+/* CTA Yellow Eye GIF Overlay Hover Effect */
+.cta-gif-overlay {
+  box-sizing: border-box !important;
+  border: 2px solid rgba(254, 220, 86, 0.2) !important;
+  transition: transform 0.15s ease-out, border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.cta-gif-overlay:hover {
+  border-color: #fedc56 !important;
+  box-shadow: 0 0 25px rgba(254, 220, 86, 0.8), inset 0 0 15px rgba(254, 220, 86, 0.4) !important;
+  cursor: pointer;
+}
+
+.cta-gif-overlay img {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+.cta-gif-overlay:hover img {
+  transform: scale(1.1) !important;
+}
+
 /* Global BG Section - Cinematic Purple Theme Override */
 .section.bg {
   background-color: #4c1d95 !important; /* Deep rich purple background color */
