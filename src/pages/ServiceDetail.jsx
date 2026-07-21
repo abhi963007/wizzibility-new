@@ -5,7 +5,7 @@ import Footer from '../components/shared/Footer';
 import { servicesData } from '../data/servicesData';
 import useMeta from '../hooks/useMeta';
 
-// Complete services mapping list to find matching items for "Related Services"
+// All services with their details
 const allServicesList = [
   { slug: 'visual-communication', title: 'Visual Communication', image: '6a3514ef9e312a69a772c2c0_8971c848c2638f539d50757c3cbdcfa62708d35c.webp' },
   { slug: 'digital-marketing', title: 'Digital Marketing', image: '6a3514e18cb733c985d735eb_054f97113db54086c0f159ca559fbaea76ca59c9.webp' },
@@ -14,6 +14,16 @@ const allServicesList = [
   { slug: 'website-development', title: 'Website Development', image: '6a35149d36fe5f1750672b3a_82d7964840e34c402f065d2c6276cb5141f0a984.webp' },
   { slug: 'app-development', title: 'App Development', image: '6a3514888691881407d3c368_1ab4a0190b641c4b8019632a8f5eac8f25cf5100.webp' }
 ];
+
+// Curated related services map: each service has 2 hand-picked related services
+const relatedServicesMap = {
+  'visual-communication': ['branding', 'multimedia-production'],
+  'digital-marketing':    ['branding', 'website-development'],
+  'branding':             ['visual-communication', 'digital-marketing'],
+  'multimedia-production':['visual-communication', 'website-development'],
+  'website-development':  ['app-development', 'digital-marketing'],
+  'app-development':      ['website-development', 'digital-marketing'],
+};
 
 // Mapping of service slugs to background videos
 const serviceVideos = {
@@ -246,10 +256,9 @@ export default function ServiceDetail() {
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
-  // Get related services (excluding current service)
-  const relatedServices = allServicesList
-    .filter(s => s.slug !== slug)
-    .slice(0, 2);
+  // Get curated related services for the current service
+  const relatedSlugs = relatedServicesMap[slug] || allServicesList.filter(s => s.slug !== slug).slice(0, 2).map(s => s.slug);
+  const relatedServices = relatedSlugs.map(s => allServicesList.find(item => item.slug === s)).filter(Boolean);
 
   return (
     <>
