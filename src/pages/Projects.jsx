@@ -61,23 +61,38 @@ const projectsSchema = [
 
 export default function ProjectsPage() {
   const ctaRef = React.useRef(null);
-  const [ctaActive, setCtaActive] = React.useState(false);
+  const [ctaScale, setCtaScale] = React.useState(0);
 
   React.useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          setCtaActive(true);
-        } else {
-          setCtaActive(false);
-        }
-      });
-    }, { threshold: 0.15 });
+    const handleScroll = () => {
+      if (!ctaRef.current) return;
+      const rect = ctaRef.current.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+      
+      if (rect.top < viewportHeight && rect.bottom > 0) {
+        const startPoint = viewportHeight;
+        const endPoint = viewportHeight * 0.25; 
+        
+        let progress = (startPoint - rect.top) / (startPoint - endPoint);
+        if (progress < 0) progress = 0;
+        if (progress > 1) progress = 1;
+        
+        setCtaScale(progress);
+      } else if (rect.top >= viewportHeight) {
+        setCtaScale(0);
+      } else if (rect.bottom <= 0) {
+        setCtaScale(1);
+      }
+    };
 
-    if (ctaRef.current) {
-      observer.observe(ctaRef.current);
-    }
-    return () => observer.disconnect();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll);
+    setTimeout(handleScroll, 100);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
   }, []);
 
   useMeta({
@@ -458,16 +473,30 @@ export default function ProjectsPage() {
                     </div>
                   </div>
                 </Link>
+              </div>
+              {/* GIF overlay - absolutely centered over the circles, outside rotating wrapper */}
+              <div style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: `translate(-50%, -50%) scale(${ctaScale})`,
+                transition: 'transform 0.15s ease-out',
+                zIndex: 10,
+                borderRadius: '50%',
+                overflow: 'hidden',
+                width: '240px',
+                height: '240px',
+                transformOrigin: 'center center',
+              }}>
                 <img 
                   src="/images/wizzibilityeye.gif" 
                   alt="Wizzibility Eye Animation" 
                   style={{ 
-                    width: '240px', 
-                    height: '240px', 
+                    width: '100%', 
+                    height: '100%', 
                     borderRadius: '50%', 
                     objectFit: 'cover',
-                    transform: ctaActive ? 'scale(1)' : 'scale(0)',
-                    transition: 'transform 1.0s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                    display: 'block',
                   }} 
                 />
               </div>
