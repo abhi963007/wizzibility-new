@@ -484,8 +484,8 @@ export default function ServiceDetail() {
                     {relatedServices[0] && (
                       <div role="listitem" className="w-dyn-item">
                         <Link to={`/service/${relatedServices[0].slug}`} className="services-card bg-onyx w-inline-block">
-                          <div className="max-width-17">
-                            <div className="font-2-medium center white">{relatedServices[0].title}</div>
+                          <div className="max-width-17" style={{ maxWidth: 'none' }}>
+                            <div className="font-2-medium center white" style={{ whiteSpace: 'nowrap' }}>{relatedServices[0].title}</div>
                           </div>
                           <div className="service-image-wrapper">
                             <img
@@ -526,8 +526,8 @@ export default function ServiceDetail() {
                     {relatedServices[1] && (
                       <div role="listitem" className="w-dyn-item">
                         <Link to={`/service/${relatedServices[1].slug}`} className="services-card bg-onyx w-inline-block">
-                          <div className="max-width-17">
-                            <div className="font-2-medium center white">{relatedServices[1].title}</div>
+                          <div className="max-width-17" style={{ maxWidth: 'none' }}>
+                            <div className="font-2-medium center white" style={{ whiteSpace: 'nowrap' }}>{relatedServices[1].title}</div>
                           </div>
                           <div className="service-image-wrapper">
                             <img
