@@ -7949,6 +7949,13 @@ li {
   border-radius: 50% !important;
   object-fit: cover !important;
   border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.cta-card:hover .cta-card-img {
+  transform: scale(1.12) !important;
+  border-color: rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5) !important;
 }
 
 /* Global BG Section - Cinematic Purple Theme Override */

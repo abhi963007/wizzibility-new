@@ -8,12 +8,12 @@ import useMeta from '../hooks/useMeta';
 
 // Mapping of project slugs to background videos
 const projectVideos = {
-  'social-media-videos': '/video/social.mp4',
-  'wedding-stories': '/video/brand-identity.mp4',
-  'brand-campaigns': '/video/performce-marketing.mp4',
-  'product-shoots': '/video/ui-ux.mp4',
-  'corporate-event-highlights': '/video/corporate.mp4',
-  'social-media-reel-series': '/video/content-creation.mp4',
+  'social-media-campaigns': '/video/social.mp4',
+  'brand-identity-systems': '/video/brand-identity.mp4',
+  'performance-marketing': '/video/performce-marketing.mp4',
+  'product-design-ui-ux': '/video/ui-ux.mp4',
+  'corporate-strategy-audits': '/video/corporate.mp4',
+  'multimedia-content-creation': '/video/content-creation.mp4',
 };
 
 export default function ProjectDetail() {
@@ -444,27 +444,27 @@ export default function ProjectDetail() {
                 <div className="cta-circle-small"></div>
                 <div className="cta-card _01">
                   <img loading="lazy" src="/images/home/cards1.jpeg" alt="Creative preview 1" className="cta-card-img" />
-                  <div className="cta-card-text">@SocialMedia</div>
+                  <div className="cta-card-text">SocialMedia</div>
                 </div>
                 <div className="cta-card _02">
                   <img loading="lazy" src="/images/home/cards2.jpeg" alt="Creative preview 2" className="cta-card-img" />
-                  <div className="cta-card-text">@Branding</div>
+                  <div className="cta-card-text">Branding</div>
                 </div>
                 <div className="cta-card _03">
                   <img loading="lazy" src="/images/home/cards3.jpeg" alt="Creative preview 3" className="cta-card-img" />
-                  <div className="cta-card-text">@Marketing</div>
+                  <div className="cta-card-text">Marketing</div>
                 </div>
                 <div className="cta-card _04">
                   <img loading="lazy" src="/images/home/cards4.jpeg" alt="Creative preview 4" className="cta-card-img" />
-                  <div className="cta-card-text">@UI_UX</div>
+                  <div className="cta-card-text">UI_UX</div>
                 </div>
                 <div className="cta-card _05">
                   <img loading="lazy" src="/images/home/cards5.jpeg" alt="Creative preview 5" className="cta-card-img" />
-                  <div className="cta-card-text">@Strategy</div>
+                  <div className="cta-card-text">Strategy</div>
                 </div>
                 <div className="cta-card _06">
                   <img loading="lazy" src="/images/home/cards6.jpeg" alt="Creative preview 6" className="cta-card-img" />
-                  <div className="cta-card-text">@Multimedia</div>
+                  <div className="cta-card-text">Multimedia</div>
                 </div>
               </div>
             </div>

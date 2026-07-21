@@ -24,17 +24,17 @@ const projectsSchema = [
         {
           "@type": "ListItem",
           "position": 1,
-          "url": "https://wizzibility.com/project/social-media-videos"
+          "url": "https://wizzibility.com/project/social-media-campaigns"
         },
         {
           "@type": "ListItem",
           "position": 2,
-          "url": "https://wizzibility.com/project/wedding-stories"
+          "url": "https://wizzibility.com/project/brand-identity-systems"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "url": "https://wizzibility.com/project/brand-campaigns"
+          "url": "https://wizzibility.com/project/performance-marketing"
         }
       ]
     }
@@ -146,42 +146,42 @@ export default function ProjectsPage() {
     { 
       id: 1, 
       title: 'Social Media Campaigns', 
-      slug: 'social-media-videos', 
+      slug: 'social-media-campaigns', 
       category: 'Tab 2', 
       image: 'Social Media.jpeg', 
     },
     { 
       id: 2, 
       title: 'Brand Identity Systems', 
-      slug: 'wedding-stories', 
+      slug: 'brand-identity-systems', 
       category: 'Tab 2', 
       image: 'Brand Identity Systems.jpeg', 
     },
     { 
       id: 3, 
       title: 'Performance Marketing', 
-      slug: 'brand-campaigns', 
+      slug: 'performance-marketing', 
       category: 'Tab 3', 
       image: 'Performance Marketing.jpeg', 
     },
     { 
       id: 4, 
       title: 'Product Design & UI/UX', 
-      slug: 'product-shoots', 
+      slug: 'product-design-ui-ux', 
       category: 'Tab 3', 
       image: 'Product Design.jpeg', 
     },
     { 
       id: 5, 
       title: 'Corporate Strategy & Audits', 
-      slug: 'corporate-event-highlights', 
+      slug: 'corporate-strategy-audits', 
       category: 'Tab 4', 
       image: '1.jpeg', 
     },
     { 
       id: 6, 
       title: 'Multimedia Content Creation', 
-      slug: 'social-media-reel-series', 
+      slug: 'multimedia-content-creation', 
       category: 'Tab 4', 
       image: '2.jpeg', 
     }
@@ -436,27 +436,27 @@ export default function ProjectsPage() {
                 <div className="cta-circle-small"></div>
                 <div className="cta-card _01">
                   <img loading="lazy" src="/images/home/cards1.jpeg" alt="Creative preview 1" className="cta-card-img" />
-                  <div className="cta-card-text">@SocialMedia</div>
+                  <div className="cta-card-text">SocialMedia</div>
                 </div>
                 <div className="cta-card _02">
                   <img loading="lazy" src="/images/home/cards2.jpeg" alt="Creative preview 2" className="cta-card-img" />
-                  <div className="cta-card-text">@Branding</div>
+                  <div className="cta-card-text">Branding</div>
                 </div>
                 <div className="cta-card _03">
                   <img loading="lazy" src="/images/home/cards3.jpeg" alt="Creative preview 3" className="cta-card-img" />
-                  <div className="cta-card-text">@Marketing</div>
+                  <div className="cta-card-text">Marketing</div>
                 </div>
                 <div className="cta-card _04">
                   <img loading="lazy" src="/images/home/cards4.jpeg" alt="Creative preview 4" className="cta-card-img" />
-                  <div className="cta-card-text">@UI_UX</div>
+                  <div className="cta-card-text">UI_UX</div>
                 </div>
                 <div className="cta-card _05">
                   <img loading="lazy" src="/images/home/cards5.jpeg" alt="Creative preview 5" className="cta-card-img" />
-                  <div className="cta-card-text">@Strategy</div>
+                  <div className="cta-card-text">Strategy</div>
                 </div>
                 <div className="cta-card _06">
                   <img loading="lazy" src="/images/home/cards6.jpeg" alt="Creative preview 6" className="cta-card-img" />
-                  <div className="cta-card-text">@Multimedia</div>
+                  <div className="cta-card-text">Multimedia</div>
                 </div>
               </div>
             </div>

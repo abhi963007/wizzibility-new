@@ -1,5 +1,5 @@
 export const projectsData = {
-  'social-media-videos': {
+  'social-media-campaigns': {
     title: 'Social Media Campaigns',
     heroImage: '/images/social.png',
     heroImageSizes: '100vw',
@@ -47,9 +47,9 @@ export const projectsData = {
     solutionImage: '6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp',
     solutionImageSrcset: '/images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739-p-500.webp 500w, /images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp 640w',
     
-    relatedSlugs: ['wedding-stories', 'brand-campaigns']
+    relatedSlugs: ['brand-identity-systems', 'performance-marketing']
   },
-  'wedding-stories': {
+  'brand-identity-systems': {
     title: 'Brand Identity Systems',
     heroImage: '6a356f69fd4f8718f8c20f44_717887a9f039712b0380565e87774a542a5e5727.webp',
     heroImageSizes: '100vw',
@@ -98,9 +98,9 @@ export const projectsData = {
     solutionImage: '6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp',
     solutionImageSrcset: '/images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739-p-500.webp 500w, /images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp 640w',
     
-    relatedSlugs: ['social-media-videos', 'social-media-reel-series']
+    relatedSlugs: ['social-media-campaigns', 'multimedia-content-creation']
   },
-  'brand-campaigns': {
+  'performance-marketing': {
     title: 'Performance Marketing',
     heroImage: '6a356f7a7328f22b398385f8_61975c7043a75c5376431e97031e5a4d2631ccd4.webp',
     heroImageSizes: '100vw',
@@ -148,9 +148,9 @@ export const projectsData = {
     solutionImage: '6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp',
     solutionImageSrcset: '/images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739-p-500.webp 500w, /images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp 640w',
     
-    relatedSlugs: ['product-shoots', 'corporate-event-highlights']
+    relatedSlugs: ['product-design-ui-ux', 'corporate-strategy-audits']
   },
-  'product-shoots': {
+  'product-design-ui-ux': {
     title: 'Product Design & UI/UX',
     heroImage: '6a356f5456ef1a53f0f6f826_7782b6bf6ea462330fdb471ee69d6f709461c3f2.webp',
     heroImageSizes: '100vw',
@@ -198,9 +198,9 @@ export const projectsData = {
     solutionImage: '6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp',
     solutionImageSrcset: '/images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739-p-500.webp 500w, /images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp 640w',
     
-    relatedSlugs: ['brand-campaigns', 'social-media-videos']
+    relatedSlugs: ['performance-marketing', 'social-media-campaigns']
   },
-  'corporate-event-highlights': {
+  'corporate-strategy-audits': {
     title: 'Corporate Strategy & Audits',
     heroImage: '6a356f9e917a0757bab60b84_994728c6298c5f52b20947c6dd8231033c9f481f.webp',
     heroImageSizes: '100vw',
@@ -248,9 +248,9 @@ export const projectsData = {
     solutionImage: '6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp',
     solutionImageSrcset: '/images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739-p-500.webp 500w, /images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp 640w',
     
-    relatedSlugs: ['brand-campaigns', 'social-media-reel-series']
+    relatedSlugs: ['performance-marketing', 'multimedia-content-creation']
   },
-  'social-media-reel-series': {
+  'multimedia-content-creation': {
     title: 'Multimedia Content Creation',
     heroImage: '6a356fab9d169080ef630d19_90dfbc267ae6d4a0667f0c7190f5a90daf29e6bf.webp',
     heroImageSizes: '100vw',
@@ -298,6 +298,6 @@ export const projectsData = {
     solutionImage: '6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp',
     solutionImageSrcset: '/images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739-p-500.webp 500w, /images/6a357273cd06ca2314179cf7_278fe33fde999c6d8f0145e5d805ea51b2da9739.webp 640w',
     
-    relatedSlugs: ['social-media-videos', 'corporate-event-highlights']
+    relatedSlugs: ['social-media-campaigns', 'corporate-strategy-audits']
   }
 };
