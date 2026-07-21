@@ -107,6 +107,42 @@ const servicesSchema = [
 ];
 
 export default function ServicesPage() {
+  const ctaRef = React.useRef(null);
+  const [ctaScale, setCtaScale] = React.useState(0);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if (!ctaRef.current) return;
+      const rect = ctaRef.current.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+      
+      if (rect.top < viewportHeight && rect.bottom > 0) {
+        const startPoint = viewportHeight;
+        const endPoint = viewportHeight * 0.25; 
+        
+        let progress = (startPoint - rect.top) / (startPoint - endPoint);
+        if (progress < 0) progress = 0;
+        if (progress > 1) progress = 1;
+        
+        setCtaScale(progress);
+      } else if (rect.top >= viewportHeight) {
+        setCtaScale(0);
+      } else if (rect.bottom <= 0) {
+        setCtaScale(1);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll);
+    // Initial check with a tiny delay to let elements render and layout
+    setTimeout(handleScroll, 100);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
+  }, []);
+
   useMeta({
     title: 'Our Services | Wizzibility',
     description: "Ignite bold creativity with smart tech. Explore Wizzibility's core and integrated services, including visual communication, digital marketing, website and app development, and branding.",
@@ -439,14 +475,21 @@ export default function ServicesPage() {
         })()}
 
         {/* Sticky CTA Section */}
-        <section data-wf-component-id="d0f53c86-b418-a526-4d6f-71e162cb1bb7" data-wf-variant-state="base" className="section bg">
+        <section ref={ctaRef} data-wf-component-id="d0f53c86-b418-a526-4d6f-71e162cb1bb7" data-wf-variant-state="base" className="section bg">
           <div className="cta-sticky-wrap">
             <div className="cta-sticky">
               <div className="cta-content-wrap">
-                <div className="cta-heading-wrap">
+                <div className="cta-heading-wrap" style={{ display: 'none' }}>
                   <h2 className="cta-heading">Let’s Create Something</h2>
                 </div>
-                <Link data-wf--primary-button--variant="bg-white" data-wf-component-id="65aca0e1-f951-823d-959b-848e3a7ce565" data-wf-variant-state="06be3d8b-21d0-779c-6896-d9322336667f" to="/contact" className="button w-inline-block">
+                <Link 
+                  data-wf--primary-button--variant="bg-white" 
+                  data-wf-component-id="65aca0e1-f951-823d-959b-848e3a7ce565" 
+                  data-wf-variant-state="06be3d8b-21d0-779c-6896-d9322336667f" 
+                  to="/contact" 
+                  className="button w-inline-block" 
+                  style={{ display: 'none' }}
+                >
                   <div className="button-text-wrapper w-variant-06be3d8b-21d0-779c-6896-d9322336667f">
                     <div className="button-text">Work with us</div>
                   </div>
@@ -461,6 +504,32 @@ export default function ServicesPage() {
                     </div>
                   </div>
                 </Link>
+              </div>
+              {/* GIF overlay - absolutely centered over the circles, outside rotating wrapper */}
+              <div style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: `translate(-50%, -50%) scale(${ctaScale})`,
+                transition: 'transform 0.15s ease-out',
+                zIndex: 10,
+                borderRadius: '50%',
+                overflow: 'hidden',
+                width: '240px',
+                height: '240px',
+                transformOrigin: 'center center',
+              }}>
+                <img 
+                  src="/images/wizzibilityeye.gif" 
+                  alt="Wizzibility Eye Animation" 
+                  style={{ 
+                    width: '100%', 
+                    height: '100%', 
+                    borderRadius: '50%', 
+                    objectFit: 'cover',
+                    display: 'block',
+                  }} 
+                />
               </div>
               <div className="cta-circle-large">
                 <div className="cta-circle-small"></div>

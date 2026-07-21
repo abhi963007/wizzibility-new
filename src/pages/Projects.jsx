@@ -60,6 +60,26 @@ const projectsSchema = [
 ];
 
 export default function ProjectsPage() {
+  const ctaRef = React.useRef(null);
+  const [ctaActive, setCtaActive] = React.useState(false);
+
+  React.useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setCtaActive(true);
+        } else {
+          setCtaActive(false);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    if (ctaRef.current) {
+      observer.observe(ctaRef.current);
+    }
+    return () => observer.disconnect();
+  }, []);
+
   useMeta({
     title: 'Projects & Case Stories | Wizzibility',
     description: 'Explore our portfolio of high-impact designs, creative tech solutions, and branding campaigns that drive sustainable business growth.',
@@ -409,14 +429,21 @@ export default function ProjectsPage() {
         })()}
 
         {/* Sticky CTA Section */}
-        <section data-wf-component-id="d0f53c86-b418-a526-4d6f-71e162cb1bb7" data-wf-variant-state="base" className="section bg">
+        <section ref={ctaRef} data-wf-component-id="d0f53c86-b418-a526-4d6f-71e162cb1bb7" data-wf-variant-state="base" className="section bg">
           <div className="cta-sticky-wrap">
             <div className="cta-sticky">
               <div className="cta-content-wrap">
-                <div className="cta-heading-wrap">
+                <div className="cta-heading-wrap" style={{ display: 'none' }}>
                   <h2 className="cta-heading">Let’s Create Something</h2>
                 </div>
-                <Link data-wf--primary-button--variant="bg-white" data-wf-component-id="65aca0e1-f951-823d-959b-848e3a7ce565" data-wf-variant-state="06be3d8b-21d0-779c-6896-d9322336667f" to="/contact" className="button w-inline-block">
+                <Link 
+                  data-wf--primary-button--variant="bg-white" 
+                  data-wf-component-id="65aca0e1-f951-823d-959b-848e3a7ce565" 
+                  data-wf-variant-state="06be3d8b-21d0-779c-6896-d9322336667f" 
+                  to="/contact" 
+                  className="button w-inline-block" 
+                  style={{ display: 'none' }}
+                >
                   <div className="button-text-wrapper w-variant-06be3d8b-21d0-779c-6896-d9322336667f">
                     <div className="button-text">Work with us</div>
                   </div>
@@ -431,6 +458,18 @@ export default function ProjectsPage() {
                     </div>
                   </div>
                 </Link>
+                <img 
+                  src="/images/wizzibilityeye.gif" 
+                  alt="Wizzibility Eye Animation" 
+                  style={{ 
+                    width: '240px', 
+                    height: '240px', 
+                    borderRadius: '50%', 
+                    objectFit: 'cover',
+                    transform: ctaActive ? 'scale(1)' : 'scale(0)',
+                    transition: 'transform 1.0s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                  }} 
+                />
               </div>
               <div className="cta-circle-large">
                 <div className="cta-circle-small"></div>
