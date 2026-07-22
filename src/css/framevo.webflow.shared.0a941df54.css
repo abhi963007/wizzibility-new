@@ -7191,7 +7191,8 @@ li {
 /* Blend overlay override for purple character lighting */
 .hero-home-area .blend-color {
     background-color: #4c1d95 !important;
-    /* Deep rich indigo/violet overlay for professional photo styling */
+    opacity: 0.4 !important;
+    /* Reduced violet saturation to allow natural contrast and video tones */
 }
 
 /* Edge-to-edge layout override for hero section container */
