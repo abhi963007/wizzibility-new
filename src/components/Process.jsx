@@ -171,11 +171,11 @@ export default function Process() {
         >
           <Swiper
             spaceBetween={0}
-            speed={750}
+            speed={600}
             autoplay={{
-              delay: 2400,
+              delay: 1500,
               disableOnInteraction: false,
-              pauseOnMouseEnter: true,
+              pauseOnMouseEnter: false,
             }}
             effect="coverflow"
             grabCursor={true}
