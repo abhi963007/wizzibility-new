@@ -3809,7 +3809,8 @@ li {
 
 .blend-color {
     z-index: 2;
-    background-color: var(--_color---granadier);
+    background-color: #4c1d95 !important;
+    opacity: 0.4 !important;
     pointer-events: none;
     mix-blend-mode: color;
     position: absolute;
