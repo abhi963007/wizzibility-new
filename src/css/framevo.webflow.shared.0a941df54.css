@@ -6845,63 +6845,114 @@ li {
 }
 
 /* Hero Section Custom Styles - Matching Reference */
-.hero-subtitle {
-    font-family: "Montserrat", sans-serif;
-    color: #a855f7;
-    font-size: 0.95rem;
-    font-weight: 600;
-    letter-spacing: 0.18em;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
+/* Hero Section Custom Styles - Matching Reference Mockup */
+.hero-subtitle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
 }
 
-.hero-heading-new {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 7.2rem;
-    font-weight: 400;
-    line-height: 0.9;
+.hero-subtitle {
+    font-family: "Montserrat", sans-serif;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
-    color: #fff;
-    margin: 0 0 3.5rem 0;
-    letter-spacing: -0.01em;
-    transform: scaleY(1.35);
-    transform-origin: left top;
-    display: inline-block;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    margin-bottom: 0;
+}
+
+.hero-subtitle-line {
+    width: 80px;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.hero-content-split {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 3.5rem;
+    width: 100%;
+    margin-bottom: 2.2rem;
+}
+
+.hero-heading-mockup {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5.2rem;
+    line-height: 0.95;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 1200px) {
-    .hero-heading-new {
-        font-size: 8.8rem;
-        margin-bottom: 4.2rem;
+    .hero-heading-mockup {
+        font-size: 6.2rem;
     }
 }
 
 @media screen and (min-width: 1400px) {
-    .hero-heading-new {
-        font-size: 10.5rem;
-        margin-bottom: 5rem;
+    .hero-heading-mockup {
+        font-size: 6.8rem;
     }
 }
 
-.purple-highlight {
-    color: #a855f7;
+.hero-purple-gradient {
+    font-family: "Bebas Neue", sans-serif;
+    background: linear-gradient(135deg, #e9d5ff 0%, #c084fc 40%, #a855f7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.hero-p-new {
+.hero-purple-italic-stroke {
+    font-family: "Bebas Neue", sans-serif;
+    color: #d8b4fe;
+    position: relative;
+    display: inline-block;
+}
+
+.hero-underline-svg {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    pointer-events: none;
+}
+
+.hero-right-col {
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+    max-width: 420px;
+    padding-bottom: 0.6rem;
+    flex-shrink: 0;
+}
+
+.hero-vertical-divider {
+    width: 1px;
+    height: 85px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.04) 100%);
+    flex-shrink: 0;
+}
+
+.hero-p-mockup {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.12rem;
-    line-height: 1.6;
-    color: #bbb;
-    max-width: 32rem;
-    margin: 0 0 2.2rem 0;
+    font-size: 0.95rem;
+    line-height: 1.62;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    font-weight: 400;
 }
 
 .hero-buttons-row {
     display: flex;
     align-items: center;
-    gap: 1.8rem;
+    gap: 2.2rem;
     margin-top: 1rem;
 }
 
@@ -6909,40 +6960,41 @@ li {
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-    padding: 0.8rem 1.8rem;
-    border: 1.5px solid #a855f7;
-    border-radius: 50px;
+    padding: 0.85rem 2.2rem;
+    border: 1.5px solid rgba(168, 85, 247, 0.8);
+    border-radius: 999px;
     background-color: transparent;
     color: #fff;
     font-family: "Montserrat", sans-serif;
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     font-weight: 600;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .btn-explore:hover {
-    background-color: #a855f7;
-    color: #fff;
-    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+    background-color: rgba(168, 85, 247, 0.15);
+    border-color: #c084fc;
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.35);
+    transform: translateY(-2px);
 }
 
 .btn-showreel {
     display: inline-flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.85rem;
     background: transparent;
     border: none;
     color: #fff;
     font-family: "Montserrat", sans-serif;
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     font-weight: 600;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     cursor: pointer;
-    padding: 0.8rem 0;
+    padding: 0.5rem 0;
     transition: all 0.3s ease;
     text-decoration: none;
 }
@@ -6957,16 +7009,87 @@ li {
     align-items: center;
     width: 38px;
     height: 38px;
-    border: 1.5px solid #a855f7;
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
     border-radius: 50%;
     color: #fff;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(8px);
     transition: all 0.3s ease;
 }
 
 .btn-showreel:hover .play-icon-circle {
     background-color: #a855f7;
     border-color: #a855f7;
-    box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.45);
+    transform: scale(1.08);
+}
+
+/* Side Pagination Dots - Right Margin */
+.hero-side-dots-wrapper {
+    position: absolute;
+    right: 3.5vw;
+    top: 55%;
+    transform: translateY(-50%);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.side-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.side-dot.active {
+    background-color: #c084fc;
+    border-color: #c084fc;
+    box-shadow: 0 0 10px rgba(192, 132, 252, 0.8);
+    transform: scale(1.25);
+}
+
+/* Mobile Responsiveness for Split Layout */
+@media screen and (max-width: 991px) {
+    .hero-content-split {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .hero-right-col {
+        padding-bottom: 0;
+        max-width: 100%;
+    }
+
+    .hero-vertical-divider {
+        display: none;
+    }
+
+    .hero-heading-mockup {
+        font-size: 3.6rem;
+    }
+
+    .hero-side-dots-wrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero-heading-mockup {
+        font-size: 2.8rem;
+    }
+
+    .hero-buttons-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
 }
 
 /* Bottom Scroll Discover Indicator */
