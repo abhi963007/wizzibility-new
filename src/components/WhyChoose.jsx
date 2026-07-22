@@ -47,12 +47,12 @@ export default function WhyChoose() {
     .skiper-expand-wrapper {
       display: flex;
       width: 100%;
-      max-width: 78rem;
+      max-width: 94rem;
       margin: 0 auto;
       align-items: center;
       justify-content: center;
-      gap: 0.5rem;
-      padding: 0.5rem 0;
+      gap: 0.75rem;
+      padding: 0.75rem 0;
     }
 
     .skiper-card {
@@ -60,7 +60,7 @@ export default function WhyChoose() {
       cursor: pointer;
       overflow: hidden;
       border-radius: 2.25rem;
-      height: 26rem;
+      height: 33rem;
     }
 
     .skiper-card-img {
@@ -73,15 +73,15 @@ export default function WhyChoose() {
       .skiper-expand-wrapper {
         flex-direction: column;
         height: auto;
-        gap: 0.6rem;
+        gap: 0.75rem;
       }
       .skiper-card {
         width: 100% !important;
-        height: 5rem !important;
+        height: 5.5rem !important;
         border-radius: 1.5rem;
       }
       .skiper-card.active {
-        height: 18rem !important;
+        height: 22rem !important;
       }
     }
   `;
@@ -90,7 +90,7 @@ export default function WhyChoose() {
     <section className="section onyx" style={{ position: 'relative', overflow: 'hidden' }}>
       <style>{cssStyles}</style>
       <div className="space-6-normal"></div>
-      <div className="w-layout-blockcontainer container w-container" style={{ maxWidth: '84rem' }}>
+      <div className="w-layout-blockcontainer container w-container" style={{ maxWidth: '96rem', width: '95%' }}>
         <div className="choose-wrapper">
           <div className="section-header">
             <div className="section-heading-wrap choose text-center">
@@ -113,10 +113,10 @@ export default function WhyChoose() {
                   <motion.div
                     key={feature.id}
                     className={`skiper-card ${isActive ? 'active' : ''}`}
-                    initial={{ width: '4.5rem', height: '26rem' }}
+                    initial={{ width: '7rem', height: '33rem' }}
                     animate={{
-                      width: isActive ? '26rem' : '4.5rem',
-                      height: '26rem',
+                      width: isActive ? '34rem' : '7rem',
+                      height: '33rem',
                     }}
                     transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                     onClick={() => setActiveImage(index)}
@@ -165,7 +165,7 @@ export default function WhyChoose() {
                           style={{
                             position: 'absolute',
                             inset: 0,
-                            padding: '1.75rem',
+                            padding: '2.25rem 2rem',
                             zIndex: 2,
                             display: 'flex',
                             flexDirection: 'column',
@@ -180,10 +180,10 @@ export default function WhyChoose() {
                               transition={{ duration: 0.3, delay: 0.15 }}
                               style={{
                                 color: '#ffffff',
-                                fontSize: '1.25rem',
+                                fontSize: '1.45rem',
                                 fontWeight: '700',
                                 letterSpacing: '-0.01em',
-                                marginBottom: '0.4rem',
+                                marginBottom: '0.5rem',
                                 lineHeight: '1.3',
                               }}
                             >
@@ -195,9 +195,9 @@ export default function WhyChoose() {
                               exit={{ opacity: 0, y: 5 }}
                               transition={{ duration: 0.3, delay: 0.2 }}
                               style={{
-                                color: 'rgba(255, 255, 255, 0.82)',
-                                fontSize: '0.875rem',
-                                lineHeight: '1.48',
+                                color: 'rgba(255, 255, 255, 0.85)',
+                                fontSize: '0.95rem',
+                                lineHeight: '1.5',
                                 margin: 0,
                               }}
                             >
