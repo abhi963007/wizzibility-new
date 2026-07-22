@@ -7427,14 +7427,14 @@ li {
     align-items: center;
     justify-content: center;
     pointer-events: auto;
-    width: 44px;
-    height: 44px;
+    width: 36px;
+    height: 36px;
     transition: all 0.3s ease;
 }
 
 .hamburger-circle {
-    width: 44px;
-    height: 44px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     border: 1.5px solid rgba(255, 255, 255, 0.22);
     display: flex;
@@ -7475,8 +7475,8 @@ li {
 }
 
 .hamburger-lines {
-    width: 18px;
-    height: 12px;
+    width: 15px;
+    height: 10px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -7493,21 +7493,21 @@ li {
 }
 
 .line-1 {
-    width: 18px;
+    width: 15px;
 }
 
 .line-2 {
-    width: 13px;
+    width: 11px;
     transition-delay: 0.02s;
 }
 
 .line-3 {
-    width: 16px;
+    width: 13px;
 }
 
 .navbar-toggle-btn.active .line-1 {
-    transform: translateY(5px) rotate(45deg);
-    width: 18px;
+    transform: translateY(4px) rotate(45deg);
+    width: 15px;
 }
 
 .navbar-toggle-btn.active .line-2 {
@@ -7516,8 +7516,8 @@ li {
 }
 
 .navbar-toggle-btn.active .line-3 {
-    transform: translateY(-5px) rotate(-45deg);
-    width: 18px;
+    transform: translateY(-4px) rotate(-45deg);
+    width: 15px;
 }
 
 /* Responsive mobile scaling for interactive capsule */

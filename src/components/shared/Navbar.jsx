@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import logoImg from '../../../Wizzibility_white_logo-1.webp';
 
@@ -6,6 +6,14 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    // Automatically open navbar smoothly on page load / reload
+    const timer = setTimeout(() => {
+      setIsOpen(true);
+    }, 400);
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
