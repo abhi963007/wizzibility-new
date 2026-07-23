@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import logoImg from '../../../Wizzibility_white_logo-1.webp';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
+  const glowRef = useRef(null);
 
   useEffect(() => {
     // Automatically open navbar smoothly on page load / reload
@@ -18,7 +18,12 @@ export default function Navbar() {
   const handleMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const mouseX = e.clientX - rect.left;
-    setMousePos({ x: mouseX, y: e.clientY - rect.top });
+    const mouseY = e.clientY - rect.top;
+
+    if (glowRef.current) {
+      glowRef.current.style.left = `${mouseX}px`;
+      glowRef.current.style.top = `${mouseY}px`;
+    }
 
     // Only apply macOS dock magnification if menu is open
     if (!isOpen) return;
@@ -30,8 +35,8 @@ export default function Navbar() {
       const itemCenter = itemRect.left + itemRect.width / 2 - rect.left;
       const distance = Math.abs(mouseX - itemCenter);
       
-      const maxMagnification = 1.55;
-      const rangeDistance = 90; // Smoothly magnifies neighboring elements
+      const maxMagnification = 1.35;
+      const rangeDistance = 85;
 
       // Gaussian bell curve formula
       const exponent = -Math.pow(distance, 2) / (2 * Math.pow(rangeDistance, 2));
@@ -43,7 +48,7 @@ export default function Navbar() {
 
   const handleMouseLeave = () => {
     setIsHovered(false);
-    // Reset all scales back to 1
+    // Reset all scales back to 1 smoothly
     const items = document.querySelectorAll('.nav-item-simple');
     items.forEach((item) => {
       item.style.setProperty('--dock-scale', 1);
@@ -78,10 +83,9 @@ export default function Navbar() {
         <div className="navbar-bg-glow-wrapper">
           {/* Liquid Cursor Glow (Mouse follow) */}
           <div 
+            ref={glowRef}
             className="navbar-cursor-glow" 
             style={{ 
-              left: mousePos.x, 
-              top: mousePos.y, 
               opacity: isHovered ? 1 : 0 
             }} 
           />

@@ -7426,7 +7426,7 @@ li {
     }
 }
 
-/* Hover liquid purple underline */
+/* Hover liquid purple underline - ONLY for inactive pages */
 .nav-item-simple::before {
     content: "";
     position: absolute;
@@ -7441,7 +7441,7 @@ li {
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease;
 }
 
-.nav-item-simple:hover::before {
+.nav-item-simple:not(.active):hover::before {
     transform: translateX(-50%) scaleX(1);
     opacity: 1;
 }
@@ -7486,6 +7486,11 @@ li {
 .navbar-links-wrapper.open .nav-item-simple {
     transform: translateX(0) scale(var(--dock-scale, 1));
     opacity: 1;
+}
+
+/* Eliminate staggered transition-delay when hovering over links wrapper so dock scaling is instant */
+.navbar-links-wrapper.open:hover .nav-item-simple {
+    transition-delay: 0s !important;
 }
 
 .navbar-links-wrapper.open .nav-item-simple:nth-child(1) {
