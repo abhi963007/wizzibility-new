@@ -2,11 +2,18 @@ import React, { useEffect, useRef } from 'react';
 
 export default function Team() {
   const sectionRef = useRef(null);
+  const scrollContainerRef = useRef(null);
+  const trackWrapperRef = useRef(null);
 
   const team = [
     { id: 1, name: 'Brooklyn Simmons', role: 'Lead Developer', image: 'home/Lead Developer.jpeg' },
     { id: 2, name: 'Darlene Robertson', role: 'Chief Technology Officer', image: 'home/Chief Technology.jpeg' },
     { id: 3, name: 'Emma Markson', role: 'Creative Director', image: 'home/Creative Director.jpeg' },
+    { id: 4, name: 'Divya Reddy', role: 'Senior Product Designer', image: 'home/Divya Reddy.jpeg' },
+    { id: 5, name: 'Vikas Sharma', role: 'Full Stack Engineer', image: 'home/Vikas.jpeg' },
+    { id: 6, name: 'Payal Kar Dutta', role: 'Marketing Director', image: 'home/Payal Kar Dutta.jpeg' },
+    { id: 7, name: 'Vinod Kumar', role: 'UI/UX Architect', image: 'home/Vinod.jpeg' },
+    { id: 8, name: 'Alex Morgan', role: 'Growth Strategist', image: 'home/1.jpeg' },
   ];
 
   useEffect(() => {
@@ -16,70 +23,134 @@ export default function Team() {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    const section = sectionRef.current;
-    if (!section) return;
+    // Small delay to ensure DOM is fully painted before measuring widths
+    const timer = setTimeout(() => {
+      const section = sectionRef.current;
+      const track = scrollContainerRef.current;
+      const trackWrapper = trackWrapperRef.current;
+      if (!section || !track || !trackWrapper) return;
 
-    // Heading fade-up animation
-    gsap.fromTo(
-      section.querySelector('.team-heading'),
-      { opacity: 0, y: 40 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1.0,
-        ease: 'power3.out',
+      // Heading fade-up
+      gsap.fromTo(
+        section.querySelector('.team-heading'),
+        { opacity: 0, y: 40 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1.0,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: section,
+            start: 'top 80%',
+            toggleActions: 'play none none reverse',
+          },
+        }
+      );
+
+      // Cards fade in staggered
+      gsap.fromTo(
+        section.querySelectorAll('.team-card'),
+        { opacity: 0, y: 30 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.7,
+          stagger: 0.08,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: section,
+            start: 'top 80%',
+            toggleActions: 'play none none reverse',
+          },
+        }
+      );
+
+      // The distance the track needs to slide left
+      const slideDistance = track.scrollWidth - trackWrapper.offsetWidth;
+      if (slideDistance <= 0) return; // All cards already visible, no need to scroll
+
+      // Horizontal scroll tied to vertical scroll — section pins, cards slide
+      gsap.to(track, {
+        x: -slideDistance,
+        ease: 'none',
         scrollTrigger: {
           trigger: section,
-          start: 'top 82%',
-          toggleActions: 'play none none reverse',
+          pin: true,           // freeze the section in viewport
+          pinSpacing: true,    // push down content below so flow is correct
+          start: 'top top',    // pin fires the moment section top hits viewport top
+          end: `+=${slideDistance}`, // scroll distance = pixel movement of track
+          scrub: 1,            // smooth scrubbing tied to scrollbar
+          invalidateOnRefresh: true,
         },
-      }
-    );
+      });
 
-    // Staggered card entrance animation
-    gsap.fromTo(
-      section.querySelectorAll('.team-card'),
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.85,
-        stagger: 0.18,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: section.querySelector('.team-grid'),
-          start: 'top 85%',
-          toggleActions: 'play none none reverse',
-        },
-      }
-    );
+      ScrollTrigger.refresh();
+    }, 100);
+
+    return () => {
+      clearTimeout(timer);
+      ScrollTrigger.getAll().forEach((st) => st.kill());
+    };
   }, []);
 
   return (
+    // NO overflow:hidden here — GSAP pin adds a spacer div outside this element
+    // overflow:hidden on section would hide the spacer and duplicate the section visually
     <section className="section team-section" ref={sectionRef}>
       <div className="w-layout-blockcontainer container w-container">
-        <div className="section-header" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+        <div
+          className="section-header"
+          style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: '2rem' }}
+        >
           <div style={{ width: '100%', textAlign: 'center' }}>
             <h2
               className="section-heading team-heading"
-              style={{ textAlign: 'center', whiteSpace: 'nowrap', opacity: 0 }}
+              style={{ textAlign: 'center', opacity: 0, margin: 0 }}
             >
               Expertise Teams
             </h2>
           </div>
         </div>
-        <div className="w-layout-grid team-grid">
-          {team.map((member) => (
-            <div key={member.id} className="team-card" style={{ opacity: 0 }}>
-              <div className="team-img-wrap">
-                <img src={`/images/${member.image}`} loading="lazy" alt={member.name} className="team-image" />
+
+        {/* overflow:hidden on this inner wrapper clips the sliding track safely */}
+        <div ref={trackWrapperRef} style={{ overflow: 'hidden', width: '100%' }}>
+          <div
+            ref={scrollContainerRef}
+            className="team-scroll-track"
+            style={{
+              display: 'flex',
+              gap: '1.5rem',
+              flexWrap: 'nowrap',
+              willChange: 'transform',
+            }}
+          >
+            {team.map((member) => (
+              <div
+                key={member.id}
+                className="team-card"
+                style={{
+                  opacity: 0,
+                  width: '320px',
+                  flexShrink: 0,
+                  boxSizing: 'border-box',
+                }}
+              >
+                <div className="team-img-wrap">
+                  <img
+                    src={`/images/${member.image}`}
+                    loading="lazy"
+                    alt={member.name}
+                    className="team-image"
+                    style={{ width: '100%', height: '360px', objectFit: 'cover' }}
+                  />
+                </div>
+                <div className="team-info-wrap" style={{ textAlign: 'center', marginTop: '1rem' }}>
+                  <div className="font-2-small">{member.name}</div>
+                  <div className="font-1-extra-small nobel">{member.role}</div>
+                </div>
               </div>
-              <div className="team-info-wrap">
-                <div className="font-2-small">{member.name}</div>
-                <div className="font-1-extra-small nobel">{member.role}</div>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

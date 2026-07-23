@@ -8496,14 +8496,11 @@ li {
     margin-top: 0 !important;
 }
 
-/* Team section - fully isolated block, no overflow into next sections */
+/* Team section - GSAP horizontal pin section */
+/* ⚠️ No overflow or isolation — breaks GSAP pin spacer */
 .team-section {
     padding-top: 4rem !important;
     padding-bottom: 4rem !important;
-    position: relative !important;
-    z-index: 1 !important;
-    overflow: visible !important;
-    isolation: isolate !important;
 }
 
 .team-section .section-header {
@@ -8514,6 +8511,24 @@ li {
 .team-section .team-grid {
     margin-top: 0 !important;
     padding-bottom: 0 !important;
+}
+
+/* Team Horizontal Scroll Track — GSAP translates this, no native overflow scroll */
+.team-scroll-track {
+    /* No overflow-x or scrollbar — track is moved by GSAP x transform */
+    will-change: transform;
+}
+
+@media screen and (max-width: 991px) {
+    .team-scroll-track .team-card {
+        flex: 0 0 calc(50% - 0.75rem) !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .team-scroll-track .team-card {
+        flex: 0 0 85% !important;
+    }
 }
 
 /* Testimonials Section - fully isolated, prevent overlap from Team section */
