@@ -2,15 +2,18 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Navbar from '../components/shared/Navbar';
-import Footer from '../components/shared/Footer';
-import useMeta from '../hooks/useMeta';
+import { motion } from 'framer-motion';
+import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
+import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import Navbar from '../components/shared/Navbar';
+import Footer from '../components/shared/Footer';
+import { servicesData } from '../data/servicesData';
+import useMeta from '../hooks/useMeta';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -395,95 +398,112 @@ export default function ServiceDetail() {
               <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.1rem', maxWidth: '720px', textAlign: 'center', margin: '0 auto 3rem auto' }}>
                 {service.inclusionsDesc}
               </p>
-              {/* 3D Swiper Coverflow Carousel */}
-              <div style={{ width: '100%', maxWidth: '1100px', margin: '0 auto' }}>
+              <div className="flex w-full items-center justify-center overflow-hidden">
                 <style>{`
-                  .deliverables-swiper {
-                    padding-bottom: 50px !important;
-                    padding-top: 20px !important;
+                  .Carousal_001 {
+                    padding-bottom: 60px !important;
+                    width: 100%;
+                    overflow: visible;
                   }
-                  .deliverables-swiper .swiper-pagination-bullet {
-                    background: rgba(255, 255, 255, 0.4) !important;
-                    opacity: 0.6;
-                    transition: all 0.3s;
+                  .Carousal_001 .swiper-slide {
+                    background: transparent;
+                    transition: opacity 0.3s;
                   }
-                  .deliverables-swiper .swiper-pagination-bullet-active {
-                    background: #a855f7 !important;
-                    opacity: 1;
-                    width: 28px !important;
-                    border-radius: 10px !important;
+                  .Carousal_001 .swiper-slide:not(.swiper-slide-active) {
+                    opacity: 0.5;
+                  }
+                  .swiper-button-next::after,
+                  .swiper-button-prev::after {
+                    display: none;
+                  }
+                  .swiper-button-next,
+                  .swiper-button-prev {
+                    background: rgba(168,85,247,0.15);
+                    border: 1px solid rgba(168,85,247,0.3);
+                    border-radius: 50%;
+                    width: 48px;
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: background 0.3s, transform 0.3s;
+                    top: auto;
+                    bottom: 0px;
+                  }
+                  .swiper-button-next {
+                    right: calc(50% - 30px - 48px);
+                  }
+                  .swiper-button-prev {
+                    left: calc(50% - 30px - 48px);
+                  }
+                  .swiper-button-next:hover,
+                  .swiper-button-prev:hover {
+                    background: rgba(168,85,247,0.4);
+                    transform: scale(1.05);
+                  }
+                  .swiper-pagination-bullet {
+                    background: rgba(255,255,255,0.3);
+                  }
+                  .swiper-pagination-bullet-active {
+                    background: #a855f7;
+                  }
+                  .swiper-pagination {
+                    bottom: 12px !important;
                   }
                 `}</style>
-                <Swiper
-                  spaceBetween={30}
-                  effect="coverflow"
-                  grabCursor={true}
-                  centeredSlides={true}
-                  loop={true}
-                  autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                  }}
-                  slidesPerView={1.2}
-                  breakpoints={{
-                    640: { slidesPerView: 2 },
-                    1024: { slidesPerView: 2.43 },
-                  }}
-                  coverflowEffect={{
-                    rotate: 0,
-                    slideShadows: false,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 2.5,
-                  }}
-                  pagination={{
-                    clickable: true,
-                  }}
-                  className="deliverables-swiper"
-                  modules={[EffectCoverflow, Autoplay, Pagination, Navigation]}
+                <motion.div
+                  initial={{ opacity: 0, translateY: 30 }}
+                  whileInView={{ opacity: 1, translateY: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
+                  className="w-full relative"
+                  style={{ width: '100%', maxWidth: '1200px', margin: '0 auto' }}
                 >
-                  {service.inclusionsList?.map((inclusion, index) => (
-                    <SwiperSlide key={index} style={{ height: '240px' }}>
-                      <div style={{
-                        background: 'rgba(255, 255, 255, 0.03)',
-                        backdropFilter: 'blur(20px)',
-                        border: '1px solid rgba(168, 85, 247, 0.3)',
-                        borderRadius: '24px',
-                        padding: '2rem 2.2rem',
-                        height: '100%',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'space-between',
-                        boxShadow: '0 20px 40px rgba(0,0,0,0.5)',
-                        position: 'relative',
-                        overflow: 'hidden'
-                      }}>
-                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                          <div style={{
-                            width: '42px',
-                            height: '42px',
-                            borderRadius: '14px',
-                            background: 'linear-gradient(135deg, #a855f7, #7e22ce)',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            boxShadow: '0 6px 16px rgba(168,85,247,0.4)'
-                          }}>
-                            <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                          </div>
-                          <span style={{ fontSize: '1rem', fontFamily: 'var(--font-family--phudu)', color: '#a855f7', fontWeight: 'bold', letterSpacing: '1px' }}>
-                            0{index + 1}
-                          </span>
-                        </div>
-                        <div>
-                          <h4 style={{ color: '#fff', fontSize: '1.2rem', fontWeight: '500', lineHeight: '1.4', margin: 0 }}>
-                            {inclusion}
-                          </h4>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
+                  <Swiper
+                    spaceBetween={30}
+                    autoplay={{ delay: 2500, disableOnInteraction: false }}
+                    effect="coverflow"
+                    grabCursor={true}
+                    centeredSlides={true}
+                    loop={true}
+                    slidesPerView={1.1}
+                    breakpoints={{
+                      640: { slidesPerView: 1.5 },
+                      1024: { slidesPerView: 2.2 },
+                    }}
+                    coverflowEffect={{
+                      rotate: 0,
+                      slideShadows: false,
+                      stretch: 0,
+                      depth: 100,
+                      modifier: 2.5,
+                    }}
+                    pagination={{ clickable: true }}
+                    className="Carousal_001"
+                    modules={[EffectCoverflow, Autoplay, Pagination]}
+                  >
+                    {((service.galleryImages && service.galleryImages.length > 0)
+                      ? [...service.galleryImages, ...service.galleryImages, ...service.galleryImages].slice(0, 6).map(img => `/images/services/details/${decodeURIComponent(img)}`)
+                      : [
+                          '/images/services/details/6a2fd6923e5daf11466f37d8_image 57372.webp',
+                          '/images/services/details/6a32f96f6e5d3efb008fbb33_1c77cef06aaf126d1d6c25d3ebe80b7cb39fe0c5.webp',
+                          '/images/services/details/6a32f68243bd61f703504b7e_662eab522ab6ce8bf8e08b76e6992bb21e5365a4.webp',
+                          '/images/services/details/6a2fd69280be1041c486ea15_image 57373 (3).webp',
+                          '/images/services/details/6a2fd692d5a0f9b716ac6d45_image 57377.webp',
+                          '/images/services/details/6a2fd69290263b0be396f5c5_image 57371 (1).webp'
+                        ]
+                    ).map((src, index) => (
+                      <SwiperSlide key={index} style={{ height: '320px', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
+                        <img
+                          className="h-full w-full object-cover"
+                          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                          src={src}
+                          alt={`${service.title} showcase ${index + 1}`}
+                        />
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                </motion.div>
               </div>
             </div>
 
