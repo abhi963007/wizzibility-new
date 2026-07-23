@@ -6,14 +6,14 @@ export default function Team() {
   const trackWrapperRef = useRef(null);
 
   const team = [
-    { id: 1, name: 'Brooklyn Simmons', role: 'Lead Developer', image: 'home/Lead Developer.jpeg' },
-    { id: 2, name: 'Darlene Robertson', role: 'Chief Technology Officer', image: 'home/Chief Technology.jpeg' },
-    { id: 3, name: 'Emma Markson', role: 'Creative Director', image: 'home/Creative Director.jpeg' },
-    { id: 4, name: 'Divya Reddy', role: 'Senior Product Designer', image: 'home/Divya Reddy.jpeg' },
-    { id: 5, name: 'Vikas Sharma', role: 'Full Stack Engineer', image: 'home/Vikas.jpeg' },
-    { id: 6, name: 'Payal Kar Dutta', role: 'Marketing Director', image: 'home/Payal Kar Dutta.jpeg' },
-    { id: 7, name: 'Vinod Kumar', role: 'UI/UX Architect', image: 'home/Vinod.jpeg' },
-    { id: 8, name: 'Alex Morgan', role: 'Growth Strategist', image: 'home/1.jpeg' },
+    { id: 1, name: 'Karthik Nampally', role: 'Chief Executive Officer', image: 'team/karthik.png' },
+    { id: 2, name: 'Suvenjit Kar', role: 'Chief Operating Officer', image: 'team/suvenjit.png' },
+    { id: 3, name: 'Mahima Pandey', role: 'UX/UI Designer', image: 'team/mahima.png' },
+    { id: 4, name: 'Rajinikanth Banala', role: 'Graphic Designer', image: 'team/rajinikanth.png' },
+    { id: 5, name: 'Ganesh Pardhu', role: 'AI Artist & Visual Communication Specialist', image: 'team/ganesh.png' },
+    { id: 6, name: 'Rasool Khan', role: 'Video Editor & Marketing Creative', image: 'team/rasool.png' },
+    { id: 7, name: 'Sravika Porandla', role: 'Video Editor', image: 'team/sravika.jpg' },
+    { id: 8, name: 'Abhiram A K', role: 'Web Developer', image: 'team/abhiram.jpg' },
   ];
 
   useEffect(() => {
