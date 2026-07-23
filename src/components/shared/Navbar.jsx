@@ -10,9 +10,51 @@ export default function Navbar() {
   useEffect(() => {
     // Automatically open navbar smoothly on page load / reload
     const timer = setTimeout(() => {
-      setIsOpen(true);
+      if (window.scrollY <= 100) {
+        setIsOpen(true);
+      }
     }, 400);
-    return () => clearTimeout(timer);
+
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Ignore micro jitter
+      if (Math.abs(currentScrollY - lastScrollY) < 8) {
+        ticking = false;
+        return;
+      }
+
+      if (currentScrollY <= 30) {
+        // Near top of page -> expand navbar
+        setIsOpen(true);
+      } else if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        // Scrolling DOWN -> shrink navbar capsule
+        setIsOpen(false);
+      } else if (currentScrollY < lastScrollY) {
+        // Scrolling UP -> auto-expand navbar capsule
+        setIsOpen(true);
+      }
+
+      lastScrollY = currentScrollY > 0 ? currentScrollY : 0;
+      ticking = false;
+    };
+
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(handleScroll);
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('scroll', onScroll);
+    };
   }, []);
 
   const handleMouseMove = (e) => {
@@ -65,7 +107,6 @@ export default function Navbar() {
     } else {
       window.scrollTo(0, 0);
     }
-    setIsOpen(false);
   };
 
   return (
