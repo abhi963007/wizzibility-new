@@ -380,14 +380,9 @@ export default function ServiceDetail() {
             <div style={{ marginBottom: '6rem' }}>
               <div className="section-header" style={{ marginBottom: '2rem' }}>
                 <div className="releted-service-header" style={{ maxWidth: 'none', width: '100%' }}>
-                  <div className="releted-service-heading-wrap slide-heading-left" style={{ justifyContent: 'center', display: 'flex' }}>
-                    <h2 className="section-heading" style={{ textTransform: 'uppercase', fontSize: 'clamp(2.2rem, 5vw, 6rem)', lineHeight: '1.05', letterSpacing: '-1px', textAlign: 'center' }}>
-                      WHAT'S INCLUDED
-                    </h2>
-                  </div>
-                  <div className="releted-service-heading-wrap slide-heading-right" style={{ justifyContent: 'center', display: 'flex' }}>
-                    <h2 className="section-heading" style={{ textTransform: 'uppercase', fontSize: 'clamp(2.2rem, 5vw, 6rem)', lineHeight: '1.05', letterSpacing: '-1px', textAlign: 'center' }}>
-                      IN THE SERVICES?
+                  <div className="releted-service-heading-wrap slide-heading-left" style={{ justifyContent: 'center', display: 'flex', width: '100%' }}>
+                    <h2 className="section-heading" style={{ textTransform: 'uppercase', fontSize: 'clamp(1.4rem, 3.4vw, 4.5rem)', lineHeight: '1.1', letterSpacing: '-0.5px', textAlign: 'center', whiteSpace: 'nowrap' }}>
+                      {service.inclusionsTitle}
                     </h2>
                   </div>
                 </div>
