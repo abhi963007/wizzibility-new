@@ -18,14 +18,13 @@ export default function Testimonials() {
   return (
     <section className="section testimonials-section">
       <div className="w-layout-blockcontainer container w-container">
-        <div className="section-header left">
-          <div className="section-heading-wrap testimonials-heading-wrap" style={{ marginLeft: '8rem' }}>
-            <h2 className="section-heading center-mobile" style={{ whiteSpace: 'nowrap' }}>Stories From Our Clients</h2>
-          </div>
-        </div>
-        <div className="space-3-large"></div>
         <div className="testimonial-sticky-wrap">
           <div className="testimonial-sticky">
+            <div className="section-header left" style={{ marginBottom: '2.5rem' }}>
+              <div className="section-heading-wrap testimonials-heading-wrap" style={{ marginLeft: '8rem' }}>
+                <h2 className="section-heading center-mobile" style={{ whiteSpace: 'nowrap' }}>Stories From Our Clients</h2>
+              </div>
+            </div>
             <div className="testimonial-item-wrap">
               {/* Desktop view left side circles */}
               <div className="testiminial-left">
@@ -167,7 +166,6 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-      <div className="space-10-small"></div>
     </section>
   );
 }

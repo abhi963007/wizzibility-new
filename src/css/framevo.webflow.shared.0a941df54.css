@@ -4115,12 +4115,15 @@ li {
 }
 
 .testiminial-left {
-    padding: var(--_spacing---space-2-normal) var(--_spacing---space-3-small) var(--_spacing---space-2-normal) var(--_spacing---space-2-small);
+    padding: var(--_spacing---space-2-normal) var(--_spacing---space-3-small) var(--_spacing---space-2-normal) 0;
     border-right: 1px solid var(--_color---blastic-sea);
     flex-flow: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     display: flex;
+    transform: translateX(145px);
+    position: relative;
+    z-index: 5;
 }
 
 .testimonial-color-circle {
@@ -7571,13 +7574,13 @@ li {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    border: 1.5px solid rgba(255, 255, 255, 0.22);
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.02);
-    backdrop-filter: blur(4px);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    background: transparent;
+    backdrop-filter: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* When closed, the circle border matches the capsule outer border style */
@@ -7588,17 +7591,17 @@ li {
 }
 
 .navbar-toggle-btn:hover .hamburger-circle {
-    border-color: #a855f7;
-    box-shadow: 0 0 12px rgba(168, 85, 247, 0.4);
-    background-color: rgba(168, 85, 247, 0.08);
-    transform: scale(1.05);
+    border-color: transparent;
+    box-shadow: none;
+    background-color: transparent;
+    transform: scale(1.1);
 }
 
 .floating-navbar-capsule:not(.menu-open):hover .hamburger-circle {
     border-color: transparent;
     box-shadow: none;
     background-color: transparent;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .navbar-toggle-btn:active .hamburger-circle {
@@ -8538,8 +8541,8 @@ li {
 
 /* Testimonials Section - fully isolated, prevent overlap from Team section */
 .testimonials-section {
-    padding-top: 6rem !important;
-    padding-bottom: 6rem !important;
+    padding-top: 5rem !important;
+    padding-bottom: 1rem !important;
     position: relative !important;
     z-index: 2 !important;
     background-color: var(--_color---onyx) !important;
@@ -8554,11 +8557,12 @@ li {
 }
 
 .testimonials-section .testimonial-sticky-wrap {
-    margin-top: 5rem !important;
+    margin-top: 1rem !important;
+    height: 160vh !important;
 }
 
 .testimonials-section .testimonial-sticky {
-    top: 20vh !important;
+    top: 12vh !important;
 }
 
 .testimonials-section .color-circle {
