@@ -83,7 +83,7 @@ function StickyCard002({ cards = DEFAULT_CARDS }) {
       style={{
         position: 'relative',
         width: '100%',
-        height: '520px',
+        height: '640px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -151,8 +151,8 @@ export default function Photography() {
             </div>
           </div>
 
-          {/* Middle: Sticky Stacked Cards Showcase */}
-          <div style={{ width: '100%', maxWidth: '880px', margin: '0 auto 48px auto' }}>
+          {/* Middle: Enlarged Sticky Stacked Cards Showcase */}
+          <div style={{ width: '100%', maxWidth: '1080px', margin: '0 auto 48px auto' }}>
             <StickyCard002 />
           </div>
 
