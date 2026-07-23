@@ -364,22 +364,33 @@ export default function ServiceDetail() {
                   )}
                 </div>
               </div>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: '2.5rem' }}>
                 {/* Card 1 */}
-                <div style={{ background: 'rgba(255,255,255,0.02)', backdropFilter: 'blur(20px)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '24px', padding: '2.5rem', transition: 'border-color 0.3s, transform 0.3s' }}>
-                  <div style={{ width: '48px', height: '48px', borderRadius: '16px', background: 'rgba(168,85,247,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem' }}>
-                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="#a855f7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                <div className="services-card bg-onyx" style={{ padding: '0', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', display: 'flex', flexDirection: 'column', height: '100%' }}>
+                  <div style={{ background: '#1c1c1c', padding: '1.4rem 2rem', textAlign: 'center', borderBottom: '1px solid rgba(255,255,255,0.08)', width: '100%' }}>
+                    <h3 style={{ fontFamily: 'var(--font-family--phudu)', fontSize: '1.4rem', color: '#fff', textTransform: 'uppercase', letterSpacing: '0.5px', margin: 0 }}>
+                      Brand Impact &amp; Value
+                    </h3>
                   </div>
-                  <h3 style={{ fontFamily: 'var(--font-family--phudu)', fontSize: '1.35rem', color: '#fff', marginBottom: '1rem' }}>Brand Impact & Value</h3>
-                  <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.05rem', lineHeight: '1.75' }}>{service.overviewText2}</p>
+                  <div style={{ padding: '2.5rem 2.2rem', background: '#121212', flex: 1, display: 'flex', alignItems: 'center' }}>
+                    <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.05rem', lineHeight: '1.8', margin: 0 }}>
+                      {service.overviewText2}
+                    </p>
+                  </div>
                 </div>
+
                 {/* Card 2 */}
-                <div style={{ background: 'rgba(255,255,255,0.02)', backdropFilter: 'blur(20px)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '24px', padding: '2.5rem', transition: 'border-color 0.3s, transform 0.3s' }}>
-                  <div style={{ width: '48px', height: '48px', borderRadius: '16px', background: 'rgba(168,85,247,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem' }}>
-                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#a855f7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                <div className="services-card bg-onyx" style={{ padding: '0', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', display: 'flex', flexDirection: 'column', height: '100%' }}>
+                  <div style={{ background: '#1c1c1c', padding: '1.4rem 2rem', textAlign: 'center', borderBottom: '1px solid rgba(255,255,255,0.08)', width: '100%' }}>
+                    <h3 style={{ fontFamily: 'var(--font-family--phudu)', fontSize: '1.4rem', color: '#fff', textTransform: 'uppercase', letterSpacing: '0.5px', margin: 0 }}>
+                      Strategic Approach
+                    </h3>
                   </div>
-                  <h3 style={{ fontFamily: 'var(--font-family--phudu)', fontSize: '1.35rem', color: '#fff', marginBottom: '1rem' }}>Strategic Approach</h3>
-                  <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.05rem', lineHeight: '1.75' }}>{service.experienceText}</p>
+                  <div style={{ padding: '2.5rem 2.2rem', background: '#121212', flex: 1, display: 'flex', alignItems: 'center' }}>
+                    <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.05rem', lineHeight: '1.8', margin: 0 }}>
+                      {service.experienceText}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
