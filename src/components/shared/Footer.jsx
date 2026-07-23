@@ -52,14 +52,8 @@ export default function Footer() {
       </div>
       <div className="copyright-wrapper" style={{ display: 'block' }}>
         <div className="w-layout-blockcontainer container w-container">
-          <div className="footer-bottom">
-            <div className="copyright-text">© Copyright <span>2026 - </span><span>Wizzibility</span></div>
-            <div className="uitlity-link-wrap">
-              <Link to="/style-guide" className="utility-link">Style Guide</Link>
-              <Link to="/licenses" className="utility-link">Licenses</Link>
-              <Link to="/changelog" className="utility-link">Changelog</Link>
-              <a href="https://wizzibility.com/404" className="utility-link">404</a>
-            </div>
+          <div className="footer-bottom" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', textAlign: 'center' }}>
+            <div className="copyright-text" style={{ textAlign: 'center', width: '100%' }}>© Copyright 2026 - Wizzibility</div>
           </div>
         </div>
       </div>
