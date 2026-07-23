@@ -366,28 +366,28 @@ export default function ServiceDetail() {
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: '2.5rem' }}>
                 {/* Card 1 */}
-                <div className="services-card bg-onyx" style={{ padding: '0', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', display: 'flex', flexDirection: 'column', height: '100%' }}>
-                  <div style={{ background: '#1c1c1c', padding: '1.4rem 2rem', textAlign: 'center', borderBottom: '1px solid rgba(255,255,255,0.08)', width: '100%' }}>
-                    <h3 style={{ fontFamily: 'var(--font-family--phudu)', fontSize: '1.4rem', color: '#fff', textTransform: 'uppercase', letterSpacing: '0.5px', margin: 0 }}>
+                <div className="services-card bg-onyx" style={{ padding: '0', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', display: 'flex', flexDirection: 'column' }}>
+                  <div style={{ background: '#1c1c1c', padding: '1.25rem 2rem', textAlign: 'center', borderBottom: '1px solid rgba(255,255,255,0.08)', width: '100%' }}>
+                    <h3 style={{ fontFamily: 'var(--font-family--phudu)', fontSize: '1.35rem', color: '#fff', textTransform: 'uppercase', letterSpacing: '0.5px', margin: 0 }}>
                       Brand Impact &amp; Value
                     </h3>
                   </div>
-                  <div style={{ padding: '2.5rem 2.2rem', background: '#121212', flex: 1, display: 'flex', alignItems: 'center' }}>
-                    <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.05rem', lineHeight: '1.8', margin: 0 }}>
+                  <div style={{ padding: '1.8rem 2rem 2.2rem 2rem', background: '#121212', flex: 1 }}>
+                    <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.05rem', lineHeight: '1.75', margin: 0 }}>
                       {service.overviewText2}
                     </p>
                   </div>
                 </div>
 
                 {/* Card 2 */}
-                <div className="services-card bg-onyx" style={{ padding: '0', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', display: 'flex', flexDirection: 'column', height: '100%' }}>
-                  <div style={{ background: '#1c1c1c', padding: '1.4rem 2rem', textAlign: 'center', borderBottom: '1px solid rgba(255,255,255,0.08)', width: '100%' }}>
-                    <h3 style={{ fontFamily: 'var(--font-family--phudu)', fontSize: '1.4rem', color: '#fff', textTransform: 'uppercase', letterSpacing: '0.5px', margin: 0 }}>
+                <div className="services-card bg-onyx" style={{ padding: '0', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', display: 'flex', flexDirection: 'column' }}>
+                  <div style={{ background: '#1c1c1c', padding: '1.25rem 2rem', textAlign: 'center', borderBottom: '1px solid rgba(255,255,255,0.08)', width: '100%' }}>
+                    <h3 style={{ fontFamily: 'var(--font-family--phudu)', fontSize: '1.35rem', color: '#fff', textTransform: 'uppercase', letterSpacing: '0.5px', margin: 0 }}>
                       Strategic Approach
                     </h3>
                   </div>
-                  <div style={{ padding: '2.5rem 2.2rem', background: '#121212', flex: 1, display: 'flex', alignItems: 'center' }}>
-                    <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.05rem', lineHeight: '1.8', margin: 0 }}>
+                  <div style={{ padding: '1.8rem 2rem 2.2rem 2rem', background: '#121212', flex: 1 }}>
+                    <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.05rem', lineHeight: '1.75', margin: 0 }}>
                       {service.experienceText}
                     </p>
                   </div>
