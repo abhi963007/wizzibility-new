@@ -14,14 +14,16 @@ export default function Projects() {
       <div className="space-6-normal"></div>
       <div className="w-layout-blockcontainer container w-container">
         <div className="project-wrapper">
-          <div className="project-title-wrapper">
-            <div className="section-header left">
-              <div className="max-width-44">
-                <h2 className="section-heading night">Our Recent Project</h2>
-              </div>
+          <div className="project-title-wrapper" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', width: '100%', marginBottom: '3rem' }}>
+            <div className="section-header" style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+              <h2 className="section-heading night" style={{ textAlign: 'center', whiteSpace: 'nowrap', width: '100%', textTransform: 'uppercase' }}>
+                Our Recent Project
+              </h2>
             </div>
-            <div className="max-width-30">
-              <p className="section-p">Empowering brands with creativity, technology, and strategy. We blend design, marketing, and tech to build extraordinary digital experiences.</p>
+            <div style={{ maxWidth: '680px', margin: '1.25rem auto 0 auto' }}>
+              <p className="section-p" style={{ textAlign: 'center', margin: 0, opacity: 0.85 }}>
+                Empowering brands with creativity, technology, and strategy. We blend design, marketing, and tech to build extraordinary digital experiences.
+              </p>
             </div>
           </div>
           <div className="space-3-large"></div>
