@@ -507,27 +507,6 @@ export default function ServiceDetail() {
               </div>
             </div>
 
-
-
-            {/* CTA */}
-            <div style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '28px', padding: '3.5rem 2.5rem', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-              <h3 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', color: '#fff', fontFamily: 'var(--font-family--phudu)', marginBottom: '1rem' }}>
-                Ready to elevate your brand with <span style={{ color: '#a855f7' }}>{service.title}</span>?
-              </h3>
-              <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.1rem', maxWidth: '600px', marginBottom: '2rem' }}>
-                Partner with Wizzibility to turn your strategy into high-performing creative digital assets.
-              </p>
-              <Link to="/contact" className="button quote-btn-purple w-inline-block">
-                <div className="button-text-wrapper"><div className="button-text">Start Your Project</div></div>
-                <div className="button-icon-wrapper">
-                  <div className="project-arrow-pill">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="button-icon"><path d="M4 11V13L16 13V15H18V13H20V11H18V9H16V11H4ZM14 7H16V9H14V7ZM14 7H12V5L14 5V7ZM14 17H16V15H14V17ZM14 17H12V19H14V17Z" fill="currentColor"></path></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" className="button-icon"><path d="M4 11V13L16 13V15H18V13H20V11H18V9H16V11H4ZM14 7H16V9H14V7ZM14 7H12V5L14 5V7ZM14 17H12V19H14V17Z" fill="currentColor"></path></svg>
-                  </div>
-                </div>
-              </Link>
-            </div>
-
           </div>
         </section>
 
