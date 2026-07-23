@@ -251,8 +251,8 @@ export default function ServicesPage() {
                       <div role="list" className="w-dyn-items">
                         <div role="listitem" className="w-dyn-item">
                           <Link to={`/service/${service.slug}`} className="services-card bg-onyx w-inline-block">
-                            <div className={service.maxWidthClass}>
-                              <div className="font-2-medium center white">{service.title}</div>
+                            <div style={{ maxWidth: '100%', width: '100%', display: 'flex', justifyContent: 'center' }}>
+                              <div className="font-2-medium center white" style={{ whiteSpace: 'nowrap' }}>{service.title}</div>
                             </div>
                             <div className="service-image-wrapper">
                               <img 
