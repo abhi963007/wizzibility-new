@@ -582,7 +582,6 @@ export default function ServiceDetail() {
               </div>
             </div>
           </div>
-          <div className="space-10-small"></div>
         </section>
 
         <Footer />
