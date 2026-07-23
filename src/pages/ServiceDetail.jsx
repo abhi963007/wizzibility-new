@@ -4,8 +4,13 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Navbar from '../components/shared/Navbar';
 import Footer from '../components/shared/Footer';
-import { servicesData } from '../data/servicesData';
 import useMeta from '../hooks/useMeta';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Autoplay, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -390,18 +395,95 @@ export default function ServiceDetail() {
               <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.1rem', maxWidth: '720px', textAlign: 'center', margin: '0 auto 3rem auto' }}>
                 {service.inclusionsDesc}
               </p>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
-                {service.inclusionsList?.map((inclusion, index) => (
-                  <div key={index} style={{ background: 'rgba(255,255,255,0.02)', backdropFilter: 'blur(16px)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '20px', padding: '1.8rem', display: 'flex', alignItems: 'flex-start', gap: '1.25rem', transition: 'transform 0.3s, border-color 0.3s' }}>
-                    <div style={{ minWidth: '36px', height: '36px', borderRadius: '12px', background: 'linear-gradient(135deg, #a855f7, #7e22ce)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(168,85,247,0.3)', flexShrink: 0 }}>
-                      <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', fontFamily: 'var(--font-family--phudu)', color: '#a855f7', letterSpacing: '1px' }}>0{index + 1}</span>
-                      <h4 style={{ color: '#fff', fontSize: '1.1rem', fontWeight: '500', marginTop: '4px', lineHeight: '1.4' }}>{inclusion}</h4>
-                    </div>
-                  </div>
-                ))}
+              {/* 3D Swiper Coverflow Carousel */}
+              <div style={{ width: '100%', maxWidth: '1100px', margin: '0 auto' }}>
+                <style>{`
+                  .deliverables-swiper {
+                    padding-bottom: 50px !important;
+                    padding-top: 20px !important;
+                  }
+                  .deliverables-swiper .swiper-pagination-bullet {
+                    background: rgba(255, 255, 255, 0.4) !important;
+                    opacity: 0.6;
+                    transition: all 0.3s;
+                  }
+                  .deliverables-swiper .swiper-pagination-bullet-active {
+                    background: #a855f7 !important;
+                    opacity: 1;
+                    width: 28px !important;
+                    border-radius: 10px !important;
+                  }
+                `}</style>
+                <Swiper
+                  spaceBetween={30}
+                  effect="coverflow"
+                  grabCursor={true}
+                  centeredSlides={true}
+                  loop={true}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  slidesPerView={1.2}
+                  breakpoints={{
+                    640: { slidesPerView: 2 },
+                    1024: { slidesPerView: 2.43 },
+                  }}
+                  coverflowEffect={{
+                    rotate: 0,
+                    slideShadows: false,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 2.5,
+                  }}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  className="deliverables-swiper"
+                  modules={[EffectCoverflow, Autoplay, Pagination, Navigation]}
+                >
+                  {service.inclusionsList?.map((inclusion, index) => (
+                    <SwiperSlide key={index} style={{ height: '240px' }}>
+                      <div style={{
+                        background: 'rgba(255, 255, 255, 0.03)',
+                        backdropFilter: 'blur(20px)',
+                        border: '1px solid rgba(168, 85, 247, 0.3)',
+                        borderRadius: '24px',
+                        padding: '2rem 2.2rem',
+                        height: '100%',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'space-between',
+                        boxShadow: '0 20px 40px rgba(0,0,0,0.5)',
+                        position: 'relative',
+                        overflow: 'hidden'
+                      }}>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                          <div style={{
+                            width: '42px',
+                            height: '42px',
+                            borderRadius: '14px',
+                            background: 'linear-gradient(135deg, #a855f7, #7e22ce)',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            boxShadow: '0 6px 16px rgba(168,85,247,0.4)'
+                          }}>
+                            <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                          </div>
+                          <span style={{ fontSize: '1rem', fontFamily: 'var(--font-family--phudu)', color: '#a855f7', fontWeight: 'bold', letterSpacing: '1px' }}>
+                            0{index + 1}
+                          </span>
+                        </div>
+                        <div>
+                          <h4 style={{ color: '#fff', fontSize: '1.2rem', fontWeight: '500', lineHeight: '1.4', margin: 0 }}>
+                            {inclusion}
+                          </h4>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
               </div>
             </div>
 
