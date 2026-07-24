@@ -249,7 +249,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Services Page Hero Banner */}
-      <div className="hero-home-area">
+      <div className="hero-home-area" style={{ borderBottom: '1px solid var(--_color---blastic-sea)' }}>
         <Navbar />
         <div className="space-3-small"></div>
         <section className="section hero">
