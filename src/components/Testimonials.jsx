@@ -48,6 +48,30 @@ export default function Testimonials() {
 
   return (
     <section className="section testimonials-section" ref={sectionRef}>
+      <style>{`
+        .testimonial-color-circle {
+          transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease, z-index 0.4s ease !important;
+          cursor: pointer !important;
+          position: relative !important;
+        }
+        .testimonial-color-circle:hover {
+          transform: scale(1.75) !important;
+          z-index: 999 !important;
+          box-shadow: 0 14px 35px rgba(0, 0, 0, 0.9), 0 0 30px rgba(168, 85, 247, 0.7), 0 0 15px rgba(255, 216, 77, 0.5) !important;
+        }
+        .testimonial-img-wrap {
+          transition: transform 0.4s ease !important;
+        }
+        .testimonial-color-circle:hover .testimonial-img-wrap {
+          transform: scale(1.05) !important;
+        }
+        .testimonial-img {
+          transition: transform 0.4s ease !important;
+        }
+        .testimonial-color-circle:hover .testimonial-img {
+          transform: scale(1.15) !important;
+        }
+      `}</style>
       <div className="w-layout-blockcontainer container w-container">
         <div className="testimonial-sticky-wrap">
           <div className="testimonial-sticky">

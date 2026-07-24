@@ -1,4 +1,0 @@
-SVG copy test log:
-Copied step-1.svg to C:\Users\Admin\Desktop\wizzibility-new\src\components\step-1.svg
-Copied step-2.svg to C:\Users\Admin\Desktop\wizzibility-new\src\components\step-2.svg
-Copied curve.webp to C:\Users\Admin\Desktop\wizzibility-new\src\components\curve.webp
