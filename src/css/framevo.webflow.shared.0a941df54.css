@@ -2,6 +2,22 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     font-family: sans-serif;
+    font-size: 16px;
+    transition: font-size 0.1s ease-out;
+}
+
+/* Fluid Desktop Scaling calibrated to 1920px baseline monitor */
+@media screen and (min-width: 992px) {
+    html {
+        font-size: clamp(10.5px, calc(100vw / 1920 * 16), 22px);
+    }
+}
+
+/* Mobile & Tablet explicit root font reset */
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 16px;
+    }
 }
 
 body {
