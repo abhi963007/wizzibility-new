@@ -42,7 +42,6 @@ export default function Projects() {
                     </div>
                     <div className="project-right">
                       <div className="project-collection-heading">{project.title}</div>
-                      <div className="project-collection-date">{project.date}</div>
                       <div className="project-line-wrap"></div>
                     </div>
                     <div className="demo">#</div>
