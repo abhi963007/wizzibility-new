@@ -347,7 +347,7 @@ export default function ServiceDetail() {
       <main className="main" id="main-content" role="main">
 
         {/* ── StickyCard002 Scroll-Driven Stacking Gallery ── */}
-        <ServiceStickyGallery service={service} />
+        {/* <ServiceStickyGallery service={service} /> */}
 
         {/* ── Content Section ── */}
         <section className="section" style={{ padding: '7rem 0', position: 'relative' }}>
@@ -371,34 +371,45 @@ export default function ServiceDetail() {
                   )}
                 </div>
               </div>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: '2.5rem' }}>
-                {/* Card 1 */}
-                <div className="services-card bg-onyx" style={{ padding: '0', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', display: 'flex', flexDirection: 'column' }}>
-                  <div style={{ background: '#1c1c1c', padding: '1.25rem 2rem', textAlign: 'center', borderBottom: '1px solid rgba(255,255,255,0.08)', width: '100%' }}>
-                    <h3 style={{ fontFamily: 'var(--font-family--phudu)', fontSize: '1.35rem', color: '#fff', textTransform: 'uppercase', letterSpacing: '0.5px', margin: 0 }}>
-                      Brand Impact &amp; Value
-                    </h3>
+              <div 
+                style={{ 
+                  display: 'flex', 
+                  flexWrap: 'wrap', 
+                  justifyContent: 'center', 
+                  gap: '2rem', 
+                  width: '100%' 
+                }}
+              >
+                {(service.serviceCards || [
+                  { title: 'Brand Impact & Value', desc: service.overviewText2 },
+                  { title: 'Strategic Approach', desc: service.experienceText }
+                ]).map((card, idx) => (
+                  <div 
+                    key={idx} 
+                    className="services-card bg-onyx" 
+                    style={{ 
+                      flex: '1 1 340px', 
+                      maxWidth: '380px', 
+                      padding: '0', 
+                      borderRadius: '24px', 
+                      overflow: 'hidden', 
+                      border: '1px solid rgba(255,255,255,0.08)', 
+                      display: 'flex', 
+                      flexDirection: 'column' 
+                    }}
+                  >
+                    <div style={{ background: '#1c1c1c', padding: '1.25rem 2rem', textAlign: 'center', borderBottom: '1px solid rgba(255,255,255,0.08)', width: '100%' }}>
+                      <h3 style={{ fontFamily: 'var(--font-family--phudu)', fontSize: '1.25rem', color: '#fff', textTransform: 'uppercase', letterSpacing: '0.5px', margin: 0 }}>
+                        {card.title}
+                      </h3>
+                    </div>
+                    <div style={{ padding: '1.8rem 2rem 2.2rem 2rem', background: '#121212', flex: 1 }}>
+                      <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.02rem', lineHeight: '1.7', margin: 0 }}>
+                        {card.desc}
+                      </p>
+                    </div>
                   </div>
-                  <div style={{ padding: '1.8rem 2rem 2.2rem 2rem', background: '#121212', flex: 1 }}>
-                    <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.05rem', lineHeight: '1.75', margin: 0 }}>
-                      {service.overviewText2}
-                    </p>
-                  </div>
-                </div>
-
-                {/* Card 2 */}
-                <div className="services-card bg-onyx" style={{ padding: '0', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', display: 'flex', flexDirection: 'column' }}>
-                  <div style={{ background: '#1c1c1c', padding: '1.25rem 2rem', textAlign: 'center', borderBottom: '1px solid rgba(255,255,255,0.08)', width: '100%' }}>
-                    <h3 style={{ fontFamily: 'var(--font-family--phudu)', fontSize: '1.35rem', color: '#fff', textTransform: 'uppercase', letterSpacing: '0.5px', margin: 0 }}>
-                      Strategic Approach
-                    </h3>
-                  </div>
-                  <div style={{ padding: '1.8rem 2rem 2.2rem 2rem', background: '#121212', flex: 1 }}>
-                    <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.05rem', lineHeight: '1.75', margin: 0 }}>
-                      {service.experienceText}
-                    </p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
 
