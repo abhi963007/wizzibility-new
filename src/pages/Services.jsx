@@ -145,6 +145,44 @@ export default function ServicesPage() {
     };
   }, []);
 
+  React.useEffect(() => {
+    let attempts = 0;
+    const initAnimation = () => {
+      const gsap = window.gsap;
+      if (!gsap) {
+        attempts++;
+        if (attempts > 15) {
+          document.querySelectorAll('.hero-title-wrapper, .hero-left').forEach(el => {
+            if (el) {
+              el.style.opacity = '1';
+              el.style.transform = 'none';
+            }
+          });
+          return;
+        }
+        setTimeout(initAnimation, 100);
+        return;
+      }
+
+      gsap.killTweensOf('.hero-title-wrapper, .hero-left');
+
+      const timeline = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+      timeline
+        .fromTo('.hero-title-wrapper',
+          { y: 35, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.7 }
+        )
+        .fromTo('.hero-left',
+          { y: 25, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.7 },
+          '>+0.1'
+        );
+    };
+
+    initAnimation();
+  }, []);
+
   useMeta({
     title: 'Our Services | Wizzibility',
     description: "Ignite bold creativity with smart tech. Explore Wizzibility's core and integrated services, including visual communication, digital marketing, website and app development, and branding.",
@@ -223,7 +261,7 @@ export default function ServicesPage() {
                   Our <span className="heading-hightlight">Ser<span style={{ color: '#ffd84d', opacity: 1, display: 'inline-block' }}>vi</span>ces</span>
                 </h1>
               </div>
-              <div className="hero-left">
+              <div className="hero-left" style={{ opacity: 0 }}>
                 <p className="project-hero-p">
                   Ignite bold creativity with smart tech. We offer tailored solutions blending innovation and artistry for every industry.
                 </p>

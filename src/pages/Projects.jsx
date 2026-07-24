@@ -179,6 +179,44 @@ export default function ProjectsPage() {
     };
   }, [activeTab]);
 
+  useEffect(() => {
+    let attempts = 0;
+    const initAnimation = () => {
+      const gsap = window.gsap;
+      if (!gsap) {
+        attempts++;
+        if (attempts > 15) {
+          document.querySelectorAll('.hero-title-wrapper, .project-header-top').forEach(el => {
+            if (el) {
+              el.style.opacity = '1';
+              el.style.transform = 'none';
+            }
+          });
+          return;
+        }
+        setTimeout(initAnimation, 100);
+        return;
+      }
+
+      gsap.killTweensOf('.hero-title-wrapper, .project-header-top');
+
+      const timeline = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+      timeline
+        .fromTo('.hero-title-wrapper',
+          { y: 35, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.7 }
+        )
+        .fromTo('.project-header-top',
+          { y: 25, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.7 },
+          '>+0.1'
+        );
+    };
+
+    initAnimation();
+  }, []);
+
   const projects = [
     { 
       id: 1, 
@@ -283,7 +321,7 @@ export default function ProjectsPage() {
                   Our <span className="heading-hightlight">Pro<span style={{ color: '#ffd84d', opacity: 1, display: 'inline-block' }}>je</span>cts</span>
                 </h1>
               </div>
-              <div className="project-header-top">
+              <div className="project-header-top" style={{ opacity: 0 }}>
                 <div className="hero-left">
                   <p className="project-hero-p">
                     Empowering brands with creativity, technology, and strategy. We blend design, marketing, and tech to build extraordinary digital experiences that stand out.

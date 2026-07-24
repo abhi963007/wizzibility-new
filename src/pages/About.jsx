@@ -38,6 +38,44 @@ export default function About() {
     }
   });
 
+  React.useEffect(() => {
+    let attempts = 0;
+    const initAnimation = () => {
+      const gsap = window.gsap;
+      if (!gsap) {
+        attempts++;
+        if (attempts > 15) {
+          document.querySelectorAll('.hero-title-wrapper, .hero-left').forEach(el => {
+            if (el) {
+              el.style.opacity = '1';
+              el.style.transform = 'none';
+            }
+          });
+          return;
+        }
+        setTimeout(initAnimation, 100);
+        return;
+      }
+
+      gsap.killTweensOf('.hero-title-wrapper, .hero-left');
+
+      const timeline = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+      timeline
+        .fromTo('.hero-title-wrapper',
+          { y: 35, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.7 }
+        )
+        .fromTo('.hero-left',
+          { y: 25, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.7 },
+          '>+0.1'
+        );
+    };
+
+    initAnimation();
+  }, []);
+
   const handleLinkClick = () => {
     if (window.lenis) {
       window.lenis.scrollTo(0, { immediate: true });
@@ -61,7 +99,7 @@ export default function About() {
                   About <span className="heading-hightlight">Wi<span style={{ color: '#ffd84d', opacity: 1, display: 'inline-block' }}>zz</span>ibility</span>
                 </h1>
               </div>
-              <div className="hero-left">
+              <div className="hero-left" style={{ opacity: 0 }}>
                 <p className="project-hero-p">
                   We are a next-generation creative tech studio. By blending fluid artistry with engineering precision, we craft digital experiences that linger in memory.
                 </p>
