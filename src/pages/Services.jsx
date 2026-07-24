@@ -159,44 +159,51 @@ export default function ServicesPage() {
   const services = [
     { 
       id: 1, 
-      title: 'Visual Communication', 
-      slug: 'visual-communication', 
-      image: 'Service 1.jpeg', 
-      maxWidthClass: 'max-width-17' 
-    },
-    { 
-      id: 2, 
       title: 'Digital Marketing', 
       slug: 'digital-marketing', 
       image: 'Service 2.jpeg', 
       maxWidthClass: 'max-width-17' 
     },
     { 
+      id: 2, 
+      title: 'Visual Communication', 
+      slug: 'visual-communication', 
+      image: 'Service 1.jpeg', 
+      maxWidthClass: 'max-width-17' 
+    },
+    { 
       id: 3, 
+      title: 'Print Media', 
+      slug: 'print-media', 
+      image: 'Service 6.jpeg', 
+      maxWidthClass: 'max-width-17' 
+    },
+    { 
+      id: 4, 
       title: 'Branding', 
       slug: 'branding', 
       image: 'Service 3.jpeg', 
       maxWidthClass: 'max-width-17' 
     },
     { 
-      id: 4, 
+      id: 5, 
+      title: 'Tech Development', 
+      slug: 'tech-development', 
+      image: 'Service 5.jpeg', 
+      maxWidthClass: 'max-width-24' 
+    },
+    { 
+      id: 6, 
       title: 'Multimedia Production', 
       slug: 'multimedia-production', 
       image: 'Service 4.jpeg', 
       maxWidthClass: 'max-width-17' 
     },
     { 
-      id: 5, 
-      title: 'Website Development', 
-      slug: 'website-development', 
-      image: 'Service 5.jpeg', 
-      maxWidthClass: 'max-width-24' 
-    },
-    { 
-      id: 6, 
-      title: 'App Development', 
-      slug: 'app-development', 
-      image: 'Service 6.jpeg', 
+      id: 7, 
+      title: 'Strategy Planning', 
+      slug: 'strategy-planning', 
+      image: 'Service 1.jpeg', 
       maxWidthClass: 'max-width-24' 
     }
   ];
@@ -247,9 +254,14 @@ export default function ServicesPage() {
             <div className="w-layout-grid services-grid">
               {services.map((service, index) => {
                 const isLeft = index % 2 === 0;
+                const isLastSingle = services.length % 2 !== 0 && index === services.length - 1;
                 return (
-                  <div key={service.id} className={isLeft ? "services-left" : "service-right"}>
-                    <div className="w-dyn-list">
+                  <div 
+                    key={service.id} 
+                    className={isLastSingle ? "services-centered-last" : (isLeft ? "services-left" : "service-right")}
+                    style={isLastSingle ? { gridColumn: '1 / -1', display: 'flex', justifyContent: 'center', width: '100%' } : {}}
+                  >
+                    <div className="w-dyn-list" style={isLastSingle ? { width: '100%', maxWidth: '36rem' } : {}}>
                       <div role="list" className="w-dyn-items">
                         <div role="listitem" className="w-dyn-item">
                           <Link to={`/service/${service.slug}`} className="services-card bg-onyx w-inline-block">

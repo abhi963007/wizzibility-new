@@ -19,28 +19,35 @@ gsap.registerPlugin(ScrollTrigger);
 
 // ── All services list ──────────────────────────────────────
 const allServicesList = [
-  { slug: 'visual-communication', title: 'Visual Communication', image: '6a3514ef9e312a69a772c2c0_8971c848c2638f539d50757c3cbdcfa62708d35c.webp' },
   { slug: 'digital-marketing', title: 'Digital Marketing', image: '6a3514e18cb733c985d735eb_054f97113db54086c0f159ca559fbaea76ca59c9.webp' },
+  { slug: 'visual-communication', title: 'Visual Communication', image: '6a3514ef9e312a69a772c2c0_8971c848c2638f539d50757c3cbdcfa62708d35c.webp' },
+  { slug: 'print-media', title: 'Print Media', image: '6a3514888691881407d3c368_1ab4a0190b641c4b8019632a8f5eac8f25cf5100.webp' },
   { slug: 'branding', title: 'Branding', image: '6a3514d344d27a821e163d62_c39acb39f24eaae1617e34596fcd880c93c2af1a.webp' },
+  { slug: 'tech-development', title: 'Tech Development', image: '6a35149d36fe5f1750672b3a_82d7964840e34c402f065d2c6276cb5141f0a984.webp' },
   { slug: 'multimedia-production', title: 'Multimedia Production', image: '6a3514be30f3515af988ac02_ff0be023f7b2ee24272fccf4bf1cd342a495c37a.webp' },
-  { slug: 'website-development', title: 'Website Development', image: '6a35149d36fe5f1750672b3a_82d7964840e34c402f065d2c6276cb5141f0a984.webp' },
-  { slug: 'app-development', title: 'App Development', image: '6a3514888691881407d3c368_1ab4a0190b641c4b8019632a8f5eac8f25cf5100.webp' }
+  { slug: 'strategy-planning', title: 'Strategy Planning', image: '6a3514e18cb733c985d735eb_054f97113db54086c0f159ca559fbaea76ca59c9.webp' },
 ];
 
 const relatedServicesMap = {
+  'digital-marketing':    ['branding', 'strategy-planning'],
   'visual-communication': ['branding', 'multimedia-production'],
-  'digital-marketing':    ['branding', 'website-development'],
+  'print-media':          ['visual-communication', 'branding'],
   'branding':             ['visual-communication', 'digital-marketing'],
-  'multimedia-production':['visual-communication', 'website-development'],
-  'website-development':  ['app-development', 'digital-marketing'],
-  'app-development':      ['website-development', 'digital-marketing'],
+  'tech-development':     ['digital-marketing', 'visual-communication'],
+  'multimedia-production':['visual-communication', 'tech-development'],
+  'strategy-planning':    ['digital-marketing', 'branding'],
+  'website-development':  ['tech-development', 'digital-marketing'],
+  'app-development':      ['tech-development', 'digital-marketing'],
 };
 
 const serviceVideos = {
-  'visual-communication': '/video/visual.mp4',
   'digital-marketing': '/video/digital.mp4',
+  'visual-communication': '/video/visual.mp4',
+  'print-media': '/video/services.mp4',
   'branding': '/video/brand.mp4',
+  'tech-development': '/video/web.mp4',
   'multimedia-production': '/video/multimedia.mp4',
+  'strategy-planning': '/video/services.mp4',
   'website-development': '/video/web.mp4',
   'app-development': '/video/app.mp4',
 };
