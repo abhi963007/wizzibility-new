@@ -11,7 +11,7 @@ export default function Footer() {
   };
 
   return (
-    <footer data-wf-component-id="5a6382d2-e0d3-62a0-fb99-90b247678888" data-wf-variant-state="base" className="section" role="contentinfo" style={{ paddingTop: '1.5rem' }}>
+    <footer data-wf-component-id="5a6382d2-e0d3-62a0-fb99-90b247678888" data-wf-variant-state="base" className="section" role="contentinfo" style={{ paddingTop: '2.5rem' }}>
       <div className="space-2-normal" style={{ paddingTop: '1rem' }}></div>
       <div className="w-layout-blockcontainer container w-container">
         <div className="footer-wrapper">
@@ -24,7 +24,7 @@ export default function Footer() {
               <NavLink to="/contact" className="nav-item-simple" onClick={handleLinkClick}>Contact</NavLink>
             </div>
           </div>
-          <div className="space-4-medium"></div>
+          <div className="space-3-small"></div>
           <div className="footer-title-wrapper">
             <a href="mailto:info@wizzibility.com" className="email-address" aria-label="Wizzibility Email Contact">info@wizzibility.com</a>
             <div className="footer-social-block">
