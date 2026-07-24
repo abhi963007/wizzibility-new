@@ -54,7 +54,7 @@ export default function AboutWizzibility() {
               margin: 0,
               fontWeight: 400
             }}>
-              Wizzibility is a design-driven agency focused on crafting bold digital experiences for brands that want to stand out — and scale.
+              Wizzibility is a design-driven agency focused on crafting bold digital experiences for brands that want to stand out — and scale. We believe that exceptional design is the bridge between innovative technology and human emotion. By combining strategic thinking with creative excellence, we build digital identities that not only capture attention but drive meaningful business results.
             </p>
           </motion.div>
         </div>
