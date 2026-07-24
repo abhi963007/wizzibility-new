@@ -101,10 +101,17 @@ export default function Hero() {
                 </span>
               </Link>
               <a 
-                href="#gallery" 
+                href="#showreel" 
                 onClick={(e) => {
                   e.preventDefault();
-                  document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' });
+                  const target = document.getElementById('showreel') || document.querySelector('.cinematic-section');
+                  if (target) {
+                    if (window.lenis) {
+                      window.lenis.scrollTo(target, { offset: -50 });
+                    } else {
+                      target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                  }
                 }} 
                 className="btn-showreel"
               >
