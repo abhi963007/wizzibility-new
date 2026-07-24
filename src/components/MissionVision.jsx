@@ -1,244 +1,173 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect, useRef } from 'react';
 
 export default function MissionVision() {
+  const sectionRef = useRef(null);
+  const missionTextRef = useRef(null);
+  const visionTextRef = useRef(null);
+
+  useEffect(() => {
+    const gsap = window.gsap;
+    const ScrollTrigger = window.ScrollTrigger;
+    if (!gsap || !ScrollTrigger) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const ctx = gsap.context(() => {
+      // Mission Text Scroll Highlight
+      if (missionTextRef.current) {
+        const missionSpans = missionTextRef.current.querySelectorAll('.scroll-word');
+        gsap.fromTo(
+          missionSpans,
+          { opacity: 0.15 },
+          {
+            opacity: 1,
+            stagger: 0.08,
+            ease: 'none',
+            scrollTrigger: {
+              trigger: missionTextRef.current,
+              start: 'top 80%',
+              end: 'bottom 55%',
+              scrub: 0.8,
+            },
+          }
+        );
+      }
+
+      // Vision Text Scroll Highlight
+      if (visionTextRef.current) {
+        const visionSpans = visionTextRef.current.querySelectorAll('.scroll-word');
+        gsap.fromTo(
+          visionSpans,
+          { opacity: 0.15 },
+          {
+            opacity: 1,
+            stagger: 0.08,
+            ease: 'none',
+            scrollTrigger: {
+              trigger: visionTextRef.current,
+              start: 'top 80%',
+              end: 'bottom 55%',
+              scrub: 0.8,
+            },
+          }
+        );
+      }
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="section mission-vision-section" style={{ padding: '6rem 0 3rem 0', position: 'relative' }}>
-      <div className="w-layout-blockcontainer container w-container">
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-            gap: '2.5rem',
-            alignItems: 'stretch',
-          }}
-        >
-          {/* Mission Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
-            style={{
-              background: '#111111',
-              border: '1px solid rgba(255, 255, 255, 0.08)',
-              borderRadius: '1.75rem',
-              padding: '3rem 2.5rem',
-              display: 'flex',
-              flexDirection: 'column',
-              justify: 'space-between',
-              position: 'relative',
-              overflow: 'hidden',
-              boxShadow: '0 20px 40px rgba(0,0,0,0.4)',
-              transition: 'border-color 0.3s ease, transform 0.3s ease',
-            }}
-            whileHover={{ y: -5, borderColor: 'rgba(224, 45, 13, 0.35)' }}
-          >
-            <div
-              style={{
-                position: 'absolute',
-                top: '-60px',
-                right: '-60px',
-                width: '180px',
-                height: '180px',
-                background: 'radial-gradient(circle, rgba(224, 45, 13, 0.12) 0%, rgba(0,0,0,0) 70%)',
-                pointerEvents: 'none',
-              }}
-            />
+    <section className="section mission-vision-section" ref={sectionRef} style={{ padding: '7rem 0', backgroundColor: '#040200' }}>
+      <style>{`
+        .custom-section-heading {
+          font-family: "Bebas Neue", sans-serif !important;
+          font-weight: 400 !important;
+          text-transform: uppercase !important;
+          transform: scaleY(1.3) !important;
+          transform-origin: center center !important;
+          line-height: 1.15 !important;
+          letter-spacing: -0.01em !important;
+          -webkit-font-smoothing: antialiased;
+          color: var(--_color---nobel);
+          font-size: var(--_typography---heading--heading-style-h2);
+          text-align: center;
+          margin: 0;
+          position: relative;
+        }
 
-            <div>
-              <div
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.5rem',
-                  marginBottom: '1.25rem',
-                }}
-              >
-                <span
-                  style={{
-                    width: '8px',
-                    height: '8px',
-                    borderRadius: '50%',
-                    backgroundColor: '#e02d0d',
-                    display: 'inline-block',
-                  }}
-                ></span>
-                <span
-                  style={{
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.15em',
-                    color: '#e02d0d',
-                    fontSize: '0.85rem',
-                    fontWeight: 600,
-                  }}
-                >
-                  PURPOSE
-                </span>
-              </div>
+        .scroll-text-block {
+          font-family: "Bebas Neue", sans-serif !important;
+          font-size: clamp(2.2rem, 4.2vw, 3.8rem);
+          line-height: 1.1;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+          color: #ffffff;
+          -webkit-font-smoothing: antialiased;
+        }
+      `}</style>
 
-              <h2
-                style={{
-                  fontSize: 'calc(1.8rem + 0.8vw)',
-                  color: '#ffffff',
-                  fontFamily: 'Phudu, sans-serif',
-                  fontWeight: 700,
-                  marginBottom: '1.25rem',
-                  letterSpacing: '-0.01em',
-                }}
-              >
-                Our Mission
-              </h2>
-
-              <p
-                style={{
-                  color: 'rgba(255, 255, 255, 0.75)',
-                  fontSize: '1.05rem',
-                  lineHeight: 1.65,
-                  margin: 0,
-                }}
-              >
-                To create an AI-forward platform that empowers every brand — big or small — to access intelligent, creative, and scalable branding solutions that are both effective and affordable.
-              </p>
-            </div>
-
-            <div style={{ marginTop: '2.5rem', display: 'flex', alignItems: 'center' }}>
-              <div
-                style={{
-                  width: '28px',
-                  height: '28px',
-                  borderRadius: '50%',
-                  border: '1px solid rgba(224, 45, 13, 0.5)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justify: 'center',
-                }}
-              >
-                <div
-                  style={{
-                    width: '6px',
-                    height: '6px',
-                    borderRadius: '50%',
-                    backgroundColor: '#e02d0d',
-                  }}
-                ></div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Vision Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.15, ease: 'easeOut' }}
-            style={{
-              background: '#111111',
-              border: '1px solid rgba(255, 255, 255, 0.08)',
-              borderRadius: '1.75rem',
-              padding: '3rem 2.5rem',
-              display: 'flex',
-              flexDirection: 'column',
-              justify: 'space-between',
-              position: 'relative',
-              overflow: 'hidden',
-              boxShadow: '0 20px 40px rgba(0,0,0,0.4)',
-              transition: 'border-color 0.3s ease, transform 0.3s ease',
-            }}
-            whileHover={{ y: -5, borderColor: 'rgba(255, 255, 255, 0.25)' }}
-          >
-            <div
-              style={{
-                position: 'absolute',
-                top: '-60px',
-                right: '-60px',
-                width: '180px',
-                height: '180px',
-                background: 'radial-gradient(circle, rgba(255, 255, 255, 0.06) 0%, rgba(0,0,0,0) 70%)',
-                pointerEvents: 'none',
-              }}
-            />
-
-            <div>
-              <div
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.5rem',
-                  marginBottom: '1.25rem',
-                }}
-              >
-                <span
-                  style={{
-                    width: '8px',
-                    height: '8px',
-                    borderRadius: '50%',
-                    backgroundColor: '#ffffff',
-                    display: 'inline-block',
-                  }}
-                ></span>
-                <span
-                  style={{
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.15em',
-                    color: 'rgba(255, 255, 255, 0.7)',
-                    fontSize: '0.85rem',
-                    fontWeight: 600,
-                  }}
-                >
-                  FUTURE
-                </span>
-              </div>
-
-              <h2
-                style={{
-                  fontSize: 'calc(1.8rem + 0.8vw)',
-                  color: '#ffffff',
-                  fontFamily: 'Phudu, sans-serif',
-                  fontWeight: 700,
-                  marginBottom: '1.25rem',
-                  letterSpacing: '-0.01em',
-                }}
-              >
-                Our Vision
-              </h2>
-
-              <p
-                style={{
-                  color: 'rgba(255, 255, 255, 0.75)',
-                  fontSize: '1.05rem',
-                  lineHeight: 1.65,
-                  margin: 0,
-                }}
-              >
-                To provide modular, customizable brand kits that adapt to each brand's unique voice, tone, and visual identity — making professional branding flexible, fast, and accessible.
-              </p>
-            </div>
-
-            <div style={{ marginTop: '2.5rem', display: 'flex', alignItems: 'center' }}>
-              <div
-                style={{
-                  width: '28px',
-                  height: '28px',
-                  borderRadius: '50%',
-                  border: '1px solid rgba(255, 255, 255, 0.3)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justify: 'center',
-                }}
-              >
-                <div
-                  style={{
-                    width: '6px',
-                    height: '6px',
-                    borderRadius: '50%',
-                    backgroundColor: '#ffffff',
-                  }}
-                ></div>
-              </div>
-            </div>
-          </motion.div>
+      <div className="w-layout-blockcontainer container w-container" style={{ maxWidth: '85rem' }}>
+        
+        {/* COMBINED HEADING MATCHING EXPERTISE TEAMS */}
+        <div className="section-header" style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: '4rem' }}>
+          <div style={{ width: '100%', textAlign: 'center' }}>
+            <h2 className="custom-section-heading">
+              OUR MISSION & VISION
+            </h2>
+          </div>
         </div>
+
+        {/* MISSION PARAGRAPH BLOCK */}
+        <div style={{ marginBottom: '5rem' }}>
+          <div ref={missionTextRef} className="scroll-text-block">
+            <span className="scroll-word">OUR </span>
+            <span className="scroll-word">MISSION </span>
+            <span className="scroll-word">IS </span>
+            <span className="scroll-word">TO </span>
+            <span className="scroll-word">CREATE </span>
+            <span className="scroll-word">AN </span>
+            <span className="scroll-word" style={{ color: '#ffd84d' }}>AI-FORWARD </span>
+            <span className="scroll-word">PLATFORM </span>
+            <span className="scroll-word">THAT </span>
+            <span className="scroll-word">EMPOWERS </span>
+            <span className="scroll-word">EVERY </span>
+            <span className="scroll-word">BRAND </span>
+            <span className="scroll-word" style={{ opacity: 0.4 }}>— </span>
+            <span className="scroll-word">BIG </span>
+            <span className="scroll-word">OR </span>
+            <span className="scroll-word">SMALL </span>
+            <span className="scroll-word" style={{ opacity: 0.4 }}>— </span>
+            <span className="scroll-word">TO </span>
+            <span className="scroll-word">ACCESS </span>
+            <span className="scroll-word">INTELLIGENT, </span>
+            <span className="scroll-word">CREATIVE, </span>
+            <span className="scroll-word">AND </span>
+            <span className="scroll-word" style={{ color: '#ffd84d' }}>SCALABLE </span>
+            <span className="scroll-word">BRANDING </span>
+            <span className="scroll-word">SOLUTIONS </span>
+            <span className="scroll-word">THAT </span>
+            <span className="scroll-word">ARE </span>
+            <span className="scroll-word">EFFECTIVE </span>
+            <span className="scroll-word">AND </span>
+            <span className="scroll-word">AFFORDABLE.</span>
+          </div>
+        </div>
+
+        {/* VISION PARAGRAPH BLOCK */}
+        <div>
+          <div ref={visionTextRef} className="scroll-text-block">
+            <span className="scroll-word">OUR </span>
+            <span className="scroll-word">VISION </span>
+            <span className="scroll-word">IS </span>
+            <span className="scroll-word">TO </span>
+            <span className="scroll-word">PROVIDE </span>
+            <span className="scroll-word">MODULAR, </span>
+            <span className="scroll-word" style={{ color: '#ffd84d' }}>CUSTOMIZABLE </span>
+            <span className="scroll-word">BRAND </span>
+            <span className="scroll-word">KITS </span>
+            <span className="scroll-word">THAT </span>
+            <span className="scroll-word">ADAPT </span>
+            <span className="scroll-word">TO </span>
+            <span className="scroll-word">EACH </span>
+            <span className="scroll-word">BRAND'S </span>
+            <span className="scroll-word">UNIQUE </span>
+            <span className="scroll-word">VOICE, </span>
+            <span className="scroll-word">TONE, </span>
+            <span className="scroll-word">AND </span>
+            <span className="scroll-word">VISUAL </span>
+            <span className="scroll-word">IDENTITY </span>
+            <span className="scroll-word" style={{ opacity: 0.4 }}>— </span>
+            <span className="scroll-word">MAKING </span>
+            <span className="scroll-word">PROFESSIONAL </span>
+            <span className="scroll-word">BRANDING </span>
+            <span className="scroll-word" style={{ color: '#ffd84d' }}>FLEXIBLE, </span>
+            <span className="scroll-word">FAST, </span>
+            <span className="scroll-word">AND </span>
+            <span className="scroll-word">ACCESSIBLE.</span>
+          </div>
+        </div>
+
       </div>
     </section>
   );

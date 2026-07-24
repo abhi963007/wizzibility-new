@@ -131,7 +131,9 @@ export default function Contact() {
           <div className="contact-hero" style={{ paddingTop: 'clamp(5rem, 15vw, 15rem)' }}>
             <div className="contact-hero-header">
               <div className="hero-title-wrapper">
-                <h1 className="hero-heading">Contact Us</h1>
+                <h1 className="hero-heading">
+                  Contact <span className="heading-hightlight" style={{ color: '#ffd84d', opacity: 1, display: 'inline-block' }}>Us</span>
+                </h1>
               </div>
             </div>
             <div className="contact-hero-top">

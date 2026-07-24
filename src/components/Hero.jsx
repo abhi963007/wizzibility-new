@@ -75,16 +75,10 @@ export default function Hero() {
             {/* Split Content: Main Headline & Right Paragraph with Divider */}
             <div className="hero-content-split">
               {/* Left Headline */}
-              <h1 className="hero-heading-mockup">
-                WE CREATE <br />
-                DIGITAL <span className="hero-purple-gradient">EXPERIENCES</span> <br />
-                THAT DRIVE{' '}
-                <span className="hero-purple-italic-stroke">
-                  REAL IMPACT.
-                  <svg className="hero-underline-svg" viewBox="0 0 200 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 9C50 3 130 2 198 8" stroke="#a855f7" strokeWidth="2.5" strokeLinecap="round"/>
-                  </svg>
-                </span>
+              <h1 className="hero-heading-mockup" style={{ fontSize: 'clamp(4.5rem, 7.5vw, 8.2rem)', letterSpacing: '0.05em', lineHeight: 0.95 }}>
+                WE ARE <br />
+                <span style={{ color: '#ffd84d', WebkitTextFillColor: '#ffd84d', fontFamily: '"Bebas Neue", sans-serif' }}>CREATIVE</span> <br />
+                <span style={{ color: '#d8b4fe', fontFamily: '"Bebas Neue", sans-serif' }}>TECH STUDIO</span>
               </h1>
 
               {/* Right Column with Vertical Line Divider & Text */}

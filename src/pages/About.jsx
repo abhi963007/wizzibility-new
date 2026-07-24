@@ -62,7 +62,9 @@ export default function About() {
                 </p>
               </div>
               <div className="hero-title-wrapper">
-                <h1 className="hero-heading">About <span className="heading-hightlight">Wizzibility</span></h1>
+                <h1 className="hero-heading">
+                  About <span className="heading-hightlight">Wi<span style={{ color: '#ffd84d', opacity: 1, display: 'inline-block' }}>zz</span>ibility</span>
+                </h1>
               </div>
             </div>
           </div>
