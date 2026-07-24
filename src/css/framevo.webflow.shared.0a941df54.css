@@ -7270,7 +7270,7 @@ li {
 }
 
 .floating-navbar-capsule.menu-open {
-    width: 680px;
+    width: min(840px, 94vw);
     height: 64px;
     border-radius: 999px;
     transform: translateX(0);
@@ -7323,7 +7323,7 @@ li {
 }
 
 .navbar-ambient-backlight.menu-open {
-    width: 684px;
+    width: min(844px, 94.5vw);
     height: 68px;
     border-radius: 999px;
     transform: translateX(0);
@@ -7367,7 +7367,7 @@ li {
 
 .floating-navbar-capsule.menu-open .navbar-internal-layout {
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 28px;
 }
 
 .nav-brand-custom {
@@ -7387,7 +7387,7 @@ li {
 .floating-navbar-capsule.menu-open .nav-brand-custom {
     opacity: 1;
     max-width: 150px;
-    margin-right: 12px;
+    margin-right: 28px;
     pointer-events: auto;
     overflow: visible;
 }
@@ -7405,7 +7405,7 @@ li {
     color: #999;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 6px 12px;
+    padding: 6px 10px;
     position: relative;
     display: inline-block;
     transform: scale(var(--dock-scale, 1));
@@ -7496,7 +7496,7 @@ li {
 .navbar-links-wrapper {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
     justify-content: center;
     height: 100%;
     position: relative;
@@ -7511,7 +7511,7 @@ li {
 .navbar-links-wrapper.open {
     opacity: 1;
     visibility: visible;
-    max-width: 420px;
+    max-width: 560px;
     overflow: visible;
 }
 

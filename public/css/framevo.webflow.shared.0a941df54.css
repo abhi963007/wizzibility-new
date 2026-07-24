@@ -6576,6 +6576,27 @@ li {
     }
 }
 
+.floating-navbar-capsule.menu-open {
+    width: min(840px, 94vw);
+}
+
+.navbar-ambient-backlight.menu-open {
+    width: min(844px, 94.5vw);
+}
+
+.floating-navbar-capsule.menu-open .navbar-internal-layout {
+    padding: 0 28px;
+}
+
+.floating-navbar-capsule.menu-open .nav-brand-custom {
+    margin-right: 28px;
+}
+
+.navbar-links-wrapper.open {
+    max-width: 560px;
+    gap: 20px;
+}
+
 /* Yellow dot for active menu item */
 .nav-item-simple.active::after,
 .nav-item-simple.w--current::after,
