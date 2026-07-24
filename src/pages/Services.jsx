@@ -218,15 +218,15 @@ export default function ServicesPage() {
           <div className="space-10-small"></div>
           <div className="w-layout-blockcontainer container w-container">
             <div className="hero-wrapper">
-              <div className="hero-left">
-                <p className="project-hero-p">
-                  Ignite bold creativity with smart tech. We offer tailored solutions blending innovation and artistry for every industry.
-                </p>
-              </div>
               <div className="hero-title-wrapper">
                 <h1 className="hero-heading">
                   Our <span className="heading-hightlight">Ser<span style={{ color: '#ffd84d', opacity: 1, display: 'inline-block' }}>vi</span>ces</span>
                 </h1>
+              </div>
+              <div className="hero-left">
+                <p className="project-hero-p">
+                  Ignite bold creativity with smart tech. We offer tailored solutions blending innovation and artistry for every industry.
+                </p>
               </div>
             </div>
           </div>

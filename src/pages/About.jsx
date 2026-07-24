@@ -56,15 +56,15 @@ export default function About() {
           <div className="space-10-small"></div>
           <div className="w-layout-blockcontainer container w-container">
             <div className="hero-wrapper">
-              <div className="hero-left">
-                <p className="project-hero-p">
-                  We are a next-generation creative tech studio. By blending fluid artistry with engineering precision, we craft digital experiences that linger in memory.
-                </p>
-              </div>
               <div className="hero-title-wrapper">
                 <h1 className="hero-heading">
                   About <span className="heading-hightlight">Wi<span style={{ color: '#ffd84d', opacity: 1, display: 'inline-block' }}>zz</span>ibility</span>
                 </h1>
+              </div>
+              <div className="hero-left">
+                <p className="project-hero-p">
+                  We are a next-generation creative tech studio. By blending fluid artistry with engineering precision, we craft digital experiences that linger in memory.
+                </p>
               </div>
             </div>
           </div>

@@ -243,15 +243,15 @@ export default function ServiceDetail() {
         }
       } catch (err) { console.warn('SplitText error:', err); }
       const tl = gsapInst.timeline({ defaults: { ease: 'power3.out' } });
-      if (paragraphSplit?.lines?.length) {
-        tl.fromTo(paragraphSplit.lines, { yPercent: 100, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.6, stagger: { amount: 0.2 }, ease: 'power2.out' }, 0);
-      } else {
-        tl.fromTo('.hero-p', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, 0);
-      }
       if (headingSplit?.chars?.length) {
-        tl.fromTo(headingSplit.chars, { yPercent: 100, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.6, stagger: { amount: 0.7 } }, 0.46);
+        tl.fromTo(headingSplit.chars, { yPercent: 100, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.6, stagger: { amount: 0.7 } }, 0);
       } else {
-        tl.fromTo('.single-innner-heading-span', { y: 25, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, 0.46);
+        tl.fromTo('.single-innner-heading-span', { y: 25, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, 0);
+      }
+      if (paragraphSplit?.lines?.length) {
+        tl.fromTo(paragraphSplit.lines, { yPercent: 100, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.6, stagger: { amount: 0.2 }, ease: 'power2.out' }, 0.46);
+      } else {
+        tl.fromTo('.hero-p', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, 0.46);
       }
     };
     const timer = setTimeout(initAnimation, 100);
@@ -319,15 +319,15 @@ export default function ServiceDetail() {
           <div className="space-6-normal hide-mobile"></div>
           <div className="w-layout-blockcontainer container w-container">
             <div className="hero-wrapper">
-              <div className="hero-left">
-                <p className="hero-p" style={{ opacity: 0 }}>{service.overviewText1}</p>
-              </div>
               <div className="hero-title-wrapper">
                 <h1 className="single-innner-heading">
                   <span className="single-innner-heading-span" style={{ display: 'inline-block', opacity: 0 }}>
                     {service.title}
                   </span>
                 </h1>
+              </div>
+              <div className="hero-left">
+                <p className="hero-p" style={{ opacity: 0 }}>{service.overviewText1}</p>
               </div>
             </div>
           </div>

@@ -137,11 +137,11 @@ export default function ProjectDetail() {
           <div className="space-6-normal hide-mobile"></div>
           <div className="w-layout-blockcontainer container w-container">
             <div className="hero-wrapper">
-              <div className="hero-left">
-                <p className="hero-p">{project.overview}</p>
-              </div>
               <div className="hero-title-wrapper">
                 <h1 className="single-innner-heading">{project.title}</h1>
+              </div>
+              <div className="hero-left">
+                <p className="hero-p">{project.overview}</p>
               </div>
             </div>
           </div>

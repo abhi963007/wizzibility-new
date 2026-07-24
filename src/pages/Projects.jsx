@@ -278,17 +278,17 @@ export default function ProjectsPage() {
           <div className="space-10-small"></div>
           <div className="w-layout-blockcontainer container w-container">
             <div className="hero-wrapper">
+              <div className="hero-title-wrapper">
+                <h1 className="hero-heading">
+                  Our <span className="heading-hightlight">Pro<span style={{ color: '#ffd84d', opacity: 1, display: 'inline-block' }}>je</span>cts</span>
+                </h1>
+              </div>
               <div className="project-header-top">
                 <div className="hero-left">
                   <p className="project-hero-p">
                     Empowering brands with creativity, technology, and strategy. We blend design, marketing, and tech to build extraordinary digital experiences that stand out.
                   </p>
                 </div>
-              </div>
-              <div className="hero-title-wrapper">
-                <h1 className="hero-heading">
-                  Our <span className="heading-hightlight">Pro<span style={{ color: '#ffd84d', opacity: 1, display: 'inline-block' }}>je</span>cts</span>
-                </h1>
               </div>
             </div>
           </div>
