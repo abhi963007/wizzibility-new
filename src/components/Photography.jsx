@@ -146,8 +146,9 @@ export default function Photography() {
           {/* Top: Section Header */}
           <div className="section-header" style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: '40px' }}>
             <div className="section-heading-wrap photography" style={{ width: '100%', textAlign: 'center' }}>
-              <h2 className="section-heading" style={{ textAlign: 'center', width: '100%' }}>
-                Visuals That Tell Your Brand's Story
+              <h2 className="section-heading" style={{ textAlign: 'center', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <span style={{ lineHeight: '1' }}>Visuals That Tell Your</span>
+                <span style={{ lineHeight: '1', marginTop: '-15px' }}>Brand's Story</span>
               </h2>
             </div>
           </div>
