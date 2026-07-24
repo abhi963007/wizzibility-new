@@ -77,12 +77,13 @@ export default function MissionVision() {
         }
 
         .scroll-text-block {
-          font-family: "Bebas Neue", sans-serif !important;
-          font-size: clamp(2.2rem, 4.2vw, 3.8rem);
-          line-height: 1.1;
-          letter-spacing: 0.02em;
-          text-transform: uppercase;
-          color: #ffffff;
+          font-family: "Montserrat", "Inter Tight", sans-serif !important;
+          font-size: calc(1.5rem + 0.5vw);
+          font-weight: 400;
+          line-height: 1.6;
+          letter-spacing: normal;
+          text-transform: none;
+          color: rgba(255, 255, 255, 0.9);
           -webkit-font-smoothing: antialiased;
         }
       `}</style>
@@ -101,70 +102,70 @@ export default function MissionVision() {
         {/* MISSION PARAGRAPH BLOCK */}
         <div style={{ marginBottom: '5rem' }}>
           <div ref={missionTextRef} className="scroll-text-block">
-            <span className="scroll-word">OUR </span>
-            <span className="scroll-word">MISSION </span>
-            <span className="scroll-word">IS </span>
-            <span className="scroll-word">TO </span>
-            <span className="scroll-word">CREATE </span>
-            <span className="scroll-word">AN </span>
-            <span className="scroll-word" style={{ color: '#ffd84d' }}>AI-FORWARD </span>
-            <span className="scroll-word">PLATFORM </span>
-            <span className="scroll-word">THAT </span>
-            <span className="scroll-word">EMPOWERS </span>
-            <span className="scroll-word">EVERY </span>
-            <span className="scroll-word">BRAND </span>
+            <span className="scroll-word">Our </span>
+            <span className="scroll-word">mission </span>
+            <span className="scroll-word">is </span>
+            <span className="scroll-word">to </span>
+            <span className="scroll-word">create </span>
+            <span className="scroll-word">an </span>
+            <span className="scroll-word" style={{ color: '#ffd84d', fontWeight: 600 }}>AI-forward </span>
+            <span className="scroll-word">platform </span>
+            <span className="scroll-word">that </span>
+            <span className="scroll-word">empowers </span>
+            <span className="scroll-word">every </span>
+            <span className="scroll-word">brand </span>
             <span className="scroll-word" style={{ opacity: 0.4 }}>— </span>
-            <span className="scroll-word">BIG </span>
-            <span className="scroll-word">OR </span>
-            <span className="scroll-word">SMALL </span>
+            <span className="scroll-word">big </span>
+            <span className="scroll-word">or </span>
+            <span className="scroll-word">small </span>
             <span className="scroll-word" style={{ opacity: 0.4 }}>— </span>
-            <span className="scroll-word">TO </span>
-            <span className="scroll-word">ACCESS </span>
-            <span className="scroll-word">INTELLIGENT, </span>
-            <span className="scroll-word">CREATIVE, </span>
-            <span className="scroll-word">AND </span>
-            <span className="scroll-word" style={{ color: '#ffd84d' }}>SCALABLE </span>
-            <span className="scroll-word">BRANDING </span>
-            <span className="scroll-word">SOLUTIONS </span>
-            <span className="scroll-word">THAT </span>
-            <span className="scroll-word">ARE </span>
-            <span className="scroll-word">EFFECTIVE </span>
-            <span className="scroll-word">AND </span>
-            <span className="scroll-word">AFFORDABLE.</span>
+            <span className="scroll-word">to </span>
+            <span className="scroll-word">access </span>
+            <span className="scroll-word">intelligent, </span>
+            <span className="scroll-word">creative, </span>
+            <span className="scroll-word">and </span>
+            <span className="scroll-word" style={{ color: '#ffd84d', fontWeight: 600 }}>scalable </span>
+            <span className="scroll-word">branding </span>
+            <span className="scroll-word">solutions </span>
+            <span className="scroll-word">that </span>
+            <span className="scroll-word">are </span>
+            <span className="scroll-word">effective </span>
+            <span className="scroll-word">and </span>
+            <span className="scroll-word">affordable.</span>
           </div>
         </div>
 
         {/* VISION PARAGRAPH BLOCK */}
         <div>
           <div ref={visionTextRef} className="scroll-text-block">
-            <span className="scroll-word">OUR </span>
-            <span className="scroll-word">VISION </span>
-            <span className="scroll-word">IS </span>
-            <span className="scroll-word">TO </span>
-            <span className="scroll-word">PROVIDE </span>
-            <span className="scroll-word">MODULAR, </span>
-            <span className="scroll-word" style={{ color: '#ffd84d' }}>CUSTOMIZABLE </span>
-            <span className="scroll-word">BRAND </span>
-            <span className="scroll-word">KITS </span>
-            <span className="scroll-word">THAT </span>
-            <span className="scroll-word">ADAPT </span>
-            <span className="scroll-word">TO </span>
-            <span className="scroll-word">EACH </span>
-            <span className="scroll-word">BRAND'S </span>
-            <span className="scroll-word">UNIQUE </span>
-            <span className="scroll-word">VOICE, </span>
-            <span className="scroll-word">TONE, </span>
-            <span className="scroll-word">AND </span>
-            <span className="scroll-word">VISUAL </span>
-            <span className="scroll-word">IDENTITY </span>
+            <span className="scroll-word">Our </span>
+            <span className="scroll-word">vision </span>
+            <span className="scroll-word">is </span>
+            <span className="scroll-word">to </span>
+            <span className="scroll-word">provide </span>
+            <span className="scroll-word">modular, </span>
+            <span className="scroll-word" style={{ color: '#ffd84d', fontWeight: 600 }}>customizable </span>
+            <span className="scroll-word">brand </span>
+            <span className="scroll-word">kits </span>
+            <span className="scroll-word">that </span>
+            <span className="scroll-word">adapt </span>
+            <span className="scroll-word">to </span>
+            <span className="scroll-word">each </span>
+            <span className="scroll-word">brand's </span>
+            <span className="scroll-word">unique </span>
+            <span className="scroll-word">voice, </span>
+            <span className="scroll-word">tone, </span>
+            <span className="scroll-word">and </span>
+            <span className="scroll-word">visual </span>
+            <span className="scroll-word">identity </span>
             <span className="scroll-word" style={{ opacity: 0.4 }}>— </span>
-            <span className="scroll-word">MAKING </span>
-            <span className="scroll-word">PROFESSIONAL </span>
-            <span className="scroll-word">BRANDING </span>
-            <span className="scroll-word" style={{ color: '#ffd84d' }}>FLEXIBLE, </span>
-            <span className="scroll-word">FAST, </span>
-            <span className="scroll-word">AND </span>
-            <span className="scroll-word">ACCESSIBLE.</span>
+            <span className="scroll-word">making </span>
+            <span className="scroll-word">professional </span>
+            <span className="scroll-word">branding </span>
+            <span className="scroll-word" style={{ color: '#ffd84d', fontWeight: 600 }}>flexible, </span>
+            <span className="scroll-word">fast, </span>
+            <span className="scroll-word">and </span>
+            <span className="scroll-word">accessible.</span>
           </div>
         </div>
 
