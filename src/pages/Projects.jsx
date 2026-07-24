@@ -108,7 +108,7 @@ export default function ProjectsPage() {
       url: 'https://wizzibility.com/project'
     }
   });
-  const [activeTab, setActiveTab] = useState('Tab 1');
+  const [activeTab, setActiveTab] = useState('Tab 2');
 
   // GSAP sticky-stack animation: each card shrinks/fades as the next one slides over it
   useEffect(() => {
@@ -356,13 +356,7 @@ export default function ProjectsPage() {
             <div className="proect-tab w-tabs">
               {/* Tab Selector Menu */}
               <div className="project-tab-menu w-tab-menu">
-                <button 
-                  onClick={() => setActiveTab('Tab 1')} 
-                  className={`project-tab-link w-inline-block w-tab-link ${activeTab === 'Tab 1' ? 'w--current' : ''}`}
-                  style={{ background: 'none', border: 'none', cursor: 'pointer' }}
-                >
-                  <div>All</div>
-                </button>
+
                 <button 
                   onClick={() => setActiveTab('Tab 2')} 
                   className={`project-tab-link w-inline-block w-tab-link ${activeTab === 'Tab 2' ? 'w--current' : ''}`}
@@ -388,10 +382,7 @@ export default function ProjectsPage() {
 
               {/* Tab Panels */}
               <div className="project-tab-content w-tab-content">
-                {/* Tab 1: All */}
-                <div className={`w-tab-pane ${activeTab === 'Tab 1' ? 'w--tab-active' : ''}`}>
-                  {activeTab === 'Tab 1' && renderProjectGrid(projects)}
-                </div>
+
 
                 {/* Tab 2: Creative */}
                 <div className={`w-tab-pane ${activeTab === 'Tab 2' ? 'w--tab-active' : ''}`}>
