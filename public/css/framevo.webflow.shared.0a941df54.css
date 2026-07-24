@@ -3661,12 +3661,13 @@ li {
 }
 
 .footer-navigation {
-    padding: var(--_spacing---space-small);
+    padding: 0.75rem 1.75rem;
     border-radius: var(--_border-radius---border-radius--border-full);
     background-color: var(--_color---rangon-green);
     justify-content: center;
     align-items: center;
     display: flex;
+    position: relative;
 }
 
 .footer-title-wrapper {
@@ -6582,7 +6583,7 @@ li {
 .navlink.w--current::after {
     content: "";
     position: absolute;
-    bottom: -6px;
+    bottom: -2px;
     left: 50%;
     transform: translateX(-50%);
     width: 5px;
