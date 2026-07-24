@@ -12,6 +12,17 @@ export default function Footer() {
 
   return (
     <footer data-wf-component-id="5a6382d2-e0d3-62a0-fb99-90b247678888" data-wf-variant-state="base" className="section" role="contentinfo" style={{ paddingTop: '2.5rem' }}>
+      <style>
+        {`
+          .footer-soical-wrapper:hover .footer-social-icon,
+          .footer-soical-wrapper:hover .footer-social-text {
+            color: #ffd84d !important;
+          }
+          .footer-social-icon, .footer-social-text {
+            transition: color 0.3s ease;
+          }
+        `}
+      </style>
       <div className="space-2-normal" style={{ paddingTop: '1rem' }}></div>
       <div className="w-layout-blockcontainer container w-container">
         <div className="footer-wrapper">
