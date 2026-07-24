@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/shared/Navbar';
 import Footer from '../components/shared/Footer';
 import Team from '../components/Team';
+import MissionVision from '../components/MissionVision';
+import AboutWizzibility from '../components/AboutWizzibility';
 import Testimonials from '../components/Testimonials';
 import WhyChoose from '../components/WhyChoose';
 // import Process from '../components/Process';
@@ -81,7 +83,11 @@ export default function About() {
       </div>
 
       <main className="main" id="main-content" role="main">
+        {/* About Wizzibility Details Section */}
+        <AboutWizzibility />
 
+        {/* Mission and Vision Section */}
+        <MissionVision />
 
         {/* Team Component */}
         <Team />

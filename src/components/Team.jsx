@@ -30,22 +30,24 @@ export default function Team() {
       const trackWrapper = trackWrapperRef.current;
       if (!section || !track || !trackWrapper) return;
 
-      // Heading fade-up
-      gsap.fromTo(
-        section.querySelector('.team-heading'),
-        { opacity: 0, y: 40 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1.0,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: section,
-            start: 'top 80%',
-            toggleActions: 'play none none reverse',
-          },
-        }
-      );
+      // The distance the track needs to slide left
+      const slideDistance = Math.max(0, track.scrollWidth - trackWrapper.offsetWidth);
+      const totalScrollDistance = slideDistance + window.innerHeight;
+
+      // Custom Character Split Animation for Heading
+      gsap.to(section.querySelectorAll('.team-char'), {
+        opacity: 1,
+        y: '0%',
+        duration: 0.6,
+        stagger: 0.05,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 80%',
+          end: `+=${totalScrollDistance}`,
+          toggleActions: 'play reverse play reverse',
+        },
+      });
 
       // Cards fade in staggered
       gsap.fromTo(
@@ -60,13 +62,12 @@ export default function Team() {
           scrollTrigger: {
             trigger: section,
             start: 'top 80%',
-            toggleActions: 'play none none reverse',
+            end: `+=${totalScrollDistance}`,
+            toggleActions: 'play reverse play reverse',
           },
         }
       );
 
-      // The distance the track needs to slide left
-      const slideDistance = track.scrollWidth - trackWrapper.offsetWidth;
       if (slideDistance <= 0) return; // All cards already visible, no need to scroll
 
       // Horizontal scroll tied to vertical scroll — section pins, cards slide
@@ -97,17 +98,44 @@ export default function Team() {
     // NO overflow:hidden here — GSAP pin adds a spacer div outside this element
     // overflow:hidden on section would hide the spacer and duplicate the section visually
     <section className="section team-section" ref={sectionRef}>
+      <style>{`
+        .custom-section-heading {
+          font-family: "Bebas Neue", sans-serif !important;
+          font-weight: 400 !important;
+          text-transform: uppercase !important;
+          transform: scaleY(1.3) !important;
+          transform-origin: center center !important;
+          line-height: 1.15 !important;
+          letter-spacing: -0.01em !important;
+          -webkit-font-smoothing: antialiased;
+          color: var(--_color---nobel);
+          font-size: var(--_typography---heading--heading-style-h2);
+          text-align: center;
+          margin: 0;
+          position: relative;
+        }
+      `}</style>
       <div className="w-layout-blockcontainer container w-container">
         <div
           className="section-header"
           style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: '2rem' }}
         >
           <div style={{ width: '100%', textAlign: 'center' }}>
-            <h2
-              className="section-heading team-heading"
-              style={{ textAlign: 'center', opacity: 0, margin: 0 }}
-            >
-              Expertise Teams
+            <h2 className="custom-section-heading team-heading">
+              {"Expertise Teams".split('').map((char, index) => (
+                <span
+                  key={index}
+                  className="team-char"
+                  style={{
+                    display: 'inline-block',
+                    opacity: 0,
+                    transform: 'translateY(100%)',
+                    whiteSpace: char === ' ' ? 'pre' : 'normal',
+                  }}
+                >
+                  {char}
+                </span>
+              ))}
             </h2>
           </div>
         </div>
