@@ -149,6 +149,7 @@ export default function Navbar() {
           {/* Navigation Links Wrapper (collapses/reveals with swipe) */}
           <div className={`navbar-links-wrapper ${isOpen ? 'open' : ''}`}>
             <NavLink to="/" className="nav-item-simple" onClick={handleLinkClick}>HOME</NavLink>
+            <NavLink to="/about" className="nav-item-simple" onClick={handleLinkClick}>ABOUT</NavLink>
             <NavLink to="/service" className="nav-item-simple" onClick={handleLinkClick}>SERVICES</NavLink>
             <NavLink to="/project" className="nav-item-simple" onClick={handleLinkClick}>PROJECTS</NavLink>
             <NavLink to="/contact" className="nav-item-simple" onClick={handleLinkClick}>CONTACT</NavLink>

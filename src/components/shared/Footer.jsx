@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Footer() {
   const handleLinkClick = () => {
@@ -17,10 +17,11 @@ export default function Footer() {
         <div className="footer-wrapper">
           <div className="footer-nav-wrapper">
             <div className="footer-navigation">
-              <Link to="/" className="navlink" onClick={handleLinkClick}>Home</Link>
-              <Link to="/service" className="navlink" onClick={handleLinkClick}>Service</Link>
-              <Link to="/project" className="navlink" onClick={handleLinkClick}>Project</Link>
-              <Link to="/contact" className="navlink" onClick={handleLinkClick}>Contact</Link>
+              <NavLink to="/" className="nav-item-simple" onClick={handleLinkClick}>Home</NavLink>
+              <NavLink to="/about" className="nav-item-simple" onClick={handleLinkClick}>About</NavLink>
+              <NavLink to="/service" className="nav-item-simple" onClick={handleLinkClick}>Service</NavLink>
+              <NavLink to="/project" className="nav-item-simple" onClick={handleLinkClick}>Project</NavLink>
+              <NavLink to="/contact" className="nav-item-simple" onClick={handleLinkClick}>Contact</NavLink>
             </div>
           </div>
           <div className="space-4-medium"></div>

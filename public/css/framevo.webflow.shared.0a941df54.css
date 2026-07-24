@@ -6574,3 +6574,42 @@ li {
         grid-row-gap: var(--_spacing---space-1-large);
     }
 }
+
+/* Yellow dot for active menu item */
+.nav-item-simple.active::after,
+.nav-item-simple.w--current::after,
+.navlink.active::after,
+.navlink.w--current::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    background-color: #fbbf24;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(251, 191, 36, 0.6);
+    animation: yellowDotPulse 4s infinite ease-in-out;
+}
+
+/* Show purple line on hover ONLY if page is NOT active */
+.nav-item-simple:not(.active):not(.w--current):hover::before,
+.navlink:not(.active):not(.w--current):hover::before {
+    transform: translateX(-50%) scaleX(1);
+    opacity: 1;
+}
+
+/* Strictly hide purple underline for active item, including on hover */
+.nav-item-simple.active::before,
+.nav-item-simple.w--current::before,
+.nav-item-simple.active:hover::before,
+.nav-item-simple.w--current:hover::before,
+.navlink.active::before,
+.navlink.w--current::before,
+.navlink.active:hover::before,
+.navlink.w--current:hover::before {
+    display: none !important;
+    opacity: 0 !important;
+    transform: translateX(-50%) scaleX(0) !important;
+}

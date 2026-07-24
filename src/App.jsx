@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
+import About from './pages/About';
 import Services from './pages/Services';
 import ServiceDetail from './pages/ServiceDetail';
 import Projects from './pages/Projects';
@@ -17,6 +18,10 @@ const ROUTE_CONFIG = {
       '/js/webflow.497307bd.76564bc1fcd59a88.js?v=2',
     ],
     pageId: '6a2ede0dd01527a201b478d1',
+  },
+  '/about': {
+    scriptSrcs: ['/js/webflow.4f562678.55c679493bfc0e5e.js'],
+    pageId: '6a351d55090fb3eb90d329a2',
   },
   '/service': {
     scriptSrcs: ['/js/webflow.4f562678.55c679493bfc0e5e.js'],
@@ -64,8 +69,6 @@ function AppContent() {
 
   useWebflow(scriptSrcs, pageId);
 
-
-
   // Scroll to the top of the window on every page transition
   React.useEffect(() => {
     if (window.lenis) {
@@ -79,6 +82,7 @@ function AppContent() {
     <div className="page-wrapper">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/service" element={<Services />} />
         <Route path="/service/:slug" element={<ServiceDetail />} />
         <Route path="/project" element={<Projects />} />
