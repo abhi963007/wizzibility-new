@@ -158,7 +158,7 @@ export default function About() {
         <Testimonials />
 
         {/* Call To Action Section */}
-        <section className="section bg" style={{ padding: '4rem 0 2rem 0', textDecoration: 'none' }}>
+        {/* <section className="section bg" style={{ padding: '4rem 0 2rem 0', textDecoration: 'none' }}>
           <div className="w-layout-blockcontainer container w-container">
             <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
               <h2 style={{ fontSize: 'calc(2rem + 2vw)', color: '#fff', textTransform: 'uppercase', fontFamily: 'Phudu, sans-serif', marginBottom: '1.5rem' }}>
@@ -177,7 +177,7 @@ export default function About() {
               </Link>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Footer */}
         <Footer />
