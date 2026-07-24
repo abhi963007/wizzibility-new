@@ -1,4 +1,8 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Testimonials() {
   const testimonials = [
@@ -15,8 +19,35 @@ export default function Testimonials() {
     'home/Vinod.jpeg',
   ];
 
+  const sectionRef = useRef(null);
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      if (textRef.current && sectionRef.current) {
+        gsap.fromTo(
+          textRef.current,
+          { rotationX: 90, opacity: 0, y: 50 },
+          {
+            rotationX: 0,
+            opacity: 1,
+            y: 0,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: sectionRef.current,
+              start: 'top 85%', // Trigger much earlier, as soon as it enters screen
+              end: 'top 40%',
+              scrub: 1,
+            }
+          }
+        );
+      }
+    });
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="section testimonials-section">
+    <section className="section testimonials-section" ref={sectionRef}>
       <div className="w-layout-blockcontainer container w-container">
         <div className="testimonial-sticky-wrap">
           <div className="testimonial-sticky">
@@ -83,12 +114,10 @@ export default function Testimonials() {
                     ))}
                   </div>
                   <div className="review-right">
-                    <div className="review-right-text-wrap">
-                      {testimonials.map((t, i) => (
-                        <div key={t.id} className={`review-right-text _0${i + 1}`}>
-                          Wizzibility
-                        </div>
-                      ))}
+                    <div className="review-right-text-wrap" style={{ perspective: '1000px' }}>
+                      <div className="review-right-text" ref={textRef} style={{ color: 'rgba(255,255,255,0.05)', webkitTextStroke: '1px rgba(255,255,255,0.2)' }}>
+                        Wizzibility
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -3756,7 +3756,7 @@ li {
     display: flex;
 }
 
-.footer-nav-wrapper {
+.footer-nav-wrapper, .custom-footer-nav-wrapper {
     border-radius: var(--_border-radius---border-radius--border-full);
     background-color: var(--_color---rangon-green);
     flex-flow: column;

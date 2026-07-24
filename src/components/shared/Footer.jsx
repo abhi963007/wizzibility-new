@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="space-2-normal" style={{ paddingTop: '1rem' }}></div>
       <div className="w-layout-blockcontainer container w-container">
         <div className="footer-wrapper">
-          <div className="footer-nav-wrapper">
+          <div className="custom-footer-nav-wrapper">
             <div className="footer-navigation">
               <NavLink to="/" className="nav-item-simple" onClick={handleLinkClick}>Home</NavLink>
               <NavLink to="/about" className="nav-item-simple" onClick={handleLinkClick}>About</NavLink>
@@ -48,7 +48,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="space-10-small"></div>
+          <div className="space-4-medium"></div>
         </div>
       </div>
       <div className="copyright-wrapper" style={{ display: 'block' }}>
