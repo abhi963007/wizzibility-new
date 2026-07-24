@@ -21,6 +21,16 @@ export default function Footer() {
           .footer-social-icon, .footer-social-text {
             transition: color 0.3s ease;
           }
+          .email-address {
+            font-family: "Bebas Neue", sans-serif !important;
+            font-weight: 400 !important;
+            text-transform: uppercase !important;
+            transform: scaleY(1.3) !important;
+            transform-origin: center center !important;
+            line-height: 1.15 !important;
+            letter-spacing: 0.02em !important;
+            display: inline-block !important;
+          }
         `}
       </style>
       <div className="space-2-normal" style={{ paddingTop: '1rem' }}></div>
