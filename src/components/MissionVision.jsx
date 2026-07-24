@@ -114,11 +114,9 @@ export default function MissionVision() {
             <span className="scroll-word">empowers </span>
             <span className="scroll-word">every </span>
             <span className="scroll-word">brand </span>
-            <span className="scroll-word" style={{ opacity: 0.4 }}>— </span>
             <span className="scroll-word">big </span>
             <span className="scroll-word">or </span>
             <span className="scroll-word">small </span>
-            <span className="scroll-word" style={{ opacity: 0.4 }}>— </span>
             <span className="scroll-word">to </span>
             <span className="scroll-word">access </span>
             <span className="scroll-word">intelligent, </span>
@@ -158,7 +156,6 @@ export default function MissionVision() {
             <span className="scroll-word">and </span>
             <span className="scroll-word">visual </span>
             <span className="scroll-word">identity </span>
-            <span className="scroll-word" style={{ opacity: 0.4 }}>— </span>
             <span className="scroll-word">making </span>
             <span className="scroll-word">professional </span>
             <span className="scroll-word">branding </span>

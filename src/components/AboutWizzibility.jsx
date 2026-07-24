@@ -9,7 +9,7 @@ export default function AboutWizzibility() {
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
           gap: '4rem',
-          alignItems: 'center'
+          alignItems: 'stretch'
         }}>
           {/* Left Column: Bold Headline */}
           <motion.div
@@ -17,6 +17,7 @@ export default function AboutWizzibility() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
+            style={{ height: '100%' }}
           >
             <h2 style={{
               fontFamily: '"Inter Tight", "Montserrat", sans-serif',
@@ -29,8 +30,10 @@ export default function AboutWizzibility() {
               margin: 0,
               display: 'flex',
               flexDirection: 'column',
+              justifyContent: 'space-between',
               alignItems: 'flex-end',
-              textAlign: 'right'
+              textAlign: 'right',
+              height: '100%'
             }}>
               <span>WE</span>
               <span>DESIGN WITH</span>
@@ -44,18 +47,38 @@ export default function AboutWizzibility() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
-            style={{ maxWidth: '540px' }}
+            style={{ maxWidth: '540px', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '0.25rem 0' }}
           >
-            <p style={{
+            <div style={{
               fontFamily: '"Montserrat", "Inter Tight", sans-serif',
               fontSize: 'calc(1.1rem + 0.35vw)',
-              lineHeight: 1.6,
+              lineHeight: 1.5,
               color: 'rgba(255, 255, 255, 0.9)',
               margin: 0,
               fontWeight: 400
             }}>
-              Wizzibility is a design-driven agency focused on crafting bold digital experiences for brands that want to stand out — and scale. We believe that exceptional design is the bridge between innovative technology and human emotion. By combining strategic thinking with creative excellence, we build digital identities that not only capture attention but drive meaningful business results.
-            </p>
+              Wizzibility is a design-driven agency
+            </div>
+            <div style={{
+              fontFamily: '"Montserrat", "Inter Tight", sans-serif',
+              fontSize: 'calc(1.1rem + 0.35vw)',
+              lineHeight: 1.5,
+              color: 'rgba(255, 255, 255, 0.9)',
+              margin: 0,
+              fontWeight: 400
+            }}>
+              focused on crafting bold digital experiences
+            </div>
+            <div style={{
+              fontFamily: '"Montserrat", "Inter Tight", sans-serif',
+              fontSize: 'calc(1.1rem + 0.35vw)',
+              lineHeight: 1.5,
+              color: 'rgba(255, 255, 255, 0.9)',
+              margin: 0,
+              fontWeight: 400
+            }}>
+              for brands that want to stand out — and scale.
+            </div>
           </motion.div>
         </div>
       </div>
