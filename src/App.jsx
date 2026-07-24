@@ -20,7 +20,11 @@ const ROUTE_CONFIG = {
     pageId: '6a2ede0dd01527a201b478d1',
   },
   '/about': {
-    scriptSrcs: ['/js/webflow.4f562678.55c679493bfc0e5e.js'],
+    scriptSrcs: [
+      '/js/webflow.schunk.121b0d7ff03e0f4a.js',
+      '/js/webflow.4f562678.55c679493bfc0e5e.js',
+      '/js/webflow.497307bd.76564bc1fcd59a88.js'
+    ],
     pageId: '6a351d55090fb3eb90d329a2',
   },
   '/service': {

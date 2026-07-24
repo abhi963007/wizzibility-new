@@ -151,11 +151,11 @@ export default function About() {
         {/* Team Component */}
         <Team />
 
-        {/* Testimonials Component */}
-        <Testimonials />
-
         {/* Why Choose Component */}
         <WhyChoose />
+
+        {/* Testimonials Component */}
+        <Testimonials />
 
         {/* Call To Action Section */}
         <section className="section bg" style={{ padding: '4rem 0 2rem 0', textDecoration: 'none' }}>
