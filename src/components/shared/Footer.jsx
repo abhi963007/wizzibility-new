@@ -31,6 +31,10 @@ export default function Footer() {
             letter-spacing: 0.02em !important;
             display: inline-block !important;
           }
+          .footer-navigation .nav-item-simple {
+            font-size: 1rem !important;
+            padding: 8px 16px !important;
+          }
         `}
       </style>
       <div className="space-2-normal" style={{ paddingTop: '1rem' }}></div>
