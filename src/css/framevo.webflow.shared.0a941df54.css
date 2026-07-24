@@ -4298,9 +4298,14 @@ li {
 
 .review-right-text {
     font-size: var(--_typography---font-size--font-1-large);
-    line-height: var(--_typography---line-height--line-height-1-2);
-    font-weight: var(--fonts-weight--medium);
-    writing-mode: vertical-lr;
+    font-family: var(--font-family--phudu);
+    text-transform: uppercase;
+    color: var(--_color---transparent);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+    transform-style: preserve-3d;
+    writing-mode: vertical-rl;
+    position: absolute;
+    inset: 0%;
 }
 
 .review-right-text._02,
