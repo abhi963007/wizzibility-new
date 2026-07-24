@@ -75,10 +75,10 @@ export default function Hero() {
             {/* Split Content: Main Headline & Right Paragraph with Divider */}
             <div className="hero-content-split">
               {/* Left Headline */}
-              <h1 className="hero-heading-mockup" style={{ fontSize: 'clamp(4.5rem, 7.5vw, 8.2rem)', letterSpacing: '0.05em', lineHeight: 0.95 }}>
+              <h1 className="hero-heading-mockup" style={{ fontFamily: '"Michroma", sans-serif', fontSize: 'clamp(2.5rem, 4.5vw, 5.5rem)', fontWeight: 400, letterSpacing: '0.02em', lineHeight: 1.15 }}>
                 WE ARE <br />
-                <span style={{ color: '#ffd84d', WebkitTextFillColor: '#ffd84d', fontFamily: '"Bebas Neue", sans-serif' }}>CREATIVE</span> <br />
-                <span style={{ color: '#d8b4fe', fontFamily: '"Bebas Neue", sans-serif' }}>TECH STUDIO</span>
+                <span style={{ color: '#ffd84d', WebkitTextFillColor: '#ffd84d', fontFamily: '"Michroma", sans-serif' }}>CREATIVE</span> <br />
+                <span style={{ color: '#ffffff', WebkitTextFillColor: '#ffffff', fontFamily: '"Michroma", sans-serif' }}>TECH STUDIO</span>
               </h1>
 
               {/* Right Column with Vertical Line Divider & Text */}
@@ -150,7 +150,7 @@ export default function Hero() {
 
       {/* Background Media & Overlays */}
       <video className="hero-home-image" autoPlay loop muted playsInline>
-        <source src="/video/hero2.mp4" type="video/mp4" />
+        <source src="/video/hero.mp4" type="video/mp4" />
       </video>
       <div className="blend-color"></div>
       <div className="home-hero-overlay home"></div>
