@@ -323,49 +323,49 @@ export default function ProjectsPage() {
                   className={`project-tab-link w-inline-block w-tab-link ${activeTab === 'Tab 1' ? 'w--current' : ''}`}
                   style={{ background: 'none', border: 'none', cursor: 'pointer' }}
                 >
-                  <div>All Projects</div>
+                  <div>All</div>
                 </button>
                 <button 
                   onClick={() => setActiveTab('Tab 2')} 
                   className={`project-tab-link w-inline-block w-tab-link ${activeTab === 'Tab 2' ? 'w--current' : ''}`}
                   style={{ background: 'none', border: 'none', cursor: 'pointer' }}
                 >
-                  <div>Marketing & Branding</div>
+                  <div>Creative</div>
                 </button>
                 <button 
                   onClick={() => setActiveTab('Tab 3')} 
                   className={`project-tab-link w-inline-block w-tab-link ${activeTab === 'Tab 3' ? 'w--current' : ''}`}
                   style={{ background: 'none', border: 'none', cursor: 'pointer' }}
                 >
-                  <div>Tech & Development</div>
+                  <div>Tech</div>
                 </button>
                 <button 
                   onClick={() => setActiveTab('Tab 4')} 
                   className={`project-tab-link w-inline-block w-tab-link ${activeTab === 'Tab 4' ? 'w--current' : ''}`}
                   style={{ background: 'none', border: 'none', cursor: 'pointer' }}
                 >
-                  <div>Multimedia & Design</div>
+                  <div>Studio</div>
                 </button>
               </div>
 
               {/* Tab Panels */}
               <div className="project-tab-content w-tab-content">
-                {/* Tab 1: All Projects */}
+                {/* Tab 1: All */}
                 <div className={`w-tab-pane ${activeTab === 'Tab 1' ? 'w--tab-active' : ''}`}>
                   {activeTab === 'Tab 1' && renderProjectGrid(projects)}
                 </div>
 
-                {/* Tab 2: Weddings */}
+                {/* Tab 2: Creative */}
                 <div className={`w-tab-pane ${activeTab === 'Tab 2' ? 'w--tab-active' : ''}`}>
                   {activeTab === 'Tab 2' && renderProjectGrid(projects.filter(p => p.category === 'Tab 2'))}
                 </div>
 
-                {/* Tab 3: Events */}
+                {/* Tab 3: Tech */}
                 <div className={`w-tab-pane ${activeTab === 'Tab 3' ? 'w--tab-active' : ''}`}>
                   {activeTab === 'Tab 3' && renderProjectGrid(projects.filter(p => p.category === 'Tab 3'))}
                 </div>
 
-                {/* Tab 4: Product Photography */}
+                {/* Tab 4: Studio */}
                 <div className={`w-tab-pane ${activeTab === 'Tab 4' ? 'w--tab-active' : ''}`}>
                   {activeTab === 'Tab 4' && renderProjectGrid(projects.filter(p => p.category === 'Tab 4'))}
                 </div>
