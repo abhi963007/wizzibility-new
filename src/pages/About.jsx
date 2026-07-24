@@ -5,7 +5,7 @@ import Footer from '../components/shared/Footer';
 import Team from '../components/Team';
 import Testimonials from '../components/Testimonials';
 import WhyChoose from '../components/WhyChoose';
-import Process from '../components/Process';
+// import Process from '../components/Process';
 import useMeta from '../hooks/useMeta';
 
 const aboutSchema = [
@@ -147,9 +147,6 @@ export default function About() {
             </div>
           </div>
         </section>
-
-        {/* Process & Execution */}
-        <Process />
 
         {/* Team Component */}
         <Team />
