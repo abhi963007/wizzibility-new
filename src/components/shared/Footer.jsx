@@ -11,8 +11,8 @@ export default function Footer() {
   };
 
   return (
-    <footer data-wf-component-id="5a6382d2-e0d3-62a0-fb99-90b247678888" data-wf-variant-state="base" className="section" role="contentinfo">
-      <div className="space-5-small"></div>
+    <footer data-wf-component-id="5a6382d2-e0d3-62a0-fb99-90b247678888" data-wf-variant-state="base" className="section" role="contentinfo" style={{ paddingTop: '1.5rem' }}>
+      <div className="space-2-normal" style={{ paddingTop: '1rem' }}></div>
       <div className="w-layout-blockcontainer container w-container">
         <div className="footer-wrapper">
           <div className="footer-nav-wrapper">

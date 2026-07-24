@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/shared/Navbar';
 import Footer from '../components/shared/Footer';
 import Team from '../components/Team';
+import Testimonials from '../components/Testimonials';
 import WhyChoose from '../components/WhyChoose';
 import Process from '../components/Process';
 import useMeta from '../hooks/useMeta';
@@ -153,11 +154,14 @@ export default function About() {
         {/* Team Component */}
         <Team />
 
+        {/* Testimonials Component */}
+        <Testimonials />
+
         {/* Why Choose Component */}
         <WhyChoose />
 
         {/* Call To Action Section */}
-        <section className="section bg" style={{ padding: '6rem 0', textDecoration: 'none' }}>
+        <section className="section bg" style={{ padding: '4rem 0 2rem 0', textDecoration: 'none' }}>
           <div className="w-layout-blockcontainer container w-container">
             <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
               <h2 style={{ fontSize: 'calc(2rem + 2vw)', color: '#fff', textTransform: 'uppercase', fontFamily: 'Phudu, sans-serif', marginBottom: '1.5rem' }}>

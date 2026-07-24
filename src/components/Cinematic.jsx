@@ -63,7 +63,7 @@ export default function Cinematic() {
           </div>
         </div>
       </div>
-      <div className="space-10-small"></div>
+      <div className="space-2-normal" style={{ paddingTop: '1.5rem' }}></div>
     </section>
   );
 }

@@ -138,7 +138,8 @@ function StickyCard002({ cards = DEFAULT_CARDS }) {
 
 export default function Photography() {
   return (
-    <section className="section photography-section-purple">
+    <section className="section photography-section-purple" style={{ paddingTop: '5rem' }}>
+      <div className="space-6-normal"></div>
       <div className="w-layout-blockcontainer container w-container">
         <div className="photography-wrapper" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           

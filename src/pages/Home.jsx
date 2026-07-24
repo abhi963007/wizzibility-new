@@ -1,14 +1,14 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
-import Services from '../components/Services';
+// import Services from '../components/Services';
 import Photography from '../components/Photography';
 import Gallery from '../components/Gallery';
 import WhyChoose from '../components/WhyChoose';
 import Process from '../components/Process';
 import Cinematic from '../components/Cinematic';
-import Team from '../components/Team';
-import Testimonials from '../components/Testimonials';
+// import Team from '../components/Team';
+// import Testimonials from '../components/Testimonials';
 import Footer from '../components/shared/Footer';
 
 import useMeta from '../hooks/useMeta';
@@ -144,14 +144,14 @@ export default function Home() {
       <Hero />
       <main className="main" id="main-content" role="main">
         <Projects />
-        <Services />
+        {/* <Services /> */}
         <Photography />
         <Gallery />
         <WhyChoose />
         <Process />
         <Cinematic />
-        <Team />
-        <Testimonials />
+        {/* <Team /> */}
+        {/* <Testimonials /> */}
         <Footer />
       </main>
     </>
