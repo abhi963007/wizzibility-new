@@ -19,7 +19,10 @@ export default function Cinematic() {
         <div className="cinematic-wrapper">
           <div className="section-header" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
             <div className="section-heading-wrap cinematic" style={{ width: '100%', textAlign: 'center' }}>
-              <h2 className="section-heading" style={{ textAlign: 'center', width: '100%' }}>Digital Experiences That Drive Growth</h2>
+              <h2 className="section-heading" style={{ textAlign: 'center', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <span style={{ lineHeight: '1' }}>Digital Experiences That</span>
+                <span style={{ lineHeight: '1', marginTop: '-15px' }}>Drive Growth</span>
+              </h2>
             </div>
           </div>
           <div className="space-3-large"></div>
