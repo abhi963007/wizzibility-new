@@ -322,7 +322,16 @@ export default function ServiceDetail() {
               <div className="hero-title-wrapper">
                 <h1 className="single-innner-heading">
                   <span className="single-innner-heading-span" style={{ display: 'inline-block', opacity: 0 }}>
-                    {service.title}
+                    {service.title.split(' ').map((word, index, arr) => (
+                      <React.Fragment key={index}>
+                        {index === 1 ? (
+                          <span className="heading-hightlight" style={{ color: '#ffd84d', opacity: 1, display: 'inline-block' }}>{word}</span>
+                        ) : (
+                          word
+                        )}
+                        {index < arr.length - 1 && ' '}
+                      </React.Fragment>
+                    ))}
                   </span>
                 </h1>
               </div>

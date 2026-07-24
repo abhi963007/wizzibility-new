@@ -318,7 +318,7 @@ export default function ProjectsPage() {
             <div className="hero-wrapper">
               <div className="hero-title-wrapper">
                 <h1 className="hero-heading">
-                  Our <span className="heading-hightlight">Pro<span style={{ color: '#ffd84d', opacity: 1, display: 'inline-block' }}>je</span>cts</span>
+                  Our <span className="heading-hightlight" style={{ color: '#ffd84d', opacity: 1, display: 'inline-block' }}>Projects</span>
                 </h1>
               </div>
               <div className="project-header-top" style={{ opacity: 0 }}>

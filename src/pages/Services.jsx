@@ -258,7 +258,7 @@ export default function ServicesPage() {
             <div className="hero-wrapper">
               <div className="hero-title-wrapper">
                 <h1 className="hero-heading">
-                  Our <span className="heading-hightlight">Ser<span style={{ color: '#ffd84d', opacity: 1, display: 'inline-block' }}>vi</span>ces</span>
+                  Our <span className="heading-hightlight" style={{ color: '#ffd84d', opacity: 1, display: 'inline-block' }}>Services</span>
                 </h1>
               </div>
               <div className="hero-left" style={{ opacity: 0 }}>

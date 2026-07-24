@@ -175,7 +175,18 @@ export default function ProjectDetail() {
           <div className="w-layout-blockcontainer container w-container">
             <div className="hero-wrapper">
               <div className="hero-title-wrapper">
-                <h1 className="single-innner-heading">{project.title}</h1>
+                <h1 className="single-innner-heading">
+                  {project.title.split(' ').map((word, index, arr) => (
+                    <React.Fragment key={index}>
+                      {index === 1 ? (
+                        <span className="heading-hightlight" style={{ color: '#ffd84d', opacity: 1, display: 'inline-block' }}>{word}</span>
+                      ) : (
+                        word
+                      )}
+                      {index < arr.length - 1 && ' '}
+                    </React.Fragment>
+                  ))}
+                </h1>
               </div>
               <div className="hero-left" style={{ opacity: 0 }}>
                 <p className="hero-p">{project.overview}</p>
