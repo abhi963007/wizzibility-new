@@ -40,12 +40,17 @@ export default function About() {
 
   React.useEffect(() => {
     let attempts = 0;
+    let headingSplit = null;
+    let paragraphSplit = null;
+
     const initAnimation = () => {
       const gsap = window.gsap;
+      const SplitText = window.SplitText;
+
       if (!gsap) {
         attempts++;
         if (attempts > 15) {
-          document.querySelectorAll('.hero-title-wrapper, .hero-left').forEach(el => {
+          document.querySelectorAll('.hero-title-wrapper, .hero-left, .hero-heading, .project-hero-p').forEach(el => {
             if (el) {
               el.style.opacity = '1';
               el.style.transform = 'none';
@@ -57,23 +62,64 @@ export default function About() {
         return;
       }
 
-      gsap.killTweensOf('.hero-title-wrapper, .hero-left');
+      gsap.killTweensOf('.hero-title-wrapper, .hero-left, .hero-heading, .project-hero-p, .anim-char, .anim-line');
+
+      try {
+        if (SplitText) {
+          gsap.set('.hero-heading', { clearProps: 'all', opacity: 1 });
+          gsap.set('.project-hero-p', { clearProps: 'all', opacity: 1 });
+          gsap.set('.hero-left', { clearProps: 'all', opacity: 1 }); // Ensure parent is visible
+          headingSplit = new SplitText('.hero-heading', { type: 'chars', charsClass: 'anim-char' });
+          paragraphSplit = new SplitText('.project-hero-p', { type: 'lines', linesClass: 'anim-line' });
+        }
+      } catch (err) {
+        console.warn('SplitText error in About.jsx:', err);
+      }
 
       const timeline = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-      timeline
-        .fromTo('.hero-title-wrapper',
+      // Step 1: Main heading animates in FIRST
+      if (headingSplit?.chars?.length) {
+        timeline.fromTo(
+          headingSplit.chars,
+          { yPercent: 100, opacity: 0 },
+          { yPercent: 0, opacity: 1, duration: 0.6, stagger: { amount: 0.5 } },
+          0
+        );
+      } else {
+        timeline.fromTo(
+          '.hero-title-wrapper',
           { y: 35, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.7 }
-        )
-        .fromTo('.hero-left',
+          { y: 0, opacity: 1, duration: 0.7 },
+          0
+        );
+      }
+
+      // Step 2: Sub-content paragraph animates in SECOND (only after main heading finishes)
+      if (paragraphSplit?.lines?.length) {
+        timeline.fromTo(
+          paragraphSplit.lines,
+          { yPercent: 100, opacity: 0 },
+          { yPercent: 0, opacity: 1, duration: 0.6, stagger: { amount: 0.2 }, ease: 'power2.out' },
+          '>+0.1'
+        );
+      } else {
+        timeline.fromTo(
+          '.hero-left',
           { y: 25, opacity: 0 },
           { y: 0, opacity: 1, duration: 0.7 },
           '>+0.1'
         );
+      }
     };
 
-    initAnimation();
+    const timer = setTimeout(initAnimation, 100);
+
+    return () => {
+      clearTimeout(timer);
+      try { headingSplit?.revert(); } catch (e) {}
+      try { paragraphSplit?.revert(); } catch (e) {}
+    };
   }, []);
 
   const handleLinkClick = () => {
